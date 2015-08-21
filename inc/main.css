@@ -379,12 +379,19 @@ NAV:before, NAV:after { content: ""; display: table; }
   color: #555555;
 }
 
-.gray ARTICLE {
+.blue {
+  background: #2E65B0;
+  color: #FFFFFF;
+}
+
+.gray ARTICLE,
+.blue ARTICLE {
   margin-bottom: 0;
   padding: 1.2em 0;
 }
 
-.gray H1 {
+.gray H1,
+.blue H1 {
   font-size: 300%;
 }
 
@@ -399,6 +406,8 @@ NAV:before, NAV:after { content: ""; display: table; }
 .gray A:hover, .gray A:active {
   color: #959595;
 }
+
+
 
 ARTICLE, .mb {
   margin-bottom: 2em;
