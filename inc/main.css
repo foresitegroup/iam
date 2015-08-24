@@ -1,5 +1,6 @@
 /*
 #959595 - gray
+#252525 - dark gray
 #ED243B - red
 #78131F - dark red
 #2E65B0 - blue
@@ -353,7 +354,7 @@ NAV:before, NAV:after { content: ""; display: table; }
   font-weight: bold;
   color: #FFFFFF;
   background-repeat: none;
-  background-position: center top !important;
+  background-position: center center !important;
 }
 
 .tall {
@@ -365,6 +366,9 @@ NAV:before, NAV:after { content: ""; display: table; }
   -moz-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
   box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
 }
+
+A.redlink:link, A.redlink:visited { color: #ED243B; }
+A.redlink:hover, A.redlink:active { color: #959595; }
 
 .redtext {
   color: #ED243B;
@@ -379,24 +383,33 @@ NAV:before, NAV:after { content: ""; display: table; }
   color: #555555;
 }
 
+.darkgray {
+  background: #252525;
+  color: #FFFFFF;
+}
+
 .blue {
   background: #2E65B0;
   color: #FFFFFF;
 }
 
 .gray ARTICLE,
+.darkgray ARTICLE,
 .blue ARTICLE {
   margin-bottom: 0;
   padding: 1.2em 0;
 }
 
 .gray H1,
+.darkgray H1,
 .blue H1 {
   font-size: 300%;
+  line-height: 1em;
 }
 
 .gray H2 {
   font-size: 240%;
+  line-height: 1em;
 }
 
 .gray A:link, .gray A:visited {
@@ -407,7 +420,8 @@ NAV:before, NAV:after { content: ""; display: table; }
   color: #959595;
 }
 
-
+.gray A.redlink:link, .gray A.redlink:visited { color: #ED243B; }
+.gray A.redlink:hover, .gray A.redlink:active { color: #959595; }
 
 ARTICLE, .mb {
   margin-bottom: 2em;
@@ -584,11 +598,17 @@ FOOTER INPUT[type="text"] {
   padding: 0.5em 7%;
   background: #255595;
   border: 1px solid #255595;
+  color: #FFFFFF;
 }
 
 FOOTER INPUT[type="text"]:focus {
   border-color: #255595;
 }
+
+FOOTER INPUT::-webkit-input-placeholder { color: #FFFFFF; }
+FOOTER INPUT:-moz-placeholder { color: #FFFFFF; } /* FF 4-18 */
+FOOTER INPUT::-moz-placeholder { color: #FFFFFF; } /* FF 19+ */
+FOOTER INPUT:-ms-input-placeholder { color: #FFFFFF; } /* IE 10+ */
 
 FOOTER INPUT[type="submit"] {
   background: #1A3A64;
@@ -756,6 +776,58 @@ FOOTER .three-col A.social:active {
   margin: 0 auto 4em;
 }
 
+.tour-header {
+  text-align: center;
+  width: 70%;
+}
+
+.tour .two-col {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 120%;
+  line-height: 1.4em;
+}
+
+.tour .two-col H1 {
+  margin: 0;
+  font-size: 315%;
+  line-height: 1em;
+}
+
+.tour .two-col HR {
+  width: 44px;
+  margin: 1em auto;
+}
+
+.tour .two-col .redbutton {
+  font-size: 84%;
+  margin-top: 1em;
+}
+
+.tour-amazon {
+  width: 100%;
+  margin: 1.9em 0;
+}
+
+.tour-amazon TD {
+  width: 45%;
+  padding: 0;
+  text-align: center;
+  font-size: 280%;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+.tour-amazon TD.tour-amazon-image {
+  width: 55%;
+  text-align: left;
+}
+
+.tour-amazon TD .amazon-stars {
+  font-size: 60%;
+  padding-top: 1em;
+}
+
 
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */
@@ -852,6 +924,24 @@ FOOTER .three-col A.social:active {
     margin: 0 auto;
     width: 40%;
   }
+
+  .download-form {
+    width: 83%;
+  }
+
+  .tour .two-col H1 {
+    font-size: 230%;
+  }
+
+  .tour-amazon TD {
+    width: 40%;
+    font-size: 210%;
+  }
+
+  .tour-amazon TD.tour-amazon-image {
+    width: 50%;
+    padding-right: 10%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -880,6 +970,10 @@ FOOTER .three-col A.social:active {
 
   #footermenu UL LI {
     padding-left: 3%;
+  }
+
+  .download-form {
+    width: 90%;
   }
 }
 
@@ -1018,6 +1112,20 @@ FOOTER .three-col A.social:active {
   .trial-download .two-col H1 {
     font-size: 210%;
   }
+
+  .download-form {
+    width: 100%;
+  }
+
+  .tour .two-col H1 {
+    font-size: 180%;
+  }
+
+  .tour-amazon TD,
+  .tour-amazon TD.tour-amazon-image {
+    width: 50%;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1134,5 +1242,18 @@ FOOTER .three-col A.social:active {
 
   .testimonials .cycle-slide DIV SPAN {
     margin-top: 0.5em;
+  }
+
+  .gray H1,
+  .blue H1 {
+    font-size: 280%;
+  }
+
+  .tour-amazon TD {
+    width: 100%;
+  }
+
+  .tour-amazon TD.tour-amazon-image {
+    display: none;
   }
 }

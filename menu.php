@@ -3,6 +3,7 @@
   <li>
     <a href="#">WHY IAM?</a>
     <ul>
+      <li><a href="tour.php">Tour</a></li>
       <li><a href="#">Features</a></li>
       <li><a href="#">Secure Software</a></li>
     </ul>
