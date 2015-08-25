@@ -123,7 +123,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 
 <div class="gray">
   <article style="text-align: center;">
-    <h2>VISIT OUR <a href="#">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
+    <h2 class="small">VISIT OUR <a href="#">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
   </article>
 </div>
 

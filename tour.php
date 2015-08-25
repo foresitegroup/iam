@@ -22,7 +22,7 @@ include "header.php";
     <hr>
     If you are managing your own investments or have help from a professional Investment Account Manager is the best AAII (American Association of Individual Investors) rated portfolio software on the market.<br>
     <br>
-    <a href="#" class="redbutton">START TOUR</a>
+    <a href="tour-iam.php" class="redbutton">START TOUR</a>
   </div>
 
   <div class="two-col">
@@ -30,7 +30,7 @@ include "header.php";
     <hr>
     See why professional money advisors and investors rely on Investment Account Manager PROFESSIONAL and the comprehensive tools available to help them grow their client's portfolios.<br>
     <br>
-    <a href="#" class="redbutton">START TOUR</a>
+    <a href="tour-pro.php" class="redbutton">START TOUR</a>
   </div>
 
   <div style="clear: both;"></div>

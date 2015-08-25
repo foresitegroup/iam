@@ -1,6 +1,7 @@
 /*
 #959595 - gray
 #252525 - dark gray
+#1B1B1B - darkest gray
 #ED243B - red
 #78131F - dark red
 #2E65B0 - blue
@@ -385,7 +386,12 @@ A.redlink:hover, A.redlink:active { color: #959595; }
 
 .darkgray {
   background: #252525;
-  color: #FFFFFF;
+  color: #696969;
+}
+
+.darkestgray {
+  background: #1B1B1B;
+  color: #696969;
 }
 
 .blue {
@@ -395,6 +401,7 @@ A.redlink:hover, A.redlink:active { color: #959595; }
 
 .gray ARTICLE,
 .darkgray ARTICLE,
+.darkestgray ARTICLE,
 .blue ARTICLE {
   margin-bottom: 0;
   padding: 1.2em 0;
@@ -408,8 +415,13 @@ A.redlink:hover, A.redlink:active { color: #959595; }
 }
 
 .gray H2 {
-  font-size: 240%;
+  font-size: 300%;
   line-height: 1em;
+  margin: 0.5em 0;
+}
+
+.gray H2.small {
+  font-size: 240%;
 }
 
 .gray A:link, .gray A:visited {
@@ -816,6 +828,7 @@ FOOTER .three-col A.social:active {
   font-size: 280%;
   line-height: 1em;
   font-weight: bold;
+  color: #FFFFFF;
 }
 
 .tour-amazon TD.tour-amazon-image {
@@ -828,6 +841,138 @@ FOOTER .three-col A.social:active {
   padding-top: 1em;
 }
 
+.tour-index {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tour-index A {
+  font-size: 85%;
+}
+
+.tour-index H3 {
+  font-size: 218%;
+  font-weight: 800;
+  line-height: 1em;
+  margin: 0.3em 0 0.6em;
+}
+
+.tour-index .redtext {
+  font-weight: 700;
+}
+
+.tour-section-title {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.tour-section-title .redtext {
+  font-weight: 800;
+}
+
+.tour-section-menu ARTICLE {
+  margin-bottom: 0;
+  padding: 0.75em 0 1.3em;
+  text-align: center;
+  color: #646464;
+  font-size: 156%;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.tour-section-menu ARTICLE .redtext {
+  font-weight: 800;
+}
+
+.tour-section-menu ARTICLE HR {
+  margin: 0.75em 0 1.3em;
+  border-top: 1pt solid #E1E1E1;
+}
+
+A.tour-section-link-prev:link,
+A.tour-section-link-prev:visited,
+A.tour-section-link-next:link,
+A.tour-section-link-next:visited {
+  margin: 0 1em;
+  color: #969696;
+  text-decoration: none;
+}
+
+A.tour-section-link-prev:hover,
+A.tour-section-link-prev:active,
+A.tour-section-link-next:hover,
+A.tour-section-link-next:active {
+  color: #ED243B;
+}
+
+A.tour-section-link:link,
+A.tour-section-link:visited {
+  color: #252525;
+  text-decoration: none;
+  border: 3px solid #D2D2D2;
+  border-radius: 50%;
+  display: inline-block;
+  width: 2.1em;
+  height: 2.1em;
+  line-height: 2.1em;
+  text-align: center;
+  font-size: 60%;
+  font-weight: bold;
+  -webkit-transition: color 0.2s, background 0.2s, border-color 0.2s;
+  -moz-transition: color 0.2s, background 0.2s, border-color 0.2s;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+
+A.tour-section-link:hover,
+A.tour-section-link:active,
+A.tour-section-link.current {
+  color: #FFFFFF;
+  background: #ED243B;
+  border-color: #B91D2F;
+}
+
+.tour-section-menu ARTICLE HR.tour-section-link-hr {
+  border-top: 1pt dotted #C6C6C6;
+  width: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.tour-section-menu.footer ARTICLE {
+  padding: 1.3em 0;
+  font-size: 130%;
+  font-weight: 800;
+}
+
+.tour-section-menu.footer ARTICLE .prev {
+  float: left;
+  text-decoration: none;
+}
+
+.tour-section-menu.footer ARTICLE .next {
+  float: right;
+  text-decoration: none;
+}
+
+.tour-section-menu.footer ARTICLE .prev .fa,
+.tour-section-menu.footer ARTICLE .next .fa {
+  color: #959595;
+}
+
+.tour-section-menu.footer ARTICLE A.index:link,
+.tour-section-menu.footer ARTICLE A.index:visited {
+  color: #555555;
+}
+
+.tour-section-menu.footer ARTICLE A.index:hover,
+.tour-section-menu.footer ARTICLE A.index:active {
+  color: #959595;
+}
 
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */
@@ -927,6 +1072,10 @@ FOOTER .three-col A.social:active {
 
   .download-form {
     width: 83%;
+  }
+
+  .tour-header {
+    width: 85%;
   }
 
   .tour .two-col H1 {
@@ -1117,6 +1266,10 @@ FOOTER .three-col A.social:active {
     width: 100%;
   }
 
+  .tour-header {
+    width: 96%;
+  }
+
   .tour .two-col H1 {
     font-size: 180%;
   }
@@ -1255,5 +1408,27 @@ FOOTER .three-col A.social:active {
 
   .tour-amazon TD.tour-amazon-image {
     display: none;
+  }
+
+  .tour-index H3 {
+    font-size: 190%;
+  }
+
+  .tour-section-title ARTICLE {
+    line-height: 1em;
+  }
+
+  A.tour-section-link-prev:link,
+  A.tour-section-link-prev:visited {
+    margin: 0 0.3em 0 0;
+  }
+
+  A.tour-section-link-next:link,
+  A.tour-section-link-next:visited {
+    margin: 0 0 0 0.3em;
+  }
+
+  .tour-section-menu ARTICLE HR.tour-section-link-hr {
+    width: 0.3em;
   }
 }
