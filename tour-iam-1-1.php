@@ -26,9 +26,17 @@ include "header.php";
   </article>
 </div>
 
-<div class="gray">
+<div class="gray bt bb tour-content">
   <article>
-    CONTENT GOES HERE
+    As a comprehensive portfolio management software program, Investment Account Manager offers investment tracking features for a variety of asset types: cash, money market funds, US Governments, agencies, tax-exempt bonds, corporate bonds, preferred stocks, mutual funds, exchange traded funds, common stocks, options, and other investments.
+
+    <hr>
+
+    <img src="images/tour-iam-1-1.jpg" alt="">
+
+    <hr>
+
+    For common stocks, IAM allows users to define stocks by size, style, and sector. For mutual funds and ETF's, investment objective and fund composition can be tracked. Those assets with maturity dates, such as fixed income and options, can be listed on a Maturity Schedule report, to ladder investments and gauge reinvestment risk. In all, Investment Account Manager allows users to monitor the most common of investment types, providing users with more than 40 professional reports summarizing their investment holdings, essential for improved portfolio management decision making.
   </article>
 </div>
 
@@ -40,7 +48,7 @@ include "header.php";
   </article>
 </div>
 
-<div class="gray">
+<div class="gray bt">
   <article style="text-align: center;">
     <h2>START YOUR IAM <a href="free-trial.php" class="redlink">FREE TRIAL</a> TODAY</h2>
   </article>

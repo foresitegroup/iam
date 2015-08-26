@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<div class="gray mb">
+<div class="gray bb mb">
   <article class="tour-header">
     We offer Investment Account Manager and IAM Professional, depending on you and your client needs. Take the comprehensive tour or begin a <a href="free-trial.php">free trial</a> and see what IAM has to offer.
   </article>

@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<div class="gray mb">
+<div class="gray bb mb">
   <article class="tour-header">
     Users of Investment Account Manager become well-organized investors, empowered to make more educated portfolio management decisions, such as: measuring the true performance of investments, rebalancing investment holdings to meet targeted allocation goals, identifying more efficient tax planning decisions, and a collective understanding of all investment portfolios owned.
   </article>

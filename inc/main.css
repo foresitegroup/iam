@@ -25,7 +25,7 @@ IMG {
 
 HR {
   border: none 0;
-  border-top: 1pt solid #555555; /* the border */
+  border-top: 1pt solid #EBEBEB; /* the border */
   height: 1pt; /* whatever the total width of the border-top and border-bottom equal */
 }
 
@@ -43,6 +43,11 @@ A[href$=".pdf"] {
   background: transparent url(../images/pdf.png) center left no-repeat;
   background-size: auto 1em;
   padding-left: 1.4em;
+}
+
+UL, OL {
+  margin: 0 0 0 0.7em;
+  padding: 0 0 0 0.7em;
 }
 
 H1 {
@@ -384,6 +389,9 @@ A.redlink:hover, A.redlink:active { color: #959595; }
   color: #555555;
 }
 
+.gray.bt { border-top: 1px solid #CCCCCC; }
+.gray.bb { border-bottom: 1px solid #CCCCCC; }
+
 .darkgray {
   background: #252525;
   color: #696969;
@@ -398,6 +406,9 @@ A.redlink:hover, A.redlink:active { color: #959595; }
   background: #2E65B0;
   color: #FFFFFF;
 }
+
+.blue.bt { border-top: 1px solid #285899; }
+.blue.bb { border-bottom: 1px solid #285899; }
 
 .gray ARTICLE,
 .darkgray ARTICLE,
@@ -434,6 +445,10 @@ A.redlink:hover, A.redlink:active { color: #959595; }
 
 .gray A.redlink:link, .gray A.redlink:visited { color: #ED243B; }
 .gray A.redlink:hover, .gray A.redlink:active { color: #959595; }
+
+.gray HR {
+  border-top-color: #C2C2C2;
+}
 
 ARTICLE, .mb {
   margin-bottom: 2em;
@@ -523,6 +538,7 @@ A.redbutton:hover, A.redbutton:active {
 
 #products {
   background: #EBEBEB;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 #products ARTICLE {
@@ -944,7 +960,7 @@ A.tour-section-link.current {
 }
 
 .tour-section-menu.footer ARTICLE {
-  padding: 1.3em 0;
+  padding: 1.9em 0;
   font-size: 130%;
   font-weight: 800;
 }
@@ -973,6 +989,22 @@ A.tour-section-link.current {
 .tour-section-menu.footer ARTICLE A.index:active {
   color: #959595;
 }
+
+.tour-content {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.tour-content IMG {
+  max-width: 100%;
+}
+
+.tour-content HR {
+  margin: 3em 0;
+}
+
+.tour-content A:link, .tour-content A:visited { color: #ED243B; }
+.tour-content A:hover, .tour-content A:active { color: #959595; }
 
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */

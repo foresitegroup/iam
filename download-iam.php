@@ -10,7 +10,7 @@ $timestamp = time();
 $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 ?>
 
-<div class="gray mb">
+<div class="gray bt mb">
   <article style="text-align: center;">
     <h1>FREE TRIAL DOWNLOAD</h1>
   </article>
