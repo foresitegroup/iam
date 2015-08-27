@@ -30,7 +30,7 @@ include "header.php";
     <hr>
     See why professional money advisors and investors rely on Investment Account Manager PROFESSIONAL and the comprehensive tools available to help them grow their client's portfolios.<br>
     <br>
-    <a href="tour-pro.php" class="redbutton">START TOUR</a>
+    <a href="tour-pro-1-1.php" class="redbutton">START TOUR</a>
   </div>
 
   <div style="clear: both;"></div>

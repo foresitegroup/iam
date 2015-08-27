@@ -446,6 +446,9 @@ A.redlink:hover, A.redlink:active { color: #959595; }
 .gray A.redlink:link, .gray A.redlink:visited { color: #ED243B; }
 .gray A.redlink:hover, .gray A.redlink:active { color: #959595; }
 
+.gray A.bluelink:link, .gray A.bluelink:visited { color: #2E65B0; }
+.gray A.bluelink:hover, .gray A.bluelink:active { color: #959595; }
+
 .gray HR {
   border-top-color: #C2C2C2;
 }
@@ -900,7 +903,8 @@ FOOTER .three-col A.social:active {
   font-weight: 600;
 }
 
-.tour-section-menu ARTICLE .redtext {
+.tour-section-menu ARTICLE .redtext,
+.tour-section-menu ARTICLE .bluetext {
   font-weight: 800;
 }
 
@@ -923,6 +927,13 @@ A.tour-section-link-prev:active,
 A.tour-section-link-next:hover,
 A.tour-section-link-next:active {
   color: #ED243B;
+}
+
+A.tour-section-link-prev.pn-blue:hover,
+A.tour-section-link-prev.pn-blue:active,
+A.tour-section-link-next.pn-blue:hover,
+A.tour-section-link-next.pn-blue:active {
+  color: #2E65B0;
 }
 
 A.tour-section-link:link,
@@ -949,6 +960,13 @@ A.tour-section-link.current {
   color: #FFFFFF;
   background: #ED243B;
   border-color: #B91D2F;
+}
+
+A.tour-section-link.tsl-blue:hover,
+A.tour-section-link.tsl-blue:active,
+A.tour-section-link.tsl-blue.current {
+  background: #2E65B0;
+  border-color: #255493;
 }
 
 .tour-section-menu ARTICLE HR.tour-section-link-hr {
