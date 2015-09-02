@@ -1,7 +1,7 @@
 <ul class="clearfix">
   <li><a href="free-trial.php">FREE TRIAL</a></li>
   <li>
-    <a href="#">WHY IAM?</a>
+    <a href="why-iam.php">WHY IAM?</a>
     <ul>
       <li><a href="tour.php">Tour</a></li>
       <li><a href="#">Features</a></li>

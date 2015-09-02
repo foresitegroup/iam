@@ -367,6 +367,10 @@ NAV:before, NAV:after { content: ""; display: table; }
   height: 221px;
 }
 
+.med {
+  height: 197px;
+}
+
 .topshadow {
   -webkit-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
   -moz-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
@@ -473,7 +477,9 @@ ARTICLE, .mb {
   margin: 0 5% 2em 0;
 }
 
-.three-col:nth-child(3) {
+.three-col:nth-child(3),
+.three-col:nth-child(7),
+.three-col:nth-child(11) {
   margin-right: 0;
 }
 
@@ -1024,6 +1030,85 @@ A.tour-section-link.tsl-blue.current {
 .tour-content A:link, .tour-content A:visited { color: #ED243B; }
 .tour-content A:hover, .tour-content A:active { color: #959595; }
 
+.whyiam {
+  position: relative;
+  margin-top: 2em;
+  font-size: 137%;
+  font-weight: bold;
+}
+
+.whyiam H1 {
+  font-size: 316%;
+  line-height: 1em;
+  margin: 0;
+}
+
+.whyiam HR {
+  margin: 0.8em 0 1.8em;
+}
+
+.whyiam .fa-check {
+  color: #ED243B;
+}
+
+.whyiam-testimonials {
+  background: url(../images/whyiam-testimonials.jpg) center no-repeat;
+  color: #FFFFFF;
+}
+
+.whyiam-testimonials .testimonials .cycle-slide {
+  padding: 0 10%;
+  width: 80%;
+  height: 323px;
+}
+
+.whyiam-features {
+  text-align: center;
+}
+
+.whyiam-features H1 {
+  font-size: 260%;
+}
+
+.uam-chart {
+  text-align: center;
+  padding: 3.5em 0 !important;
+}
+
+.uam-chart IMG {
+  max-width: 100%;
+}
+
+.uam .three-col {
+  margin-top: 2.3em;
+}
+
+.uam H2 {
+  font-size: 160%;
+  line-height: 1.1em;
+  margin: 0.6em 0;
+}
+
+.uam LI {
+  margin-bottom: 0.8em;
+}
+
+.uam .three-col.download {
+  padding: 1.3em 0;
+  background: #EBEBEB;
+  color: #363636;
+  font-size: 125%;
+  font-weight: bold;
+  line-height: 1.3em;
+  text-align: center;
+  margin-top: 1.85em;
+}
+
+.uam .download A {
+  font-size: 95%;
+}
+
+
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */
   HEADER,
@@ -1140,6 +1225,24 @@ A.tour-section-link.tsl-blue.current {
   .tour-amazon TD.tour-amazon-image {
     width: 50%;
     padding-right: 10%;
+  }
+
+  .whyiam .two-col {
+    margin: 0;
+    width: 56%;
+  }
+
+  .whyiam-features H1 {
+    font-size: 200%;
+  }
+
+  .uam .three-col.download {
+    padding: 1.3em 3%;
+    width: 24%;
+  }
+
+  .uam .three-col.download .redbutton {
+    line-height: 1em;
   }
 }
 
@@ -1329,6 +1432,19 @@ A.tour-section-link.tsl-blue.current {
     width: 50%;
     padding: 0;
   }
+
+  .whyiam .two-col {
+    width: 100%;
+  }
+
+  .whyiam-features H1 {
+    font-size: 260%;
+  }
+
+  .uam .three-col.download {
+    padding: 1.3em 0;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1452,6 +1568,10 @@ A.tour-section-link.tsl-blue.current {
     font-size: 280%;
   }
 
+  .darkgray H1 {
+    font-size: 220%;
+  }
+
   .tour-amazon TD {
     width: 100%;
   }
@@ -1480,5 +1600,14 @@ A.tour-section-link.tsl-blue.current {
 
   .tour-section-menu ARTICLE HR.tour-section-link-hr {
     width: 0.3em;
+  }
+
+  .whyiam-testimonials {
+    font-size: 90%;
+  }
+
+  .whyiam-testimonials .testimonials .cycle-slide {
+    padding: 0 2%;
+    width: 96%;
   }
 }
