@@ -1,9 +1,9 @@
 <ul class="clearfix">
-  <li><a href="free-trial.php">FREE TRIAL</a></li>
+  <li><a href="<?php echo $TopDir; ?>free-trial.php">FREE TRIAL</a></li>
   <li>
-    <a href="why-iam.php">WHY IAM?</a>
+    <a href=<?php echo $TopDir; ?>"why-iam.php">WHY IAM?</a>
     <ul>
-      <li><a href="tour.php">Tour</a></li>
+      <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
       <li><a href="#">Features</a></li>
       <li><a href="#">Secure Software</a></li>
     </ul>

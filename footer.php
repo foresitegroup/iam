@@ -1,7 +1,7 @@
 
     <div id="footer-wrap">
       <footer>
-        <img src="images/apple-touch-icon.png" alt="" id="footer-logo">
+        <img src="<?php echo $TopDir; ?>images/apple-touch-icon.png" alt="" id="footer-logo">
         
         <div class="three-col">
           <h2>LATEST POSTS</h2>

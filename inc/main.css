@@ -380,6 +380,9 @@ NAV:before, NAV:after { content: ""; display: table; }
 A.redlink:link, A.redlink:visited { color: #ED243B; }
 A.redlink:hover, A.redlink:active { color: #959595; }
 
+A.whitelink:link, A.whitelink:visited { color: #FFFFFF; }
+A.whitelink:hover, A.whitelink:active { color: #959595; }
+
 .redtext {
   color: #ED243B;
 }
@@ -524,7 +527,8 @@ ARTICLE, .mb {
   padding: 0 1em;
 }
 
-A.redbutton:link, A.redbutton:visited {
+A.redbutton:link, A.redbutton:visited,
+A.add_to_cart_button:link, A.add_to_cart_button:visited {
   background: #ED243B;
   color: #FFFFFF;
   text-decoration: none;
@@ -539,10 +543,16 @@ A.redbutton:link, A.redbutton:visited {
   display: inline-block;
 }
 
-A.redbutton:hover, A.redbutton:active {
+A.redbutton:hover, A.redbutton:active,
+A.add_to_cart_button:hover, A.add_to_cart_button:active {
   background: #C2C2C2;
   color: #111111;
   text-decoration: none;
+}
+
+A.add_to_cart_button:link, A.add_to_cart_button:visited {
+  text-transform: uppercase;
+  font-size: 100%;
 }
 
 #products {
@@ -1107,6 +1117,80 @@ A.tour-section-link.tsl-blue.current {
 .uam .download A {
   font-size: 95%;
 }
+
+.store-title ARTICLE {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.store-title ARTICLE H1 {
+  margin: 0.35em 0;
+}
+
+.store-title ARTICLE H2 {
+  font-size: 240%;
+}
+
+UL.products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+UL.products LI {
+  border-top: 1px solid #EBEBEB;
+  padding: 3em 0 2em;
+}
+
+UL.products LI.first {
+  border-top: none;
+  padding-top: 2em;
+}
+
+UL.products LI A {
+  color: #555555;
+  text-decoration: none;
+}
+
+UL.products .shop-index-left {
+  float: left;
+  width: 30%;
+}
+
+UL.products .shop-index-right {
+  float: right;
+  width: 60%;
+}
+
+UL.products H3 {
+  text-transform: uppercase;
+  font-size: 200%;
+  line-height: 1em;
+  margin: 0;
+}
+
+UL.products LI P {
+  margin: 0.5em 0 0;
+  width: 90%;
+}
+
+UL.products LI .price {
+  display: block;
+  margin: 1em 0;
+  font-size: 143%;
+  font-weight: bold;
+  color: #ED243B;
+}
+
+UL.products LI .note {
+  width: 55%;
+  font-size: 81.25%;
+  line-height: 1.3em;
+  font-style: italic;
+  margin-top: 2em;
+}
+
+
 
 
 @media only screen and (max-width: 800px) {
