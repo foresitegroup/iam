@@ -22,26 +22,38 @@ get_header( 'shop' ); ?>
 </div>
 
 <article>
-	<?php if ( have_posts() ) : ?>
+	<ul class="products">
+    <?php
+    $args = array( 'post_type' => 'product', 'posts_per_page' => 0, 'product_cat' => 'software', 'orderby' => 'menu_order', 'order' => 'asc' );
+    $loop = new WP_Query( $args );
 
-		<?php woocommerce_product_loop_start(); ?>
+    while ( $loop->have_posts() ) : $loop->the_post();
+      global $product;
+      wc_get_template_part( 'content', 'product' );
+    endwhile;
 
-			<?php woocommerce_product_subcategories(); ?>
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php wc_get_template_part( 'content', 'product' ); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		<?php woocommerce_product_loop_end(); ?>
-
-	<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
-
-		<?php wc_get_template( 'loop/no-products-found.php' ); ?>
-
-	<?php endif; ?>
+    wp_reset_query();
+    ?>
+  </ul>
 </article>
+
+<div class="gray">
+  <article>
+    <ul class="products">
+      <?php
+      $args = array( 'post_type' => 'product', 'posts_per_page' => 0, 'product_cat' => 'support', 'orderby' => 'menu_order', 'order' => 'asc' );
+      $loop = new WP_Query( $args );
+
+      while ( $loop->have_posts() ) : $loop->the_post();
+        global $product;
+        wc_get_template_part( 'content', 'product' );
+      endwhile;
+      
+      wp_reset_query();
+      ?>
+    </ul>
+  </article>
+</div>
 
 <div class="darkgray store-title">
   <article>

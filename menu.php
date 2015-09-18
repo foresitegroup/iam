@@ -1,7 +1,7 @@
 <ul class="clearfix">
   <li><a href="<?php echo $TopDir; ?>free-trial.php">FREE TRIAL</a></li>
   <li>
-    <a href=<?php echo $TopDir; ?>"why-iam.php">WHY IAM?</a>
+    <a href="<?php echo $TopDir; ?>why-iam.php">WHY IAM?</a>
     <ul>
       <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
       <li><a href="#">Features</a></li>
@@ -9,10 +9,10 @@
     </ul>
   </li>
   <li>
-    <a href="#">PRODUCTS</a>
+    <a href="<?php echo $TopDir; ?>products">PRODUCTS</a>
     <ul>
-      <li><a href="#">Investment Account Manager</a></li>
-      <li><a href="#">IAM Professional</a></li>
+      <li><a href="<?php echo $TopDir; ?>products/product/investment-account-manager/">Investment Account Manager</a></li>
+      <li><a href="<?php echo $TopDir; ?>products/product/investment-account-manager-professional/">IAM Professional</a></li>
     </ul>
   </li>
   <li>
@@ -38,5 +38,8 @@
       <li><a href="#">Blog</a></li>
       <li><a href="#">Privacy Policy</a></li>
     </ul>
+  </li>
+  <li class="cart">
+    <a href="<?php echo $TopDir; ?>products/cart"><i class="fa fa-shopping-cart"></i> CART</a>
   </li>
 </ul>
