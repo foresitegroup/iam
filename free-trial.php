@@ -11,7 +11,7 @@ include "header.php";
 </div>
 
 <div class="gray mb">
-  <article style="font-size: 270%; font-weight: 600;">
+  <article class="trial-gray">
     Follow Our 3 Simple Steps:
   </article>
 </div>

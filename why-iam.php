@@ -4,7 +4,7 @@ $PageTitle = "Why IAM?";
 include "header.php";
 ?>
 
-<div class="sub-header tall" style="background: url(images/sub-header-why-iam.jpg);">
+<div class="sub-header taller" style="background: url(images/sub-header-why-iam.jpg);">
   <article class="vert-center">
     SINCE 1985
     <div style="font-size: 34%; font-weight: normal; line-height: 1.4em;">
@@ -86,8 +86,8 @@ include "header.php";
   <br>
 </article>
 
-<div class="gray bt">
-  <article style="text-align: center;">
+<div class="gray footer bt">
+  <article>
     <h2>START YOUR IAM <a href="free-trial.php" class="redlink">FREE TRIAL</a> TODAY</h2>
   </article>
 </div>

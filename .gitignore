@@ -43,6 +43,7 @@ Temporary Items
 .apdisk
 
 inc/dbconfig.php
+pdf/
 products/*
 !products/wp-content/
 products/wp-content/*

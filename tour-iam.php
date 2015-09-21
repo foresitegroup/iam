@@ -21,7 +21,7 @@ include "header.php";
 </article>
 
 <div class="darkestgray">
-  <article style="text-align: center;">
+  <article style="padding: 1em 0;">
     JUMP TO SECTION
   </article>
 </div>
@@ -157,8 +157,8 @@ include "header.php";
   </article>
 </div>
 
-<div class="gray">
-  <article style="text-align: center;">
+<div class="gray footer">
+  <article>
     <h2>START YOUR IAM <a href="free-trial.php" class="redlink">FREE TRIAL</a> TODAY</h2>
   </article>
 </div>

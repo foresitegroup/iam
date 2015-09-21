@@ -4,6 +4,7 @@
 #1B1B1B - darkest gray
 #ED243B - red
 #78131F - dark red
+#2F82BF - light blue
 #2E65B0 - blue
 #255595 - dark blue
 #132B4A - darker blue
@@ -39,11 +40,11 @@ A:hover, A:active {
   text-decoration: underline;
 }
 
-A[href$=".pdf"] {
+/*A[href$=".pdf"] {
   background: transparent url(../images/pdf.png) center left no-repeat;
   background-size: auto 1em;
   padding-left: 1.4em;
-}
+}*/
 
 UL, OL {
   margin: 0 0 0 0.7em;
@@ -59,7 +60,10 @@ H2 {
 }
 
 H3 {
-  margin-bottom: 0.1em;
+  font-size: 2.4em;
+  line-height: 1em;
+  margin: 0.1em 0;
+  color: #363636;
 }
 
 LABEL {
@@ -243,7 +247,7 @@ NAV:before, NAV:after { content: ""; display: table; }
   display: block;
   position: absolute;
   top: 90px;
-  left: 1.9em;
+  left: 0.2em;
   background: #ED243B;
   -webkit-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
   -moz-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
@@ -388,12 +392,16 @@ NAV:before, NAV:after { content: ""; display: table; }
   background-position: center center !important;
 }
 
+.med {
+  height: 197px;
+}
+
 .tall {
   height: 221px;
 }
 
-.med {
-  height: 197px;
+.taller {
+  height: 247px;
 }
 
 .topshadow {
@@ -407,14 +415,6 @@ A.redlink:hover, A.redlink:active { color: #959595; }
 
 A.whitelink:link, A.whitelink:visited { color: #FFFFFF; }
 A.whitelink:hover, A.whitelink:active { color: #959595; }
-
-.redtext {
-  color: #ED243B;
-}
-
-.bluetext {
-  color: #2E65B0;
-}
 
 .gray {
   background: #EBEBEB;
@@ -442,29 +442,39 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
 .blue.bt { border-top: 1px solid #285899; }
 .blue.bb { border-bottom: 1px solid #285899; }
 
+.lightblue {
+  background: #2F82BF;
+  color: #FFFFFF;
+}
+
 .gray ARTICLE,
 .darkgray ARTICLE,
 .darkestgray ARTICLE,
-.blue ARTICLE {
+.blue ARTICLE,
+.lightblue ARTICLE {
   margin-bottom: 0;
-  padding: 1.2em 0;
+  padding: 0.3em 0;
+  text-align: center;
 }
 
 .gray H1,
 .darkgray H1,
-.blue H1 {
+.blue H1,
+.lightblue H1 {
   font-size: 300%;
   line-height: 1em;
 }
 
-.gray H2 {
+.gray H2,
+.darkgray H2 {
   font-size: 300%;
   line-height: 1em;
   margin: 0.5em 0;
 }
 
 .gray H2.small {
-  font-size: 240%;
+  font-size: 250%;
+  line-height: 1.2em;
 }
 
 .gray A:link, .gray A:visited {
@@ -485,12 +495,29 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
   border-top-color: #C2C2C2;
 }
 
-.darkgray H2 {
+/*.darkgray H2 {
+  font-size: 300%;
   line-height: 1em;
+}*/
+
+.footer ARTICLE {
+  padding: 1.2em;
+}
+
+.redtext {
+  color: #ED243B;
+}
+
+.bluetext {
+  color: #2E65B0;
+}
+
+.whitetext {
+  color: #FFFFFF;
 }
 
 ARTICLE, .mb {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .two-col {
@@ -797,6 +824,13 @@ FOOTER .three-col A.social:active {
   font-weight: 300;
 }
 
+.trial-gray {
+  font-size: 270%;
+  font-weight: 600;
+  padding: 1.2em !important;
+  text-align: left !important;
+}
+
 .trial-number {
   float: left;
   margin: 0 0.5em 1em 0;
@@ -872,8 +906,8 @@ FOOTER .three-col A.social:active {
 }
 
 .tour-header {
-  text-align: center;
   width: 70%;
+  padding: 1.6em 0 !important;
 }
 
 .tour .two-col {
@@ -892,6 +926,7 @@ FOOTER .three-col A.social:active {
 .tour .two-col HR {
   width: 44px;
   margin: 1em auto;
+  border-top-color: #555555;
 }
 
 .tour .two-col .redbutton {
@@ -925,9 +960,9 @@ FOOTER .three-col A.social:active {
 }
 
 .tour-index {
-  text-align: center;
   text-transform: uppercase;
   font-weight: 600;
+  padding: 1.2em 0 !important;
 }
 
 .tour-index A {
@@ -951,6 +986,7 @@ FOOTER .three-col A.social:active {
   font-size: 200%;
   font-weight: bold;
   line-height: 1em;
+  padding: 1em 0 !important;
 }
 
 .tour-section-title .redtext {
@@ -1172,8 +1208,8 @@ A.tour-section-link.tsl-blue.current {
 }
 
 .store-title ARTICLE {
-  text-align: center;
   color: #FFFFFF;
+  padding: 1.2em 0;
 }
 
 .store-title ARTICLE H1 {
@@ -1253,7 +1289,6 @@ UL.products LI .note {
 .summary .note {
   margin-top: 1.4em;
 }
-
 
 ARTICLE.iam-single-product {
   padding: 2em 0;

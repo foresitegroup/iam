@@ -100,8 +100,8 @@ include "header.php";
   <div style="clear: both;"></div>
 </article>
 
-<div class="darkgray">
-  <article style="text-align: center; color: #FFFFFF;">
+<div class="darkgray whitetext">
+  <article>
     <h1>MONEY MANAGEMENT, YOUR WAY.</h1>
   </article>
 </div>

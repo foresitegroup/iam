@@ -11,7 +11,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 ?>
 
 <div class="blue bt mb">
-  <article style="text-align: center;">
+  <article>
     <h1>FREE TRIAL DOWNLOAD</h1>
   </article>
 </div>
@@ -121,8 +121,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <?php } ?>
 </article>
 
-<div class="gray">
-  <article style="text-align: center;">
+<div class="gray footer">
+  <article>
     <h2 class="small">VISIT OUR <a href="#">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
   </article>
 </div>

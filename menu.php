@@ -32,11 +32,11 @@
     </ul>
   </li>
   <li>
-    <a href="#">ABOUT US</a>
+    <a href="<?php echo $TopDir; ?>about-us.php">ABOUT US</a>
     <ul>
-      <li><a href="#">IAM Partners</a></li>
+      <li><a href="<?php echo $TopDir; ?>iam-partners.php">IAM Partners</a></li>
       <li><a href="#">Blog</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="<?php echo $TopDir; ?>privacy-policy.php">Privacy Policy</a></li>
     </ul>
   </li>
   <li class="cart">
