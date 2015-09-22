@@ -20,7 +20,7 @@ include "header.php";
   In the period of 1985-1994, multiple versions of QPE were developed and improved, with QPE receiving widespread acclaim from many leading investment related publications, including: PC Computing, PC Magazine, Forbes Magazine, Fortune Magazine, AAII Computerized Investing, and countless syndicated columns. With the growing interest and use by individual and professional investors, QPE also became a common topic in the CompuServe investing forums. It was there that QPE was "discovered" by the leading <strong>National Association of Investors Corp.</strong> representatives. In 1994, QPE was modified and then licensed to the NAIC as the NAIC Personal Record Keeper (PRK), the official software of the NAIC for individual investor portfolio accounting. During the period of 1994-2010, NAIC Personal Record Keeper had undergone multiple product revisions (DOS thru Windows; v1, v2, v2.5, v3, v4 and v5). As of May 31st, 2011, licensing to the Better-Investing organization has ceased and all licensed products have been discontinued.<br>
   <br>
 
-  QUANT IX SOFTWARE offers an alternative investment program, the <strong>Investment Account Manager (IAM)</strong>. Released initially in 2006, current version is v2.9.90.<br>
+  QUANT IX SOFTWARE offers an alternative investment program, the <strong>Investment Account Manager (IAM)</strong>, released initially in 2006.<br>
   <br>
 
   <strong class="redtext">The principals of QUANT IX SOFTWARE, Inc. include:</strong><br>

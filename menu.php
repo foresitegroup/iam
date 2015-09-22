@@ -4,7 +4,7 @@
     <a href="<?php echo $TopDir; ?>why-iam.php">WHY IAM?</a>
     <ul>
       <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
-      <li><a href="#">Features</a></li>
+      <li><a href="<?php echo $TopDir; ?>features.php">Features</a></li>
       <li><a href="#">Secure Software</a></li>
     </ul>
   </li>
@@ -20,7 +20,7 @@
     <ul>
       <li><a href="#">Quick Start Guide</a></li>
       <li><a href="#">Tutorials</a></li>
-      <li><a href="#">FAQ</a></li>
+      <li><a href="<?php echo $TopDir; ?>faq.php">FAQ</a></li>
     </ul>
   </li>
   <li>
