@@ -24,6 +24,9 @@ function fg_wc_cart_totals_coupon_label( $coupon ) {
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+add_action( 'fg_woocommerce_checkout_payment', 'woocommerce_checkout_payment', 10 );
+
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 function custom_override_checkout_fields( $fields ) {
   $fields['billing']['billing_first_name']['placeholder'] = 'First Name *';
@@ -42,11 +45,12 @@ add_filter('woocommerce_enable_order_notes_field', '__return_false');
 
 
 /* IAM User ID Number */
-add_action( 'woocommerce_after_order_notes', 'iam_uid' );
+//add_action( 'woocommerce_after_order_notes', 'iam_uid' );
+add_action( 'fg_woocommerce_checkout_before_customer_details', 'iam_uid' );
 function iam_uid( $checkout ) {
   echo '
-  <div id="iam_uid" style="margin: 2em 0;">
-    <h3>' . __('IAM User Identification Number') . '</h3>
+  <div id="iam_uid" style="margin: 2em 0 2.5em;">
+    <h3>' . __('IAM USER IDENTIFICATION NUMBER') . '</h3>
     If ordering <strong>a new software activation key</strong>, please enter the user identification number of the IAM demo you have downloaded. It can be found by starting IAM, and then clicking on the software activation key.<br>
     <br>
     If ordering <strong>technical support renewal</strong> for your copy of IAM, please enter the user identification number of your copy of IAM. It can be found by starting IAM, and then selecting the Help Menu | About Screen.
@@ -59,7 +63,7 @@ function iam_uid( $checkout ) {
       'placeholder'   => __('Enter User Identification Number Here'),
       ), $checkout->get_value( 'iamuid' ));
 
-  echo '</div>';
+  echo '</div><hr><br>';
 }
 
 

@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 <?php endif; ?>
 
-<div id="payment" class="woocommerce-checkout-payment">
+<div id="payment" class="woocommerce-checkout-payment" style="margin-top: 3em;">
 	<h3>SELECT PAYMENT METHOD</h3>
 	<?php if ( WC()->cart->needs_payment() ) : ?>
 	<ul class="payment_methods methods">

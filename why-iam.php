@@ -65,17 +65,17 @@ include "header.php";
 </div>
 
 <article class="whyiam-features">
-  <div class="three-col wif1">
+  <div class="three-col-left">
     <h1>SAFE</h1>
     Our software is based around the idea that your information is your own. We don't have access or download it. Your information is stored safely and securely on your home computer.
   </div>
 
-  <div class="three-col wif2">
+  <div class="three-col-mid">
     <h1>CENTRALIZED</h1>
     IAM enables a centralized portfilio platform for stocks, exchange traded funds, options, bonds, mutual funds, cash and more.
   </div>
 
-  <div class="three-col wif3">
+  <div class="three-col-right">
     <h1>SECURE</h1>
     Secure your future with...Lorem ipsum Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
   </div>

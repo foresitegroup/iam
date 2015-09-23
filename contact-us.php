@@ -56,9 +56,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerContactForm";
       mail($SendTo, $Subject, $Message, $From);
       //echo "<pre>$Message</pre><br><br>";
       
-      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Investment Account Manager.  You will be contacted shortly.";
+      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Investment Account Manager.  You will be contacted shortly.<br><br>";
     } else {
-      echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
+      echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong><br><br>";
     }
   } else {
   ?>
@@ -71,6 +71,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerContactForm";
         alert('The Email addresses provided do not match.  Please re-enter to confirm email.');
         document.getElementById('email').focus(); return false;
       }
+      if (document.getElementById('comment').value == "") { alert('Comment required.'); document.getElementById('comment').focus(); return false ; }
       return true ;
     }
   </script>
