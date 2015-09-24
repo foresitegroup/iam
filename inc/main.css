@@ -1762,6 +1762,22 @@ ARTICLE.features LI {
   font-weight: 600;
 }
 
+.searchpage DIV {
+  position: relative;
+}
+
+.searchpage BUTTON {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 0.35em 0.6em;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -2357,11 +2373,13 @@ ARTICLE.features LI {
     width: 0.3em;
   }
 
-  .whyiam-testimonials {
+  .whyiam-testimonials,
+  .taa-testimonials {
     font-size: 90%;
   }
 
-  .whyiam-testimonials .testimonials .cycle-slide {
+  .whyiam-testimonials .testimonials .cycle-slide,
+  .taa-testimonials .testimonials .cycle-slide {
     padding: 0 2%;
     width: 96%;
   }
