@@ -1404,12 +1404,12 @@ ARTICLE.iam-single-product {
   display: none;
 }
 
-ARTICLE.hentry {
+ARTICLE.page {
   width: 100%;
   margin-bottom: 0;
 }
 
-ARTICLE.hentry HEADER.entry-header {
+ARTICLE.page HEADER.entry-header {
   background: #252525;
   color: #FFFFFF;
   width: 100%;
@@ -1417,7 +1417,7 @@ ARTICLE.hentry HEADER.entry-header {
   text-transform: uppercase;
 }
 
-ARTICLE.hentry HEADER.entry-header H1 {
+ARTICLE.page HEADER.entry-header H1 {
   font-size: 300%;
   line-height: 1em;
 }
@@ -1605,6 +1605,181 @@ TABLE.customer_details TH {
   text-align: left;
 }
 
+#main .entry-title {
+  margin: 0;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+
+#main .entry-title A:link,
+#main .entry-title A:visited {
+  color: #363636;
+  text-decoration: none;
+}
+
+#main .entry-title A:hover,
+#main .entry-title A:active {
+  color: #555555;
+  text-decoration: none;
+}
+
+#main .entry-content P {
+  margin-top: 0.1em;
+}
+
+#main .entry-footer {
+  font-size: 80%;
+}
+
+#main .entry-footer .posted-on,
+#main .entry-footer .byline .author,
+#main .entry-footer .cat-links,
+#main .entry-footer .tags-links,
+#main .entry-footer .comments-link,
+#main .entry-footer .edit-link {
+  display: block;
+}
+
+#main .entry-footer .posted-on SPAN,
+#main .entry-footer .byline .author SPAN,
+#main .entry-footer .cat-links SPAN,
+#main .entry-footer .tags-links SPAN,
+#main .entry-footer .comments-link,
+#main .entry-footer .edit-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#main .entry-footer .posted-on .updated {
+  display: none;
+}
+
+#main #comments {
+  background: #EBEBEB;
+  color: #555555;
+  padding: 3em 0;
+  border-top: 1px solid #CCCCCC;
+}
+
+#main #comments ARTICLE {
+  margin-bottom: 0;
+}
+
+#main #comments .comments-title {
+  text-transform: uppercase;
+  margin: 0 0 0.5em;
+  font-size: 140%;
+}
+
+#main #comments .comment-list {
+  padding-bottom: 3em;
+}
+
+#main #comments .comment-reply-title {
+  text-transform: uppercase;
+  margin: 0 0 0.2em;
+  font-size: 140%;
+}
+
+#main .navigation {
+  padding: 1.9em 0;
+  font-size: 130%;
+  font-weight: 800;
+  border-top: 1px solid #CCCCCC;
+}
+
+#main .navigation H2 {
+  display: none;
+}
+
+#main .navigation .nav-links {
+  width: 1000px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#main .navigation .nav-links A {
+  text-decoration: none;
+}
+
+#main .navigation .nav-links .nav-previous {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+#main .navigation .nav-links .nav-next {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+#main .navigation .nav-links .nav-previous A:before,
+#main .navigation .nav-links .prev.page-numbers:before {
+  font-family: FontAwesome;
+  content: "\f104";
+  color: #959595;
+}
+
+#main .navigation .nav-links .prev.page-numbers:before {
+  margin-right: 0.3em;
+}
+
+#main .navigation .nav-links .nav-next A:after,
+#main .navigation .nav-links .next.page-numbers:after {
+  font-family: FontAwesome;
+  content: "\f105";
+  color: #959595;
+  margin-left: 0.3em;
+}
+
+#main .navigation .nav-links .nav-previous .meta-nav,
+#main .navigation .nav-links .nav-previous .screen-reader-text,
+#main .navigation .nav-links .nav-next .meta-nav,
+#main .navigation .nav-links .nav-next .screen-reader-text {
+  display: none;
+  width: 0;
+}
+
+#main .navigation .nav-links .prev.page-numbers {
+  float: left;
+  width: 15%;
+  text-align: left;
+}
+
+#main .navigation .nav-links .next.page-numbers {
+  float: right;
+  width: 15%;
+  text-align: right;
+}
+
+#main .post-thumbnail IMG {
+  max-width: 100%;
+  height: auto;
+}
+
+#main .wp-caption {
+  margin: 0;
+}
+
+#main .wp-caption-text {
+  text-align: center;
+  font-size: 80%;
+  line-height: 1.3em;
+  font-style: italic;
+}
+
+#main .alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+#main .alignright {
+  float: right;
+  margin-left: 1em;
+}
+
 .contact-phone ARTICLE {
   margin: 1em auto;
   font-size: 200%;
@@ -1785,8 +1960,14 @@ ARTICLE.features LI {
   HEADER,
   .cycle-slideshow DIV DIV,
   ARTICLE,
-  FOOTER {
+  FOOTER,
+  #main .navigation .nav-links {
     width: 96%;
+  }
+
+  #main .entry-header,
+  #main .entry-footer {
+    width: 100%;
   }
 
   #logo {
@@ -2196,6 +2377,10 @@ ARTICLE.features LI {
     width: 18%;
   }
 
+  #main IMG {
+    max-width: 100%;
+  }
+
   ARTICLE.features .feature-name {
     font-size: 75%;
   }
@@ -2470,6 +2655,25 @@ ARTICLE.features LI {
   TD.product-total {
     font-size: 75%;
     line-height: 1.3em;
+  }
+
+  #main .navigation .nav-links .prev.page-numbers,
+  #main .navigation .nav-links .next.page-numbers {
+    float: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  #main .navigation .nav-links .page-numbers {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  #main .alignleft,
+  #main .alignright {
+    float: none;
+    margin: 1.4em 0;
   }
 
   .contact-phone ARTICLE {

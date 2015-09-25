@@ -92,5 +92,8 @@ function iam_uid_display_admin_order_meta($order){
 }
 
 
-//add_action( 'fg_woocommerce_review_order_after_order_total', 'woocommerce_checkout_coupon_form', 10 );
+function my_thumbnail_size() {
+  set_post_thumbnail_size();
+}
+add_action('after_setup_theme', 'my_thumbnail_size', 11);
 ?>

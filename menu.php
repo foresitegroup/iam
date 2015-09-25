@@ -30,7 +30,7 @@
       <li><a href="<?php echo $TopDir; ?>online-support.php">Online Support</a></li>
       <li><a href="#">Manuals</a></li>
       <li><a href="#">Forum</a></li>
-      <li><a href="#">Blog</a></li>
+      <li><a href="<?php echo $TopDir; ?>products/blog/">Blog</a></li>
     </ul>
   </li>
   <li class="footer-only">
