@@ -29,6 +29,7 @@ function email($address, $name="") {
     <script type="text/javascript">
       $(document).ready(function() {
         $("a[href^='http'], a[href$='.pdf']").not("[href*='" + window.location.host + "']").attr('target','_blank');
+        $("#main a[href$='.pdf'], #main a[href$='.jpg'], #main a[href$='.png'], #main a[href$='.gif']").attr('target','_blank');
         $(".testimonials").cycle();
       });
     </script>

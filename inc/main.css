@@ -1627,6 +1627,11 @@ TABLE.customer_details TH {
   margin-top: 0.1em;
 }
 
+#main .entry-content OL,
+#main .entry-content UL {
+  margin-bottom: 1.4em;
+}
+
 #main .entry-footer {
   font-size: 80%;
 }
@@ -1754,6 +1759,7 @@ TABLE.customer_details TH {
   text-align: right;
 }
 
+#main IMG,
 #main .post-thumbnail IMG {
   max-width: 100%;
   height: auto;
@@ -2375,10 +2381,6 @@ ARTICLE.features LI {
   .tax-total TD,
   .order-total TD {
     width: 18%;
-  }
-
-  #main IMG {
-    max-width: 100%;
   }
 
   ARTICLE.features .feature-name {
