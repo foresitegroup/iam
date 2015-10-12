@@ -50,3 +50,7 @@ products/wp-content/*
 !products/wp-content/themes/
 products/wp-content/themes/*
 !products/wp-content/themes/iam
+forum/*
+!forum/Themes/
+forum/Themes/*
+!forum/Themes/IAM-Redsy

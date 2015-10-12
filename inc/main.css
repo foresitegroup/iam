@@ -79,6 +79,7 @@ LABEL {
 }
 
 INPUT[type="text"],
+INPUT[type="password"],
 INPUT[type="email"],
 INPUT[type="tel"],
 INPUT[type="number"],
@@ -108,6 +109,7 @@ SELECT {
 }
 
 INPUT[type="text"]:focus,
+INPUT[type="password"]:focus,
 INPUT[type="email"]:focus,
 INPUT[type="tel"]:focus,
 INPUT[type="number"]:focus,
@@ -229,45 +231,45 @@ NAV:before, NAV:after { content: ""; display: table; }
   display: none;
 }
 
-#show-menu:checked ~ #menu {
+#show-menu:checked ~ #main-menu {
   display: block;
 }
 
-#menu {
+#main-menu {
   float: right;
 }
 
-#menu UL {
+#main-menu UL {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-#menu UL LI {
+#main-menu UL LI {
   float: left;
   padding: 0 1.4em;
   position: relative;
   z-index: 10000;
 }
 
-#menu > UL > LI:first-child {
+#main-menu > UL > LI:first-child {
   padding-left: 0;
 }
 
-#menu > UL > LI.footer-only {
+#main-menu > UL > LI.footer-only {
   display: none;
 }
 
-#menu > UL > LI.search SPAN {
+#main-menu > UL > LI.search SPAN {
   display: none;
 }
 
-#menu > UL > LI.cart {
+#main-menu > UL > LI.cart {
   border-left: 1px solid #E1E1E1;
   padding-right: 0;
 }
 
-#menu UL LI A:link, #menu UL LI A:visited {
+#main-menu UL LI A:link, #main-menu UL LI A:visited {
   color: #959595;
   text-decoration: none;
   font-size: 93.75%;
@@ -277,17 +279,17 @@ NAV:before, NAV:after { content: ""; display: table; }
   line-height: 90px;
 }
 
-#menu UL LI:hover A {
+#main-menu UL LI:hover A {
   color: #ED243B;
   text-decoration: none;
 }
 
-#menu UL LI UL {
+#main-menu UL LI UL {
   display: none;
   padding: 0.8em 0;
 }
 
-#menu UL LI:hover UL {
+#main-menu UL LI:hover UL {
   display: block;
   position: absolute;
   top: 90px;
@@ -298,12 +300,12 @@ NAV:before, NAV:after { content: ""; display: table; }
   box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
 }
 
-#menu UL LI UL LI {
+#main-menu UL LI UL LI {
   float: none;
   padding: 0.8em 1em;
 }
 
-#menu UL LI UL LI A:link, #menu UL LI UL LI A:visited {
+#main-menu UL LI UL LI A:link, #main-menu UL LI UL LI A:visited {
   white-space: nowrap;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -311,11 +313,11 @@ NAV:before, NAV:after { content: ""; display: table; }
   line-height: 1em;
 }
 
-#menu UL LI UL LI A.two-line {
+#main-menu UL LI UL LI A.two-line {
   height: 2em;
 }
 
-#menu UL LI UL LI A:hover {
+#main-menu UL LI UL LI A:hover {
   color: #78131F;
 }
 
@@ -805,6 +807,17 @@ FOOTER .ldate {
 FOOTER .ltitle {
   font-size: 136%;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+FOOTER .three-col .ltitle A:link,
+FOOTER .three-col .ltitle A:visited {
+  color: #FFFFFF;
+}
+
+FOOTER .three-col .ltitle A:hover,
+FOOTER .three-col .ltitle A:active {
+  color: #111111;
 }
 
 FOOTER INPUT[type="text"] {
@@ -1943,11 +1956,13 @@ ARTICLE.features LI {
   font-weight: 600;
 }
 
-.searchpage DIV {
+.searchpage DIV,
+#search_form DIV {
   position: relative;
 }
 
-.searchpage BUTTON {
+.searchpage BUTTON,
+#search_form BUTTON {
   position: absolute;
   top: 0;
   right: 0;
@@ -1958,7 +1973,6 @@ ARTICLE.features LI {
   outline: 0;
   cursor: pointer;
 }
-
 
 
 @media only screen and (max-width: 800px) {
@@ -1981,13 +1995,13 @@ ARTICLE.features LI {
     margin-left: none;
   }
 
-  #menu {
+  #main-menu {
     float: none;
     display: table;
     margin: 0 auto;
   }
 
-  #menu > UL > LI.cart {
+  #main-menu > UL > LI.cart {
     border-left: 0;
   }
 
@@ -2191,7 +2205,7 @@ ARTICLE.features LI {
     font-size: 3em;
   }
   
-  #menu {
+  #main-menu {
     position: absolute;
     top: 93px;
     left: 0;
@@ -2203,16 +2217,16 @@ ARTICLE.features LI {
     padding: 1em 0;
   }
 
-  #menu UL LI {
+  #main-menu UL LI {
     float: none;
     padding: 0;
   }
 
-  #menu > UL > LI.search SPAN {
+  #main-menu > UL > LI.search SPAN {
     display: inline;
   }
 
-  #menu UL LI A:link, #menu UL LI A:visited {
+  #main-menu UL LI A:link, #main-menu UL LI A:visited {
     color: #FFFFFF;
     height: auto;
     line-height: 1em;
@@ -2221,22 +2235,22 @@ ARTICLE.features LI {
     padding: 0.5em 0;
   }
 
-  #menu UL LI A:hover, #menu UL LI A:active {
+  #main-menu UL LI A:hover, #main-menu UL LI A:active {
     color: #78131F;
   }
 
-  #menu UL LI UL {
+  #main-menu UL LI UL {
     padding: 0;
   }
 
-  #menu UL LI:hover UL {
+  #main-menu UL LI:hover UL {
     position: static;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
   }
 
-  #menu UL LI UL LI {
+  #main-menu UL LI UL LI {
     padding: 0;
   }
 
@@ -2408,11 +2422,11 @@ ARTICLE.features LI {
     line-height: 1.4em;
   }
 
-  #menu > UL > LI.footer-only {
+  #main-menu > UL > LI.footer-only {
     display: inline;
   }
 
-  #menu UL LI UL LI A:link, #menu UL LI UL LI A:visited {
+  #main-menu UL LI UL LI A:link, #main-menu UL LI UL LI A:visited {
     font-size: 80%;
   }
   

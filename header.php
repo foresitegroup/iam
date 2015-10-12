@@ -39,6 +39,7 @@ function email($address, $name="") {
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/dd_belatedpng.js"></script>
     <script type="text/javascript">DD_belatedPNG.fix('img, .png');</script>
     <![endif]-->
+    <?php echo $HeaderInc; ?>
   </head>
   <body>
 
@@ -48,7 +49,7 @@ function email($address, $name="") {
       <label for="show-menu" id="menu-toggle"><i class="fa fa-bars"></i></label>
       <input type="checkbox" id="show-menu" role="button">
 
-      <nav id="menu">
+      <nav id="main-menu">
         <?php include "menu.php"; ?>
       </nav>
     </header>

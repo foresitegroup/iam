@@ -7,16 +7,33 @@
           <div class="three-col">
             <h2>LATEST POSTS</h2>
 
-            <span class="ldate">June 29, 2015</span><br>
-            <span class="ltitle">UNDERSTANDING PORTFOLIO ALLOCATION</span><br>
-            <br>
+            <?php
+            // include_once "inc/dbconfig.php";
 
-            <span class="ldate">June 11, 2015</span><br>
-            <span class="ltitle">UNDERSTANDING PORTFOLIO ALLOCATION</span><br>
-            <br>
+            // $result = $mysqli->query("SELECT * FROM smf_messages ORDER BY poster_time DESC LIMIT 3");
 
-            <span class="ldate">April 11, 2015</span><br>
-            <span class="ltitle">WHAT DO YOU LIKE ABOUT IAM?</span>
+            // $counter = 0;
+
+            // while($row = $result->fetch_array(MYSQLI_BOTH)) {
+            //   echo "
+            //   <span class=\"ldate\">" . date("F j, Y", $row['poster_time']) . "</span><br>
+            //   <span class=\"ltitle\"><a href=\"" . $TopDir . "forum/index.php?topic=" . $row['id_topic'] . ".msg" . $row['id_msg'] . "#msg" . $row['id_msg'] . "\">" . $row['subject'] . "</a></span>";
+
+            //   if (++$counter < 3) echo "<br><br>\n";
+            // }
+
+            // mysqli_free_result($result);
+            // $mysqli->close();
+            ?>
+
+            <span class="ldate">August 12, 2015</span><br>
+            <span class="ltitle"><a href="forum.php">Re: Different Date Formats</a></span><br><br>
+
+            <span class="ldate">August 12, 2015</span><br>
+            <span class="ltitle"><a href="forum.php">Different Date Formats</a></span><br><br>
+
+            <span class="ldate">August 4, 2015</span><br>
+            <span class="ltitle"><a href="forum.php">IAM 2.9.9.0 Update Now Available</a></span>
           </div>
 
           <div class="three-col">
