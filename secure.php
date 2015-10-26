@@ -23,21 +23,15 @@ include "header.php";
   <div class="subtitle">THE BEST WAYS TO BACKUP</div>
 
   <h2>External Memory Device</h2>
-  This is one of the best options for storing important and vital information because they can hold large files, are easy to use and they're no bigger than your wallet. Many External Hard Drives and Flash Drives offer another barrier to access, like asking for a password to simply open the folders on the hard drive. Meaning if someone plugged your hard drive into their computer, they would need the password you created to open the files.<br>
+  This is one of the best options for storing important and vital information because they can hold large files, are easy to use and they're no bigger than your wallet. Many External Hard Drives and Flash Drives offer another barrier to access, like asking for a password to simply open the folders on the hard drive. <br>
   <br>
 
-  Another key feature is that these devices are tangible and mobile. You can save specific information on them, remove them from your PC and store them securely in a small safe, locked drawer or wherever you feel your information is safe and secure. You don't have to worry about the cloud or your computer crashing because you'll have everything backed up on your external hard drive or large file flash drive.<br>
-  <br>
-
-  <strong>Key Features:</strong> Small in size, Inexpensive, Easy to use, Highly Secure (Password Protected), Large amount of storage space, Nothing is saved on the Internet, Ability to back up entire computer.
+  <strong>Key Features:</strong> Small in size, Inexpensive, Easy to use, Highly Secure (Password Protected), Large amount of storage space, Ability to back up entire computer.
 
   <hr style="margin: 3em 0 3.3em;">
 
   <h2>Google Drive or Dropbox</h2>
-  <a href="http://dropbox.com">Dropbox</a> and <a href="https://www.google.com/drive/">Google Drive</a> offer easy, and free, alternatives to external hard drives and flash drives. These applications allow you to store files on "the cloud", which means your files are stored on the internet and not on your computer. This is a great option for users who have minimal space on their computers or aren't ready to make the small investment of an external hard drive. All Dropbox and Google Drive storage services are secure and need a user created password to access your information, much like the external hard drives.<br>
-  <br>
-
-  Storing information on "the cloud" acts as the ultimate back up because, unlike a home computer or an external hard drive, "the cloud" can't be lost or broken. Your files will be safe and secure and won't be taking up any space on your home computer.<br>
+  <a href="http://dropbox.com">Dropbox</a> and <a href="https://www.google.com/drive/">Google Drive</a> offer easy, and free, alternatives to external hard drives and flash drives. This is a great option for users who have minimal space on their computers or aren't ready to make the small investment of an external hard drive. All Dropbox and Google Drive storage services are secure and need a user created password to access your information, much like the external hard drives.<br>
   <br>
 
   <strong>Key Features:</strong> Free to use, Highly Secure (Password Protected), Large amount of storage space, Cloud Storage, Easy to use.<br>

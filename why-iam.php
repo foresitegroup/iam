@@ -77,7 +77,7 @@ include "header.php";
 
   <div class="three-col-right">
     <h1>SECURE</h1>
-    Secure your future with...Lorem ipsum Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+    IAM gives you the comfort of securing your financial future. Using our program will give you the financial peace of mind you've always wanted.
   </div>
 
   <div style="clear: both; height: 1em;"></div>
