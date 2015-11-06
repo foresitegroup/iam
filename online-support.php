@@ -17,10 +17,13 @@ $salt = "ForesiteGroupInvestmentAccountManagerOnlineSupportForm";
 
 <div class="bb mb">
   <article style="margin-bottom: 0; padding: 2.5em 0; text-align: center;">
-    The developers of IAM and IAM PRO are pleased to offer detailed and comprehensive online support to our users.<br>
+    The developers of IAM Individual and IAM Professional are pleased to offer detailed and comprehensive online support to our users.<br>
     <br>
 
-    If you are using our 30 day trial version or you are a first year user of IAM and IAM PRO, we will gladly provide technical support to help answer your question. After the first year you must purchase an active technical support agreement. Product support renewals can be found here for <a href="products/product/1-year-technical-support-renewal/">IAM Support Renewal</a> and <a href="/products/product/iam-pro-support-renewal-1-year/">IAM Professional Support Renewal</a>.
+    Free technical support is provided to all users during the 30 day trial period.  Technical support is also included for 1 year with all new IAM software activations. After the first year, you must purchase a technical support renewal to receive ongoing technical support.<br>
+    <br>
+
+    Technical support renewals can be found here for <a href="products/product-category/support-individual/">IAM Support Renewal</a> and <a href="/products/product/iam-pro-support-renewal-1-year/">IAM Professional Support Renewal</a>.
   </article>
 </div>
 
@@ -110,9 +113,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerOnlineSupportForm";
       <textarea name="<?php echo md5("question" . $ip . $salt . $timestamp); ?>" id="question" placeholder="* Please describe the nature of your question and/or error condition"></textarea><br>
       <br>
 
-      <label for="errorlog">If you recieved an error log, please include the message</label>
-      <textarea name="<?php echo md5("errorlog" . $ip . $salt . $timestamp); ?>" id="errorlog" placeholder="If you recieved an error log, please include the message (Tools | View Error Log)"></textarea><br>
-      <br>
+      <!-- <label for="errorlog">If you received an error log, please include the message</label>
+      <textarea name="<?php //echo md5("errorlog" . $ip . $salt . $timestamp); ?>" id="errorlog" placeholder="If you recieved an error log, please include the message (Tools | View Error Log)"></textarea><br>
+      <br> -->
 
       <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
 

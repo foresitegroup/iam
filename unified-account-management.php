@@ -23,25 +23,28 @@ include "header.php";
   <div class="three-col" style="border-top: 9px solid #2E65B0;">
     <h2>TAXABLE ACCOUNT</h2>
     <ul>
-      <li>Annual tax consequences for all income</li>
+      <li>Accumulation, Distribution, Gifting</li>
+      <li>Allocation and Rebalancing</li>
+      <li>Annual Tax Consequences</li>
+      <li>Cost Basis Accounting</li>
       <li>Estate Considerations</li>
-      <li>Accumulation, Distribution or Gifting Phase</li>
     </ul>
   </div>
 
   <div class="three-col" style="border-top: 9px solid #0096CE;">
     <h2>IRA</h2>
     <ul>
-      <li>Different types of IRAs require different investment strategies</li>
-      <li>Alternatives provide both advantages &amp; disadvantages</li>
-      <li>Accumulation or distribution phase</li>
+      <li>Accumulation or Distribution Phase</li>
+      <li>Allocation and Rebalance with Taxable Accounts</li>
+      <li>Manage Tax Advantaged Investments</li>
     </ul>
   </div>
 
   <div class="three-col" style="border-top: 9px solid #00AEEF;">
     <h2>IRA 2</h2>
     <ul>
-      <li>Identify which IRA is the preferred account for each investment type</li>
+      <li>Accumulation or Distribution Phase</li>
+      <li>Multiple IRAs with Different Investment Strategies</li>
     </ul>
   </div>
 
@@ -50,25 +53,27 @@ include "header.php";
   <div class="three-col" style="border-top: 9px solid #81C5E2;">
     <h2>TAXABLE ACCOUNT 2</h2>
     <ul>
-      <li>Other taxable accounts, including those held at different financial institutions</li>
-      <li>Spousal accounts, trust accounts, children accounts</li>
+      <li>Multiple Portfolio Management of other Taxable Accounts</li>
+      <li>Spousal Accounts, Trust Accounts, Children Accounts</li>
     </ul>
   </div>
 
   <div class="three-col" style="border-top: 9px solid #C7EAFC;">
     <h2>PORTFOLIO MANAGEMENT</h2>
     <ul>
-      <li>Investment strategy: market trading, passive investing, fundamental analysis, technical analysis</li>
-      <li>Asset classes: cash, bonds, stocks, funds, options, real estate, others</li>
-      <li>Asset Allocation: tacatical re-balancing decisions based on changing market conditions versus annual re-balancing to re-align portfolios</li>
+      <li>Centralized Secure Portfolio Management</li>
+      <li>Comprehensive Transaction Accounting</li>
+      <li>Detailed, Informative and Customizable Reporting</li>
+      <li>Portfolio Allocation and Rebalancing</li>
     </ul>
   </div>
 
   <div class="three-col" style="border-top: 9px solid #001339;">
     <h2>ADVICE &amp; INVESTOR RESOURCES</h2>
     <ul>
-      <li>Investment research &amp; analytics</li>
-      <li>Professional investments advice</li>
+      <li>Allocation and Rebalancing Tools</li>
+      <li>Collaborate with Financial Advisors</li>
+      <li>Investment Research and Analytics</li>
     </ul>
   </div>
 
@@ -77,17 +82,18 @@ include "header.php";
   <div class="three-col" style="border-top: 9px solid #0F254D;">
     <h2>PORTFOLIO GOALS</h2>
     <ul>
-      <li>Growth, income or balanced</li>
-      <li>Risk vs. return trade-offs</li>
+      <li>Define Portfolio Objectives</li>
+      <li>Measure Performance</li>
+      <li>Rebalance to Reach Investment Goals</li>
     </ul>
   </div>
 
   <div class="three-col" style="border-top: 9px solid #224072;">
     <h2>RISK TOLERANCE</h2>
     <ul>
-      <li>Age/Time horizon</li>
-      <li>Sources of wealth &amp; income</li>
-      <li>Liquidity, marketability</li>
+      <li>Age/Time Horizon</li>
+      <li>Investment Objectives</li>
+      <li>Sources of Wealth and Income</li>
     </ul>
   </div>
 

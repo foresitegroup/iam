@@ -70,7 +70,7 @@
 
             <a href="https://www.facebook.com/investmentaccountmanager" class="social"><i class="fa fa-facebook"></i></a>
             <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="social"><i class="fa fa-wordpress"></i></a>
+            <a href="<?php echo $TopDir; ?>products/blog" class="social"><i class="fa fa-wordpress"></i></a>
           </div>
 
           <div style="clear: both;"></div>

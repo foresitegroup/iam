@@ -408,6 +408,7 @@ NAV:before, NAV:after { content: ""; display: table; }
 }
 
 #banner-form INPUT[type="text"] {
+  background: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   width: 94%;
@@ -763,6 +764,7 @@ button.single_add_to_cart_button:hover {
 }
 
 #partners {
+  margin-bottom: 2em;
   padding: 3.5em 0 1.5em;
   text-align: center;
 }
@@ -1830,7 +1832,7 @@ ARTICLE.features .feature-type {
 }
 
 ARTICLE.features .feature-desc {
-  min-height: 200px;
+  min-height: 330px;
 }
 
 ARTICLE.features HR {
@@ -2148,7 +2150,7 @@ ARTICLE.features LI {
   }
 
   ARTICLE.features .feature-desc {
-    min-height: 270px;
+    min-height: 440px;
   }
 
   .taa-quote {
@@ -2187,6 +2189,10 @@ ARTICLE.features LI {
 
   .download-form {
     width: 90%;
+  }
+
+  ARTICLE.features .feature-desc {
+    min-height: 465px;
   }
 }
 

@@ -9,7 +9,7 @@ include "header.php";
     <div>
       <div>
         <h1>The Software Solution for Investing</h1>
-        Since 1985, Investment Account Manager 2.0 offers the tools you need to provide centralized potfolio management for stocks, bonds, mutual funds, exchange traded funds, options, cash and more. Start a <a href="free-trial.php">free trial</a> today!
+        Since 1985, Investment Account Manager offers the tools you need to provide centralized potfolio management for stocks, bonds, mutual funds, exchange traded funds, options, cash and more. Start a <a href="free-trial.php">free trial</a> today!
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@ include "header.php";
         <img src="images/banner-softpedia.png" alt="SOFTPEDIA 100% CLEAN"><br>
         NO SPYWARE. NO ADWARE. NO VIRUSES.
         <div style="font-size: 75%; margin: 0.7em 0 0; width: 100%;">Certified by www.softpedia.com</div>
-        
+
         <span id="slide-aaii">
           <img src="images/banner-aaii.png" alt="AAII">
           <span style="float: left; line-height: 1.35em;">
@@ -47,19 +47,19 @@ include "header.php";
         <h1>Recommended By Our Clients</h1>
         "The is the best portfolio management program. I have used it for 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."<br>
         <br>
-        - John Smith, CEO
+        - Ken D.
       </div>
     </div>
   </div>
-  
+
   <?php
   // Settings for randomizing the field names
   $ip = $_SERVER['REMOTE_ADDR'];
   $timestamp = time();
-  $salt = "ForesiteGroupInvestmentAccountManagerBannerForm";
+  $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   ?>
   <span id="banner-form">
-    <form class="vert-center">
+    <form action="download-iam.php" method="POST" class="vert-center">
       <div>
         <h1>FREE TRIAL!</h1>
         <span>Simply fill out the form below and start your 30 day free trial today</span><br>
@@ -67,8 +67,12 @@ include "header.php";
 
         <div style="font-size: 80%; color: #ED243B; padding-bottom: 0.3em; width: auto;">* Required</div>
 
-        <label for="fullname">First &amp; Last Name</label>
-        <input type="text" name="<?php echo md5("fullname" . $ip . $salt . $timestamp); ?>" id="fullname" placeholder="* FIRST &amp; LAST NAME"><br>
+        <label for="firstname">First Name</label>
+        <input type="text" name="<?php echo md5("firstname" . $ip . $salt . $timestamp); ?>" id="firstname" placeholder="* FIRST NAME"><br>
+        <br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="<?php echo md5("lastname" . $ip . $salt . $timestamp); ?>" id="lastname" placeholder="* LAST NAME"><br>
         <br>
 
         <label for="email">Email</label>
@@ -79,16 +83,18 @@ include "header.php";
         <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* CONFIRM EMAIL"><br>
         <br>
 
-        <input type="checkbox" name="tou" id="tou" value="I agree to Terms of Use">
+        <!-- <input type="checkbox" name="tou" id="tou" value="I agree to Terms of Use">
         <label for="tou"><span></span>I agree to <a href="#">Terms of Use</a></label><br>
-        <br>
+        <br> -->
+
+        <input type="hidden" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more.">
 
         <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
 
         <input type="hidden" name="ip" value="<?php echo $ip; ?>">
         <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
-        <input type="submit" name="submit" value="DOWNLOAD NOW, IT'S FREE!">
+        <input type="submit" name="submit" value="DOWNLOAD NOW">
       </div>
     </form>
   </span>
@@ -97,17 +103,17 @@ include "header.php";
 <article>
   <div class="three-col feature1">
     <h2>UNIFIED ACCOUNT MANAGEMENT</h2>
-    Safe. Centralized. Secure. With a large array of tools, IAM enables a centralized portfilio platform for stocks, exchange traded funds, options, bonds, mutual funds, cash &amp; more.
+    Safe. Centralized. Secure. With a large array of tools, IAM provides a centralized portfolio platform for stocks, exchange traded funds, options, bonds, mutual funds, cash &amp; more.
   </div>
 
   <div class="three-col feature2">
     <h2>CONTROL YOUR FUTURE</h2>
-    Using IAM, the top rated reliable investment account management software in the nation, you will be in control of your financial future.
+    Organize. Implement. Review. Succeed. Comprehensive portfolio management to improve investing results.
   </div>
 
   <div class="three-col feature3">
     <h2>OVER 22,000 SATISFIED USERS</h2>
-    With over 22,000 downloads, we continue to provide essential tools to thousands of independent investors with Investment Account Manager &amp; Investment Account Manager Pro.
+    With 30+ years of satisfied users, we continue to provide essential tools to thousands of independent investors with Investment Account Manager &amp; Investment Account Manager Pro.
   </div>
 
   <div style="clear: both;"></div>
@@ -117,7 +123,7 @@ include "header.php";
   <article class="vert-center">
     <span style="color: #ED243B;">IAM</span>, YOUR TRUSTED PARTNER IN SECURING YOUR FINANCIAL FUTURE.<br>
 
-    <a href="#" class="redbutton">DISCOVER MORE</a>
+    <a href="why-iam.php" class="redbutton">DISCOVER MORE</a>
   </article>
 </div>
 
@@ -130,22 +136,26 @@ include "header.php";
 
       Manage Single or Multiple Portfolios<br>
       <br>
-      Analyze Asset Allocation &amp; Diversification<br>
+      Accurately Track Security Cost Basis<br>
       <br>
-      Accurately Track Your Security Cost Basis Information<br>
+      Comprehensive Reporting and Graphing Tools<br>
       <br>
-      Detailed Reporting<br>
+      Asset Allocation and Rebalancing<br>
+      <br>
+      Rebalance Portfolio Targets Showing Absolute and Relative Divergence<br>
+      <br>
+      Benchmark Comparisons: Monthly, Quarterly, Annually<br>
       <br>
       Utilize Fundamental Ratio Analysis Tools<br>
       <br>
-      Interact with Other Software Tools<br>
+      Ability to Download Investment Activity from Popular Financial Institutions<br>
       <br>
-      Windows XP, Vista, Windows 7 or Windows 8<br>
+      Windows 7, Windows 8, Windows 10, Mac Compatible with Windows Emulation Software<br>
       <br>
       <br>
       <br>
 
-      <a href="#" class="redbutton">BUY NOW</a>
+      <a href="products/product-category/iam-individual/" class="redbutton">BUY NOW</a>
     </div>
 
     <div class="three-col">
@@ -153,42 +163,46 @@ include "header.php";
 
       <div>INVESTMENT ACCOUNT MANAGER <span class="bluetext">PRO</span></div>
 
-      Unified Multiple Portfolio Management<br>
+      All IAM Individual Features Plus...<br>
       <br>
-      Collective Asset Allocation/Diversification<br>
+      QuoteMedia Fundamental Data Feed<br>
       <br>
-      Model Portfolio Allocations, Risk Levels &amp; Create Benchmark Comparisons<br>
+      Custom Model Portfolio Objectives and Allocations<br>
       <br>
-      Rebalance Portfolio Targets Showing Absolute &amp; Relative Divergence From Your Benchmark<br>
+      Target Allocations on Individual Asset Level within Portfolio Models<br>
       <br>
-      Detailed Reporting &amp; Graphing; Monthly, Quarterly, Annually<br>
+      Ability to Auto-Create Client Portfolios to Model Allocations<br>
       <br>
-      Professional, Client Ready, Customizable Batch Reporting For Efficiency<br>
+      Blended Benchmark Portfolios by Percentages<br>
+      <br>
+      Import Client Custodial Files<br>
+      <br>
+      Professional, Client Ready, Customizable Batch Reporting for Efficiency<br>
+      <br>
+      Additional Reports: Client Billing (with custom Tier Schedule); Contributions/Withdrawals; Executive Summary; Asset Level Allocations; and more....<br>
       <br>
       <br>
 
-      <a href="#" class="redbutton">BUY NOW</a>
+      <a href="products/product/investment-account-manager-professional/" class="redbutton">BUY NOW</a>
     </div>
 
     <div class="three-col">
       <h2>SUPPORT</h2>
-      
-      <div>COMPREHENSIVE SUPPORT 24/7</div>
 
-      The IAM staff is availble to help with any questions, commenets &amp; concerns you may have about your investment software &amp; set-up.<br>
+      <div>COMPREHENSIVE SUPPORT</div>
+
+      Investment Account Manager provides award-winning, free technical support to answer any questions while using the 30 day trial version, as well as one year of free unlimited technical support with IAM software activation.<br>
       <br>
       <strong style="color: #111111;">
-        SUPPORT<br>
+        <a href="online-support.php">SUPPORT</a><br>
         <br>
-        COMMUNITY FORUM<br>
+        <a href="forum.php">COMMUNITY FORUM</a><br>
         <br>
-        SOFTWARE MANUAL<br>
+        <a href="#">SOFTWARE MANUAL</a><br>
         <br>
-        HOW-TO'S, TIPS &amp; TUTORIALS<br>
+        <a href="learn.php">HOW-TO'S, TIPS &amp; TUTORIALS</a><br>
         <br>
-        FREQUENTLY ASKED QUESTIONS<br>
-        <br>
-        EMAIL, LIVE CHAT, PHONE
+        <a href="faq.php">FREQUENTLY ASKED QUESTIONS</a>
       </strong>
     </div>
 

@@ -20,7 +20,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <img src="images/logo-download.png" alt="" style="max-width: 100%;"><br>
   <br>
 
-  Thank you for your interest in the Investment Account Manager (Individual). Designed by professional money managers and used Worldwide in related forms since 1985, Investment Account Manager (IAM) provides extensive investment tracking and portfolio management tools for investors.<br>
+  Thank you for your interest in the Investment Account Manager - Individual version. Designed by professional money managers and used Worldwide in related forms since 1985, Investment Account Manager provides extensive investment tracking and portfolio management tools for individual investors.<br>
   <br>
   <br>
 
@@ -37,15 +37,17 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
           $_POST[md5('confirmemail' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
       
-      $now = time();
-      
-      $result = $mysqli->query("SELECT * FROM downloads WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
+      if (isset($_POST['uptodate'])) {
+        $now = time();
+        
+        $result = $mysqli->query("SELECT * FROM downloads WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
 
-      if (mysqli_num_rows($result) == 0) {
-        $mysqli->query("INSERT INTO downloads (firstname,lastname,email,uptodate,feedback,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST['uptodate'] . "','" . $_POST['feedback'] . "','$now')");
+        if (mysqli_num_rows($result) == 0) {
+          $mysqli->query("INSERT INTO downloads (firstname,lastname,email,uptodate,feedback,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST['uptodate'] . "','" . $_POST['feedback'] . "','$now')");
+        }
+
+        mysqli_free_result($result);
       }
-
-      mysqli_free_result($result);
       ?>
       <div style="text-align: left;">
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">1</div>
@@ -100,11 +102,11 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* Confirm Email"><br>
       <br>
 
-      <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more.">
+      <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
       <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label>
 
-      <input type="checkbox" name="feedback" id="feedback" value="Send me invitations to provide feedback about IAM software.">
-      <label for="feedback" style="text-align: left;"><span></span>Send me invitations to provide feedback about IAM software.</label><br>
+      <!-- <input type="checkbox" name="feedback" id="feedback" value="Send me invitations to provide feedback about IAM software.">
+      <label for="feedback" style="text-align: left;"><span></span>Send me invitations to provide feedback about IAM software.</label> --><br>
       <br>
 
       <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
@@ -118,6 +120,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <a href="#" style="font-size: 70%; text-decoration: none;">Minimum system requirements</a>
     </div>
   </form>
+
+  <a href="mailto:?subject=Investment Account Manager Demo&body=%0AHello, I thought you might find this investment software useful.%0A<?php echo $_SERVER['HTTP_REFERER']; ?>">Refer a Friend</a>
   <?php } ?>
 </article>
 
