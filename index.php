@@ -112,7 +112,7 @@ include "header.php";
   </div>
 
   <div class="three-col feature3">
-    <h2>OVER 22,000 SATISFIED USERS</h2>
+    <h2>30+ YEARS OF SATISFIED USERS</h2>
     With 30+ years of satisfied users, we continue to provide essential tools to thousands of independent investors with Investment Account Manager &amp; Investment Account Manager Pro.
   </div>
 

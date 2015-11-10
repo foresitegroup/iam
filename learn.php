@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<div class="red mb">
+<div class="gray mb">
   <article style="width: 60%; padding: 2em 0;">
     Investment Account Manager IAM &amp; Investment Account Manager Professional IAM PRO offer several outlets for added support including:
   </article>

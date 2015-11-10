@@ -23,7 +23,7 @@ include "header.php";
     <br>
     <br>
 
-    <a href="download-iam.php" class="redbutton">TRY NOW</a><br>
+    <a href="download-iam.php" class="graybutton">TRY NOW</a><br>
     <br>
     <br>
 
@@ -63,12 +63,15 @@ include "header.php";
     <hr>
 
     <div class="feature-desc">
-      IAM with QuoteMedia&trade; offers users the ability to automatically populate and update the fundamental and descriptive data for common stocks, exchange traded and mutual funds. This data, when incorporated into IAM, provides the information for powerful fundamental ratio analysis and screening.  The QuoteMedia&trade; data feed is particularly helpful at month end, so with just a few simple clicks, your investments reflect updated fundamental and descriptive data. <em>See the bottom of this features list for the fundamental data and ratios.</em>
+      IAM with QuoteMedia&trade; offers users the ability to automatically populate and update the fundamental and descriptive data for common stocks, exchange traded and mutual funds. This data, when incorporated into IAM, provides the information for powerful fundamental ratio analysis and screening.  The QuoteMedia&trade; data feed is particularly helpful at month end, so with just a few simple clicks, your investments reflect updated fundamental and descriptive data.<br>
+      <br>
+
+      <em>See the bottom of this features list for the fundamental data and ratios.</em>
     </div>
     <br>
     <br>
 
-    <a href="download-iam.php" class="redbutton">TRY NOW</a><br>
+    <a href="download-iam.php" class="graybutton">TRY NOW</a><br>
     <br>
     <br>
 
@@ -131,7 +134,7 @@ include "header.php";
     <br>
     <br>
 
-    <a href="download-iam-pro.php" class="redbutton">TRY NOW</a><br>
+    <a href="download-iam-pro.php" class="graybutton">TRY NOW</a><br>
     <br>
     <br>
 
