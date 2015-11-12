@@ -68,6 +68,6 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 
 <div class="darkgray store-title">
   <article>
-    <h2>VISIT OUR <a href="#" class="whitelink">TUTORIAL</a> PAGE FOR ADDED SUPPORT.</h2>
+    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
   </article>
 </div>

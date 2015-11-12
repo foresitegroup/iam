@@ -23,7 +23,7 @@ include "header.php";
     <br>
     <br>
 
-    <a href="download-iam.php" class="graybutton">TRY NOW</a><br>
+    <a href="download-iam.php" class="graybutton" style="visibility: hidden;">TRY NOW</a><br>
     <br>
     <br>
 
@@ -34,22 +34,22 @@ include "header.php";
       <li>Comprehensive Transaction Accounting</li>
       <li>Detailed, Informative and Customizable Reporting</li>
       <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
-      <li>Portfolio Allocation and Rebalancing Analysis</li>
+      <li>Portfolio Allocation and<br>Rebalancing Analysis</li>
       <li>Portfolio Performance with Benchmark Comparisons</li>
       <li>Fundamental Ratio Analysis</li>
-      <li>Multiple Portfolio Management and Reporting</li>
-      <li>Portfolio Combination and Duplication</li>
+      <li>Multiple Portfolio Management<br>and Reporting</li>
+      <li>Portfolio Combination &amp; Duplication</li>
       <li>Portfolio Setup Wizard</li>
       <li>Financial Institution Downloads</li>
       <li>Security Cross-Referencing</li>
       <li>Automatic Security Price Updating</li>
       <li>Mutual Fund Composition Analysis</li>
       <li>Batch Processing of Reports</li>
-      <li>Price Alerts to monitor your Securities</li>
+      <li>Price Alerts to Monitor your Securities</li>
       <li>Create Historical Pricing Databases</li>
       <li>Import from AAII Stock Investor Pro</li>
       <li>Import from Quicken&reg; and Captools&reg;</li>
-      <li>Import from Microsoft Excel&reg; (xls or csv)</li>
+      <li>Import from Microsoft Excel&reg;</li>
       <li>Additional Data Importing/Exporting</li>
       <li>Backup and Restore</li>
       <li>Comprehensive Help System</li>
@@ -66,7 +66,9 @@ include "header.php";
       IAM with QuoteMedia&trade; offers users the ability to automatically populate and update the fundamental and descriptive data for common stocks, exchange traded and mutual funds. This data, when incorporated into IAM, provides the information for powerful fundamental ratio analysis and screening.  The QuoteMedia&trade; data feed is particularly helpful at month end, so with just a few simple clicks, your investments reflect updated fundamental and descriptive data.<br>
       <br>
 
-      <em>See the bottom of this features list for the fundamental data and ratios.</em>
+      <div style="padding: 0 15%; font-weight: normal; font-style: italics; font-size: 90%; line-height: 1.2em;">
+        See the bottom of this features list for the fundamental data and ratios.
+      </div>
     </div>
     <br>
     <br>
@@ -77,49 +79,51 @@ include "header.php";
 
     <div class="feature-header">PRODUCT FEATURES</div>
 
-    <ul>
-      <li>Centralized Secure Portfolio Management</li>
-      <li>Comprehensive Transaction Accounting</li>
-      <li>Detailed, Informative and Customizable Reporting</li>
-      <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
-      <li>Portfolio Allocation and Rebalancing Analysis</li>
-      <li>Portfolio Performance with Benchmark Comparisons</li>
-      <li>Fundamental Ratio Analysis</li>
-      <li>Multiple Portfolio Management and Reporting</li>
-      <li>Portfolio Combination and Duplication</li>
-      <li>Portfolio Setup Wizard</li>
-      <li>Financial Institution Downloads</li>
-      <li>Security Cross-Referencing</li>
-      <li>Automatic Security Price Updating</li>
-      <li>Mutual Fund Composition Analysis</li>
-      <li>Batch Processing of Reports</li>
-      <li>Price Alerts to monitor your Securities</li>
-      <li>Create Historical Pricing Databases</li>
-      <li>Import from AAII Stock Investor Pro</li>
-      <li>Import from Quicken&reg; and Captools&reg;</li>
-      <li>Import from Microsoft Excel&reg; (xls or csv)</li>
-      <li>Additional Data Importing/Exporting</li>
-      <li>Backup and Restore</li>
-      <li>Comprehensive Help System</li>
-      <li>
-        <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
-        <ul>
-          <li>security name, prior day market price</li>
-          <li>common stock sector and size</li>
-          <li>earnings per share, dividends per share</li>
-          <li>beta, book value per share, cash flow per share</li>
-        </ul>
-      </li>
-      <li>
-        Derive Fundamental Ratios Including:
-        <ul>
-          <li>current yield, dividend payout and coverage</li>
-          <li>price / earnings, projected price / earnings, PEG</li>
-          <li>price / cash flow, return on cash flow</li>
-          <li>price / book value, return on equity</li>
-        </ul>
-      </li>
-    </ul>
+    <div style="text-align: left;">
+      <ul>
+        <li>Centralized Secure Portfolio Management</li>
+        <li>Comprehensive Transaction Accounting</li>
+        <li>Detailed, Informative and Customizable Reporting</li>
+        <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
+        <li>Portfolio Allocation and<br>Rebalancing Analysis</li>
+        <li>Portfolio Performance with Benchmark Comparisons</li>
+        <li>Fundamental Ratio Analysis</li>
+        <li>Multiple Portfolio Management<br>and Reporting</li>
+        <li>Portfolio Combination &amp; Duplication</li>
+        <li>Portfolio Setup Wizard</li>
+        <li>Financial Institution Downloads</li>
+        <li>Security Cross-Referencing</li>
+        <li>Automatic Security Price Updating</li>
+        <li>Mutual Fund Composition Analysis</li>
+        <li>Batch Processing of Reports</li>
+        <li>Price Alerts to Monitor your Securities</li>
+        <li>Create Historical Pricing Databases</li>
+        <li>Import from AAII Stock Investor Pro</li>
+        <li>Import from Quicken&reg; and Captools&reg;</li>
+        <li>Import from Microsoft Excel&reg;</li>
+        <li>Additional Data Importing/Exporting</li>
+        <li>Backup and Restore</li>
+        <li>Comprehensive Help System</li>
+      </ul>
+      <br>
+
+      <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
+      <ul>
+        <li>security name, prior day market price</li>
+        <li>common stock sector and size</li>
+        <li>earnings per share, dividends per share</li>
+        <li>beta, book value per share, cash flow per share</li>
+      </ul>
+      <br>
+
+      <strong>Derive Fundamental Ratios Including:</strong>
+      <ul>
+        <li>current yield, dividend payout and coverage</li>
+        <li>price / earnings, projected price / earnings, PEG</li>
+        <li>price / cash flow, return on cash flow</li>
+        <li>price / book value, return on equity</li>
+      </ul>
+    </div>
   </div>
 
   <div class="three-col-right">
@@ -139,67 +143,69 @@ include "header.php";
     <br>
 
     <div class="feature-header" style="background: #2E65B0;">PRODUCT FEATURES</div>
+    
+    <div style="text-align: left;">
+      <ul>
+        <li>Centralized Secure Portfolio Management</li>
+        <li>Comprehensive Transaction Accounting</li>
+        <li>Detailed, Informative and Customizable Reporting</li>
+        <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
+        <li>Portfolio Allocation and<br>Rebalancing Analysis</li>
+        <li>Portfolio Performance with Benchmark Comparisons</li>
+        <li>Fundamental Ratio Analysis</li>
+        <li>Multiple Portfolio Management<br>and Reporting</li>
+        <li>Portfolio Combination &amp; Duplication</li>
+        <li>Portfolio Setup Wizard</li>
+        <li>Financial Institution Downloads</li>
+        <li>Security Cross-Referencing</li>
+        <li>Automatic Security Price Updating</li>
+        <li>Mutual Fund Composition Analysis</li>
+        <li>Batch Processing of Reports</li>
+        <li>Price Alerts to Monitor your Securities</li>
+        <li>Create Historical Pricing Databases</li>
+        <li>Import from AAII Stock Investor Pro</li>
+        <li>Import from Quicken&reg; and Captools&reg;</li>
+        <li>Import from Microsoft Excel&reg;</li>
+        <li>Additional Data Importing/Exporting</li>
+        <li>Backup and Restore</li>
+        <li>Comprehensive Help System</li>
+      </ul>
+      <br>
 
-    <ul>
-      <li>Centralized Secure Portfolio Management</li>
-      <li>Comprehensive Transaction Accounting</li>
-      <li>Detailed, Informative and Customizable Reporting</li>
-      <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
-      <li>Portfolio Allocation and Rebalancing Analysis</li>
-      <li>Portfolio Performance with Benchmark Comparisons</li>
-      <li>Fundamental Ratio Analysis</li>
-      <li>Multiple Portfolio Management and Reporting</li>
-      <li>Portfolio Combination and Duplication</li>
-      <li>Portfolio Setup Wizard</li>
-      <li>Financial Institution Downloads</li>
-      <li>Security Cross-Referencing</li>
-      <li>Automatic Security Price Updating</li>
-      <li>Mutual Fund Composition Analysis</li>
-      <li>Batch Processing of Reports</li>
-      <li>Price Alerts to monitor your Securities</li>
-      <li>Create Historical Pricing Databases</li>
-      <li>Import from AAII Stock Investor Pro</li>
-      <li>Import from Quicken&reg; and Captools&reg;</li>
-      <li>Import from Microsoft Excel&reg; (xls or csv)</li>
-      <li>Additional Data Importing/Exporting</li>
-      <li>Backup and Restore</li>
-      <li>Comprehensive Help System</li>
-      <li>
-        <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
-        <ul>
-          <li>security name, prior day market price</li>
-          <li>common stock sector and size</li>
-          <li>earnings per share, dividends per share</li>
-          <li>beta, book value per share, cash flow per share</li>
-        </ul>
-      </li>
-      <li>
-        Derive Fundamental Ratios Including:
-        <ul>
-          <li>current yield, dividend payout and coverage</li>
-          <li>price / earnings, projected price / earnings, PEG</li>
-          <li>price / cash flow, return on cash flow</li>
-          <li>price / book value, return on equity</li>
-        </ul>
-      </li>
-      <li class="bluetext">Custodial Imports</li>
-      <li class="bluetext">Custom Model Portfolio Objectives and Allocations</li>
-      <li class="bluetext">Target Allocations on Individual Asset Level within Portfolio Models</li>
-      <li class="bluetext">Automatically Create Client Portfolios to Model Allocations</li>
-      <li class="bluetext">Blended Benchmark Portfolios by Percentages</li>
-      <li class="bluetext">Performance Reports vs Blended / Multiple Benchmarks</li>
-      <li class="bluetext">Create / Save / Customizable Batch Reporting</li>
-      <li class="bluetext">Client Billing Fee Tier Schedules</li>
-      <li class="bluetext">
-        Additional Reports:
-        <ul>
-          <li>Asset Level Allocations</li>
-          <li>Client Billing</li>
-          <li>Contributions / Withdrawals</li>
-          <li>Executive Summary</li>
-        </ul>
-      </li>
-    </ul>
+      <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
+      <ul>
+        <li>security name, prior day market price</li>
+        <li>common stock sector and size</li>
+        <li>earnings per share, dividends per share</li>
+        <li>beta, book value per share, cash flow per share</li>
+      </ul>
+      <br>
+
+      <strong>Derive Fundamental Ratios Including:</strong>
+      <ul>
+        <li>current yield, dividend payout and coverage</li>
+        <li>price / earnings, projected price / earnings, PEG</li>
+        <li>price / cash flow, return on cash flow</li>
+        <li>price / book value, return on equity</li>
+        <li class="bluetext">Custodial Imports</li>
+        <li class="bluetext">Custom Model Portfolio Objectives and Allocations</li>
+        <li class="bluetext">Target Allocations on Individual Asset Level within Portfolio Models</li>
+        <li class="bluetext">Automatically Create Client Portfolios to Model Allocations</li>
+        <li class="bluetext">Blended Benchmark Portfolios by Percentages</li>
+        <li class="bluetext">Performance Reports vs Blended / Multiple Benchmarks</li>
+        <li class="bluetext">Create / Save / Customizable Batch Reporting</li>
+        <li class="bluetext">Client Billing Fee Tier Schedules</li>
+        <li class="bluetext">
+          <strong>Additional Reports:</strong>
+          <ul>
+            <li>Asset Level Allocations</li>
+            <li>Client Billing</li>
+            <li>Contributions / Withdrawals</li>
+            <li>Executive Summary</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div style="clear: both;"></div>
@@ -207,7 +213,7 @@ include "header.php";
 
 <div class="darkgray whitetext">
   <article>
-    <h1>YOUR TRUSTED PARTNER SINCE 1985</h1>
+    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
   </article>
 </div>
 

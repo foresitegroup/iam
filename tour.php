@@ -5,19 +5,20 @@ include "header.php";
 ?>
 
 <div class="sub-header" style="background: url(images/sub-header-free-trial.jpg);">
-  <article class="vert-center">
+  <article class="vert-center" style="text-align: center;">
     TOUR IAM
   </article>
 </div>
 
 <div class="gray bb mb">
   <article class="tour-header">
-    We offer Investment Account Manager and IAM Professional, depending on you and your client needs. Take the comprehensive tour or begin a <a href="free-trial.php">free trial</a> and see what IAM has to offer.
+    We offer Investment Account Manager and IAM Professional, depending on you and your client needs.<br>
+    Take the comprehensive tour or begin a <a href="free-trial.php">free trial</a> and see what IAM has to offer.
   </article>
 </div>
 
 <article class="tour">
-  <div class="two-col">
+  <div class="two-col-left">
     <h1>INDIVIDUAL</h1>
     <hr>
     If you are managing your own investments or have help from a professional Investment Account Manager is the best AAII (American Association of Individual Investors) rated portfolio software on the market.<br>
@@ -25,7 +26,7 @@ include "header.php";
     <a href="tour-iam.php" class="redbutton">START TOUR</a>
   </div>
 
-  <div class="two-col">
+  <div class="two-col-right">
     <h1 class="bluetext">PROFESSIONAL</h1>
     <hr>
     See why professional money advisors and investors rely on Investment Account Manager PROFESSIONAL and the comprehensive tools available to help them grow their client's portfolios.<br>
@@ -46,11 +47,7 @@ include "header.php";
         <td>
           HIGHLY REGARDED ON AMAZON.COM
           <div class="amazon-stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
+            4.7/5 USER RATING
           </div>
         </td>
       </tr>

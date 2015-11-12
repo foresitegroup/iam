@@ -22,6 +22,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 
   Thank you for your interest in the Investment Account Manager - Individual version. Designed by professional money managers and used Worldwide in related forms since 1985, Investment Account Manager provides extensive investment tracking and portfolio management tools for individual investors.<br>
   <br>
+
+  <strong>Note: QuoteMedia&trade; Data Feed included while using the demo of Investment Account Manager Individual version.</strong><br>
+  <br>
   <br>
 
   <hr>
@@ -117,7 +120,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <input type="submit" name="submit" value="DOWNLOAD NOW"><br>
       <br>
 
-      <a href="#" style="font-size: 70%; text-decoration: none;">Minimum system requirements</a>
+      <span style="font-size: 70%; text-decoration: none;">Requirements: <strong>Windows 7</strong> or higher with Internet Access. Apple computer requires Windows emulations software.</span>
     </div>
   </form>
 
@@ -127,7 +130,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 
 <div class="gray footer bt">
   <article>
-    <h2 class="small">VISIT OUR <a href="#">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
+    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
   </article>
 </div>
 

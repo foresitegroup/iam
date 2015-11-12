@@ -1,4 +1,3 @@
-
 <?php
 $PageTitle = "Why IAM?";
 include "header.php";
@@ -44,20 +43,17 @@ include "header.php";
     <div class="testimonials" data-cycle-slides="> div" data-cycle-timeout="8000">
       <div>
         <div>
-          "IAM does everything I need to manage a number of accounts; it is quite intuitive; it handles large amounts of data so I don't worry even though I have more than 28 different accounts with all their transaction going back many years; the income summaries and basis data are so helpful in preparing my taxes."<br>
-          <span>- John Smith, CEO</span>
+          "This is the best portfolio management program I have used it my 30+years of investing. I would recommend IAM to anyone with a portfolio of any size."
         </div>
       </div>
       <div>
         <div>
-          "Dude, Investment Account Manager totally r0x0rs my boxers!"<br>
-          <span>- Some bro</span>
+          "Investment Account Manager is the best software that I have found for maintaining cost basis records for my stock portfolios."
         </div>
       </div>
       <div>
         <div>
-          "I want to have like 10,000 of Investment Account Manager's babies. If I couldn't use IAM, I would probably just kill myself."<br>
-          <span>- A Troubled Person</span>
+          "Investment Account Manager is by far the best portfolio management software I've found. Data input and maintenance is easy relative to the capabilities provided. The reports are well thought out. Technical support is outstanding."
         </div>
       </div>
     </div> <!-- END testimonials -->

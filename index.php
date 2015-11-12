@@ -1,4 +1,3 @@
-
 <?php
 $PageTitle = "";
 include "header.php";
@@ -47,7 +46,9 @@ include "header.php";
         <h1>Recommended By Our Clients</h1>
         "The is the best portfolio management program. I have used it for 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."<br>
         <br>
-        - Ken D.
+        - Ken D.<br>
+        <br>
+        <a href="testimonials.php">Read more testimonials</a>
       </div>
     </div>
   </div>
@@ -59,7 +60,20 @@ include "header.php";
   $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   ?>
   <span id="banner-form">
-    <form action="download-iam.php" method="POST" class="vert-center">
+    <script type="text/javascript">
+      function checkform (form) {
+        if (document.getElementById('firstname').value == "") { alert('First Name required.'); document.getElementById('firstname').focus(); return false ; }
+        if (document.getElementById('lastname').value == "") { alert('Last Name required.'); document.getElementById('lastname').focus(); return false ; }
+        if (document.getElementById('email').value == "") { alert('Email required.'); document.getElementById('email').focus(); return false ; }
+        if (document.getElementById('confirmemail').value == "") { alert('Confirm Email required.'); document.getElementById('confirmemail').focus(); return false ; }
+        if (document.getElementById('email').value != document.getElementById('confirmemail').value) {
+          alert('The Email addresses provided do not match.  Please re-enter to confirm email.');
+          document.getElementById('email').focus(); return false;
+        }
+        return true ;
+      }
+    </script>
+    <form action="download-iam.php" method="POST" onSubmit="return checkform(this)" class="vert-center">
       <div>
         <h1>FREE TRIAL!</h1>
         <span>Simply fill out the form below and start your 30 day free trial today</span><br>
@@ -112,7 +126,7 @@ include "header.php";
   </div>
 
   <div class="three-col feature3">
-    <h2>30+ YEARS OF SATISFIED USERS</h2>
+    <h2>SATISFIED<br>USERS</h2>
     With 30+ years of satisfied users, we continue to provide essential tools to thousands of independent investors with Investment Account Manager &amp; Investment Account Manager Pro.
   </div>
 
@@ -144,13 +158,12 @@ include "header.php";
       <br>
       Rebalance Portfolio Targets Showing Absolute and Relative Divergence<br>
       <br>
-      Benchmark Comparisons: Monthly, Quarterly, Annually<br>
+      Benchmark Comparisons:<br>
+      Monthly, Quarterly, Annually<br>
       <br>
       Utilize Fundamental Ratio Analysis Tools<br>
       <br>
       Ability to Download Investment Activity from Popular Financial Institutions<br>
-      <br>
-      Windows 7, Windows 8, Windows 10, Mac Compatible with Windows Emulation Software<br>
       <br>
       <br>
       <br>
@@ -163,15 +176,15 @@ include "header.php";
 
       <div>INVESTMENT ACCOUNT MANAGER <span class="bluetext">PRO</span></div>
 
-      All IAM Individual Features Plus...<br>
+      All Individual Features<br>
       <br>
       QuoteMedia Fundamental Data Feed<br>
       <br>
-      Custom Model Portfolio Objectives and Allocations<br>
+      Custom Model Portfolio<br>Objectives and Allocations<br>
       <br>
       Target Allocations on Individual Asset Level within Portfolio Models<br>
       <br>
-      Ability to Auto-Create Client Portfolios to Model Allocations<br>
+      Ability to Auto-Create Client Portfolios<br>to Model Allocations<br>
       <br>
       Blended Benchmark Portfolios by Percentages<br>
       <br>
@@ -179,7 +192,7 @@ include "header.php";
       <br>
       Professional, Client Ready, Customizable Batch Reporting for Efficiency<br>
       <br>
-      Additional Reports: Client Billing (with custom Tier Schedule); Contributions/Withdrawals; Executive Summary; Asset Level Allocations; and more....<br>
+      Reporting: Client Billing, Contributions/Withdrawls, Executive Summary, Asset Level Allocations and more....<br>
       <br>
       <br>
 
@@ -196,7 +209,7 @@ include "header.php";
       <strong style="color: #111111;">
         <a href="online-support.php">SUPPORT</a><br>
         <br>
-        <a href="forum.php">COMMUNITY FORUM</a><br>
+        <a href="forum">COMMUNITY FORUM</a><br>
         <br>
         <a href="#">SOFTWARE MANUAL</a><br>
         <br>

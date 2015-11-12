@@ -539,6 +539,12 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
   line-height: 1.2em;
 }
 
+.gray H2.smaller,
+.darkgray H2.smaller {
+  font-size: 230%;
+  line-height: 1.2em;
+}
+
 .gray A:link, .gray A:visited {
   color: #555555;
 }
@@ -606,10 +612,24 @@ ARTICLE, .mb {
   margin-right: 0;
 }
 
+.two-col-left {
+  float: left;
+  width: 45%;
+  margin: 0 4% 2em 0;
+}
+
+.two-col-right {
+  float: left;
+  width: 45%;
+  margin: 0 0 2em 0;
+  padding-left: 4%;
+  border-left: 1px solid #EBEBEB;
+}
+
 .three-col {
   float: left;
   width: 30%;
-  margin: 0 5% 2em 0;
+  margin: 0 4.9% 2em 0;
 }
 
 .three-col:nth-child(3),
@@ -639,6 +659,23 @@ ARTICLE, .mb {
   padding-left: 2.4%;
   margin-bottom: 2em;
   border-left: 1px solid #EBEBEB;
+}
+
+.one-third {
+  float: left;
+  width: 32%;
+  margin-right: 5%;
+}
+
+.two-third {
+  float: left;
+  width: 63%;
+  margin-right: 5%;
+}
+
+.one-third.last,
+.two-third.last {
+  margin-right: 0;
 }
 
 .feature1,
@@ -1045,26 +1082,34 @@ FOOTER .three-col A.social:active {
   padding: 1.6em 0 !important;
 }
 
-.tour .two-col {
+.tour .two-col,
+.tour .two-col-left,
+.tour .two-col-right {
   text-align: center;
   padding-top: 1em;
   font-size: 120%;
   line-height: 1.4em;
 }
 
-.tour .two-col H1 {
+.tour .two-col H1,
+.tour .two-col-left H1,
+.tour .two-col-right H1 {
   margin: 0;
   font-size: 315%;
   line-height: 1em;
 }
 
-.tour .two-col HR {
+.tour .two-col HR,
+.tour .two-col-left HR,
+.tour .two-col-right HR {
   width: 44px;
   margin: 1em auto;
   border-top-color: #555555;
 }
 
-.tour .two-col .redbutton {
+.tour .two-col .redbutton,
+.tour .two-col-left .redbutton,
+.tour .two-col-right .redbutton {
   font-size: 84%;
   margin-top: 1em;
 }
@@ -1388,6 +1433,16 @@ UL.products LI A,
 .gray UL.products LI A H3 {
   color: #555555;
   text-decoration: none;
+}
+
+UL.products LI A:link.learnmore, UL.products LI A:visited.learnmore {
+  color: #ED243B;
+  text-decoration: underline;
+}
+
+UL.products LI A:hover.learnmore, UL.products LI A:active.learnmore {
+  color: #959595;
+  text-decoration: underline;
 }
 
 .shop-index-left {
@@ -1859,8 +1914,8 @@ ARTICLE.features .feature-type {
 }
 
 ARTICLE.features .feature-desc {
-  min-height: 275px;
-  font-size: 85%;
+  min-height: 225px;
+  font-size: 80%;
   font-weight: 600;
   line-height: 1.4em;
 }
@@ -1881,6 +1936,81 @@ ARTICLE.features .feature-header {
 ARTICLE.features LI {
   text-align: left;
   padding-top: 1.3em;
+}
+
+ARTICLE.testihead {
+  padding: 2.5em 0;
+  text-align: left;
+}
+
+.testihead .two-third {
+  font-size: 93.75%;
+}
+
+.testihead .two-third H3 {
+  font-size: 180%;
+  font-weight: bold;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.6em;
+  color: #5E5E5E;
+}
+
+.testihead .one-third {
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ED243B;
+  line-height: 1.2em;
+}
+
+.testihead .one-third LI {
+  padding-bottom: 0.5em;
+}
+
+.testihead .one-third A:link, .testihead .one-third A:visited {
+  color: #ED243B;
+  text-decoration: none;
+}
+
+.testihead .one-third A:hover, .testihead .one-third A:active {
+  color: #959595;
+  text-decoration: none;
+}
+
+.testi H3 {
+  color: #5E5E5E;
+  font-size: 156.25%;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0 0 1.5em;
+}
+
+.testi H3 STRONG {
+  color: #ED243B;
+  text-transform: uppercase;
+}
+
+.testi HR {
+  margin: 2em 0 4em;
+}
+
+.testicolumns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  font-size: 85%;
+  color: #888888;
+}
+
+.testicolumns DIV {
+  padding-bottom: 2em;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .taa-sp-tag {
@@ -1973,7 +2103,7 @@ ARTICLE.features LI {
 }
 
 .taa-quote {
-  font-size: 240%;
+  font-size: 171%;
   line-height: 1.3em;
 }
 
@@ -2004,6 +2134,17 @@ ARTICLE.features LI {
   background: transparent;
   outline: 0;
   cursor: pointer;
+}
+
+.support,
+.learn {
+  text-align: center;
+}
+
+.support .graybutton,
+.learn .redbutton {
+  padding: 1em 2em !important;
+  font-size: 100% !important;
 }
 
 
@@ -2123,7 +2264,9 @@ ARTICLE.features LI {
     width: 85%;
   }
 
-  .tour .two-col H1 {
+  .tour .two-col H1,
+  .tour .two-col-left H1,
+  .tour .two-col-right H1 {
     font-size: 230%;
   }
 
@@ -2180,11 +2323,11 @@ ARTICLE.features LI {
   }
 
   ARTICLE.features .feature-desc {
-    min-height: 385px;
+    min-height: 300px;
   }
 
   .taa-quote {
-    font-size: 200%;
+    font-size: 150%;
     line-height: 1.3em;
   }
 }
@@ -2219,6 +2362,10 @@ ARTICLE.features LI {
 
   .download-form {
     width: 90%;
+  }
+
+  ARTICLE.features .feature-desc {
+    min-height: 330px;
   }
 }
 
@@ -2312,6 +2459,20 @@ ARTICLE.features LI {
     border: 0;
   }
 
+  .one-third,
+  .two-third,
+  .one-third.last,
+  .two-third.last {
+    float: none;
+    width: 96%;
+    margin: 0 auto 2em;
+  }
+
+  .one-third.last,
+  .two-third.last {
+    margin-bottom: 0;
+  }
+
   .feature1,
   .feature2,
   .feature3 {
@@ -2379,7 +2540,9 @@ ARTICLE.features LI {
     width: 96%;
   }
 
-  .tour .two-col H1 {
+  .tour .two-col H1,
+  .tour .two-col-left H1,
+  .tour .two-col-right H1 {
     font-size: 180%;
   }
 
@@ -2441,8 +2604,14 @@ ARTICLE.features LI {
     min-height: auto;
   }
 
+  .testicolumns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+
   .taa-quote {
-    font-size: 180%;
+    font-size: 130%;
     line-height: 1.3em;
   }
 }
@@ -2531,7 +2700,16 @@ ARTICLE.features LI {
     width: 100%;
     margin-right: 0;
   }
-  
+
+  .two-col-left,
+  .two-col-right {
+    float: none;
+    width: 100%;
+    margin: 0 0 2em 0;
+    padding: 0;
+    border: 0;
+  }
+
   .trial-number {
     margin: 0 0 0 0;
   }
@@ -2732,6 +2910,15 @@ ARTICLE.features LI {
     font-size: 230%;
   }
 
+  .testicolumns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+
   .taa-attr,
   .taa-quote {
     float: left;
@@ -2746,6 +2933,10 @@ ARTICLE.features LI {
 
   .taa-quote {
     margin-right: 0;
-    font-size: 120%;
+    font-size: 90%;
+  }
+
+  .support .graybutton {
+    margin: 0.5em 0 !important;
   }
 }

@@ -16,7 +16,7 @@ include "header.php";
   </article>
 </div>
 
-<article style="text-align: center;">
+<article class="learn">
   <h4>QUICKSTART GUIDE</h4>
   Use this condensed guide to quickly getting started, while reviewing just a few of Investment Account Manager's general features.<br>
   <br>

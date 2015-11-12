@@ -31,7 +31,7 @@ include "header.php";
     <li>Small in size</li>
     <li>Inexpensive</li>
     <li>Easy to use</li>
-    <li>Highly Secure (Password Protected)</li>
+    <li>Highly secure (Password Protected)</li>
     <li>Large amount of storage space</li>
     <li>Ability to back up selected files, folders or entire computer</li>
   </ul>
@@ -44,7 +44,6 @@ include "header.php";
 
   <strong>Key Features</strong>
   <ul>
-    <li>Cloud Storage</li>
     <li>Free to use</li>
     <li>Easy to use</li>
     <li>Highly secure (Password Protected)</li>
@@ -59,7 +58,7 @@ include "header.php";
 
 <div class="darkgray whitetext footer">
   <article>
-    <h2 class="small">IAM, PROVIDING FINANCIAL PEACE OF MIND</h2>
+    <h2 class="small">IAM, PROVIDING FINANCIAL PEACE OF MIND.</h2>
   </article>
 </div>
 

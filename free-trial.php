@@ -1,4 +1,3 @@
-
 <?php
 $PageTitle = "Free Trial";
 include "header.php";
@@ -71,20 +70,17 @@ include "header.php";
     <div class="testimonials" data-cycle-slides="> div" data-cycle-timeout="8000">
       <div>
         <div>
-          "This is the best portfolio management program. I have used it for 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."<br>
-          <span>- John Smith, CEO</span>
+          "I've used your program for many years and you've always been great in responding to any problems I've encountered. Thanks for providing such an excellent product for individual investors!"
         </div>
       </div>
       <div>
         <div>
-          "Dude, Investment Account Manager totally r0x0rs my boxers!"<br>
-          <span>- Some bro</span>
+          "Investment Account Manager is an incredibly easy way to track your investments, dividend income and cost basis for tax planning. A very intuitive tool."
         </div>
       </div>
       <div>
         <div>
-          "I want to have like 10,000 of Investment Account Manager's babies. If I couldn't use IAM, I would probably just kill myself."<br>
-          <span>- A Troubled Person</span>
+          "I've found IAM to be one of the best tools for managing accounts held at different brokers. IAM allows me to work with different accounts without having to switch between broker accounts, saving me a lot of time."
         </div>
       </div>
     </div> <!-- END testimonials -->

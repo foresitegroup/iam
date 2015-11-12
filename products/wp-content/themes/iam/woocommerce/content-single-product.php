@@ -94,6 +94,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="darkgray store-title">
   <article>
-    <h2>VISIT OUR <a href="#" class="whitelink">TUTORIAL</a> PAGE FOR ADDED SUPPORT.</h2>
+    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
   </article>
 </div>

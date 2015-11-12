@@ -100,11 +100,11 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* Confirm Email"><br>
       <br>
 
-      <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more.">
+      <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
       <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label>
 
-      <input type="checkbox" name="feedback" id="feedback" value="Send me invitations to provide feedback about IAM software.">
-      <label for="feedback" style="text-align: left;"><span></span>Send me invitations to provide feedback about IAM software.</label><br>
+      <!-- <input type="checkbox" name="feedback" id="feedback" value="Send me invitations to provide feedback about IAM software.">
+      <label for="feedback" style="text-align: left;"><span></span>Send me invitations to provide feedback about IAM software.</label> --><br>
       <br>
 
       <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
@@ -115,15 +115,17 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <input type="submit" name="submit" value="DOWNLOAD NOW"><br>
       <br>
 
-      <a href="#" style="font-size: 70%; text-decoration: none;">Minimum system requirements</a>
+      <span style="font-size: 70%; text-decoration: none;">Requirements: <strong>Windows 7</strong> or higher with Internet Access. Apple computer requires Windows emulations software.</span>
     </div>
   </form>
+
+  <a href="mailto:?subject=Investment Account Manager Professional Demo&body=%0AHello, I thought you might find this investment software useful.%0A<?php echo $_SERVER['HTTP_REFERER']; ?>">Refer a Friend</a>
   <?php } ?>
 </article>
 
 <div class="gray footer">
   <article>
-    <h2 class="small">VISIT OUR <a href="#">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
+    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
   </article>
 </div>
 

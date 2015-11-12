@@ -1,4 +1,3 @@
-
 <?php
 $PageTitle = "Support";
 include "header.php";
@@ -16,7 +15,7 @@ include "header.php";
   </article>
 </div>
 
-<article style="text-align: center;">
+<article class="support">
   <h4>HELP > CONTENTS MENU</h4>
   Located in the IAM &amp; IAM PRO software. You can review the Contents tab which provides help in an online book form; or, select the Index tab and type in a word or a phrase related to your question.<br>
   <br>
@@ -27,26 +26,26 @@ include "header.php";
   Our software comes with full operator's manual. These manuals are also available here for easy viewing and downloading.<br>
   <br>
 
-  <a href="pdf/IAM_Quick_Start_Manual.pdf" class="redbutton" style="margin: 0 1em;">QUICK START</a>
-  <a href="pdf/IAM_User_Guide_Tutorials_and_Reference_Manual.pdf" class="redbutton" style="margin: 0 1em;">IAM MANUAL</a><br>
+  <a href="pdf/IAM_Quick_Start_Manual.pdf" class="graybutton" style="margin: 0 1em;">QUICK START</a>
+  <a href="pdf/IAM_User_Guide_Tutorials_and_Reference_Manual.pdf" class="graybutton" style="margin: 0 1em;">IAM MANUAL</a><br>
   <br>
   <br>
   <br>
 
   <h4>FORUM</h4>
-  This online community posts and issues solutions to a variety of questions and concerns. This Forum is guided by the IAM and IAM PRO teams.<br>
+  This online community posts and issues solutions to a variety of questions and concerns.<br>This Forum is guided by the IAM and IAM PRO teams.<br>
   <br>
 
-  <a href="#" class="redbutton">FORUM</a><br>
+  <a href="forum" class="graybutton">FORUM</a><br>
   <br>
   <br>
   <br>
 
   <h4>ONLINE SUPPORT</h4>
-  Fill in the form provided for advice and resources to your concerns and issues. This online support is responsive the next business day or sooner, depending on support traffic.<br>
+  Fill in the form provided for advice and resources to your concerns and issues.<br>This online support is responsive the next business day or sooner, depending on support traffic.<br>
   <br>
 
-  <a href="online-support.php" class="redbutton">SUPPORT FORM</a>
+  <a href="online-support.php" class="graybutton">SUPPORT FORM</a>
 </article>
 
 <div class="darkgray whitetext footer">

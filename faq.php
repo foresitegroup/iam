@@ -74,16 +74,6 @@ include "header.php";
 
   <br>
 
-  <strong><span class="redtext">Q:</span> Can I import historical investment data from a prior version of Captools&reg; Investment Software?</strong><br>
-  <br>
-
-  Yes. Investment Account Manager is able to import data from both Quicken and Captools. Included within IAM's online help system are detailed instructions for importing and converting your historical data.<br>
-  <br>
-
-  <hr>
-
-  <br>
-
   <strong><span class="redtext">Q:</span> Is Investment Account Manager compatable on a Mac?</strong><br>
   <br>
   
