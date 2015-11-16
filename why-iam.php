@@ -78,7 +78,7 @@ include "header.php";
 
   <div style="clear: both; height: 1em;"></div>
 
-  <a href="download-iam.php" class="redbutton">DISCOVER MORE</a><br>
+  <a href="unified-account-management.php" class="redbutton">DISCOVER MORE</a><br>
   <br>
 </article>
 

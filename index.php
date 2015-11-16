@@ -126,7 +126,7 @@ include "header.php";
   </div>
 
   <div class="three-col feature3">
-    <h2>SATISFIED<br>USERS</h2>
+    <h2>30+ YEARS OF SATISFIED USERS</h2>
     With 30+ years of satisfied users, we continue to provide essential tools to thousands of independent investors with Investment Account Manager &amp; Investment Account Manager Pro.
   </div>
 
@@ -168,7 +168,7 @@ include "header.php";
       <br>
       <br>
 
-      <a href="products/product-category/iam-individual/" class="redbutton">BUY NOW</a>
+      <a href="download-iam.php" class="redbutton">TRY NOW</a>
     </div>
 
     <div class="three-col">
@@ -196,7 +196,7 @@ include "header.php";
       <br>
       <br>
 
-      <a href="products/product/investment-account-manager-professional/" class="redbutton">BUY NOW</a>
+      <a href="download-iam-pro.php" class="redbutton">TRY NOW</a>
     </div>
 
     <div class="three-col">

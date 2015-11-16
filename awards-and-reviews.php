@@ -54,7 +54,7 @@ include "header.php";
       <div>
         <div>
           "Best in class. I switched to Investment Account Manager from Captools for individuals over three years ago, and I'll tell you it has been one of the best moves I have made. IAM is a very comprehensive, self-contained, simple to use trade recording and reporting package that proves its value many times over."<br>
-          <span>- J. Bois, CNET Reivew</span>
+          <span>- John B., CNET Reivew</span>
         </div>
       </div>
     </div> <!-- END testimonials -->
@@ -63,11 +63,15 @@ include "header.php";
 
 <article style="padding-top: 2em;">
   <div class="two-col" style="font-size: 160%; line-height: 1.2em;">
-    "This is the best portfolio management program I have used it my 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."
+    "This is the best portfolio management program I have used it my 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."<br>
+    <br>
+    - Ken D.
   </div>
 
   <div class="two-col" style="font-size: 160%; line-height: 1.2em;">
-    "I have recommended IAM and am glad to recommend it. You guys work hard to make your product better and it SHOWS!!!"
+    "I have recommended IAM and am glad to recommend it. You guys work hard to make your product better and it SHOWS!!!"<br>
+    <br>
+    - Vince C.
   </div>
 
   <div style="clear: both;"></div>
@@ -86,14 +90,14 @@ include "header.php";
       "A Great Program! I have been using IAM for about 3 years and it's NAIC Better Investing predecessor for another 3 years prior to that. I track several investment portfolios of my own and family members, which contain a mix of stock, mutual funds &amp; bonds. I have found the software to be very easy to use and reliable. This software has made my portfolio tracking and analysis work quite easy!"<br>
       <br>
 
-      <strong>- Roy, Amazon.com Review</strong>
+      <strong>- Roy S., Amazon.com Review</strong>
     </div>
 
     <div class="three-col">
       "The Best on the market. I have used the program for 20 years. Excellent management tools, reports and graphs. Detailed records of all transactions. I have never owned a computer program with such rapid technical support"<br>
       <br>
 
-      <strong>- A Siemensen, CNET Review</strong>
+      <strong>- Arnold S., CNET Review</strong>
     </div>
 
     <div style="clear: both;"></div>
@@ -103,7 +107,7 @@ include "header.php";
 <div class="taa-single">
   <article>
     <div class="two-col vert-center taa-attr">
-      <strong>M. Chandler</strong><br>
+      <strong>Virginia C.</strong><br>
       CNET Review
     </div>
 
@@ -118,15 +122,21 @@ include "header.php";
 <article style="padding-top: 4em;">
   <div style="color: #959595;">
     <div class="three-col">
-      "IAM has been my greatest asset in keeping my portfolio records well organized, timely, and so much easier to follow and understand."
+      "IAM has been my greatest asset in keeping my portfolio records well organized, timely, and so much easier to follow and understand."<br>
+      <br>
+      - Harold M.
     </div>
 
     <div class="three-col">
-      "Thanks for developing an outstanding software program that is user friendly and features that you back up with real support."
+      "Thanks for developing an outstanding software program that is user friendly and features that you back up with real support."<br>
+      <br>
+      - Jon D.
     </div>
 
     <div class="three-col">
-      "I cannot see managing our portfolios without this program!! Also tech support is insanely excellent!!"
+      "I have been using IAM for more years than I can remember and credit it with providing a critical component of the tool kit to help me build a more than comfortable retirement."<br>
+      <br>
+      - Sam K.
     </div>
 
     <div style="clear: both;"></div>
@@ -138,7 +148,7 @@ include "header.php";
     <strong>"If there was a life-time membership, I'd join... I use it annually of course for taxes. But I use it every day, and I mean every day, for managing my investments."</strong><br>
     <br>
 
-    <span style="color: #959595;">- B. Mize, CNET Review</span>
+    <span style="color: #959595;">- B. Ray M., CNET Review</span>
   </div>
 </article>
 

@@ -115,7 +115,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <input type="submit" name="submit" value="DOWNLOAD NOW"><br>
       <br>
 
-      <span style="font-size: 70%; text-decoration: none;">Requirements: <strong>Windows 7</strong> or higher with Internet Access. Apple computer requires Windows emulations software.</span>
+      <span style="font-size: 70%; text-decoration: none;">Requirements: <strong>Windows 7</strong> or higher with Internet Access.<br>
+      Apple computer requires Windows emulations software.</span>
     </div>
   </form>
 

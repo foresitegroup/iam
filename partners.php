@@ -40,7 +40,7 @@ include "header.php";
   <h3>InvestEd Incorporated</h3>
   <br>
 
-  <strong>InvestEd Incorporated</strong> is a recognized not-for-profit leader in investment education. At the annual conference June 12-14, 2015, in Richmond VA, neophyte, intermediate, and advanced investors learn about stock study and portfolio management. The monthly InvestEd Newsletter, which is free, highlights information about the  conference. In addition, it includes investor education and technology articles, announcements of free webinars, and access to program recordings.<br>
+  <strong>InvestEd Incorporated</strong>, a non-profit organization dedicated to creating and nurturing an informed community of investors capable of making its own investment decisions, delivers quality education to neophyte, intermediate, and advanced investors through national and local conferences, workshops, and program recordings. While long-term fundamental investing principles are the core of InvestEd programs, alternative investment theories and use of technology facilitate our educational goals.<br>
   <br>
 
   <a href="http://investedinc.org"><img src="images/partners-invested.png" alt="InvestEd Incorporated"></a><br>

@@ -80,7 +80,7 @@ include "header.php";
   QUANT IX SOFTWARE, Inc.<br>
   11518 N. Port Washington Road, Suite 102<br>
   Mequon WI,53092 USA<br>
-  Email: <?php email("mwillms@quantixsoftware.com"); ?>
+  Email: <?php email("techsupport@investmentaccountmanager.com"); ?>
 </article>
 
 <div class="darkgray whitetext footer">
