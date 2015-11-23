@@ -124,7 +124,7 @@ include "header.php";
     <div class="three-col">
       "IAM has been my greatest asset in keeping my portfolio records well organized, timely, and so much easier to follow and understand."<br>
       <br>
-      - Harold M.
+      - Harold N.
     </div>
 
     <div class="three-col">

@@ -76,7 +76,7 @@ include "header.php";
     <form action="download-iam.php" method="POST" onSubmit="return checkform(this)" class="vert-center">
       <div>
         <h1>FREE TRIAL!</h1>
-        <span>Simply fill out the form below and start your 30 day free trial today</span><br>
+        <span>Simply fill out the form below and start your 30 day <strong>individual</strong> free trial today</span><br>
         <br>
 
         <div style="font-size: 80%; color: #ED243B; padding-bottom: 0.3em; width: auto;">* Required</div>
@@ -166,7 +166,6 @@ include "header.php";
       Ability to Download Investment Activity from Popular Financial Institutions<br>
       <br>
       <br>
-      <br>
 
       <a href="download-iam.php" class="redbutton">TRY NOW</a>
     </div>
@@ -176,23 +175,22 @@ include "header.php";
 
       <div>INVESTMENT ACCOUNT MANAGER <span class="bluetext">PRO</span></div>
 
-      All Individual Features<br>
+      All Individual Features, Plus...<br>
       <br>
       QuoteMedia Fundamental Data Feed<br>
       <br>
-      Custom Model Portfolio<br>Objectives and Allocations<br>
+      Custom Model Portfolios<br>
       <br>
-      Target Allocations on Individual Asset Level within Portfolio Models<br>
+      Target Allocations on Individual Asset Level<br>
       <br>
-      Ability to Auto-Create Client Portfolios<br>to Model Allocations<br>
+      Auto-Create Client Portfolios to Model Allocations<br>
       <br>
       Blended Benchmark Portfolios by Percentages<br>
       <br>
       Import Client Custodial Files<br>
       <br>
-      Professional, Client Ready, Customizable Batch Reporting for Efficiency<br>
+      Additional Reporting: Client Billing, Contributions/Withdrawals, Asset Level Allocations, more...<br>
       <br>
-      Reporting: Client Billing, Contributions/Withdrawls, Executive Summary, Asset Level Allocations and more....<br>
       <br>
       <br>
 

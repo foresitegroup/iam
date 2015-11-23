@@ -1914,7 +1914,7 @@ ARTICLE.features .feature-type {
 }
 
 ARTICLE.features .feature-desc {
-  min-height: 225px;
+  min-height: 270px;
   font-size: 80%;
   font-weight: 600;
   line-height: 1.4em;

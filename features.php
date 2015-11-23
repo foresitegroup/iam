@@ -20,12 +20,6 @@ include "header.php";
     <div class="feature-desc">
       IAM provides extensive investment tracking and portfolio management tools.  If you have the responsibility of overseeing and managing one or several portfolios, you'll discover many comprehensive features that save time, help you to avoid mistakes, while leading to better portfolio management decisions.
     </div>
-    <br>
-    <br>
-
-    <a href="download-iam.php" class="graybutton" style="visibility: hidden;">TRY NOW</a><br>
-    <br>
-    <br>
 
     <div class="feature-header" style="background: #ED243B;">PRODUCT FEATURES</div>
 
@@ -70,12 +64,6 @@ include "header.php";
         See the bottom of this features list for the fundamental data and ratios.
       </div>
     </div>
-    <br>
-    <br>
-
-    <a href="download-iam.php" class="graybutton">TRY NOW</a><br>
-    <br>
-    <br>
 
     <div class="feature-header">PRODUCT FEATURES</div>
 
@@ -135,12 +123,6 @@ include "header.php";
     <div class="feature-desc">
       Based on Investment Account Manager, our PRO version has been developed with a professional audience in mind, including family offices, independent investment advisors, sophisticated investors, small accounting and law firms, and foundations to provide centralized portfolio management.
     </div>
-    <br>
-    <br>
-
-    <a href="download-iam-pro.php" class="graybutton">TRY NOW</a><br>
-    <br>
-    <br>
 
     <div class="feature-header" style="background: #2E65B0;">PRODUCT FEATURES</div>
     
@@ -211,9 +193,9 @@ include "header.php";
   <div style="clear: both;"></div>
 </article>
 
-<div class="darkgray whitetext">
+<div class="gray footer bt">
   <article>
-    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
+    <h2>START YOUR IAM <a href="free-trial.php" class="redlink">FREE TRIAL</a> TODAY</h2>
   </article>
 </div>
 

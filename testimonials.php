@@ -27,6 +27,7 @@ include "header.php";
         <li><a href="#outstanding-technical-support">Outstanding Technical Support</a></li>
         <li><a href="#longevity">Longevity</a></li>
         <li><a href="#in-comparison-to-quicken">In Comparison To Quicken</a></li>
+        <li><a href="#iam-pro">IAM Professional Testimonials</a></li>
       </ul>
     </div>
 
@@ -37,7 +38,7 @@ include "header.php";
 <article class="testi">
   <a name="portfolio-management"></a>
   <h3><strong>Portfolio Management:</strong> Become well-organized investors, empowered to make more educated portfolio management decisions...</h3>
-  
+
   <div class="testicolumns">
     <div>"IAM does everything I need to manage a number of accounts; it is quite intuitive; it handles large amounts of data so I don't worry even though I have more than 28 different accounts with all their transaction going back many years; the income summaries and basis data are so helpful in preparing my taxes."</div>
 
@@ -78,7 +79,7 @@ include "header.php";
 
   <a name="track-and-manage-multiple-portfolios"></a>
   <h3><strong>Track and Manage Multiple Portfolios:</strong> You'll discover many comprehensive features that save time and help you to avoid mistakes, all the while leading to better portfolio management decisions...</h3>
-  
+
   <div class="testicolumns">
     <div>"I've found IAM to be a versatile and affordable platform for managing multiple investment accounts, with prompt and personalized support.  It's my go-to tool for keeping track of investments and planning."</div>
 
@@ -116,12 +117,12 @@ include "header.php";
 
     <div>"IAM helps me manage all my investment accounts, separately or in summary.  It is valuable to keep tax related data. It gives me a good variety of reports on asset value, dividends, and investment transactions at a reasonable price."</div>
   </div>
-  
+
   <hr>
 
   <a name="comprehensive-reporting"></a>
   <h3><strong>Comprehensive Reporting:</strong> Investment Account Manager includes more than 50 professional reports summarizing your investments: current holdings, unrealized gains/losses, sold positions &amp; realized gains/losses (tax filing), income received (tax filing), capital gain distributions, commissions paid, security allocation, portfolio diversification, portfolio cash flow projections, tax basis, performance measurements, asset maturity schedule, transactions ledger, and more...</h3>
-  
+
   <div class="testicolumns">
     <div>"IAM is a terrific portfolio tool. The reports and online price updates are vital to investment performance and tax reporting."</div>
 
@@ -150,7 +151,7 @@ include "header.php";
 
   <a name="tax-planning-and-preparation"></a>
   <h3><strong>Tax Planning and Preparation:</strong> For some investors, organizing investment records for use in preparing income taxes can be an anxiety-ridden nightmare. Investment Account Manager dramatically improves your portfolio management and investment record keeping, making income tax filing a breeze. Once organized, you'll have the tax records and information in place to make smarter decisions...</h3>
-  
+
   <div class="testicolumns">
     <div>"IAM has definitely saved me money on taxes by keeping a running record of my stock purchases.  I have a lot of DRIP accounts and IAM definitely comes in handy when keeping track of these investments."</div>
 
@@ -209,7 +210,7 @@ include "header.php";
 
   <a name="accurately-measure-portfolio-performance"></a>
   <h3><strong>Accurately Measure Portfolio Performance:</strong> Investment Account Manager properly measures all the investment flows required for measuring security and portfolio performance.  Users can derive performance from inception, or custom date periods...</h3>
-  
+
   <div class="testicolumns">
     <div>"Accurate investment performance information is critical for the individual investor to know how he/she is doing. Yet the financial services industry continues to make it difficult to obtain.  IAM is the most professional of the software tools that provide this kind of information."</div>
 
@@ -234,7 +235,7 @@ include "header.php";
 
   <a name="ease-of-use"></a>
   <h3><strong>Ease of Use:</strong> Investment Account Manager is also easy to learn and use.  Included throughout IAM is context sensitive help for quick reference to feature-specific  help, plus a detailed index with a listing of all IAM help topics...</h3>
-  
+
   <div class="testicolumns">
     <div>"After trying the demo version of IAM on several portfolios for the last 3 weeks, I am going to buy it. I found the program easy to learn and friendly. The reports are clear and easy to use/understand but yet powerful. When I had questions, technical support answered the phone and gave me a clear answer. When I had a difficult issue, they immediately put me in-touch with the developer and the issue was resolved in a day. It is good to know that some firms still strive for customer satisfaction and reach that goal. I would recommend this software."</div>
 
@@ -243,7 +244,7 @@ include "header.php";
     <div>"If you are a beginner in investing, this program is user friendly and a good investing program."</div>
 
     <div>"Investment Account Manager allows me to feel confident about tracking my investment transactions and reconciling my accounts.  I LOVE this program."</div>
-    
+
     <div>"I truly love IAM.  IAM has helped tremendously with any merger, spinoffs or splits that have occurred.  IAM also has helped me track my total portfolio income and budgets from my various brokerage accounts. Ii can easily see where the cash is located for withdrawals and where best to take it from.  Everything is in one place and backed up on my c drive, flash drive and external drive so when my computer crashes - all's well!  I reconcile my brokerage accounts with IAM monthly on the weekend when the markets are closed.  It only takes a few minutes but then I know everything is correct before things get out of whack!  Tech support has always been there for me, I'm not a computer guy but they work me through my problems."</div>
 
     <div>"Investment Account Manager is very easy to use with many useful reports and tools.  It's a great way to keep track of investments, especially if they are spread across multiple accounts."</div>
@@ -261,7 +262,7 @@ include "header.php";
 
   <a name="outstanding-technical-support"></a>
   <h3><strong>Outstanding Technical Support:</strong> The developers of Investment Account Manager prioritize our goal of helping customers.  Our goal is for IAM to be useful 'software', not 'shelf-ware' that collects dust!  We offer prompt, reliable support &mdash; either by voice, or email...</h3>
-  
+
   <div class="testicolumns">
     <div>"Awesome support.  If can't find the answer to a question, it's a great relief to know that I can call and instantly speak to one of the brothers who write the program.  That's huge in today's world and in regards to something so important.  I have used the program for years and love how it works.  You are always improving it.  Started out in the old days keeping track of stock purchases by hand - so much easier with IAM."</div>
 
@@ -399,6 +400,29 @@ include "header.php";
     <div>"IAM is much more reliable than Quicken - or for that - matter any other affordable portfolio manager. Matt and Pete, the owners of the company, are quick to respond to necessary or recommended changes."</div>
 
     <div>"I have been Using IAM since it first came out. Really like the ability to download transactions from Schwab.  I have junked Quicken and all its problems. Great job with IAM - love it."</div>
+  </div>
+
+  <hr>
+
+  <a name="iam-pro"></a>
+  <h3><strong>IAM Professional Testimonials</strong></h3>
+
+  <div class="testicolumns">
+    <div>"IAM Professional offers a huge set of institutional-grade portfolio management capabilities at very reasonable cost. The software allows advisors to look professional, and save time, money, and effort all at once. As a former institutional investment manager on large mutual funds, I can attest that software approaching this level of sophistication and flexibility costs several times more than the price of IAM. The report-generating power of the software is a significant driver of the total value proposition. Dozens of pre-set reports cover practically every conceivable need, and the ability to customize output makes the software even more flexible - and valuable. IAM eliminates the need for most additional excel number crunching. This saves time, effort, helps eliminate errors, and lets an advisor actually focus on core investing functions. On their own, these reporting functions are very useful. In aggregate, however, I believe that they are "best in class". In particular, the benchmarking, indexing, allocation/rebalancing, and ability to analyze mutual fund holdings, all provide portfolio-level insights that are valuable and hard to duplicate. In fact, I haven't found anything like this combination available in one product. As a desktop application, implementation is simple and inexpensive. More importantly, client data is as a secure as I care to make it. I have no worries that a cloud-based provider has been hacked and client account data compromised - always a risk in these days of sophisticated cyber attacks. For all its complexity and benefits, the software is quite easy to use. Customer support is remarkably responsive and highly attuned to the needs of advisors as sophisticated investors. Anyone managing client accounts of any size or number would be well advised to use IAM."</div>
+
+    <div>"Investment Account Manager Professional is user friendly and easy to manage. Ability to handle numerous client accounts with relative ease. Software allows you to have total control from downloading account activity, to maintaining accounts and generating reports."</div>
+
+    <div>"Investment Account Manager Pro (IAM) is a great software package...especially for the price. If your custodian does not have the ability to download directly to the software, the data entry / program is very user friendly. The reporting capabilities are impressive with a lot flexibility. The best part about IAM is not the program, as good as it is, but the customer service. Our questions are always answered in a timely manner, and there is always follow-up on the part of the IAM Team to make sure everything is running the way it should for us. They go above and beyond to make sure you are completely satisfied. If you are looking at a performance reporting package, and are unsure which one to choose, we highly recommend giving IAM a try. Not only will you be impressed with the program, but you will be blown way with the customer service and how hard they try to make your life easier with IAM. We are now in our third year with using this software and have no intention of using anything different."</div>
+
+    <div>"I have a small Investment Advisory Business with 100+ accounts. I wanted a program that downloaded my daily transactions, produced batch quarterly reports and was easy to use. I like the straight forward method offered by Investment Account Manager Professional that allows me to navigate between clients and reports with little, if any, training. Nearly all the functions of IAM Professional are intuitive and the onboard help screens are one of the best I seen. I am very happy with IAM Professional."</div>
+    
+    <div>"I am very pleased with my experience with 'Investment Account Manager Pro'. I am owner of a small RIA firm and cost is a major factor in everything we do. However, IAM Pro gives me everything I need and more to service my clients with accurate reporting, clean and crisp reports, easy navigation, and excellent customer support. In fact, I believe this program outperforms programs costing thousands of dollars more. Report flexibility and variety of reports is outstanding. The reports are easy to read and understand and are a valuable tool when meeting with clients. There are also many reporting features to help the advisor not only manage clients' accounts but also assist in managing your business. Whether you are a small firm as I am or a larger firm, you owe it to your clients to check this software out."</div>
+
+    <div>"I was a Senior Portfolio Manager for a large bank for almost 18 years. During this time we used several professional software applications. Since then I have started my own independent Registered Investment Advisory, focused on customized portfolio management for private clients. We have been shopping for portfolio management software which would interface with our custodian and give us the ability to analyze portfolios. I have been extremely impressed with Investment Account Manager. It has all the capabilities I had while working for a multi-billion dollar bank! It is easy to use and has clearly been designed by people who understand basic portfolio management needs. My client presentations are crisp and concise, very professional looking. After reviewing several similar offerings in the marketplace, all significantly more expensive and complex, we have decided IAM Professional offers all the functionality we need, for a significantly lower cost!"</div>
+
+    <div>"I've been pleased with Investment Account Manager, first for my own portfolio, and now for my clients'. I can get accurate ROR stats at the asset, account and portfolio level, and can add mutual fund composition data to see exactly the portfolio composition. I especially like that I can download from custodians for held away accounts on which I advise. The best, most cost effective, solution for an independent RIA that I've come across."</div>
+    
+    <div>"I have a small office that monitors brokerage statements for 30+ accounts. I have been using the Investment Account Manager Professional program for about 5 months now. I was surprised at just how easy it was to learn how to use this program. The few times that I did have questions, the support team was the best. They answered questions right away, whether it was by phone or email. I have never had customer service support like that before. Having multiple accounts, with many varying investments, I needed a program that would be accommodating to all my needs and I have found the IAM Professional to be all that I could have asked for."</div>
   </div>
 </article>
 

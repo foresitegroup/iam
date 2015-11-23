@@ -2689,7 +2689,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li.active > a,
 .nav > li.active > a:hover {
   text-decoration: none;
-  background-color: #78131F;
+  background-color: #255595;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -2704,7 +2704,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #78131F;
+  background-color: #255595;
   border-color: #337ab7;
 }
 .nav .nav-divider {

@@ -81,12 +81,12 @@ div#wrapper
 
 #message_index_jump_to INPUT[type="button"],
 #display_jump_to INPUT[type="button"] {
-  background: #ED243B;
+  background: #2E65B0;
   color: #FFFFFF;
   text-decoration: none;
   font-weight: normal;
   border-radius: 3px;
-  border: 3px solid #ED243B;
+  border: 3px solid #2E65B0;
   cursor: pointer;
   padding: 0.6em 1em 0.4em;
   -webkit-transition: background 0.2s, border 0.2s, color 0.2s;
@@ -481,7 +481,7 @@ code.bbc_code
 	color: #fff;
 	font-size: 1em;
 	font-weight: normal;
-	background: #ED243B;
+	background: #2E65B0;
 	text-transform: uppercase;
 }
 
@@ -840,7 +840,7 @@ h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg
 }
 h4.titlebg, h3.titlebg
 {
-	background: #ED243B;
+	background: #2E65B0;
 	padding-right: 9px;
 }
 h4.titlebg img.icon
@@ -860,7 +860,7 @@ div.cat_bar
 }
 div.title_bar
 {
-	background: #ED243B;
+	background: #2E65B0;
 	padding-left: 9px;
 	height: 38px;
 	overflow: hidden;
@@ -871,12 +871,12 @@ div.title_bar
 /* rounded bars needs a different background here */
 div#IC div.cat_bar
 {
-	background: #ED243B;
+	background: #2E65B0;
 	margin-bottom: 0;
 }
 div#IC div.cat_bar h3.catbg
 {
-	background: #ED243B;
+	background: #2E65B0;
 }
 div.title_barIC
 {
@@ -926,12 +926,12 @@ table.table_list a.collapse
 /* The half-round header bars for some tables. */
 tr.catbg th.first_th,tr.titlebg th.first_th
 {
-	background: #ED243B;
+	background: #2E65B0;
 	/*border-radius: 4px 0 0 0*/;
 }
 tr.catbg th.last_th, tr.titlebg th.last_th
 {
-	background: #ED243B;
+	background: #2E65B0;
 	/*border-radius: 0 4px 0 0;*/
 }
 .table_grid th.last_th input
@@ -1277,7 +1277,7 @@ span.lowerframe span
 .dropmenu li a.active
 {
   color: #FFF;
-	background: #ED243B;
+	background: #2E65B0;
 	border-radius: 3px;
 }
 .dropmenu li a.active:hover, .dropmenu li:hover a.active
@@ -1288,7 +1288,7 @@ span.lowerframe span
 .dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel
 {
   color: #FFF;
-	background: #ED243B;
+	background: #2E65B0;
 	border-radius: 3px;
 	cursor: pointer;
 	text-decoration: none;
@@ -1296,7 +1296,7 @@ span.lowerframe span
 /* the hover effects on level2 and 3 */
 .dropmenu li li a:hover, .dropmenu li li:hover>a
 {
-	background: #ED243B;
+	background: #2E65B0;
 	text-decoration: none;
 }
 .dropmenu li:hover ul ul, .dropmenu li:hover ul ul ul
@@ -1349,7 +1349,7 @@ span.lowerframe span
 }
 .buttonlist li a.active
 {
-	background: #ED243B;
+	background: #2E65B0;
 }
 .buttonlist .nav-pills  li + li
 {
@@ -1955,7 +1955,7 @@ p#whoisviewing
 	width: auto;
 	padding: 4px;
 	/*border-radius: 4px 4px 0 0;*/
-	background: #ED243B;
+	background: #2E65B0;
 	text-align: center;
 }
 .poster h4, .poster h4 a
@@ -3887,7 +3887,7 @@ footer a
 
 #menu
 {
-	background: #ED243B;
+	background: #2E65B0;
 }
 
 #menu ARTICLE {
