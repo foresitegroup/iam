@@ -117,6 +117,6 @@ if ( $order ) : ?>
 
 <div class="darkgray store-title">
   <article>
-    <h1>YOUR TRUSTED PARTNER SINCE 1985.</h1>
+    <h2>VISIT OUR <a href="#" class="whitelink">TUTORIAL</a> PAGE FOR ADDED SUPPORT.</h2>
   </article>
 </div>

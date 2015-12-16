@@ -55,9 +55,9 @@ if ( $order ) : ?>
 		    // IAM with QuoteMedia
 				if (in_array(10, $array_pid)) echo "Thank you for ordering Investment Account Manager. In the opening form after starting IAM, click on the \"software activation key\" button, and then enter these codes:<br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br>QuoteMedia Code: <strong>" . $ActCodeArray[1] . "</strong><br>";
 				// Support Renewal
-				if (in_array(16, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy. After starting IAM, please select the Help Menu | Product Support and enter the following renewal code:<br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br>";
+				if (in_array(14, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy. After starting IAM, please select the Help Menu | Product Support and enter the following renewal code:<br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br>";
 				// Support Renewal with QuoteMedia
-				if (in_array(18, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy, along with the QuoteMedia&trade; data feed. After starting IAM, please select the Help Menu | Product Support and enter the following renewal codes:<br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br>QuoteMedia Code: <strong>" . $ActCodeArray[3] . "</strong><br>";
+				if (in_array(16, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy, along with the QuoteMedia&trade; data feed. After starting IAM, please select the Help Menu | Product Support and enter the following renewal codes:<br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br>QuoteMedia Code: <strong>" . $ActCodeArray[3] . "</strong><br>";
 			} else {
 		    echo "Sorry, you did not provide a proper User Identification Number so we could not give you your activation code at this time. Please contact customer service to get your code.<br>";
 		  }

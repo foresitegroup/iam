@@ -190,7 +190,7 @@ function template_html_above()
 // </head>
 // <body', !empty($settings['redsy_navbar']) ? ' style="padding-top: 50px;"' :  '' ,'>';
 
-$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['SERVER_NAME'] . "/" : "";
+$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "";
 if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
 
 $PageTitle = $context['page_title_html_safe'];
@@ -465,7 +465,7 @@ function template_html_below()
 // 	echo '
 // </body></html>';
 
-	$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['SERVER_NAME'] . "/" : "";
+	$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "";
 	if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
 
 	echo '
