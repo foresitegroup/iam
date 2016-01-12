@@ -1,6 +1,6 @@
 
 <?php
-$PageTitle = "Detailed Transaction Accounting";
+$PageTitle = "Individual or Collective Reporting";
 include "header.php";
 ?>
 
@@ -20,23 +20,33 @@ include "header.php";
     <a href="tour-iam-1-3.php" class="tour-section-link">1.3</a>
     <hr class="tour-section-link-hr">
     <a href="tour-iam-1-4.php" class="tour-section-link">1.4</a>
+    <hr class="tour-section-link-hr">
+    <a href="tour-iam-1-5.php" class="tour-section-link">1.5</a>
     <a href="tour-iam-1-3.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
-    <span class="redtext">1.2</span> DETAILED TRANSACTION ACCOUNTING
+    <span class="redtext">1.2</span> INDIVIDUAL OR COLLECTIVE REPORTING
   </article>
 </div>
 
 <div class="gray bt bb tour-content">
   <article>
-    IAM provides detailed transaction accounting for: purchases, sales, dividends, interest, expenses, universal stock split/dividend, spin-off and mergers, tender/exchanges, return of capital, dividend reinvestment plans, security transfers, option activity and short sales.
+    In order for a portfolio management tool to be effective, an essential requirement includes the ability to provide a collective understanding of how your portfolios are integrated, and how they overlap.  This information will allow you to analyze several important questions:<br>
+    <ul style="text-align: left; display: inline-block; margin: 0 auto;">
+      <li>Collectively, what is my overall allocation, and am I properly diversified?</li>
+      <li>Do I hold concentrated positions?</li>
+      <li>Are the securities I own held in the right accounts &mdash; i.e., in deferred vs. taxable?</li>
+    </ul>
 
     <hr>
 
-    <img src="images/tour-iam-1-2.jpg" alt="">
+    <!-- <img src="images/tour-iam-1-2.jpg" alt=""> -->IMAGE GOES HERE
 
     <hr>
 
-    In the case of option transactions, Investment Account Manager is able to handle opening buys, closing sales, opening sales, closing buys, assigned, exercised and expired. For transactions such as a stock split, stock dividend percentage, spin-off or merger, these transactions can be entered on a global basis, making the process of posting to multiple portfolios owning the same asset easy and accurate. Great functionality for multiple portfolio management!
+    Investment Account Manager allows users to track an unlimited number of portfolios, with transactions segregated by account.  This provides the ability to create and track portfolios by investment account, and to design portfolios by investment objective.<br>
+    <br>
+
+    Investment Account Manager is able to group portfolios while creating reports.  For example, if you have taxable and tax deferred accounts within Investment Account Manager, and want to review the overall allocation of all of your holdings, you would select one of the available allocation reports provided within Investment Account Manager.  Investment Account Manager will produce a report showing your combined portfolios' allocation by asset class (cash, bonds, stocks and other), by stock sector (consumer discretionary v. healthcare v. energy, etc.), and/or by stock capitalization (large, medium or small cap).  With this information in hand, you can determine if you are meeting the objectives you have set for your individual portfolios, as well as for all of your accounts.
   </article>
 </div>
 

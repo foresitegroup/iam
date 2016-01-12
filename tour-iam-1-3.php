@@ -1,6 +1,6 @@
 
 <?php
-$PageTitle = "Download Current Balances and Transactions";
+$PageTitle = "Track Variety of Asset Types";
 include "header.php";
 ?>
 
@@ -20,15 +20,17 @@ include "header.php";
     <a href="tour-iam-1-3.php" class="tour-section-link current">1.3</a>
     <hr class="tour-section-link-hr">
     <a href="tour-iam-1-4.php" class="tour-section-link">1.4</a>
+    <hr class="tour-section-link-hr">
+    <a href="tour-iam-1-5.php" class="tour-section-link">1.5</a>
     <a href="tour-iam-1-4.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
-    <span class="redtext">1.3</span> DOWNLOAD CURRENT BALANCES AND TRANSACTIONS
+    <span class="redtext">1.3</span> TRACK VARIETY OF ASSET TYPES
   </article>
 </div>
 
 <div class="gray bt bb tour-content">
   <article>
-    Investment Account Manager is able to download from online financial institutions your recent investment transaction activity, such as purchases, sales, income and reinvestment activity.
+    As a comprehensive portfolio management software program, Investment Account Manager offers investment tracking features for a variety of asset types: cash, money market funds, US Governments, agencies, tax-exempt bonds, corporate bonds, preferred stocks, mutual funds, exchange traded funds, common stocks, options, and other investments.
 
     <hr>
 
@@ -36,7 +38,7 @@ include "header.php";
 
     <hr>
 
-    If the online financial institution you use is not listed in our available choices, you might like to contact them and request they provide support for Open Financial Exchange (OFX) for use in Investment Account Manager. Please direct all questions to <?php email("techsupport@quantixsoftware.com"); ?>. Investment Account Manager is also able to import a transaction file (OFX, QFX) provided by many online financial institutions. This is a helpful option in case your financial institution is not provided in our list of available choices.
+    For common stocks, IAM allows users to define stocks by size, style, and sector. For mutual funds and ETF's, investment objective and fund composition can be tracked. Those assets with maturity dates, such as fixed income and options, can be listed on a Maturity Schedule report, to ladder investments and gauge reinvestment risk. In all, Investment Account Manager allows users to monitor the most common of investment types, providing users with more than 40 professional reports summarizing their investment holdings, essential for improved portfolio management decision making.
   </article>
 </div>
 

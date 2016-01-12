@@ -1,6 +1,6 @@
 
 <?php
-$PageTitle = "Tracking for a Variety of Asset Types";
+$PageTitle = "Multiple Portfolio Management";
 include "header.php";
 ?>
 
@@ -20,15 +20,17 @@ include "header.php";
     <a href="tour-iam-1-3.php" class="tour-section-link">1.3</a>
     <hr class="tour-section-link-hr">
     <a href="tour-iam-1-4.php" class="tour-section-link">1.4</a>
+    <hr class="tour-section-link-hr">
+    <a href="tour-iam-1-5.php" class="tour-section-link">1.5</a>
     <a href="tour-iam-1-2.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
-    <span class="redtext">1.1</span> TRACKING FOR A VARIETY OF ASSET TYPES
+    <span class="redtext">1.1</span> MULTIPLE PORTFOLIO MANAGEMENT
   </article>
 </div>
 
 <div class="gray bt bb tour-content">
   <article>
-    As a comprehensive portfolio management software program, Investment Account Manager offers investment tracking features for a variety of asset types: cash, money market funds, US Governments, agencies, tax-exempt bonds, corporate bonds, preferred stocks, mutual funds, exchange traded funds, common stocks, options, and other investments.
+    Investment Account Manager allows users to track an unlimited number of portfolios. Each portfolio is a unique, and transactions are segregated by account. This provides the user the ability to design portfolios by objective, reconcile quickly with specific accounts, and to track various accounts with a single tool.
 
     <hr>
 
@@ -36,7 +38,13 @@ include "header.php";
 
     <hr>
 
-    For common stocks, IAM allows users to define stocks by size, style, and sector. For mutual funds and ETF's, investment objective and fund composition can be tracked. Those assets with maturity dates, such as fixed income and options, can be listed on a Maturity Schedule report, to ladder investments and gauge reinvestment risk. In all, Investment Account Manager allows users to monitor the most common of investment types, providing users with more than 40 professional reports summarizing their investment holdings, essential for improved portfolio management decision making.
+    One of the ways IAM helps you to better manage multiple portfolios can be found on the comprehensive report setup screens. These screens allow you to customize any of the reports so you are able to create combinations of any of the portfolios you are managing within the software.<br>
+    <br>
+
+    If for example, you have both tax deferred and currently taxable accounts within Investment Account Manager, and you were interested in better understanding the overall asset allocation of all of your holdings, you would select IAM's Asset Allocation Report and include all of your portfolios on that report using the report setup screen. Within seconds, IAM will produce a report showing your combined allocation by asset class (cash, bonds, stocks and other), by stock sector, and by stock size (large, medium or small cap).<br>
+    <br>
+
+    With this information in hand, you can then better decide if you are meeting the objectives you have set forth for your individual portfolios, as well as for aggregate whole.
   </article>
 </div>
 

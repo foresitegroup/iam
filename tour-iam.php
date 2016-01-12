@@ -32,16 +32,19 @@ include "header.php";
 
     <h3>Manage single or multiple portfolios</h3>
 
-    <span class="redtext">1.1</span> Tracking for a Variety of Asset Types<br>
+    <span class="redtext">1.1</span> Multiple Portfolio Management<br>
     <br>
 
-    <span class="redtext">1.2</span> Detailed Transaction Accounting<br>
+    <span class="redtext">1.2</span> Individual or Collective Reporting<br>
     <br>
 
-    <span class="redtext">1.3</span> Download Current Balances &amp; Transactions<br>
+    <span class="redtext">1.3</span> Track Variety of Asset Types<br>
     <br>
 
-    <span class="redtext">1.4</span> Multiple Portfolio Management<br>
+    <span class="redtext">1.4</span> Detailed Transaction Accounting<br>
+    <br>
+
+    <span class="redtext">1.5</span> Download Data From Broker or Manual Entry<br>
     <br>
 
     <hr>
