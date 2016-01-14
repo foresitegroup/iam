@@ -39,6 +39,10 @@ include "header.php";
     <hr>
 
     In the case of option transactions, Investment Account Manager is able to handle opening buys, closing sales, opening sales, closing buys, assigned, exercised and expired. For transactions such as a stock split, stock dividend percentage, spin-off or merger, these transactions can be entered on a global basis, making the process of posting to multiple portfolios owning the same asset easy and accurate. Great functionality for multiple portfolio management!
+
+    <hr>
+
+    <img src="images/tour-iam-1-4b.jpg" alt="">
   </article>
 </div>
 

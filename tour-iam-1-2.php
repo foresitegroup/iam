@@ -39,7 +39,7 @@ include "header.php";
 
     <hr>
 
-    <!-- <img src="images/tour-iam-1-2.jpg" alt=""> -->IMAGE GOES HERE
+    <img src="images/tour-iam-1-2.jpg" alt="">
 
     <hr>
 
