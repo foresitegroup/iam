@@ -18,7 +18,7 @@ include "header.php";
     <a href="tour-iam-6-2.php" class="tour-section-link">6.2</a>
     <hr class="tour-section-link-hr">
     <a href="tour-iam-6-3.php" class="tour-section-link current">6.3</a>
-    <a href="tour-iam-6-4.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
+    <a href="tour-iam-7-1.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
     <span class="redtext">6.3</span> IMPORT DATA
   </article>
@@ -26,11 +26,12 @@ include "header.php";
 
 <div class="gray bt bb tour-content">
   <article>
-    Investment Account Manager provides several pop-up menus that enable investors to easily interact with other software tools.  Users have easy access with leading stock selection guide software applications, the BetterInvesting&trade; Mutual Fund Report, and the many tools provided by Yahoo!&reg; Finance.
+    Investment Account Manager allows several ways to interact and import data from other programs including Quicken and CapTools. Users can also download from financial institutions and import CSV files. Yahoo, Google and QuoteMedia provide additional tools and sources for information.
 
     <hr>
 
-    <img src="images/tour-iam-6-2.jpg" alt="">
+    <img src="images/tour-iam-6-3.jpg" alt=""><br>
+    <img src="images/tour-iam-6-3b.jpg" alt="">
 
     <hr>
 

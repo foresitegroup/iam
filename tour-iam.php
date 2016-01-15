@@ -95,7 +95,7 @@ include "header.php";
 
     <h3>Create Detailed Reports Summarizing Investment Holdings</h3>
 
-    <span class="redtext">4.1</span> Batch Reporting<br>
+    <span class="redtext">4.1</span> Many Informative Reports<br>
     <br>
 
     <span class="redtext">4.2</span> Report Options<br>

@@ -28,7 +28,7 @@ include "header.php";
 
 <div class="gray bt bb tour-content">
   <article>
-    The Asset Library Tab organizes all the securities currently included in Investment Account Manager's asset library.
+    The Asset Library maintains a database of all the securities held within the various portfolios being managed. It serves as a library of information which is shared globally within IAM. It contains the general information for securities - name, security type, market prices, fundamentals and more. By utilizing this central database approach, Investment Account Manager saves time and improves accuracy.
 
     <hr>
 

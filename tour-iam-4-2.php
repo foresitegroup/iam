@@ -28,7 +28,7 @@ include "header.php";
 
 <div class="gray bt bb tour-content">
   <article>
-    As part of creating a report, Investment Account Manager allows users to customize the reporting information for a variety of report options. These reporting options are listed on the report setup screen.
+    As part of creating a report, Investment Account Manager allows users to customize the report, including the ability to combine portfolios on reports. The report setup screen helps users focus the report on specific preferences.
 
     <hr>
 

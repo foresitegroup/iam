@@ -1,6 +1,6 @@
 
 <?php
-$PageTitle = "Batch Reporting";
+$PageTitle = "Many Informative Reports";
 include "header.php";
 ?>
 
@@ -22,7 +22,7 @@ include "header.php";
     <a href="tour-iam-4-4.php" class="tour-section-link">4.4</a>
     <a href="tour-iam-4-2.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
-    <span class="redtext">4.1</span> BATCH REPORTING
+    <span class="redtext">4.1</span> MANY INFORMATIVE REPORTS
   </article>
 </div>
 

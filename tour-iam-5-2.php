@@ -28,7 +28,7 @@ include "header.php";
 
 <div class="gray bt bb tour-content">
   <article>
-    The Asset Library Tab organizes all the securities currently included in Investment Account Manager's asset library.
+    Individual securities can be quickly and thoroughly reviewed in the Current Asset Library.
 
     <hr>
 

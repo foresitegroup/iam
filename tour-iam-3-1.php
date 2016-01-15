@@ -30,7 +30,7 @@ include "header.php";
 
 <div class="gray bt bb tour-content">
   <article>
-    Beginning in 2011, investors will bear the responsibility to accurately report accurate cost basis data when reporting sales to the IRS, not the financial institution. Additionally, the risk of significant penalties for reporting errors will fall on consumers as part of the new legislation. Since 1985, our customers have enjoyed the benefits of accurate cost basis reporting.
+    Since 2011, investors bear the responsibility to accurately report accurate cost basis data when reporting sales to the IRS, not the financial institution. Additionally, the risk of significant penalties for reporting errors will fall on consumers as part of the new legislation. Since 1985, our customers have enjoyed the benefits of accurate cost basis reporting. Additionally, knowing the lot-by-lot costs of your investments allows you to make smarter investment decisions.
 
     <hr>
 
