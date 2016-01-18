@@ -54,3 +54,6 @@ forum/*
 !forum/Themes/
 forum/Themes/*
 !forum/Themes/IAM-Redsy
+products/wp-content/themes/iam/.DS_Store
+
+products/wp-content/themes/iam/woocommerce/.DS_Store

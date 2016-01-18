@@ -105,6 +105,9 @@ TEXTAREA {
 }
 
 SELECT {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;*/
   width: 100%;
 }
 
@@ -1650,6 +1653,21 @@ UL.payment_methods {
   margin: 0 0 4em;
   padding: 0;
   list-style-type: none;
+}
+
+#paypal_pro-cc-form {
+  border: 0;
+  padding: 0 0 1.5em 0;
+}
+
+#paypal_pro-cc-form .form-row-first {
+  float: left;
+  width: 48%;
+}
+
+#paypal_pro-cc-form .form-row-last {
+  float: right;
+  width: 48%;
 }
 
 DIV.payment_box {
