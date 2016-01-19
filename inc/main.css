@@ -1649,6 +1649,21 @@ A.checkout-button {
   margin-bottom: 2em;
 }
 
+.woocommerce-error {
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+  background: #ED243B;
+  color: yellow;
+  font-weight: bold;
+  border: 2px dotted yellow;
+}
+
+.woocommerce-credit-cards {
+  float: right;
+}
+
 UL.payment_methods {
   margin: 0 0 4em;
   padding: 0;
@@ -2899,6 +2914,10 @@ ARTICLE.testihead {
   TD.product-total {
     font-size: 75%;
     line-height: 1.3em;
+  }
+
+  .woocommerce-credit-cards {
+    float: none;
   }
 
   #main .navigation .nav-links .prev.page-numbers,

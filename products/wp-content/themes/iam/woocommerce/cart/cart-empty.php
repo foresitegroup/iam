@@ -7,7 +7,7 @@
  * @version 2.0.0
  */
 
-header('Location: '. wc_get_page_permalink( 'shop' ));
+//header('Location: '. wc_get_page_permalink( 'shop' ));
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

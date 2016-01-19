@@ -57,3 +57,9 @@ forum/Themes/*
 products/wp-content/themes/iam/.DS_Store
 
 products/wp-content/themes/iam/woocommerce/.DS_Store
+
+products/wp-content/themes/iam/woocommerce/checkout/.DS_Store
+
+products/wp-content/themes/iam/woocommerce/emails/.DS_Store
+
+products/wp-content/themes/iam/woocommerce/order/.DS_Store
