@@ -75,20 +75,18 @@ function iam_uid_process() {
     wc_add_notice( __( 'Please enter a User ID Number.' ), 'error' );
 }
 
-
 /* Save User ID to order */
-add_action( 'woocommerce_checkout_update_order_meta', 'iam_uid_update_order_meta' );
-function iam_uid_update_order_meta( $order_id ) {
-  if ( ! empty( $_POST['iamuid'] ) ) {
-    update_post_meta( $order_id, 'IAM User ID', sanitize_text_field( $_POST['iamuid'] ) );
-  }
-}
-
+// add_action( 'woocommerce_checkout_update_order_meta', 'iam_uid_update_order_meta' );
+// function iam_uid_update_order_meta( $order_id ) {
+//   if ( ! empty( $_POST['iamuid'] ) ) {
+//     add_post_meta( $order_id, 'IAM_User_ID', sanitize_text_field( $_POST['iamuid'] ) );
+//   }
+// }
 
 /* Display User ID on admin order page */
 add_action( 'woocommerce_admin_order_data_after_billing_address', 'iam_uid_display_admin_order_meta', 10, 1 );
 function iam_uid_display_admin_order_meta($order){
-  echo '<p><strong>'.__('IAM User ID').':</strong> ' . get_post_meta( $order->id, 'IAM User ID', true ) . '</p>';
+  echo '<p><strong>'.__('IAM User ID').':</strong> ' . get_post_meta( $order->id, 'IAM_User_ID', true ) . '</p>';
 }
 
 
@@ -96,4 +94,88 @@ function my_thumbnail_size() {
   set_post_thumbnail_size();
 }
 add_action('after_setup_theme', 'my_thumbnail_size', 11);
+
+
+/* Save User ID to order */
+/* and copy order data to registration table */
+function add_neworders ($order_id) {
+  global $woocommerce;
+  $order = new WC_Order( $order_id );
+  
+  // Get the product ID
+  $items = $order->get_items();
+  $array_pid = array();
+  foreach ( $items as $item ) {
+    $array_pid[] = $item['product_id'];
+  }
+
+  $qmcode = "";
+  $renewal_code = "";
+
+  // Add the User ID to WooCommerce table
+  if ( ! empty( $_POST['iamuid'] ) ) {
+    $iamuid = preg_replace('/[^0-9]/', '', sanitize_text_field( $_POST['iamuid'] ));
+    add_post_meta( $order_id, 'IAM_User_ID', $iamuid );
+
+    // Get the QM code
+    if (($iamuid != "") && ($iamuid[0] == "1") && (strlen($iamuid) == "10")) {
+      require_once( trailingslashit( get_stylesheet_directory() ) . 'woocommerce/activation-code-sub.php' );
+      $ActCodeArray = GetActCodes($iamuid);
+
+      // QM code
+      if (in_array(10, $array_pid)) $qmcode = $ActCodeArray[1];
+      if (in_array(16, $array_pid)) $qmcode = $ActCodeArray[3];
+      
+      // Renewal code
+      if (in_array(14, $array_pid) || in_array(16, $array_pid)) $renewal_code = $ActCodeArray[2];
+    }
+  }
+  
+  // Set the renewal date if it exists
+  $support_renewal_date = (in_array(14, $array_pid) || in_array(16, $array_pid) || in_array(17, $array_pid)) ? $support_renewal_date = strtotime($order->order_date) : "";
+
+  // Get the order date and convert to epoch time
+  $purch_date = strtotime($order->order_date);
+
+  global $wpdb;
+  
+  $TheTable = (in_array(12, $array_pid) || in_array(17, $array_pid)) ? "registration_prot" : "registration";
+  
+  // Is this a new customer or existing?
+  $results = $wpdb->get_results( "SELECT * FROM " . $TheTable . " ORDER BY purch_date DESC", ARRAY_A );
+  foreach($results as $row) {
+    $sn = preg_replace('/[^0-9]/', '', $row['serial_number']);
+    if ($sn == $iamuid) $exists = $row['id'];
+  }
+  
+  if ($exists != "") {
+    // Update the data
+    $wpdb->update($TheTable, array(
+      'support_renewal_date' => $support_renewal_date,
+      'renewal_code' => $renewal_code,
+      'qm_code' => $qmcode
+    ),
+    array( 'id' => $exists )
+    );
+  } else {
+    // Insert the data
+    $wpdb->insert($TheTable, array(
+      'email' => $order->billing_email,
+      'firstname' => $order->billing_first_name,
+      'lastname' => $order->billing_last_name,
+      'company' => $order->billing_company,
+      'address' => $order->billing_address_1,
+      'city' => $order->billing_city,
+      'state' => $order->billing_state,
+      'zip' => $order->billing_postcode,
+      'phone' => $order->billing_phone,
+      'serial_number' => $iamuid,
+      'purch_date' => $purch_date,
+      'support_renewal_date' => $support_renewal_date,
+      'renewal_code' => $renewal_code,
+      'qm_code' => $qmcode
+    ));
+  }
+}
+add_action( 'woocommerce_checkout_order_processed', 'add_neworders' );
 ?>

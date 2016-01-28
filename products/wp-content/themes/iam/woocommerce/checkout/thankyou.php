@@ -39,17 +39,26 @@ if ( $order ) : ?>
     
     <div class="iamuid">
 			<?php
-			$UID = preg_replace('/[^0-9]/', '', get_post_meta( $order->id, 'IAM User ID', true ));
-			if (($UID != "") && ($UID[0] == "1") && (strlen($UID) == "10")) {
+			$items = $order->get_items();
+			$array_pid = array();
+			foreach ( $items as $item ) {
+				$array_pid[] = $item['product_id'];
+			}
+
+			$UID = preg_replace('/[^0-9]/', '', get_post_meta( $order->id, 'IAM_User_ID', true ));
+
+			if (($UID != "") && ($UID[0] == "3") && (strlen($UID) == "10")) {
+				$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "";
+				if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
+
+				// IAM Pro
+				if (in_array(12, $array_pid)) echo "Thank you for ordering Investment Account Manager Professional. You will receive your software activation code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
+				// IAM Pro Renewal
+				if (in_array(17, $array_pid)) echo "Thank you for renewing your Investment Account Manager Professional Support Policy. You will receive your support renewal code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
+			} elseif (($UID != "") && ($UID[0] == "1") && (strlen($UID) == "10")) {
 				require_once( trailingslashit( get_stylesheet_directory() ) . 'woocommerce/activation-code-sub.php' );
 			  $ActCodeArray = GetActCodes($UID);
 
-			  $items = $order->get_items();
-				$array_pid = array();
-				foreach ( $items as $item ) {
-					$array_pid[] = $item['product_id'];
-				}
-		    
 		    // IAM
 		    if (in_array(8, $array_pid)) echo "Thank you for ordering Investment Account Manager. In the opening form after starting IAM, click on the \"software activation key\" button, and then enter this code:<br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br>";
 		    // IAM with QuoteMedia

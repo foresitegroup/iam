@@ -1,0 +1,111 @@
+/*
+#959595 - gray
+#252525 - dark gray
+#1B1B1B - darkest gray
+#ED243B - red
+#78131F - dark red
+#2F82BF - light blue
+#2E65B0 - blue
+#255595 - dark blue
+#132B4A - darker blue
+*/
+
+INPUT[type="submit"] {
+  padding: 0.6em 1.5em;
+}
+
+#startdate, #enddate {
+  width: 8%;
+}
+
+TD {
+  padding: 0.5em 0;
+}
+
+.fa-trash,
+A:link .fa-trash,
+A:visited .fa-trash {
+  color: #252525;
+  margin-right: 0.5em;
+}
+
+.fa-pencil,
+A:link .fa-pencil,
+A:visited .fa-pencil {
+  color: #F1D06B;
+  margin-right: 0.5em;
+}
+
+.sort,
+.sort A:link, .sort A:visited {
+  color: #ED243B;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+A:hover .fa-trash, A:active .fa-trash,
+A:hover .fa-pencil, A:active .fa-pencil,
+.sort A:hover, .sort A:active {
+  color: #959595;
+  text-decoration: none;
+}
+
+.sort INPUT[type="submit"] {
+  padding: 0.5em;
+}
+
+.sort TD {
+  padding: 0;
+}
+
+TR:nth-child(even) {
+  background-color: #EEEEEE;
+}
+
+#reg-table {
+  font-size: 75%;
+}
+
+#reg-table .sort {
+  padding-right: 1%;
+}
+
+#reg-table .fa {
+  font-size: 140%;
+  margin-top: 0.3em;
+}
+
+#reg-table .sort .fa {
+  font-size: inherit;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Small tablet */
+  #startdate, #enddate {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Small tablet */
+  #startdate, #enddate {
+    width: 11%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Small tablet */
+  #startdate, #enddate {
+    width: 14%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Phone */
+  #startdate, #enddate {
+    width: 22%;
+  }
+}

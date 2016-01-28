@@ -42,10 +42,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</tr>
 			<?php endif; ?>
 
-			<?php if ( get_post_meta( $order->id, 'IAM User ID', true ) != "" ) : ?>
+			<?php if ( get_post_meta( $order->id, 'IAM_User_ID', true ) != "" ) : ?>
 				<tr>
 					<th>IAM USER ID: </th>
-					<td><?php echo get_post_meta( $order->id, 'IAM User ID', true ); ?></td>
+					<td><?php echo get_post_meta( $order->id, 'IAM_User_ID', true ); ?></td>
 				</tr>
 			<?php endif; ?>
 

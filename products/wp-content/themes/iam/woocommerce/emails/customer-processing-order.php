@@ -27,21 +27,30 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p>
   <?php
   // _e( "Your order has been received and is now being processed. Your order details are shown below for your reference:", 'woocommerce' );
-  $UID = preg_replace('/[^0-9]/', '', get_post_meta( $order->id, 'IAM User ID', true ));
-  if (($UID != "") && ($UID[0] == "1") && (strlen($UID) == "10")) {
+  $items = $order->get_items();
+  $array_pid = array();
+  foreach ( $items as $item ) {
+    $array_pid[] = $item['product_id'];
+  }
+
+  $UID = preg_replace('/[^0-9]/', '', get_post_meta( $order->id, 'IAM_User_ID', true ));
+
+  if (($UID != "") && ($UID[0] == "3") && (strlen($UID) == "10")) {
+    $TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "";
+    if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
+    
+    // IAM Pro
+    if (in_array(12, $array_pid)) echo "Thank you for ordering Investment Account Manager Professional. You will receive your software activation code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
+    // IAM Pro Renewal
+    if (in_array(17, $array_pid)) echo "Thank you for renewing your Investment Account Manager Professional Support Policy. You will receive your support renewal code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
+  } elseif (($UID != "") && ($UID[0] == "1") && (strlen($UID) == "10")) {
     require_once( trailingslashit( get_stylesheet_directory() ) . 'woocommerce/activation-code-sub.php' );
     $ActCodeArray = GetActCodes($UID);
 
-    $items = $order->get_items();
-    $array_pid = array();
-    foreach ( $items as $item ) {
-      $array_pid[] = $item['product_id'];
-    }
-    
     // IAM
-    if (in_array(8, $array_pid)) echo "Thank you for ordering Investment Account Manager.<br><br>In the opening form after starting IAM, click on the 'software activation key' button, and then enter this code:<br><br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br><br>Please be sure to register your copy of IAM using this link:<br><a href=\"http://www.investmentaccountmanager.com/registration.php\">http://www.investmentaccountmanager.com/registration.php</a><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
+    if (in_array(8, $array_pid)) echo "Thank you for ordering Investment Account Manager.<br><br>In the opening form after starting IAM, click on the 'software activation key' button, and then enter this code:<br><br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br><br><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
     // IAM with QuoteMedia
-    if (in_array(10, $array_pid)) echo "Thank you for ordering Investment Account Manager.<br><br>In the opening form after starting IAM, click on the 'software activation key' button, and then enter these codes:<br><br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br><br>QuoteMedia Code: <strong>" . $ActCodeArray[1] . "</strong><br><br>Please be sure to register your copy of IAM using this link:<br><a href=\"http://www.investmentaccountmanager.com/registration.php\">http://www.investmentaccountmanager.com/registration.php</a><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
+    if (in_array(10, $array_pid)) echo "Thank you for ordering Investment Account Manager.<br><br>In the opening form after starting IAM, click on the 'software activation key' button, and then enter these codes:<br><br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br><br>QuoteMedia Code: <strong>" . $ActCodeArray[1] . "</strong><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
     // Support Renewal
     if (in_array(14, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy.<br><br>After starting IAM, please select the Help Menu | Product Support and enter the following renewal code:<br><br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
     // Support Renewal with QuoteMedia
@@ -101,8 +110,8 @@ do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, 
  */
 do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
 
-if ( get_post_meta( $order->id, 'IAM User ID', true ) != "" ) : ?>
-<strong>IAM USER ID:</strong> <?php echo get_post_meta( $order->id, 'IAM User ID', true ); ?>
+if ( get_post_meta( $order->id, 'IAM_User_ID', true ) != "" ) : ?>
+<strong>IAM USER ID:</strong> <?php echo get_post_meta( $order->id, 'IAM_User_ID', true ); ?>
 <?php endif;
 
 /**

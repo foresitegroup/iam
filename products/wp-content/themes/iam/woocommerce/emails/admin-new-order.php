@@ -77,8 +77,8 @@
   */
  do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
 
-if ( get_post_meta( $order->id, 'IAM User ID', true ) != "" ) : ?>
-<strong>IAM USER ID:</strong> <?php echo get_post_meta( $order->id, 'IAM User ID', true ); ?>
+if ( get_post_meta( $order->id, 'IAM_User_ID', true ) != "" ) : ?>
+<strong>IAM USER ID:</strong> <?php echo get_post_meta( $order->id, 'IAM_User_ID', true ); ?>
 <?php endif;
 
  /**
