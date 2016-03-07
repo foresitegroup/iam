@@ -74,6 +74,17 @@ H4 {
   color: #484848;
 }
 
+H5 {
+  font-size: 164.28%;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0 0 0.6em;
+}
+
+SUP {
+  font-size: 50%;
+}
+
 LABEL {
   display: none;
 }
@@ -491,6 +502,11 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
   color: #696969;
 }
 
+.purple {
+  background: #46166C;
+  color: #FFFFFF;
+}
+
 .red {
   background: #ED243B;
   color: #FFFFFF;
@@ -512,12 +528,25 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
 .gray ARTICLE,
 .darkgray ARTICLE,
 .darkestgray ARTICLE,
+.purple ARTICLE,
 .red ARTICLE,
 .blue ARTICLE,
 .lightblue ARTICLE {
   margin-bottom: 0;
   padding: 0.3em 0;
   text-align: center;
+}
+
+.purple ARTICLE {
+  font-weight: 600;
+  font-size: 220%;
+  line-height: 1.2em;
+  padding: 1.5em 0;
+}
+
+.purple ARTICLE SUP {
+  font-size: 50%;
+  font-weight: 300;
 }
 
 .gray H1,
@@ -2178,6 +2207,26 @@ ARTICLE.testihead {
 .learn .redbutton {
   padding: 1em 2em !important;
   font-size: 100% !important;
+}
+
+.scottrade-left {
+  font-size: 118.75%;
+  line-height: 1.6em;
+}
+
+.scottrade-left LI {
+  line-height: 1.4em;
+  margin-bottom: 0.8em;
+}
+
+.scottrade-right {
+  font-size: 87.5%;
+  line-height: 1.7em;
+}
+
+.scottrade-right IMG {
+  max-width: 100%;
+  height: auto;
 }
 
 
