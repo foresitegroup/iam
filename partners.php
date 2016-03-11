@@ -14,7 +14,7 @@ include "header.php";
   <h3>QuoteMedia&trade;</h3>
   <br>
 
-  Frontrunner in the Financial Market Data Industry. <strong>QuoteMedia's</strong> diversity of technical expertise, its agile responsiveness to custom corporate requirements, and its proven commitment to superior delivery technologies have established This company as a frontrunner in the financial market data industry. Subscribers to the QuoteMedia data feed for Investment Account Manager can globally update all stocks, funds and ETF's in the IAM asset library. This function is particularly helpful at month end, so that with just a few simple clicks, your investments reflect updated fundamental and descriptive data. <a href="quotemedia.php">Click Here</a> for information on using QuoteMedia Data Subscription with Investment Account Manager.<br>
+  Frontrunner in the Financial Market Data Industry. <strong>QuoteMedia's</strong> diversity of technical expertise, its agile responsiveness to custom corporate requirements, and its proven commitment to superior delivery technologies have established This company as a frontrunner in the financial market data industry. Subscribers to the QuoteMedia data feed for Investment Account Manager can globally update all stocks, funds and ETF's in the IAM asset library. This function is particularly helpful at month end, so that with just a few simple clicks, your investments reflect updated fundamental and descriptive data. <a href="quotemedia.php">Information on using QuoteMedia Data Subscription with Investment Account Manager can be found here.</a><br>
   <br>
 
   <a href="http://www.quotemedia.com"><img src="images/partners-quotemedia.png" alt="QuoteMedia"></a><br>
@@ -57,6 +57,19 @@ include "header.php";
   <br>
 
   <a href="http://www.manifestinvesting.com"><img src="images/partners-manifest.png" alt="Manifest Investing"></a><br>
+  <br>
+
+  <hr>
+
+  <br>
+
+  <h3>Scottrade Advisor Services</h3>
+  <br>
+
+  Personalized service and powerful technology are hallmarks of <strong>Scottrade<sup>&reg;</sup> Advisor Services</strong>, a division of Scottrade, Inc., providing comprehensive custodial services for Registered Investment Advisors. A fresh new custodial platform and advanced account management tools help create a productive environment for your business with a minimum of administrative headaches, while dedicated relationship teams provide the one-on-one support you need and deserve. <a href="scottrade.php">Information on using Scottrade with Investment Account Manager Pro can be found here.</a><br>
+  <br>
+
+  <a href="http://advisor.scottrade.com"><img src="images/partners-scottrade.png" alt="Scottrade"></a><br>
   <br>
 </article>
 
