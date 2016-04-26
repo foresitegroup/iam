@@ -30,6 +30,10 @@ HR {
   height: 1pt; /* whatever the total width of the border-top and border-bottom equal */
 }
 
+HR.full {
+  border-top-color: #959595;
+}
+
 A:link, A:visited {
   color: #ED243B;
   text-decoration: underline;
@@ -628,6 +632,10 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
 
 .whitetext A:hover, .whitetext A:active {
   color: #959595;
+}
+
+.centered {
+  text-align: center;
 }
 
 ARTICLE, .mb {
@@ -2228,6 +2236,84 @@ ARTICLE.testihead {
   max-width: 100%;
   height: auto;
 }
+
+.getting-started > LI {
+  padding-bottom: 1.3em;
+}
+
+.getting-started > LI > UL {
+  padding-left: 0.4em;
+  margin-top: 0.5em;
+}
+
+.getting-started > LI > UL > LI { 
+  list-style-type: none;
+}
+
+.getting-started > LI > UL > LI:before {
+  content: "\26AC";
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -1em;
+  top: -0.1em;
+  color: red;
+}
+
+.getting-started > LI UL LI {
+  padding-bottom: 0.5em;
+}
+
+.getting-started > LI UL LI UL {
+  margin-top: 0.5em;
+  list-style-type: disc;
+}
+
+.getting-started > LI UL LI UL LI UL,
+.getting-started > LI UL LI UL LI OL {
+  margin-top: 0.5em;
+}
+
+.getting-started > LI UL LI UL LI > UL {
+  padding-left: 0.4em;
+}
+
+.getting-started > LI UL LI UL LI > UL LI { 
+  list-style-type: none;
+}
+
+.getting-started > LI UL LI UL LI > UL LI:before {
+  content: "-";
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -1em;
+  top: -0.1em;
+}
+
+.getting-started > LI UL LI UL LI OL > LI {
+  font-weight: bold;
+}
+
+.getting-started > LI UL LI UL LI OL > LI SPAN {
+  font-weight: normal;
+}
+
+.long-string {
+  /* Careful, this breaks the word wherever it is without a hyphen */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  /* Adds a hyphen where the word breaks */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+
 
 
 @media only screen and (max-width: 800px) {
