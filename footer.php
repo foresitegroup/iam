@@ -45,13 +45,8 @@
             <form>
               <div>
                 <label for="emailaddress">Email Address</label>
-                <input type="text" name="<?php echo md5("emailaddress" . $ip . $salt . $timestamp); ?>" id="emailaddress" placeholder="EMAIL ADDRESS"><br>
+                <input type="text" name="email" id="emailaddress" placeholder="EMAIL ADDRESS"><br>
                 <br>
-
-                <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
-
-                <input type="hidden" name="ip" value="<?php echo $ip; ?>">
-                <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
                 <input type="submit" name="submit" value="SUBMIT">
               </div>

@@ -1,5 +1,7 @@
 <?php
 $PageTitle = "Awards and Reviews";
+$Description = "Investment Account Manager prides itself on having the best product the industry has to offer. Let our customers and awards tell you why.";
+$Keywords = "";
 include "header.php";
 ?>
 

@@ -1,5 +1,7 @@
 <?php
 $PageTitle = "Free Trial";
+$Description = "Start your Investment Account Manager Free Trial today!";
+$Keywords = "aaii.com, portfolio record keeper, investment record keeping, portfolio tracker, investment account manager, Portfolio Management Software, quant IX, quantix, investment software, investing spreadsheet, personal finance software, financial tools, retirement, financial planning, Cost basis, Cost basis record keeping, Cost basis accounting, Cost basis rules, capital gains transactions, capital gains accounting, personal stock, Import Personal Stock Monitor QIF, record keeping, professional record keeping, retirement planning, free trial, free trial download, portfolio management free trial, investment account manager free trial, unified account management";
 include "header.php";
 ?>
 

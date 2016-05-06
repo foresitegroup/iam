@@ -1,6 +1,8 @@
 
 <?php
 $PageTitle = "Unified Account Management";
+$Description = "Investment Account Manager gives you the comfort of securing your financial future. Let us show you why IAM is right for you.";
+$Keywords = "portfolio record keeper, investment record keeping, portfolio tracker, investment account manager, Portfolio Management Software, quant IX, quantix, investment software, investing spreadsheet, personal finance software, financial tools, retirement, financial planning, Cost basis, Cost basis record keeping, Cost basis accounting, Cost basis rules, capital gains transactions, capital gains accounting, personal stock, Import Personal Stock Monitor QIF, record keeping, professional record keeping, retirement planning, financial peace of mind, award winning software, unified account management";
 include "header.php";
 ?>
 

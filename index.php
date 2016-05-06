@@ -1,5 +1,7 @@
 <?php
 $PageTitle = "";
+$Description = "Welcome to Investment Account Manager. Since 1985, Investment Account Manager offers the tools you need to provide centralized portfolio management for stocks, bonds, mutual funds, exchange traded funds, options, cash and more. Start a free trial today!";
+$Keywords = "aaii.com, portfolio record keeper, investment record keeping, portfolio tracker, investment account manager, Portfolio Management Software, quant IX, quantix, quant 9, stock manager, microsoft money import, Quicken import, captools import, investment software, investing spreadsheet, personal finance software, financial tools, retirement, financial planning, Cost basis, Cost basis record keeping, Cost basis accounting, Cost basis rules, capital gains transactions, capital gains accounting, personal stock, Import Personal Stock Monitor QIF, record keeping, professional record keeping, retirement planning, unified account management";
 include "header.php";
 ?>
 

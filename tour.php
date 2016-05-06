@@ -1,6 +1,8 @@
 
 <?php
 $PageTitle = "Tour IAM";
+$Description = "Take the comprehensive tour of Investment Account Manager or begin a free trial and see what IAM has to offer.";
+$Keywords = "portfolio record keeper, investment record keeping, portfolio tracker, investment account manager, Portfolio Management Software, quant IX, quantix, investment software, investing spreadsheet, personal finance software, financial tools, retirement, financial planning, Cost basis, Cost basis record keeping, Cost basis accounting, Cost basis rules, capital gains transactions, capital gains accounting, personal stock, Import Personal Stock Monitor QIF, record keeping, professional record keeping, retirement planning, financial peace of mind, award winning software, unified account management, tour investment account manager, take a tour";
 include "header.php";
 ?>
 

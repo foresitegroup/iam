@@ -1,6 +1,8 @@
 
 <?php
 $PageTitle = "IAM Features";
+$Description = "Investment Account Manager provides extensive investment tracking and portfolio management tools. You'll discover many comprehensive features that save time, help you to avoid mistakes, while leading to better portfolio management decisions.";
+$Keywords = "Investment Account Manager features, Centralized Secure Portfolio Management, Comprehensive Transaction Accounting, Detailed and Informative and Customizable Reporting, Accurate Tax, Tracking Tools with Security Lot Assignment, Portfolio Allocation and Rebalancing Analysis, Portfolio Performance with Benchmark Comparisons, Fundamental Ratio Analysis, Multiple Portfolio Management and Reporting, Portfolio Combination & Duplication, Portfolio Setup Wizard, Financial Institution Downloads, Security Cross-Referencing, Automatic Security Price Updating, Mutual Fund Composition Analysis, Batch Processing of Reports, Price Alerts to Monitor your Securities, Create Historical Pricing Databases, Import from AAII Stock Investor Pro, Import from Quicken and Captools, Import from Microsoft Excel";
 include "header.php";
 ?>
 

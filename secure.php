@@ -1,6 +1,8 @@
 
 <?php
 $PageTitle = "Secure Software";
+$Description = "To help you keep your information safe and secure, we want to outline a few options you have to make sure your files and information are safely backed up.";
+$Keywords = "investment record keeping, portfolio tracker, investment account manager, Portfolio Management Software, quant IX, quantix, quant 9, stock manager, microsoft money import, Quicken import, captools import, investment software, investing spreadsheet, personal finance software, financial tools, retirement, financial planning, Cost basis, Cost basis record keeping, Cost basis accounting, Cost basis rules, capital gains transactions, capital gains accounting, personal stock, Import Personal Stock Monitor QIF, record keeping, professional record keeping, retirement planning, unified account management, securing your information, google drive, backing up information, how to back up investment account manager information";
 include "header.php";
 ?>
 
