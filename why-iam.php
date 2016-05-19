@@ -30,7 +30,7 @@ include "header.php";
     <br>
     <i class="fa fa-check"></i> Variety of Investment Capabilities<br>
     <br>
-    <i class="fa fa-check"></i> 24/7 Customer Support<br>
+    <i class="fa fa-check"></i> Award Winning Customer Support<br>
     <br>
     <i class="fa fa-check"></i> Safe, Centralized &amp; Secure
   </div>
@@ -45,7 +45,7 @@ include "header.php";
     <div class="testimonials" data-cycle-slides="> div" data-cycle-timeout="8000">
       <div>
         <div>
-          "This is the best portfolio management program I have used it my 30+years of investing. I would recommend IAM to anyone with a portfolio of any size."
+          "This is the best portfolio management program I have used it my 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."
         </div>
       </div>
       <div>
