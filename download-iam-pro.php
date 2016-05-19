@@ -29,6 +29,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <br>
 
   <?php
+  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number; 
+
   if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     if (
           $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
@@ -42,7 +44,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       $result = $mysqli->query("SELECT * FROM downloads_pro WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
 
       if (mysqli_num_rows($result) == 0) {
-        $mysqli->query("INSERT INTO downloads_pro (firstname,lastname,email,uptodate,feedback,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST['uptodate'] . "','" . $_POST['feedback'] . "','$now')");
+        $mysqli->query("INSERT INTO downloads_pro (firstname,lastname,email,uptodate,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST['uptodate'] . "','$now')");
+
+        $mysqli->query("UPDATE downloads_count SET number = number+1 WHERE product = 'iam_pro'");
       }
 
       mysqli_free_result($result);
@@ -57,7 +61,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
         <br>
 
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">3</div>
-        Once the IAM trial download has been completed, select <strong>Run</strong>. The IAM trial version installation will begin. Please follow the steps for installing the IAM trial version. If you have any questions with the installation, please contact our technical support team at 800-247-6354 or send an email to <a href="mailto:techsupport@quantixsoftware.com">techsupport@quantixsoftware.com</a>.<br>
+        Once the IAM trial download has been completed, find the installation file where it was saved and double click it. The IAM trial version installation will begin. Please follow the steps for installing the IAM trial version. If you have any questions with the installation, please contact our technical support team at 800-247-6354 or send an email to <a href="mailto:techsupport@investmentaccountmanager.com">techsupport@investmentaccountmanager.com</a>.<br>
         <br>
       </div>
       <?php
@@ -65,6 +69,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
     }
   } else {
+    // echo $downloads;
   ?>
   <script type="text/javascript">
     function checkform (form) {
@@ -101,10 +106,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <br>
 
       <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
-      <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label>
-
-      <!-- <input type="checkbox" name="feedback" id="feedback" value="Send me invitations to provide feedback about IAM software.">
-      <label for="feedback" style="text-align: left;"><span></span>Send me invitations to provide feedback about IAM software.</label> --><br>
+      <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label><br>
       <br>
 
       <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
@@ -120,7 +122,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
     </div>
   </form>
 
-  <a href="mailto:?subject=Investment Account Manager Professional Demo&body=%0AHello, I thought you might find this investment software useful.%0A<?php echo $_SERVER['HTTP_REFERER']; ?>">Refer a Friend</a>
+  <a href="mailto:?subject=Investment Account Manager Professional Demo&body=%0AHello, I thought you might find this investment software useful.%0A<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">Refer a Friend</a>
   <?php } ?>
 </article>
 
