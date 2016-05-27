@@ -30,7 +30,7 @@ include "header.php";
     <br>
     <i class="fa fa-check"></i> Variety of Investment Capabilities<br>
     <br>
-    <i class="fa fa-check"></i> Award Winning Customer Support<br>
+    <i class="fa fa-check"></i> Acclaimed Customer Support<br>
     <br>
     <i class="fa fa-check"></i> Safe, Centralized &amp; Secure
   </div>

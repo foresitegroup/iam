@@ -2313,6 +2313,38 @@ ARTICLE.testihead {
   hyphens: auto;
 }
 
+.howto {
+  text-align: center;
+}
+
+.howto A:link, .howto A:visited {
+  color: #363636;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.howto A:hover, .howto A:active {
+  color: #959595;
+  text-decoration: none;
+}
+
+.spaced LI {
+  padding-bottom: 1.5em;
+}
+
+.spaced LI UL LI {
+  padding: 0.5em 0;
+}
+
+.spaced-top LI {
+  padding-bottom: 2em;
+}
+
+.spaced-top LI UL LI {
+  padding: 0;
+}
+
 
 
 

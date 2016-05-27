@@ -15,7 +15,7 @@
     <a href="<?php echo $TopDir; ?>learn.php">LEARN</a>
     <ul>
       <li><a href="<?php echo $TopDir; ?>getting-started.php">Getting Started</a></li>
-      <!-- <li><a href="<?php //echo $TopDir; ?>#">Tutorials</a></li> -->
+      <li><a href="<?php echo $TopDir; ?>how-to.php">How To</a></li>
       <li><a href="<?php echo $TopDir; ?>faq.php">FAQ</a></li>
     </ul>
   </li>

@@ -17,20 +17,20 @@ include "header.php";
 </div>
 
 <article class="learn">
-  <h4>QUICKSTART GUIDE</h4>
-  Use this condensed guide to quickly getting started, while reviewing just a few of Investment Account Manager's general features.<br>
+  <h4>GETTING STARTED</h4>
+  Use this condensed guide to quickly get started, while reviewing just a few of Investment Account Manager's general features.  <br>
   <br>
 
-  <a href="#" class="redbutton">GET STARTED</a><br>
+  <a href="getting-started.php" class="redbutton">GET STARTED</a><br>
   <br>
   <br>
   <br>
 
-  <h4>VIDEO TUTORIALS</h4>
-  We provide you with an indepth series of tutorial videos on topics including: Homepage Overview, Reporting Features, Manually Entering &amp; Downloading Investment Holdings &amp; AAII Stock Investor Pro Integration.<br>
+  <h4>HOW TO</h4>
+  Included are quick explanations of specific features and and functions in IAM for Individual users.<br>
   <br>
 
-  <a href="#" class="redbutton">WATCH HERE</a><br>
+  <a href="how-to.php" class="redbutton">VISIT HOW TO</a><br>
   <br>
   <br>
   <br>
@@ -44,7 +44,7 @@ include "header.php";
 
 <div class="darkgray whitetext footer">
   <article>
-    <h2>NEED HELP? TRY OUR <a href="#">SUPPORT</a> PAGE</h2>
+    <h2>NEED HELP? TRY OUR <a href="support.php">SUPPORT</a> PAGE</h2>
   </article>
 </div>
 
