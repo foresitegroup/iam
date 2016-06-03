@@ -50,7 +50,7 @@ include "header.php";
   <a href="how-to-iam-with-equity-options.php">IAM with Equity Options</a><br>
   <br>
 
-  <a href="how-to-iam3-utilities.php">IAM3 Utilities</a><br>
+  <a href="how-to-iam3-utility-program.php">IAM3 Utility Program</a><br>
   <br>
 
   <a href="how-to-import-your-google-finance-portfolio-into-iam.php">Import your Google Finance Portfolio into IAM</a><br>
@@ -74,10 +74,10 @@ include "header.php";
   <a href="how-to-understanding-investment-account-managers-asset-libraries.php">Understanding Investment Account Manager's Asset Libraries</a><br>
   <br>
 
-  <a href="how-to-uploading-your-portfolio-to-google.php">Uploading Your Portfolio to Google</a><br>
+  <a href="how-to-uploading-your-portfolio-to-google-finance.php">Uploading Your Portfolio to Google Finance</a><br>
   <br>
 
-  <a href="how-to-using-aaii-stock-investor-pro-software-with-investment-account-manager.php">Using AAII Stock Investor Pro Software with Investment Account Manager</a><br>
+  <a href="how-to-uploading-your-portfolio-to-yahoo-finance.php">Uploading Your Portfolio to Yahoo Finance</a><br>
   <br>
 
   <a href="how-to-using-watch-lists.php">Using Watch Lists</a>

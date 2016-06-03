@@ -22,8 +22,8 @@
   <li>
     <a href="<?php echo $TopDir; ?>support.php">SUPPORT</a>
     <ul>
+      <li><a href="<?php echo $TopDir; ?>iam3-individual.php">New Individual IAM</a></li>
       <li><a href="<?php echo $TopDir; ?>online-support.php">Online Support</a></li>
-      <!-- <li><a href="<?php //echo $TopDir; ?>#">Manuals</a></li> -->
       <li><a href="<?php echo $TopDir; ?>forum">Forum</a></li>
       <li><a href="<?php echo $TopDir; ?>products/blog/">Blog</a></li>
     </ul>

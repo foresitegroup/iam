@@ -29,7 +29,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <br>
 
   <?php
-  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number; 
+  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number;
 
   if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     if (
@@ -38,9 +38,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
           $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
           $_POST[md5('confirmemail' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
-      
+
       $now = time();
-      
+
       $result = $mysqli->query("SELECT * FROM downloads_pro WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
 
       if (mysqli_num_rows($result) == 0) {
@@ -57,11 +57,11 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
         <br>
 
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">2</div>
-        When asked to Run or Save the file, choose <strong>Save / Save as</strong>. When prompted where to save the IAM trial download, select a location that will be easy for you to find the file once the download is complete.  Many users simply select their "<strong>Desktop</strong>" for the download location.<br>
+        When asked to Run or Save the file, choose <strong>Save / Save as</strong>. When prompted where to save the Investment Account Manager Professional trial version, select a location that will be easy for you to find the file once the download is complete. Many users simply select either their "<strong>Desktop</strong>" or their "<strong>Downloads</strong>" folder for the download location.<br>
         <br>
 
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">3</div>
-        Once the IAM trial download has been completed, find the installation file where it was saved and double click it. The IAM trial version installation will begin. Please follow the steps for installing the IAM trial version. If you have any questions with the installation, please contact our technical support team at 800-247-6354 or send an email to <a href="mailto:techsupport@investmentaccountmanager.com">techsupport@investmentaccountmanager.com</a>.<br>
+        Once the trial version download has been completed, select "<strong>Run</strong>" when prompted by your browser.  <em>Note:</em> If your browser does not prompt to "<strong>Run</strong>", locate the IAM Pro trial version installation file where it was saved and double click the file name. The trial version installation will begin. Please follow the steps for installing the IAM Professional trial version. If you have any questions with the installation, please contact our technical support team at 800-247-6354 or send an email to <a href="mailto:techsupport@investmentaccountmanager.com">techsupport@investmentaccountmanager.com</a>.<br>
         <br>
       </div>
       <?php

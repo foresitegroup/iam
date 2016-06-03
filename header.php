@@ -7,6 +7,7 @@ if (!isset($Keywords)) $Keywords = "";
 $TheCSS = $_SERVER['DOCUMENT_ROOT'] . "/iam/inc/main.css";
 
 function email($address, $name="") {
+  $email = "";
   for ($i = 0; $i < strlen($address); $i++) { $email .= (rand(0, 1) == 0) ? "&#" . ord(substr($address, $i)) . ";" : substr($address, $i, 1); }
   if ($name == "") $name = $email;
   echo "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;$email\">$name</a>";

@@ -22,16 +22,6 @@ include "header.php";
   <br>
   <br>
 
-  <h4>MANUALS</h4>
-  Our software comes with full operator's manual. These manuals are also available here for easy viewing and downloading.<br>
-  <br>
-
-  <a href="pdf/IAM_Quick_Start_Manual.pdf" class="graybutton" style="margin: 0 1em;">QUICK START</a>
-  <a href="pdf/IAM_User_Guide_Tutorials_and_Reference_Manual.pdf" class="graybutton" style="margin: 0 1em;">IAM MANUAL</a><br>
-  <br>
-  <br>
-  <br>
-
   <h4>FORUM</h4>
   This online community posts and issues solutions to a variety of questions and concerns.<br>This Forum is guided by the IAM and IAM PRO teams.<br>
   <br>

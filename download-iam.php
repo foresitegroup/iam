@@ -30,9 +30,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <hr>
   <br>
   <br>
-  
+
   <?php
-  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number; 
+  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number;
 
   if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     if (
@@ -41,20 +41,20 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
           $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
           $_POST[md5('confirmemail' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
-      
-      if (isset($_POST['uptodate'])) {
-        $now = time();
-        
-        $result = $mysqli->query("SELECT * FROM downloads WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
 
-        if (mysqli_num_rows($result) == 0) {
-          $mysqli->query("INSERT INTO downloads (firstname,lastname,email,uptodate,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST['uptodate'] . "','$now')");
+      $uptodate = (isset($_POST['uptodate'])) ? $_POST['uptodate'] : "";
 
-          $mysqli->query("UPDATE downloads_count SET number = number+1 WHERE product = 'iam'");
-        }
+      $now = time();
 
-        mysqli_free_result($result);
+      $result = $mysqli->query("SELECT * FROM downloads WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
+
+      if (mysqli_num_rows($result) == 0) {
+        $mysqli->query("INSERT INTO downloads (firstname,lastname,email,uptodate,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $uptodate . "','$now')");
+
+        $mysqli->query("UPDATE downloads_count SET number = number+1 WHERE product = 'iam'");
       }
+
+      mysqli_free_result($result);
       ?>
       <div style="text-align: left;">
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">1</div>
@@ -62,11 +62,11 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
         <br>
 
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">2</div>
-        When asked to Run or Save the file, choose <strong>Save / Save as</strong>. When prompted where to save the IAM trial download, select a location that will be easy for you to find the file once the download is complete.  Many users simply select their "<strong>Desktop</strong>" for the download location.<br>
+        When asked to Run or Save the file, choose <strong>Save / Save as</strong>.  When prompted where to save the Investment Account Manager Individual trial version, select a location that will be easy for you to find the file once the download is complete. Many users simply select either their "<strong>Desktop</strong>" or their "<strong>Downloads</strong>" folder for the download location.<br>
         <br>
 
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">3</div>
-        Once the IAM trial download has been completed, find the installation file where it was saved and double click it. The IAM trial version installation will begin. Please follow the steps for installing the IAM trial version. If you have any questions with the installation, please contact our technical support team at 800-247-6354 or send an email to <a href="mailto:techsupport@investmentaccountmanager.com">techsupport@investmentaccountmanager.com</a>.<br>
+        Once the trial version download has been completed, select "<strong>Run</strong>" when prompted by your browser.  <em>Note:</em> If your browser does not prompt to "<strong>Run</strong>", locate the IAM Individual trial version installation file where it was saved and double click the file name. The trial version installation will begin. Please follow the steps for installing the IAM Individual trial version. If you have any questions with the installation, please contact our technical support team at 800-247-6354 or send an email to <a href="mailto:techsupport@investmentaccountmanager.com">techsupport@investmentaccountmanager.com</a>.<br>
         <br>
       </div>
       <?php
@@ -115,7 +115,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       <br>
 
       <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
-        
+
       <input type="hidden" name="ip" value="<?php echo $ip; ?>">
       <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 

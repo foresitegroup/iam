@@ -23,7 +23,7 @@ include "header.php";
   <div class="two-col-left">
     <h1>INDIVIDUAL</h1>
     <hr>
-    If you are managing your own investments or have help from a professional Investment Account Manager is the best AAII (American Association of Individual Investors) rated portfolio software on the market.<br>
+    Designed by professional money managers, and used by investors Worldwide in related forms since 1985, the Investment Account Manager's purpose is to help you better understand and manage your investment portfolios. Whether you're a seasoned investor or a novice, you'll find IAM Individual offers a comprehensive set of features - yet is an easy to learn and use portfolio management software tool.<br>
     <br>
     <a href="tour-iam.php" class="redbutton">START TOUR</a>
   </div>
@@ -31,7 +31,7 @@ include "header.php";
   <div class="two-col-right">
     <h1 class="bluetext">PROFESSIONAL</h1>
     <hr>
-    See why professional money advisors and investors rely on Investment Account Manager PROFESSIONAL and the comprehensive tools available to help them grow their client's portfolios.<br>
+    Investment Account Manager Professional has been developed with a professional audience in mind, including family offices, independent investment advisors, small accounting and law firms, and foundations. Designed by an award winning, experienced team, Investment Account Manager Professional offers a comprehensive asset management solution to better manage client portfolios.<br>
     <br>
     <a href="tour-pro-1-1.php" class="redbutton">START TOUR</a>
   </div>
