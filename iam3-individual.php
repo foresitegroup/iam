@@ -33,7 +33,7 @@ include "header.php";
   </ul>
   <br>
 
-  All users of Investment Account Manager 2 Individual version, with active support policies, qualify for a free upgrade to the new IAM3 Individual version! Simply download the new trial version of Investment Account Manager 3 individual. Once installed, and after exploring IAM3 individual, you can easily convert your existing IAM2 Individual version data.<br>
+  All users of Investment Account Manager 2 Individual version, with active support policies, qualify for a free upgrade to the new IAM3 Individual version! Simply download the new trial version of Investment Account Manager 3 individual. Once installed, and after exploring IAM3 individual, you can easily convert your existing IAM2 Individual version data. <em>Please note: support renewals for IAM2 are no longer available.</em><br>
   <br>
   <br>
 
@@ -42,7 +42,7 @@ include "header.php";
   <br>
 
   <ol>
-    <li><a href="#">Download the new IAMv3 demo.</a><br><br></li>
+    <li><a href="download-iam.php">Download the new IAMv3 demo.</a><br><br></li>
     <li>Once downloaded, install the new IAMv3 demo, using the default locations as provided during the installation process.<br><br></li>
     <li>Once installed, start the IAMv3 demo.<br><br></li>
     <li>
