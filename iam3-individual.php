@@ -33,7 +33,7 @@ include "header.php";
   </ul>
   <br>
 
-  All users of Investment Account Manager 2 Individual version, with active support policies, qualify for a free upgrade to the new IAM3 Individual version! Simply download the new trial version of Investment Account Manager 3 individual. Once installed, and after exploring IAM3 individual, you can easily convert your existing IAM2 Individual version data. <em>Please note: support renewals for IAM2 are no longer available.</em><br>
+  All users of Investment Account Manager 2 Individual version, with active support policies, qualify for a free upgrade to the new IAM3 Individual version! Simply download the new trial version of Investment Account Manager 3 individual. Once installed, and after exploring IAM3 individual, you can easily convert your existing IAM2 Individual version data. <em style="color: #ED243B;">Please note: support renewals for IAM2 are no longer available.</em><br>
   <br>
   <br>
 
@@ -94,7 +94,14 @@ include "header.php";
   </ol>
   <br>
 
-  Thank you for your continued use of Investment Account Manager. We appreciate you as a customer, and are confident you'll find IAM3 Individual version even more helpful in successfully managing your investment portfolio(s).
+  <em style="color: #ED243B;">If your IAM2 support has expired, once you have installed and converted your existing IAM2 data into IAM3, you can order support renewal codes for IAM3 to convert the demo to a full version.</em><br>
+  <br>
+
+  Thank you for your continued use of Investment Account Manager. We appreciate you as a customer, and are confident you'll find IAM3 Individual version even more helpful in successfully managing your investment portfolio(s).<br>
+  <br>
+
+  Matt and Peter Willms<br>
+  QUANT IX SOFTWARE, Inc.
 </article>
 
 <div class="darkgray whitetext footer bt">
