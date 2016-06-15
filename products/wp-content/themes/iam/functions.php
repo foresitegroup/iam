@@ -139,10 +139,11 @@ function add_neworders ($order_id) {
 
   global $wpdb;
   
-  $TheTable = (in_array(12, $array_pid) || in_array(17, $array_pid)) ? "registration_prot" : "registration";
+  $TheTable = (in_array(12, $array_pid) || in_array(17, $array_pid)) ? "registration_pro" : "registration";
   
   // Is this a new customer or existing?
   $results = $wpdb->get_results( "SELECT * FROM " . $TheTable . " ORDER BY purch_date DESC", ARRAY_A );
+  $exists = "";
   foreach($results as $row) {
     $sn = preg_replace('/[^0-9]/', '', $row['serial_number']);
     if ($sn == $iamuid) $exists = $row['id'];
