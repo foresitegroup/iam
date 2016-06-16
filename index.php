@@ -211,9 +211,9 @@ include "header.php";
         <br>
         <a href="forum">COMMUNITY FORUM</a><br>
         <br>
-        <a href="#">SOFTWARE MANUAL</a><br>
+        <a href="getting-started.php">SOFTWARE MANUAL</a><br>
         <br>
-        <a href="learn.php">HOW-TO'S, TIPS &amp; TUTORIALS</a><br>
+        <a href="how-to.php">HOW-TO'S, TIPS &amp; TUTORIALS</a><br>
         <br>
         <a href="faq.php">FREQUENTLY ASKED QUESTIONS</a>
       </strong>
