@@ -1536,11 +1536,23 @@ UL.products LI .price,
 }
 
 UL.products LI .note {
-  width: 55%;
+  /*width: 55%;*/
   font-size: 81.25%;
   line-height: 1.3em;
   font-style: italic;
   margin-top: 2em;
+}
+
+UL.products LI .note A:link,
+UL.products LI .note A:visited {
+  color: #ED243B;
+  text-decoration: underline;
+}
+
+UL.products LI .note A:hover,
+UL.products LI .note A:active {
+  color: #959595;
+  text-decoration: underline;
 }
 
 .summary .note {
@@ -1551,11 +1563,9 @@ ARTICLE.iam-single-product {
   padding: 2em 0;
 }
 
-.summary H2 {
-  display:none;   
-}
-
-.summary .quantity {
+.summary H2,
+.summary .quantity,
+.summary .stock {
   display: none;
 }
 

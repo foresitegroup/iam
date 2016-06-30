@@ -99,19 +99,19 @@ include "header.php";
 
       <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
       <ul>
-        <li>security name, prior day market price</li>
-        <li>common stock sector and size</li>
-        <li>earnings per share, dividends per share</li>
-        <li>beta, book value per share, cash flow per share</li>
+        <li>Security Name, Prior Day Market Price</li>
+        <li>Common Stock Sector and Size</li>
+        <li>Earnings Per Share, Dividends Per Share</li>
+        <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
       </ul>
       <br>
 
       <strong>Derive Fundamental Ratios Including:</strong>
       <ul>
-        <li>current yield, dividend payout and coverage</li>
-        <li>price / earnings, projected price / earnings, PEG</li>
-        <li>price / cash flow, return on cash flow</li>
-        <li>price / book value, return on equity</li>
+        <li>Current Yield, Dividend Payout and Coverage</li>
+        <li>Price / Earnings, Projected Price / Earnings, PEG</li>
+        <li>Price / Cash Flow, Return on Cash Flow</li>
+        <li>Price / Book Value, Return on Equity</li>
       </ul>
     </div>
   </div>
@@ -158,19 +158,19 @@ include "header.php";
 
       <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
       <ul>
-        <li>security name, prior day market price</li>
-        <li>common stock sector and size</li>
-        <li>earnings per share, dividends per share</li>
-        <li>beta, book value per share, cash flow per share</li>
+        <li>Security Name, Prior Day Market Price</li>
+        <li>Common Stock Sector and Size</li>
+        <li>Earnings Per Share, Dividends Per Share</li>
+        <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
       </ul>
       <br>
 
       <strong>Derive Fundamental Ratios Including:</strong>
       <ul>
-        <li>current yield, dividend payout and coverage</li>
-        <li>price / earnings, projected price / earnings, PEG</li>
-        <li>price / cash flow, return on cash flow</li>
-        <li>price / book value, return on equity</li>
+        <li>Current Yield, Dividend Payout and Coverage</li>
+        <li>Price / Earnings, Projected Price / Earnings, PEG</li>
+        <li>Price / Cash Flow, Return on Cash Flow</li>
+        <li>Price / Book Value, Return on Equity</li>
         <li class="bluetext">Custodial Imports</li>
         <li class="bluetext">Custom Model Portfolio Objectives and Allocations</li>
         <li class="bluetext">Target Allocations on Individual Asset Level within Portfolio Models</li>

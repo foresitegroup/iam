@@ -9,7 +9,7 @@ include "header.php";
   <article class="vert-center">
     SINCE 1985
     <div style="font-size: 34%; font-weight: normal; line-height: 1.4em;">
-      With rave reviews from professionals &amp; multiple awards, <span class="redtext">Investment Account Manager</span> has been satisfying the needs of individual investors since 1985. Our customers choose IAM because of it's reliable investment management capabilities, giving your the ability to secure your financial future.
+      With rave reviews from professionals &amp; multiple awards, <span class="redtext">Investment Account Manager</span> has been satisfying the needs of individual investors since 1985. Our customers choose IAM because of it's reliable investment management capabilities, giving you the ability to secure your financial future.
     </div>
   </article>
 </div>

@@ -1,12 +1,12 @@
 
 <?php
-$PageTitle = "Transferring files from IAM2 to new IAM3";
+$PageTitle = "Converting files from IAM2 to new IAM3";
 include "header.php";
 ?>
 
 <div class="red mb">
   <article>
-    <h1>TRANSFERRING FILES FROM IAM2 TO NEW IAM3</h1>
+    <h1>CONVERTING FILES FROM IAM2 TO NEW IAM3</h1>
   </article>
 </div>
 
@@ -16,7 +16,7 @@ include "header.php";
   <br>
 
   <ul>
-    <li>Click on this link to download the new IAMv3 demo.<br><br></li>
+    <li><a href="download-iam.php">Download the new IAMv3 demo.</a><br><br></li>
     <li>Once downloaded, install the new IAMv3 demo, using the default locations as provided during the installation process.<br><br></li>
     <li>Once installed, start the IAMv3 demo.<br><br></li>
     <li>

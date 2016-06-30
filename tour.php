@@ -23,7 +23,7 @@ include "header.php";
   <div class="two-col-left">
     <h1>INDIVIDUAL</h1>
     <hr>
-    Designed by professional money managers, and used by investors Worldwide in related forms since 1985, the Investment Account Manager's purpose is to help you better understand and manage your investment portfolios. Whether you're a seasoned investor or a novice, you'll find IAM Individual offers a comprehensive set of features - yet is an easy to learn and use portfolio management software tool.<br>
+    Designed by professional money managers, and used by investors worldwide in related forms since 1985, the Investment Account Manager's purpose is to help you better understand and manage your investment portfolios. Whether you're a seasoned investor or a novice, you'll find IAM Individual offers a comprehensive set of features - yet is an easy to learn and use portfolio management software tool.<br>
     <br>
     <a href="tour-iam.php" class="redbutton">START TOUR</a>
   </div>

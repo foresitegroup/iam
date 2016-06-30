@@ -26,6 +26,9 @@ include "header.php";
   <a href="how-to-collective-reporting.php">Collective Reporting</a><br>
   <br>
 
+  <a href="how-to-converting-files-from-iam2-to-new-iam3.php">Converting files from IAM2 to new IAM3</a><br>
+  <br>
+
   <a href="how-to-copy-or-transfer-a-security-to-another-portfolio.php">Copy or Transfer a Security to Another Portfolio</a><br>
   <br>
 
@@ -66,9 +69,6 @@ include "header.php";
   <br>
 
   <a href="how-to-technical-analysis-through-investment-account-manager.php">Technical Analysis through Investment Account Manager</a><br>
-  <br>
-
-  <a href="how-to-transferring-files-from-iam2-to-new-iam3.php">Transferring files from IAM2 to new IAM3</a><br>
   <br>
 
   <a href="how-to-understanding-investment-account-managers-asset-libraries.php">Understanding Investment Account Manager's Asset Libraries</a><br>

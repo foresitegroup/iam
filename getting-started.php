@@ -17,6 +17,14 @@ include "header.php";
 <hr class="full mb">
 
 <article>
+  <h5 class="redtext">PURCHASING SUPPORT? PLEASE READ</h5>
+  With the new release of Investment Account Manager v3 for Individuals, technical support renewals are no longer available for your older version of Investment Account Manager v2.  To renew support, you need to first download and install a new demo of Investment Account Manager v3, then once installed, start the demo, and while in demo mode, use the file menu | <a href="how-to-converting-files-from-iam2-to-new-iam3.php">convert IAM2 Individual to IAM3 individual</a>.  Once your data has been converted, a new user ID will be created that can be used for renewing support for Investment Account Manager 3 for Individuals.<br>
+  <br>
+
+  If you have any questions, please call Investment Account Manager technical support at 800-247-6354.<br>
+  <br>
+  <br>
+
   <strong>So, let's get started.</strong><br>
   <br>
 
@@ -28,7 +36,7 @@ include "header.php";
   <h5>INSTALLING IAM3</h5>
 
   <ol class="getting-started">
-    <li class="long-string"><strong>Download the 30 day trial version from our website &mdash; www.investmentaccountmanager.com.  The file name is IAM3_Setup.exe.</strong></li>
+    <li class="long-string"><strong><a href="download-iam.php">Download the 30 day trial version</a> from our website &mdash; www.investmentaccountmanager.com.  The file name is IAM3_Setup.exe.</strong></li>
 
     <li>
       <strong>Install the trial.</strong>

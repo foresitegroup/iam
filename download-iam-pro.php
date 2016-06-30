@@ -22,6 +22,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 
   Thank you for your interest in the Investment Account Manager's IAM <span class="bluetext">Professional Version</span>.<br>To download IAM PRO for your free 30 day trial, please provide the following information.<br>
   <br>
+
+  <span class="redtext">Downloads: <?php echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number; ?></span><br>
+  <br>
   <br>
 
   <hr>
@@ -29,8 +32,6 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <br>
 
   <?php
-  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number;
-
   if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     if (
           $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
@@ -69,7 +70,6 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
     }
   } else {
-    // echo $downloads;
   ?>
   <script type="text/javascript">
     function checkform (form) {

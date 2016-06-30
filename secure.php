@@ -17,7 +17,7 @@ include "header.php";
     Since 1985, we have developed top-rated, desktop-based portfolio management software.  In addition to IAM's comprehensive and accurate investment record-keeping features, a large part of why our software is critically acclaimed is due to the safety and security of your investment data.<br>
     <br>
 
-    Our software is based around the idea that your information is your own and no one else's. We don't have access to it, we can't download it and your information isn't cloud based.  Your information is stored safely and securely on your home computer, protected by your computer's security tools (firewall, anti-virus software, password protections).  To help you keep your information safe and secure, we want to outline a few options you have to make sure your files and information are safely backed up in case of a computer malfunction or the dreaded spilled coffee.
+    Our software is based around the idea that your information is your own and no one else's. We don't have access to it, nor can we download it. Your information is stored safely and securely on your home computer, protected by your computer's security tools (firewall, anti-virus software, password protections).  To help you keep your information safe and secure, we want to outline a few options you have to make sure your files and information are safely backed up in case of a computer malfunction or the dreaded spilled coffee.
   </article>
 </div>
 

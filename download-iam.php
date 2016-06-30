@@ -25,6 +25,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 
   <strong>Note: QuoteMedia&trade; Data Feed included while using the demo of Investment Account Manager Individual version.</strong><br>
   <br>
+
+  <span class="redtext">Downloads: <?php echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number; ?></span><br>
+  <br>
   <br>
 
   <hr>
@@ -32,8 +35,6 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <br>
 
   <?php
-  $downloads = $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number;
-
   if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     if (
           $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
@@ -75,7 +76,6 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
     }
   } else {
-    // echo $downloads;
   ?>
   <script type="text/javascript">
     function checkform (form) {

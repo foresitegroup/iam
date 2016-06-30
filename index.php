@@ -46,7 +46,7 @@ include "header.php";
     <div>
       <div>
         <h1>Recommended By Our Clients</h1>
-        "The is the best portfolio management program. I have used it for 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."<br>
+        "This is the best portfolio management program. I have used it for 30+ years of investing. I would recommend IAM to anyone with a portfolio of any size."<br>
         <br>
         - Ken D.<br>
         <br>
@@ -210,8 +210,6 @@ include "header.php";
         <a href="online-support.php">SUPPORT</a><br>
         <br>
         <a href="forum">COMMUNITY FORUM</a><br>
-        <br>
-        <a href="getting-started.php">SOFTWARE MANUAL</a><br>
         <br>
         <a href="how-to.php">HOW-TO'S, TIPS &amp; TUTORIALS</a><br>
         <br>

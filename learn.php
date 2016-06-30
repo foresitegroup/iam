@@ -27,7 +27,7 @@ include "header.php";
   <br>
 
   <h4>HOW TO</h4>
-  Included are quick explanations of specific features and and functions in IAM for Individual users.<br>
+  Included are quick explanations of specific features and functions in IAM for individual users.<br>
   <br>
 
   <a href="how-to.php" class="redbutton">VISIT HOW TO</a><br>
