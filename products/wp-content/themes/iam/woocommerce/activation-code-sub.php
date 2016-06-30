@@ -1,23 +1,26 @@
 <?php
 function GetActCodes($UID) {
   // The last 2 digits of the previous year are used to select the four positions of the user ID number that are used in the activation code.
-  $LastFour[13] = "3927";
-  $LastFour[14] = "4063";
-  $LastFour[15] = "5835";
-  $LastFour[16] = "6207";
-  $LastFour[17] = "7684";
-  $LastFour[18] = "8045";
-  $LastFour[19] = "9736";
-  $LastFour[20] = "0914";
+  $LastFour[16] = "5358";
+  $LastFour[17] = "6072";
+  $LastFour[18] = "7846";
+  $LastFour[19] = "8450";
+  $LastFour[20] = "9673";
+  $LastFour[21] = "0491";
+  $LastFour[22] = "1438";
+  $LastFour[23] = "2869";
+  $LastFour[24] = "3698";
+  $LastFour[25] = "4285";
+  $LastFour[26] = "5406";
 
 
   // BEGIN ACTIVATION CODE
   // Get the positions
-  $LastYear = date("y", strtotime("last year"));
-  $Pos1 = ($LastFour[$LastYear][0] == "0") ? 9 : $LastFour[$LastYear][0] - 1;
-  $Pos2 = ($LastFour[$LastYear][1] == "0") ? 9 : $LastFour[$LastYear][1] - 1;
-  $Pos3 = ($LastFour[$LastYear][2] == "0") ? 9 : $LastFour[$LastYear][2] - 1;
-  $Pos4 = ($LastFour[$LastYear][3] == "0") ? 9 : $LastFour[$LastYear][3] - 1;
+  $ThisYear = date("y");
+  $Pos1 = ($LastFour[$ThisYear][0] == "0") ? 9 : $LastFour[$ThisYear][0] - 1;
+  $Pos2 = ($LastFour[$ThisYear][1] == "0") ? 9 : $LastFour[$ThisYear][1] - 1;
+  $Pos3 = ($LastFour[$ThisYear][2] == "0") ? 9 : $LastFour[$ThisYear][2] - 1;
+  $Pos4 = ($LastFour[$ThisYear][3] == "0") ? 9 : $LastFour[$ThisYear][3] - 1;
 
   // Convert UID to letters;
   $numbers = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
@@ -26,15 +29,16 @@ function GetActCodes($UID) {
   
   // Construct the activation code
   $ActCode = $UID[$Pos1] .
-             $LastFour[$LastYear][3] .
+             $LastFour[$ThisYear][3] .
              $UID[$Pos2] .
              $UIDalpha[6] .
-             $LastFour[$LastYear][2] .
+             $LastFour[$ThisYear][2] .
              $UID[$Pos3] .
              $UIDalpha[3] .
-             $LastFour[$LastYear][1] .
+             $LastFour[$ThisYear][1] .
              $UID[$Pos4] .
-             $LastFour[$LastYear][0];
+             $LastFour[$ThisYear][0] .
+             "L";
   // END ACTIVATION CODE
 
 
@@ -52,14 +56,14 @@ function GetActCodes($UID) {
 
   // BEGIN RENEWAL CODE
   // Get the positions
-  $ThisYear = date("y");
-  $Pos1r = ($LastFour[$ThisYear][0] == "0") ? 9 : $LastFour[$ThisYear][0] - 1;
-  $Pos2r = ($LastFour[$ThisYear][1] == "0") ? 9 : $LastFour[$ThisYear][1] - 1;
-  $Pos3r = ($LastFour[$ThisYear][2] == "0") ? 9 : $LastFour[$ThisYear][2] - 1;
-  $Pos4r = ($LastFour[$ThisYear][3] == "0") ? 9 : $LastFour[$ThisYear][3] - 1;
+  $NextYear = date("y", strtotime("next year"));
+  $Pos1r = ($LastFour[$NextYear][0] == "0") ? 9 : $LastFour[$NextYear][0] - 1;
+  $Pos2r = ($LastFour[$NextYear][1] == "0") ? 9 : $LastFour[$NextYear][1] - 1;
+  $Pos3r = ($LastFour[$NextYear][2] == "0") ? 9 : $LastFour[$NextYear][2] - 1;
+  $Pos4r = ($LastFour[$NextYear][3] == "0") ? 9 : $LastFour[$NextYear][3] - 1;
 
   // Construct the renewal code
-  $RenCode = $UID[$Pos1r] . $UID[$Pos2r] . $UID[$Pos3r] . $UID[$Pos4r] . $LastFour[$ThisYear];
+  $RenCode = $UID[$Pos1r] . $UID[$Pos2r] . $UID[$Pos3r] . $UID[$Pos4r] . $LastFour[$NextYear];
   // END RENEWAL CODE
 
 

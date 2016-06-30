@@ -43,7 +43,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
     if (in_array(12, $array_pid)) echo "Thank you for ordering Investment Account Manager Professional. You will receive your software activation code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
     // IAM Pro Renewal
     if (in_array(17, $array_pid)) echo "Thank you for renewing your Investment Account Manager Professional Support Policy. You will receive your support renewal code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
-  } elseif (($UID != "") && ($UID[0] == "1") && (strlen($UID) == "10")) {
+  } elseif (($UID != "") && ($UID[0] == "2") && (strlen($UID) == "10")) {
     require_once( trailingslashit( get_stylesheet_directory() ) . 'woocommerce/activation-code-sub.php' );
     $ActCodeArray = GetActCodes($UID);
 

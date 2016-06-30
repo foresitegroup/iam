@@ -118,7 +118,7 @@ function add_neworders ($order_id) {
     add_post_meta( $order_id, 'IAM_User_ID', $iamuid );
 
     // Get the QM code
-    if (($iamuid != "") && ($iamuid[0] == "1") && (strlen($iamuid) == "10")) {
+    if (($iamuid != "") && ($iamuid[0] == "2") && (strlen($iamuid) == "10")) {
       require_once( trailingslashit( get_stylesheet_directory() ) . 'woocommerce/activation-code-sub.php' );
       $ActCodeArray = GetActCodes($iamuid);
 
