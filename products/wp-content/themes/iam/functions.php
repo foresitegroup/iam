@@ -152,6 +152,15 @@ function add_neworders ($order_id) {
   if ($exists != "") {
     // Update the data
     $wpdb->update($TheTable, array(
+      'email' => $order->billing_email,
+      'firstname' => $order->billing_first_name,
+      'lastname' => $order->billing_last_name,
+      'company' => $order->billing_company,
+      'address' => $order->billing_address_1,
+      'city' => $order->billing_city,
+      'state' => $order->billing_state,
+      'zip' => $order->billing_postcode,
+      'phone' => $order->billing_phone,
       'support_renewal_date' => $support_renewal_date,
       'renewal_code' => $renewal_code,
       'qm_code' => $qmcode
