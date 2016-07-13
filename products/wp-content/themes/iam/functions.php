@@ -115,7 +115,9 @@ function add_neworders ($order_id) {
   // Add the User ID to WooCommerce table
   if ( ! empty( $_POST['iamuid'] ) ) {
     $iamuid = preg_replace('/[^0-9]/', '', sanitize_text_field( $_POST['iamuid'] ));
-    add_post_meta( $order_id, 'IAM_User_ID', $iamuid );
+    $iamuid_formatted = substr_replace($iamuid, '_', 4, 0);
+    $iamuid_formatted = substr_replace($iamuid_formatted, '_', -3, 0);
+    add_post_meta( $order_id, 'IAM_User_ID', $iamuid_formatted );
 
     // Get the QM code
     if (($iamuid != "") && ($iamuid[0] == "2") && (strlen($iamuid) == "10")) {
@@ -179,7 +181,7 @@ function add_neworders ($order_id) {
       'state' => $order->billing_state,
       'zip' => $order->billing_postcode,
       'phone' => $order->billing_phone,
-      'serial_number' => $iamuid,
+      'serial_number' => $iamuid_formatted,
       'purch_date' => $purch_date,
       'support_renewal_date' => $support_renewal_date,
       'renewal_code' => $renewal_code,

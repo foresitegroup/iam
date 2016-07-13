@@ -19,6 +19,11 @@ if ($_POST['confirmationCAP'] == "") {
      )
   {
     $pdate = time();
+    
+    // Put the underscores in the ID number
+    $sn = preg_replace('/[^0-9]/', '', $_POST[md5('serial_number' . $_POST['ip'] . $salt . $_POST['timestamp'])]);
+    $sn = substr_replace($sn, '_', 4, 0);
+    $sn = substr_replace($sn, '_', -3, 0);
 
     if (!empty($_REQUEST['id'])) {
       //UPDATE
@@ -33,7 +38,7 @@ if ($_POST['confirmationCAP'] == "") {
                     state = '" . $_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
                     zip = '" . $_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
                     phone = '" . $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    serial_number = '" . $_POST[md5('serial_number' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
+                    serial_number = '" . $sn . "',
                     purch_date = '" . $pdate . "'
                     WHERE id = '" . $_POST['id'] . "'");
     } else {
@@ -60,7 +65,7 @@ if ($_POST['confirmationCAP'] == "") {
                     '" . $_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
                     '" . $_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
                     '" . $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('serial_number' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
+                    '" . $sn . "',
                     '" . $pdate . "'
                     )");
     }
