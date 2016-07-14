@@ -71,17 +71,13 @@ function iam_uid( $checkout ) {
 add_action('woocommerce_checkout_process', 'iam_uid_process');
 function iam_uid_process() {
   // Check if set, if its not set add an error.
-  if ( ! $_POST['iamuid'] )
+  if (!$_POST['iamuid']) {
     wc_add_notice( __( 'Please enter a User ID Number.' ), 'error' );
+  } else {
+    if ($_POST['iamuid'][0] != "2" && $_POST['iamuid'][0] != "3") wc_add_notice( __( 'User ID Number must start with a 2 or a 3.' ), 'error' );
+    if (strlen(preg_replace('/[^0-9]/', '', $_POST['iamuid'])) != 10) wc_add_notice( __( 'User ID Number must be 10 digits.' ), 'error' );
+  }
 }
-
-/* Save User ID to order */
-// add_action( 'woocommerce_checkout_update_order_meta', 'iam_uid_update_order_meta' );
-// function iam_uid_update_order_meta( $order_id ) {
-//   if ( ! empty( $_POST['iamuid'] ) ) {
-//     add_post_meta( $order_id, 'IAM_User_ID', sanitize_text_field( $_POST['iamuid'] ) );
-//   }
-// }
 
 /* Display User ID on admin order page */
 add_action( 'woocommerce_admin_order_data_after_billing_address', 'iam_uid_display_admin_order_meta', 10, 1 );
