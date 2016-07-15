@@ -26,6 +26,42 @@
 
  <p><?php printf( __( 'You have received an order from %s. The order is as follows:', 'woocommerce' ), $order->get_formatted_billing_full_name() ); ?></p>
 
+ <p>
+  <?php
+  $items = $order->get_items();
+  $array_pid = array();
+  foreach ( $items as $item ) {
+    $array_pid[] = $item['product_id'];
+  }
+
+  $UID = preg_replace('/[^0-9]/', '', get_post_meta( $order->id, 'IAM_User_ID', true ));
+
+  if (($UID != "") && ($UID[0] == "3") && (strlen($UID) == "10")) {
+    $TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "";
+    if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
+    
+    // IAM Pro
+    if (in_array(12, $array_pid)) echo "Thank you for ordering Investment Account Manager Professional. You will receive your software activation code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
+    // IAM Pro Renewal
+    if (in_array(17, $array_pid)) echo "Thank you for renewing your Investment Account Manager Professional Support Policy. You will receive your support renewal code within 24 hours.  If you have any questions or concerns about your order, please <a href=\"" . $TopDir . "/contact-us.php\">contact us</a>.<br>";
+  } elseif (($UID != "") && ($UID[0] == "2") && (strlen($UID) == "10")) {
+    require_once( trailingslashit( get_stylesheet_directory() ) . 'woocommerce/activation-code-sub.php' );
+    $ActCodeArray = GetActCodes($UID);
+
+    // IAM
+    if (in_array(8, $array_pid)) echo "Thank you for ordering Investment Account Manager.<br><br>In the opening form after starting IAM, click on the 'software activation key' button, and then enter this code:<br><br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br><br><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
+    // IAM with QuoteMedia
+    if (in_array(10, $array_pid)) echo "Thank you for ordering Investment Account Manager.<br><br>In the opening form after starting IAM, click on the 'software activation key' button, and then enter these codes:<br><br>Software Activation: <strong>" . $ActCodeArray[0] . "</strong><br><br>QuoteMedia Code: <strong>" . $ActCodeArray[1] . "</strong><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
+    // Support Renewal
+    if (in_array(14, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy.<br><br>After starting IAM, please select the Help Menu | Product Support and enter the following renewal code:<br><br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
+    // Support Renewal with QuoteMedia
+    if (in_array(16, $array_pid)) echo "Thank you for renewing your Investment Account Manager Support Policy, along with the QuoteMedia&trade; data feed.<br><br>After starting IAM, please select the Help Menu | Product Support and enter the following renewal code:<br><br>Tech Support Activation Code: <strong>" . $ActCodeArray[2] . "</strong><br><br>QuoteMedia Code: <strong>" . $ActCodeArray[3] . "</strong><br><br>If you have any questions, please let us know.<br><br>We appreciate your business, and hope that Investment Account Manager helps you to better manage your portfolios.<br><br>QUANT IX SOFTWARE, Inc.<br><br>";
+  } else {
+    echo "Sorry, you did not provide a proper User Identification Number so we could not give you your activation code at this time. Please contact customer service to get your code.<br>";
+  }
+  ?>
+</p>
+
  <?php do_action( 'woocommerce_email_before_order_table', $order, true, false ); ?>
 
 <h2><a class="link" href="<?php echo admin_url( 'post.php?post=' . $order->id . '&action=edit' ); ?>"><?php printf( __( 'Order #%s', 'woocommerce'), $order->get_order_number() ); ?></a> (<?php printf( '<time datetime="%s">%s</time>', date_i18n( 'c', strtotime( $order->order_date ) ), date_i18n( wc_date_format(), strtotime( $order->order_date ) ) ); ?>)</h2>
