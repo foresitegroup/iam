@@ -105,6 +105,7 @@ include "header.php";
   $ip = $_SERVER['REMOTE_ADDR'];
   $timestamp = time();
   $salt = "IAM3RegistrationForm";
+  $prehash = $ip . $salt . $timestamp;
   ?>
 
   <noscript>
@@ -119,7 +120,7 @@ include "header.php";
       If you have previously registered IAM2, enter your <strong>old IAM2 User ID</strong> in the field below. If we are able to find your information, the registration form will be automatically filled with most of the data that we need.<br>
       <br>
 
-      <input type="text" name="<?php echo md5("iam2_uid" . $ip . $salt . $timestamp); ?>" id="iam2_uid" placeholder="Old IAM2 User ID"><br>
+      <input type="text" name="<?php echo md5("iam2_uid" . $prehash); ?>" id="iam2_uid" placeholder="Old IAM2 User ID"><br>
       <br>
 
       <input type="hidden" name="referrer" value="registration.php">
@@ -143,40 +144,41 @@ include "header.php";
   </noscript>
 
   <form action="form-registration.php" method="POST" id="form-registration">
-    <input type="text" name="<?php echo md5("firstname" . $ip . $salt . $timestamp); ?>" id="firstname" placeholder="First Name" value="<?php if (!empty($feedback_lookup['firstname'])) echo $feedback_lookup['firstname']; ?>"><br>
+    <input type="text" name="<?php echo md5("firstname" . $prehash); ?>" id="firstname" placeholder="First Name" value="<?php if (!empty($feedback_lookup['firstname'])) echo $feedback_lookup['firstname']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("lastname" . $ip . $salt . $timestamp); ?>" id="lastname" placeholder="Last Name" value="<?php if (!empty($feedback_lookup['lastname'])) echo $feedback_lookup['lastname']; ?>"><br>
+    <input type="text" name="<?php echo md5("lastname" . $prehash); ?>" id="lastname" placeholder="Last Name" value="<?php if (!empty($feedback_lookup['lastname'])) echo $feedback_lookup['lastname']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("address" . $ip . $salt . $timestamp); ?>" id="address" placeholder="Address" value="<?php if (!empty($feedback_lookup['address'])) echo $feedback_lookup['address']; ?>"><br>
+    <input type="text" name="<?php echo md5("address" . $prehash); ?>" id="address" placeholder="Address" value="<?php if (!empty($feedback_lookup['address'])) echo $feedback_lookup['address']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("city" . $ip . $salt . $timestamp); ?>" id="city" placeholder="City" value="<?php if (!empty($feedback_lookup['city'])) echo $feedback_lookup['city']; ?>"><br>
+    <input type="text" name="<?php echo md5("city" . $prehash); ?>" id="city" placeholder="City" value="<?php if (!empty($feedback_lookup['city'])) echo $feedback_lookup['city']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("state" . $ip . $salt . $timestamp); ?>" id="state" placeholder="State" value="<?php if (!empty($feedback_lookup['state'])) echo $feedback_lookup['state']; ?>"><br>
+    <input type="text" name="<?php echo md5("state" . $prehash); ?>" id="state" placeholder="State" value="<?php if (!empty($feedback_lookup['state'])) echo $feedback_lookup['state']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("zip" . $ip . $salt . $timestamp); ?>" id="zip" placeholder="Zip Code" value="<?php if (!empty($feedback_lookup['zip'])) echo $feedback_lookup['zip']; ?>"><br>
+    <input type="text" name="<?php echo md5("zip" . $prehash); ?>" id="zip" placeholder="Zip Code" value="<?php if (!empty($feedback_lookup['zip'])) echo $feedback_lookup['zip']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("phone" . $ip . $salt . $timestamp); ?>" id="phone" placeholder="Phone" value="<?php if (!empty($feedback_lookup['phone'])) echo $feedback_lookup['phone']; ?>"><br>
+    <input type="text" name="<?php echo md5("phone" . $prehash); ?>" id="phone" placeholder="Phone" value="<?php if (!empty($feedback_lookup['phone'])) echo $feedback_lookup['phone']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
+    <input type="text" name="<?php echo md5("email" . $prehash); ?>" id="email" placeholder="Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("confirm_email" . $ip . $salt . $timestamp); ?>" id="confirm_email" placeholder="Confirm Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
+    <input type="text" name="<?php echo md5("confirm_email" . $prehash); ?>" id="confirm_email" placeholder="Confirm Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("serial_number" . $ip . $salt . $timestamp); ?>" id="serial_number" placeholder="New IAM3 User ID"><br>
+    <input type="text" name="<?php echo md5("serial_number" . $prehash); ?>" id="serial_number" placeholder="New IAM3 User ID"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("confirm_serial_number" . $ip . $salt . $timestamp); ?>" id="confirm_serial_number" placeholder="Confirm IAM3 User ID"><br>
+    <input type="text" name="<?php echo md5("confirm_serial_number" . $prehash); ?>" id="confirm_serial_number" placeholder="Confirm IAM3 User ID"><br>
     <br>
 
     <input type="hidden" name="id" id="id" value="<?php if (!empty($feedback_lookup['id'])) echo $feedback_lookup['id']; ?>">
+    <input type="hidden" name="orig_sn" id="orig_sn" value="<?php if (!empty($feedback_lookup['orig_sn'])) echo $feedback_lookup['orig_sn']; ?>">
 
     <input type="hidden" name="referrer" value="registration.php">
 

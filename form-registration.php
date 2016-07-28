@@ -6,22 +6,24 @@ $salt = "IAM3RegistrationForm";
 include_once "inc/dbconfig.php";
 
 if ($_POST['confirmationCAP'] == "") {
+  $posthash = $_POST['ip'] . $salt . $_POST['timestamp'];
+
   if (
-      $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('address' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('city' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST[md5('serial_number' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
+      $_POST[md5('firstname' . $posthash)] != "" &&
+      $_POST[md5('lastname' . $posthash)] != "" &&
+      $_POST[md5('address' . $posthash)] != "" &&
+      $_POST[md5('city' . $posthash)] != "" &&
+      $_POST[md5('state' . $posthash)] != "" &&
+      $_POST[md5('zip' . $posthash)] != "" &&
+      $_POST[md5('phone' . $posthash)] != "" &&
+      $_POST[md5('email' . $posthash)] != "" &&
+      $_POST[md5('serial_number' . $posthash)] != ""
      )
   {
     $pdate = time();
     
     // Put the underscores in the ID number
-    $sn = preg_replace('/[^0-9]/', '', $_POST[md5('serial_number' . $_POST['ip'] . $salt . $_POST['timestamp'])]);
+    $sn = preg_replace('/[^0-9]/', '', $_POST[md5('serial_number' . $posthash)]);
     $sn = substr_replace($sn, '_', 4, 0);
     $sn = substr_replace($sn, '_', -3, 0);
 
@@ -30,17 +32,36 @@ if ($_POST['confirmationCAP'] == "") {
       $action = "updated";
 
       $mysqli->query("UPDATE registration SET
-                    email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    firstname = '" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    lastname = '" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    address = '" . $_POST[md5('address' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    city = '" . $_POST[md5('city' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    state = '" . $_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    zip = '" . $_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    phone = '" . $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
+                    email = '" . $_POST[md5('email' . $posthash)] . "',
+                    firstname = '" . $_POST[md5('firstname' . $posthash)] . "',
+                    lastname = '" . $_POST[md5('lastname' . $posthash)] . "',
+                    address = '" . $_POST[md5('address' . $posthash)] . "',
+                    city = '" . $_POST[md5('city' . $posthash)] . "',
+                    state = '" . $_POST[md5('state' . $posthash)] . "',
+                    zip = '" . $_POST[md5('zip' . $posthash)] . "',
+                    phone = '" . $_POST[md5('phone' . $posthash)] . "',
                     serial_number = '" . $sn . "',
                     purch_date = '" . $pdate . "'
                     WHERE id = '" . $_POST['id'] . "'");
+      
+      $Subject = "IAM3 Registration Update";
+      $SendTo = "patmccurdymusic@gmail.com";
+      $Headers = "Bcc: mark@foresitegrp.com\r\n";
+      $Headers .= "From: Registration Form <registrationform@investmentaccountmanager.com>\r\n";
+
+      $Message = $_POST[md5('firstname' . $posthash)] . " " . $_POST[md5('lastname' . $posthash)] . "\n";
+      $Message .= $_POST[md5('address' . $posthash)] . "\n";
+      $Message .= $_POST[md5('city' . $posthash)] . ", " . $_POST[md5('state' . $posthash)] . " " . $_POST[md5('zip' . $posthash)] . "\n\n";
+
+      $Message .= $_POST[md5('phone' . $posthash)] . "\n";
+      $Message .= $_POST[md5('email' . $posthash)] . "\n\n";
+
+      $Message .= "New IAM User ID: " . $sn . "\n";
+      if ($_POST['orig_sn'] != "") $Message .= "Old IAM User ID: " . $_POST['orig_sn'] . "\n";
+
+      $Message = stripslashes($Message);
+
+      mail($SendTo, $Subject, $Message, $Headers);
     } else {
       // ADD
       $action = "added";
@@ -57,14 +78,14 @@ if ($_POST['confirmationCAP'] == "") {
                     serial_number,
                     purch_date
                     ) VALUES(
-                    '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('address' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('city' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
-                    '" . $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "',
+                    '" . $_POST[md5('email' . $posthash)] . "',
+                    '" . $_POST[md5('firstname' . $posthash)] . "',
+                    '" . $_POST[md5('lastname' . $posthash)] . "',
+                    '" . $_POST[md5('address' . $posthash)] . "',
+                    '" . $_POST[md5('city' . $posthash)] . "',
+                    '" . $_POST[md5('state' . $posthash)] . "',
+                    '" . $_POST[md5('zip' . $posthash)] . "',
+                    '" . $_POST[md5('phone' . $posthash)] . "',
                     '" . $sn . "',
                     '" . $pdate . "'
                     )");
