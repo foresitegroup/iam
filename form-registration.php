@@ -45,7 +45,7 @@ if ($_POST['confirmationCAP'] == "") {
                     WHERE id = '" . $_POST['id'] . "'");
       
       $Subject = "IAM3 Registration Update";
-      $SendTo = "patmccurdymusic@gmail.com";
+      $SendTo = "techsupport@investmentaccountmanager.com";
       $Headers = "Bcc: mark@foresitegrp.com\r\n";
       $Headers .= "From: Registration Form <registrationform@investmentaccountmanager.com>\r\n";
 
