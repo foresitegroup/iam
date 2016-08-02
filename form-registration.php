@@ -20,7 +20,7 @@ if ($_POST['confirmationCAP'] == "") {
       $_POST[md5('serial_number' . $posthash)] != ""
      )
   {
-    $pdate = time();
+    //$pdate = time();
     
     // Put the underscores in the ID number
     $sn = preg_replace('/[^0-9]/', '', $_POST[md5('serial_number' . $posthash)]);
@@ -40,8 +40,7 @@ if ($_POST['confirmationCAP'] == "") {
                     state = '" . $_POST[md5('state' . $posthash)] . "',
                     zip = '" . $_POST[md5('zip' . $posthash)] . "',
                     phone = '" . $_POST[md5('phone' . $posthash)] . "',
-                    serial_number = '" . $sn . "',
-                    purch_date = '" . $pdate . "'
+                    serial_number = '" . $sn . "'
                     WHERE id = '" . $_POST['id'] . "'");
       
       $Subject = "IAM3 Registration Update";
@@ -75,8 +74,7 @@ if ($_POST['confirmationCAP'] == "") {
                     state,
                     zip,
                     phone,
-                    serial_number,
-                    purch_date
+                    serial_number
                     ) VALUES(
                     '" . $_POST[md5('email' . $posthash)] . "',
                     '" . $_POST[md5('firstname' . $posthash)] . "',
@@ -86,8 +84,7 @@ if ($_POST['confirmationCAP'] == "") {
                     '" . $_POST[md5('state' . $posthash)] . "',
                     '" . $_POST[md5('zip' . $posthash)] . "',
                     '" . $_POST[md5('phone' . $posthash)] . "',
-                    '" . $sn . "',
-                    '" . $pdate . "'
+                    '" . $sn . "'
                     )");
     }
     
