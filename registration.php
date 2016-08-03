@@ -11,8 +11,11 @@ include "header.php";
 </div>
 
 <article>
+  <script type="text/javascript" src="inc/jquery.mask.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
+      $.jMaskGlobals.watchDataMask = true;
+
       var formLookup = $('#form-lookup');
       var formLookupMessages = $('#form-lookup-messages');
 
@@ -68,6 +71,8 @@ include "header.php";
           if ($('#email').val() !== $('#confirm_email').val()) { alert('Email mismatch. Please make sure both emails are correct.'); $('#email').focus(); return false; }
           if ($('#serial_number').val() === '') { alert('New IAM3 User ID required.'); $('#serial_number').focus(); return false; }
           if ($('#serial_number').val() !== $('#confirm_serial_number').val()) { alert('New IAM3 User ID mismatch. Please make sure both IDs are correct.'); $('#serial_number').focus(); return false; }
+          if ($('#serial_number').val()[0] !== '2') { alert('New IAM3 User ID must start with 2.'); $('#serial_number').focus(); return false; }
+          if ($('#serial_number').val().length !== 12) { alert('Incorrect number of characters for New IAM3 User ID.'); $('#serial_number').focus(); return false; }
           return true;
         }
         
@@ -162,19 +167,19 @@ include "header.php";
     <input type="text" name="<?php echo md5("zip" . $prehash); ?>" id="zip" placeholder="Zip Code" value="<?php if (!empty($feedback_lookup['zip'])) echo $feedback_lookup['zip']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("phone" . $prehash); ?>" id="phone" placeholder="Phone" value="<?php if (!empty($feedback_lookup['phone'])) echo $feedback_lookup['phone']; ?>"><br>
+    <input type="text" name="<?php echo md5("phone" . $prehash); ?>" id="phone" placeholder="Phone" value="<?php if (!empty($feedback_lookup['phone'])) echo $feedback_lookup['phone']; ?>" data-mask="000-000-0000"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("email" . $prehash); ?>" id="email" placeholder="Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
+    <input type="email" name="<?php echo md5("email" . $prehash); ?>" id="email" placeholder="Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("confirm_email" . $prehash); ?>" id="confirm_email" placeholder="Confirm Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
+    <input type="email" name="<?php echo md5("confirm_email" . $prehash); ?>" id="confirm_email" placeholder="Confirm Email" value="<?php if (!empty($feedback_lookup['email'])) echo $feedback_lookup['email']; ?>"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("serial_number" . $prehash); ?>" id="serial_number" placeholder="New IAM3 User ID"><br>
+    <input type="text" name="<?php echo md5("serial_number" . $prehash); ?>" id="serial_number" placeholder="New IAM3 User ID" data-mask="2000_000_000"><br>
     <br>
 
-    <input type="text" name="<?php echo md5("confirm_serial_number" . $prehash); ?>" id="confirm_serial_number" placeholder="Confirm IAM3 User ID"><br>
+    <input type="text" name="<?php echo md5("confirm_serial_number" . $prehash); ?>" id="confirm_serial_number" placeholder="Confirm IAM3 User ID" data-mask="2000_000_000"><br>
     <br>
 
     <input type="hidden" name="id" id="id" value="<?php if (!empty($feedback_lookup['id'])) echo $feedback_lookup['id']; ?>">
