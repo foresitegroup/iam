@@ -20,6 +20,11 @@ include "header.php";
       var formLookupMessages = $('#form-lookup-messages');
 
       $(formLookup).submit(function(event) {
+        $(form).find('input:text, textarea').val('');
+        $('#email').val(''); // Grrr!
+        $('#confirm_email').val('');
+        $('#form-lookup-messages').html('');
+
         event.preventDefault();
 
         var formLookupData = $(formLookup).serialize();
@@ -72,7 +77,7 @@ include "header.php";
           if ($('#serial_number').val() === '') { alert('New IAM3 User ID required.'); $('#serial_number').focus(); return false; }
           if ($('#serial_number').val() !== $('#confirm_serial_number').val()) { alert('New IAM3 User ID mismatch. Please make sure both IDs are correct.'); $('#serial_number').focus(); return false; }
           if ($('#serial_number').val()[0] !== '2') { alert('New IAM3 User ID must start with 2.'); $('#serial_number').focus(); return false; }
-          if ($('#serial_number').val().length !== 12) { alert('Incorrect number of characters for New IAM3 User ID.'); $('#serial_number').focus(); return false; }
+          if ($('#serial_number').val().length !== 12) { alert('Invalid IAM3 User ID. Please re-enter.'); $('#serial_number').focus(); return false; }
           return true;
         }
         
@@ -90,6 +95,7 @@ include "header.php";
 
             $(form).find('input:text, textarea').val('');
             $('#email').val(''); // Grrr!
+            $('#confirm_email').val('');
             $('#iam2_uid').val('');
             $('#form-lookup-messages').html('');
           })
@@ -137,7 +143,7 @@ include "header.php";
       <input type="submit" name="submit" value="LOOK UP" style="display: block; margin: 0 auto; outline: none;">
     </div>
 
-    <div id="form-lookup-messages" style="padding: 3em 0;"><?php if (!empty($feedback_lookup['feedback'])) echo $feedback_lookup['feedback']; ?></div>
+    <div id="form-lookup-messages" style="padding: 3em 0;"><?php if (!empty($feedback_lookup)) echo $feedback_lookup; ?></div>
   </form>
 
   

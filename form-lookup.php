@@ -20,28 +20,38 @@ if ($_POST['confirmationCAP'] == "") {
     }
 
     $result = $mysqli->query("SELECT * FROM registration WHERE serial_number = '$uid_ul' OR serial_number = '$uid_noul' ORDER BY serial_number DESC");
-    $row = $result->fetch_array(MYSQLI_ASSOC);
 
-    $lookup = array(
-      'firstname' => $row['firstname'],
-      'lastname' => $row['lastname'],
-      'address' => $row['address'],
-      'city' => $row['city'],
-      'state' => $row['state'],
-      'zip' => $row['zip'],
-      'phone' => $row['phone'],
-      'email' => $row['email'],
-      'confirm_email' => $row['email'],
-      'id' => $row['id'],
-      'orig_sn' => $uid_ul,
-      'feedback' => "Good news! We found information associated with your IAM User ID and put it in the form below. Please double check that the information is correct and up to date. Also, be sure to enter your <strong>New IAM3 User ID</strong> before submitting."
-    );
+    if ($result->num_rows > 0) {
+      $row = $result->fetch_array(MYSQLI_ASSOC);
 
-    $feedback_lookup = $lookup;
-    
-    if (!empty($_REQUEST['src'])) {
-      header('Content-type: application/json');
-      echo json_encode($lookup);
+      $lookup = array(
+        'firstname' => $row['firstname'],
+        'lastname' => $row['lastname'],
+        'address' => $row['address'],
+        'city' => $row['city'],
+        'state' => $row['state'],
+        'zip' => $row['zip'],
+        'phone' => $row['phone'],
+        'email' => $row['email'],
+        'confirm_email' => $row['email'],
+        'id' => $row['id'],
+        'orig_sn' => $uid_ul,
+        'feedback' => "Good news! We found information associated with your IAM User ID and put it in the form below. Please double check that the information is correct and up to date. Also, be sure to enter your <strong>New IAM3 User ID</strong> before submitting."
+      );
+
+      $feedback_lookup = $lookup['feedback'];
+      
+      if (!empty($_REQUEST['src'])) {
+        header('Content-type: application/json');
+        echo json_encode($lookup);
+      }
+    } else {
+      $feedback_lookup = "Sorry, we were not able to find your information in our records. You'll have to enter it manually in the form below.";
+
+      if (!empty($_REQUEST['src'])) {
+        header("HTTP/1.0 500 Internal Server Error");
+        echo $feedback_lookup;
+      }
     }
   } else {
     $feedback_lookup = "Sorry, we were not able to find your information in our records. You'll have to enter it manually in the form below.";
