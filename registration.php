@@ -98,6 +98,10 @@ include "header.php";
             $('#confirm_email').val('');
             $('#iam2_uid').val('');
             $('#form-lookup-messages').html('');
+
+            // Hide forms on registration submit
+            $('#form-lookup').css('display', 'none');
+            $('#form-registration').css('display', 'none');
           })
           .fail(function(data) {
             if (data.responseText !== '') {
@@ -198,9 +202,8 @@ include "header.php";
     <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
     <input type="submit" name="submit" value="SUBMIT" style="display: block; margin: 0 auto; outline: none;">
-
-    <div id="form-registration-messages" style="padding-top: 3em; text-align: center;"><?php echo $feedback; ?></div>
   </form>
+  <h3 id="form-registration-messages" style="text-align: center; line-height: 2em; padding: 2em 0;"><?php echo $feedback; ?></h3>
 </article>
 
 <div class="darkgray whitetext footer">
