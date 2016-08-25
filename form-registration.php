@@ -89,14 +89,14 @@ if ($_POST['confirmationCAP'] == "") {
                       )");
       }
       
-      $feedback = "<strong>Your information has been $action! Thank you for registering IAM3.</strong>";
+      $feedback = "Your information has been $action!<br>Thank you for registering IAM3.";
 
       if (!empty($_REQUEST['src'])) {
         header("HTTP/1.0 200 OK");
         echo $feedback;
       }
     } else {
-      $feedback = "<strong>Your IAM3 User ID was entered incorrectly. Please retry with correct ID.</strong>";
+      $feedback = "Your IAM3 User ID was entered incorrectly.<br>Please retry with correct ID.";
 
       if (!empty($_REQUEST['src'])) {
         header("HTTP/1.0 500 Internal Server Error");
@@ -104,7 +104,7 @@ if ($_POST['confirmationCAP'] == "") {
       }
     }
   } else {
-    $feedback = "<strong>Some required information is missing! Please go back and make sure all fields are filled.</strong>";
+    $feedback = "Some required information is missing!<br>Please go back and make sure all fields are filled.";
 
     if (!empty($_REQUEST['src'])) {
       header("HTTP/1.0 500 Internal Server Error");
