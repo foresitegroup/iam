@@ -8,6 +8,7 @@ Redirect 301 /awards.php http://www.investmentaccountmanager.com/awards-and-revi
 Redirect 301 /blog http://www.investmentaccountmanager.com/products/blog
 Redirect 301 /captools_import.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /contact_us.php http://www.investmentaccountmanager.com/contact-us.php
+Redirect 301 /data_entry.php http://www.investmentaccountmanager.com
 Redirect 301 /error-messages.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /iam_tour.php http://www.investmentaccountmanager.com/tour-iam.php
 Redirect 301 /iam_tour1.php http://www.investmentaccountmanager.com/tour-iam.php
@@ -50,14 +51,30 @@ Redirect 301 /manual.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /money_import.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /newsletter.php http://www.investmentaccountmanager.com/index.php
 Redirect 301 /partner_links.php http://www.investmentaccountmanager.com/index.php
+Redirect 301 /pers_inst.php http://www.investmentaccountmanager.com
 Redirect 301 /privacy.php http://www.investmentaccountmanager.com/privacy-policy.php
 Redirect 301 /quicken_import.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /quotemedia.php http://www.investmentaccountmanager.com/how-to-quotemedia-data-feed-with-investment-account-manager.php
 Redirect 301 /sample_reports.php http://www.investmentaccountmanager.com/how-to.php
+Redirect 301 /sample-reports.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /securing-your-information.php http://www.investmentaccountmanager.com/secure.php
+Redirect 301 /software-manual.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /store http://www.investmentaccountmanager.com/products
 Redirect 301 /system_req.php http://www.investmentaccountmanager.com/faq.php
 Redirect 301 /tips.php http://www.investmentaccountmanager.com/how-to.php
+Redirect 301 /trial_download.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /trial_download_iam.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /tutorials.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /utility-program.php http://www.investmentaccountmanager.com/how-to-iam3-utility-program.php
+
+# IAM Pro specific
+Redirect 301 /professional-features.php http://www.investmentaccountmanager.com/features.php
+Redirect 301 /iam_pro_tour.php http://www.investmentaccountmanager.com/tour-pro-1-1.php
+
+# Begone hacker scum!
+Redirect 301 /blogs.php http://www.google.com
+Redirect 301 /blog_edit.php http://www.google.com
+Redirect 301 /profile_blogs_new.php http://www.google.com
+Redirect 301 /forum/user.php http://www.google.com
+Redirect 301 /login.php http://www.google.com
+Redirect 301 /wp-login.php http://www.google.com

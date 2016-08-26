@@ -443,7 +443,7 @@ function template_body_below()
 		</ul>
 		<ul class="reset">
 			<li>', theme_copyright(), '</li>
-			<li>Theme by <a href="http://smftricks.com/">SMFTricks</a></li>
+			<li>Theme by <a href="https://smftricks.com/">SMFTricks</a></li>
 			<!--<li>', !empty($settings['redsy_copyright']) ? $settings['redsy_copyright'] : $context['forum_name'] .' &copy;' ,'</li>-->
 		</ul>';
 
@@ -465,7 +465,7 @@ function template_html_below()
 // 	echo '
 // </body></html>';
 
-	$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['HTTP_HOST'] . "/" : "";
+	$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "https://" . $_SERVER['HTTP_HOST'] . "/" : "";
 	if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
 
 	echo '

@@ -23,7 +23,7 @@ function email($address, $name="") {
     <meta name="author" content="Foresite Group">
 
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css?<?php echo filemtime($TopDir . "inc/main.css"); ?>" type="text/css">
     <link rel="stylesheet" href="inc/admin.css?<?php echo filemtime("inc/admin.css"); ?>" type="text/css">
