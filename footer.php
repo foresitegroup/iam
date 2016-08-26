@@ -25,15 +25,6 @@
             mysqli_free_result($result);
             $mysqli->close();
             ?>
-
-            <!-- <span class="ldate">August 12, 2015</span><br>
-            <span class="ltitle"><a href="forum.php">Re: Different Date Formats</a></span><br><br>
-
-            <span class="ldate">August 12, 2015</span><br>
-            <span class="ltitle"><a href="forum.php">Different Date Formats</a></span><br><br>
-
-            <span class="ldate">August 4, 2015</span><br>
-            <span class="ltitle"><a href="forum.php">IAM 2.9.9.0 Update Now Available</a></span> -->
           </div>
 
           <div class="three-col">
@@ -63,8 +54,8 @@
             <strong><a href="<?php echo $TopDir; ?>contact-us.php">Send us a message</a></strong><br>
             <br>
 
-            <a href="https://www.facebook.com/investmentaccountmanager" class="social"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/Investment-Account-Manager-266848243474575/" class="social"><i class="fa fa-facebook"></i></a>
+            <!-- <a href="#" class="social"><i class="fa fa-linkedin"></i></a> -->
             <a href="<?php echo $TopDir; ?>products/blog" class="social"><i class="fa fa-wordpress"></i></a>
           </div>
 
