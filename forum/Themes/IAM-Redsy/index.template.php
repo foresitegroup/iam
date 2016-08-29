@@ -151,7 +151,7 @@ function template_html_above()
 	$HeaderInc .= $context['html_headers'];
   
   // Add stylesheet for admin area
-	if ($context['user']['is_admin']) $HeaderInc .= '\n<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/admin.css" />';
+	if ($context['user']['is_admin']) $HeaderInc .= '<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/admin.css" />';
 
 	include "../header.php";
 }
