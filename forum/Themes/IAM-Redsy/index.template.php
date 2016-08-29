@@ -79,208 +79,81 @@ function template_html_above()
 {
 	global $context, $settings, $options, $scripturl, $txt, $modSettings;
 
-	// Show right to left and the character set for ease of translating.
-// 	echo '<!DOCTYPE html>
-// <html xmlns="http://www.w3.org/1999/xhtml"', $context['right_to_left'] ? ' dir="rtl"' : '', '>
-// <head>';
- 
-	// The ?fin20 part of this link is just here to make sure browsers don't cache it wrongly.
-	// echo '
-	// <link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/bootstrap.css?fin20" />
-	// <link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/font-awesome.css?fin20" />
-	// <link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/index', $context['theme_variant'], '.css?fin20" />';
+	$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "https://" . $_SERVER['HTTP_HOST'] . "/" : "";
+	if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
 
-	// Some browsers need an extra stylesheet due to bugs/compatibility issues.
-	// foreach (array('ie7', 'ie6', 'webkit') as $cssfix)
-	// 	if ($context['browser']['is_' . $cssfix])
-	// 		echo '
-	// <link rel="stylesheet" type="text/css" href="', $settings['default_theme_url'], '/css/', $cssfix, '.css" />';
+	$PageTitle = $context['page_title_html_safe'];
 
-	// RTL languages require an additional stylesheet.
-	// if ($context['right_to_left'])
-	// 	echo '
-	// <link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/rtl.css" />';
+	$HeaderInc = '
+		<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/bootstrap.css?fin20" />
+		<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/font-awesome.css?fin20" />
+		<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/index' . $context['theme_variant'] . '.css?fin20" />';
 
 	// Here comes the JavaScript bits!
-	// echo '
-	// <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	// <script type="text/javascript" src="', $settings['theme_url'], '/scripts/redsy.js?fin20"></script>
-	// <script type="text/javascript" src="', $settings['theme_url'], '/scripts/bootstrap.min.js?fin20"></script>
-	// <script type="text/javascript">
-	// $(document).ready(function(){
-	// 	$("input[type=button]").attr("class", "btn btn-default btn-sm");
-	// 	$(".button_submit").attr("class", "btn btn-danger btn-sm");
-	// 	$("#advanced_search input[type=\'text\'], #search_term_input input[type=\'text\']").removeAttr("size"); 
-	// 	$(".table_grid").addClass("table table-striped");
-	// 	$("img[alt=\'', $txt['new'], '\'], img.new_posts").replaceWith("<span class=\'label label-warning\'>', $txt['new'], '</span>");
-	// 	$("#profile_success").removeAttr("id").removeClass("windowbg").addClass("alert alert-success"); 
-	// 	$("#profile_error").removeAttr("id").removeClass("windowbg").addClass("alert alert-danger"); 
-	// });
-	// </script>	
-	// <script type="text/javascript" src="', $settings['default_theme_url'], '/scripts/script.js?fin20"></script>
-	// <script type="text/javascript" src="', $settings['theme_url'], '/scripts/theme.js?fin20"></script>
-	// <script type="text/javascript"><!-- // --><![CDATA[
-	// 	var smf_theme_url = "', $settings['theme_url'], '";
-	// 	var smf_default_theme_url = "', $settings['default_theme_url'], '";
-	// 	var smf_images_url = "', $settings['images_url'], '";
-	// 	var smf_scripturl = "', $scripturl, '";
-	// 	var smf_iso_case_folding = ', $context['server']['iso_case_folding'] ? 'true' : 'false', ';
-	// 	var smf_charset = "', $context['character_set'], '";', $context['show_pm_popup'] ? '
-	// 	var fPmPopup = function ()
-	// 	{
-	// 		if (confirm("' . $txt['show_personal_messages'] . '"))
-	// 			window.open(smf_prepareScriptUrl(smf_scripturl) + "action=pm");
-	// 	}
-	// 	addLoadEvent(fPmPopup);' : '', '
-	// 	var ajax_notification_text = "', $txt['ajax_in_progress'], '";
-	// 	var ajax_notification_cancel_text = "', $txt['modify_cancel'], '";
-	// // ]]></script>';
-
-	// echo '
-	// <style type="text/css">
-	// @media (min-width: 768px) 
-	// {
-	// 	.container {
-	// 		width: ' . $settings['forum_width'] . ';
-	// 	}
-	// }
-	// </style>
-	// <meta name="viewport" content="width=device-width, initial-scale=1" />
-	// <meta http-equiv="Content-Type" content="text/html; charset=', $context['character_set'], '" />
-	// <meta name="description" content="', $context['page_title_html_safe'], '" />', !empty($context['meta_keywords']) ? '
-	// <meta name="keywords" content="' . $context['meta_keywords'] . '" />' : '', '
-	// <title>', $context['page_title_html_safe'], '</title>';
+	$HeaderInc .= '
+	<script type="text/javascript" src="' . $settings['theme_url'] . '/scripts/redsy.js?fin20"></script>
+	<script type="text/javascript" src="' . $settings['theme_url'] . '/scripts/bootstrap.min.js?fin20"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("input[type=button]").attr("class", "btn btn-default btn-sm");
+		$(".button_submit").attr("class", "btn btn-danger btn-sm");
+		$("#advanced_search input[type=\'text\'], #search_term_input input[type=\'text\']").removeAttr("size"); 
+		$(".table_grid").addClass("table table-striped");
+		$("img[alt=\'' . $txt['new'] . '\'], img.new_posts").replaceWith("<span class=\'label label-warning\'>' . $txt['new'] . '</span>");
+		$("#profile_success").removeAttr("id").removeClass("windowbg").addClass("alert alert-success"); 
+		$("#profile_error").removeAttr("id").removeClass("windowbg").addClass("alert alert-danger"); 
+	});
+	</script>	
+	<script type="text/javascript" src="' . $settings['default_theme_url'] . '/scripts/script.js?fin20"></script>
+	<script type="text/javascript" src="' . $settings['theme_url'] . '/scripts/theme.js?fin20"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "' . $settings['theme_url'] . '";
+		var smf_default_theme_url = "' . $settings['default_theme_url'] . '";
+		var smf_images_url = "' . $settings['images_url'] . '";
+		var smf_scripturl = "' . $scripturl . '";
+		var ajax_notification_text = "' . $txt['ajax_in_progress'] . '";
+		var ajax_notification_cancel_text = "' . $txt['modify_cancel'] . '";
+	// ]]></script>';
 
 	// Please don't index these Mr Robot.
-	// if (!empty($context['robot_no_index']))
-	// 	echo '
-	// <meta name="robots" content="noindex" />';
+	if (!empty($context['robot_no_index']))
+		$HeaderInc .= '
+	<meta name="robots" content="noindex" />';
 
 	// Present a canonical url for search engines to prevent duplicate content in their indices.
-	// if (!empty($context['canonical_url']))
-	// 	echo '
-	// <link rel="canonical" href="', $context['canonical_url'], '" />';
+	if (!empty($context['canonical_url']))
+		$HeaderInc .= '
+	<link rel="canonical" href="' . $context['canonical_url'] . '" />';
 
 	// Show all the relative links, such as help, search, contents, and the like.
-	// echo '
-	// <link rel="help" href="', $scripturl, '?action=help" />
-	// <link rel="search" href="', $scripturl, '?action=search" />
-	// <link rel="contents" href="', $scripturl, '" />';
+	$HeaderInc .= '
+	<link rel="help" href="' . $scripturl . '?action=help" />
+	<link rel="search" href="' . $scripturl . '?action=search" />
+	<link rel="contents" href="' . $scripturl . '" />';
 
 	// If RSS feeds are enabled, advertise the presence of one.
-	// if (!empty($modSettings['xmlnews_enable']) && (!empty($modSettings['allow_guestAccess']) || $context['user']['is_logged']))
-	// 	echo '
-	// <link rel="alternate" type="application/rss+xml" title="', $context['forum_name_html_safe'], ' - ', $txt['rss'], '" href="', $scripturl, '?type=rss;action=.xml" />';
+	if (!empty($modSettings['xmlnews_enable']) && (!empty($modSettings['allow_guestAccess']) || $context['user']['is_logged']))
+		$HeaderInc .= '
+	<link rel="alternate" type="application/rss+xml" title="' . $context['forum_name_html_safe'] . ' - ' . $txt['rss'] . '" href="' . $scripturl . '?type=rss;action=.xml" />';
 
 	// If we're viewing a topic, these should be the previous and next topics, respectively.
-	// if (!empty($context['current_topic']))
-	// 	echo '
-	// <link rel="prev" href="', $scripturl, '?topic=', $context['current_topic'], '.0;prev_next=prev" />
-	// <link rel="next" href="', $scripturl, '?topic=', $context['current_topic'], '.0;prev_next=next" />';
+	if (!empty($context['current_topic']))
+		$HeaderInc .= '
+	<link rel="prev" href="' . $scripturl . '?topic=' . $context['current_topic'] . '.0;prev_next=prev" />
+	<link rel="next" href="' . $scripturl . '?topic=' . $context['current_topic'] . '.0;prev_next=next" />';
 
 	// If we're in a board, or a topic for that matter, the index will be the board's index.
-	// if (!empty($context['current_board']))
-	// 	echo '
-	// <link rel="index" href="', $scripturl, '?board=', $context['current_board'], '.0" />';
+	if (!empty($context['current_board']))
+		$HeaderInc .= '
+	<link rel="index" href="' . $scripturl . '?board=' . $context['current_board'] . '.0" />';
 
 	// Output any remaining HTML headers. (from mods, maybe?)
-// 	echo $context['html_headers'];
+	$HeaderInc .= $context['html_headers'];
+  
+  // Add stylesheet for admin area
+	if ($context['user']['is_admin']) $HeaderInc .= '\n<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/admin.css" />';
 
-// 	echo '
-// </head>
-// <body', !empty($settings['redsy_navbar']) ? ' style="padding-top: 50px;"' :  '' ,'>';
-
-$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "https://" . $_SERVER['HTTP_HOST'] . "/" : "";
-if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
-
-$PageTitle = $context['page_title_html_safe'];
-
-$HeaderInc = '
-	<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/bootstrap.css?fin20" />
-	<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/font-awesome.css?fin20" />
-	<link rel="stylesheet" type="text/css" href="' . $settings['theme_url'] . '/css/index' . $context['theme_variant'] . '.css?fin20" />';
-
-// Here comes the JavaScript bits!
-$HeaderInc .= '
-<script type="text/javascript" src="' . $settings['theme_url'] . '/scripts/redsy.js?fin20"></script>
-<script type="text/javascript" src="' . $settings['theme_url'] . '/scripts/bootstrap.min.js?fin20"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$("input[type=button]").attr("class", "btn btn-default btn-sm");
-	$(".button_submit").attr("class", "btn btn-danger btn-sm");
-	$("#advanced_search input[type=\'text\'], #search_term_input input[type=\'text\']").removeAttr("size"); 
-	$(".table_grid").addClass("table table-striped");
-	$("img[alt=\'' . $txt['new'] . '\'], img.new_posts").replaceWith("<span class=\'label label-warning\'>' . $txt['new'] . '</span>");
-	$("#profile_success").removeAttr("id").removeClass("windowbg").addClass("alert alert-success"); 
-	$("#profile_error").removeAttr("id").removeClass("windowbg").addClass("alert alert-danger"); 
-});
-</script>	
-<script type="text/javascript" src="' . $settings['default_theme_url'] . '/scripts/script.js?fin20"></script>
-<script type="text/javascript" src="' . $settings['theme_url'] . '/scripts/theme.js?fin20"></script>
-<script type="text/javascript"><!-- // --><![CDATA[
-	var smf_theme_url = "' . $settings['theme_url'] . '";
-	var smf_default_theme_url = "' . $settings['default_theme_url'] . '";
-	var smf_images_url = "' . $settings['images_url'] . '";
-	var smf_scripturl = "' . $scripturl . '";
-	var ajax_notification_text = "' . $txt['ajax_in_progress'] . '";
-	var ajax_notification_cancel_text = "' . $txt['modify_cancel'] . '";
-// ]]></script>';
-
-// $HeaderInc .= '
-// 	<style type="text/css">
-// 	@media (min-width: 768px) 
-// 	{
-// 		.container {
-// 			width: ' . $settings['forum_width'] . ';
-// 		}
-// 	}
-// 	</style>
-// 	<meta name="viewport" content="width=device-width, initial-scale=1" />';
-
-// Please don't index these Mr Robot.
-if (!empty($context['robot_no_index']))
-	$HeaderInc .= '
-<meta name="robots" content="noindex" />';
-
-// Present a canonical url for search engines to prevent duplicate content in their indices.
-if (!empty($context['canonical_url']))
-	$HeaderInc .= '
-<link rel="canonical" href="' . $context['canonical_url'] . '" />';
-
-// Show all the relative links, such as help, search, contents, and the like.
-$HeaderInc .= '
-<link rel="help" href="' . $scripturl . '?action=help" />
-<link rel="search" href="' . $scripturl . '?action=search" />
-<link rel="contents" href="' . $scripturl . '" />';
-
-// If RSS feeds are enabled, advertise the presence of one.
-if (!empty($modSettings['xmlnews_enable']) && (!empty($modSettings['allow_guestAccess']) || $context['user']['is_logged']))
-	$HeaderInc .= '
-<link rel="alternate" type="application/rss+xml" title="' . $context['forum_name_html_safe'] . ' - ' . $txt['rss'] . '" href="' . $scripturl . '?type=rss;action=.xml" />';
-
-// If we're viewing a topic, these should be the previous and next topics, respectively.
-if (!empty($context['current_topic']))
-	$HeaderInc .= '
-<link rel="prev" href="' . $scripturl . '?topic=' . $context['current_topic'] . '.0;prev_next=prev" />
-<link rel="next" href="' . $scripturl . '?topic=' . $context['current_topic'] . '.0;prev_next=next" />';
-
-// If we're in a board, or a topic for that matter, the index will be the board's index.
-if (!empty($context['current_board']))
-	$HeaderInc .= '
-<link rel="index" href="' . $scripturl . '?board=' . $context['current_board'] . '.0" />';
-
-// Output any remaining HTML headers. (from mods, maybe?)
-$HeaderInc .= $context['html_headers'];
-
-include "../header.php";
-
-// echo '
-// <div class="darkgray store-title">
-//   <article>
-//     <h1>FORUM</h1>
-//   </article>
-// </div>
-// ';
+	include "../header.php";
 }
 
 function template_body_above()

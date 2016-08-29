@@ -1,0 +1,12 @@
+.dropmenu a span {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 1em;
+}
+
+#admin_content TABLE {
+  font-size: 80%;
+}
+
+#admin_content .flow_auto .floatright .additional_row {
+  padding: 0.5em 1em;
+}
