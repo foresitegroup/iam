@@ -51,7 +51,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       $result = $mysqli->query("SELECT * FROM downloads WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
       
       // ...and make sure they are not already registered users
-      $rresult = $mysqli->query("SELECT * FROM registration WHERE firstname = '" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "' AND lastname = '" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
+      // $rresult = $mysqli->query("SELECT * FROM registration WHERE firstname = '" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "' AND lastname = '" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
+      $rresult = $mysqli->query("SELECT * FROM registration WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
 
       if (mysqli_num_rows($result) == 0 && mysqli_num_rows($rresult) == 0) {
         $mysqli->query("INSERT INTO downloads (firstname,lastname,email,uptodate,download_date) VALUES ('" . $_POST[md5('firstname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('lastname' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "','" . $uptodate . "','$now')");
