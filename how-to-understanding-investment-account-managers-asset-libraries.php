@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Investment Account Manager separates individual portfolio accounts from the shared asset libraries. This design allows efficient and accurate data sharing by storing collective data in a centralized database which then can be used by the individual portfolios as needed.<br>
   <br>
 

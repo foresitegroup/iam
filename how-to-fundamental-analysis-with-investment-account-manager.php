@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Fundamental ratio analysis is an investment approach that focuses on specific relationships, or ratios, of the financial data of a company. This method offers a "snap shot" of a company's value, where the analysis is a review of a firm's financial report. Recognizing the importance of these relationships and ratios, the Investment Account Manager provides the investor with a comprehensive set of variables that can be used to derive informative ratios that may be helpful in discovering undervalued securities.<br>
   <br>
 

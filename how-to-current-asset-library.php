@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   <strong>Select Asset Library Menu | Current Asset Library</strong><br>
   <br>
 

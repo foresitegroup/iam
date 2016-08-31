@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Instead of re-inventing the wheel, Investment Account Manager provides access to technical analysis by conveniently accessing the many tools freely available on the Internet.  IAM provides  hyperlinks to popular financial websites, including Yahoo!, Google and QuoteMedia.  These hyperlinks are available from our Home Page for any security listed, as well as through the Current Asset Library.<br>
   <br>
 

@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   A watch list is a grouping of securities into a portfolio that have something in common.  For instance, you might have a watch list for your IRA portfolio, another for your Taxable.  Watch list can also be effectively grouped by types of securities: i.e., Energy Common Stocks, Financial Common Stocks, etc.  The point is, Investment Account Manager allows for an unlimited number of watch list portfolios so that you can keep up-to-date with alternative investments.
   Using watch lists help investors better manage their portfolios by providing alternative investment lists to use when building or modifying existing portfolios.<br>
   <br>

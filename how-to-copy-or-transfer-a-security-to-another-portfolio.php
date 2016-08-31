@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   <img src="images/how-to-copy-or-transfer-a-security-to-another-portfolio1.jpg" alt=""><br>
   <br>
 

@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   <strong><em>Definition:</em></strong> the Price Alerts feature is a valuable tool found within Investment Account Manager to keep users notified when the market price of an asset crosses its high or low target price.<br>
   <br>
 

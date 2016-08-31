@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   The Home Page for Investment Account Manager displays a summary of information for the currently open portfolio.  It can be thought of as the program's dashboard.<br>
   <br>
 

@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   If you have been tracking your portfolio on Google (or another online service) it can be imported into Investment Account Manager 3, so long as the download file is an OFX type file.  Follow these steps to import:<br>
   <br>
 

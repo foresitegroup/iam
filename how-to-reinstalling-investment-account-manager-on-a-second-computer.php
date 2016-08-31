@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   The Investment Account Manager (IAM) User License allows our customers to install IAM on a 2nd backup computer, as well as on a primary computer.  It also allows for the reinstallation of the program in the event of computer malfunction.<br>
   <br>
 

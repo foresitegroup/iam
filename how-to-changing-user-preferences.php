@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   <strong>Select the File Menu | Preferences.</strong><br>
   <br>
 

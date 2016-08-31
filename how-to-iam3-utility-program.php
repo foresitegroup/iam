@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Investment Account Manager's Utility Program is designed to fix problems that might occur if an error is caused (I.e., abnormal shut-down, conflict with another program such as a firewall or anti-virus, etc.).  The program repairs these types of issues, as well as providing other utilities.<br>
   <br>
 

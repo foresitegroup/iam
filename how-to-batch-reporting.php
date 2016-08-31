@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   The Batch Reporting feature (available is advanced mode) allows users to produce a series of reports for a selected list of portfolios. For instance, users can customize batch reporting by using the various Report Setup Options to print a series of reports at the end of each month, each quarter or year.<br>
   <br>
 

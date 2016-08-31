@@ -59,6 +59,9 @@ include "header.php";
   <a href="how-to-import-your-google-finance-portfolio-into-iam.php">Import your Google Finance Portfolio into IAM</a><br>
   <br>
 
+  <a href="how-to-portfolio-performance-comparison.php">Portfolio Performance Comparison</a><br>
+  <br>
+
   <a href="how-to-quotemedia-data-feed-with-investment-account-manager.php">QuoteMedia Data Feed with Investment Account Manager</a><br>
   <br>
 

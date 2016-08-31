@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   In order for a portfolio management tool to be effective, it is essential to thoroughly provide a collective understanding of how your portfolios are integrated, and how the overlap.  This information will allow you to analyze two important questions:<br>
   <br>
 

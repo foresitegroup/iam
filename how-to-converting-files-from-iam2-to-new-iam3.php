@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   <strong>Install Investment Account Manager 3</strong><br>
   Follow these steps for downloading a demo of IAM3.  Note: when you are ready to convert your current IAMv2 data, as long as your current IAM2 is up-to-date with active support, the IAM3 demo will convert to a full version!<br>
   <br>

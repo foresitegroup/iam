@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Investment Account Manager allows for easy and accurate posting of global transactions, i.e., a corporate action affecting all positions of the underlying security. These include income stock splits (i.e. 2:1 stock split), stock dividend distributions (i.e. 10% stock dividend is declared resulting in additional shares), spin-offs (i.e. Company ABC issues holders shares in Company EFG) and mergers (i.e. Company 123 is taken-over by Company 456).  IAM's global transactions adjust any or all of the portfolios within the program for the global activity.  For instance, if you hold XYZ stock in several portfolios, and XYZ declares a 2:1 stock split, Investment Account Manager will automatically adjust each portfolio to reflect the stock split.<br>
   <br>
 

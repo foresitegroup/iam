@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
 One of the many benefits of using Investment Account Manager is its ability to utilize investment record keeping in a manner to be able to access the information to improve decision making.  This ability is particularly useful when making tax conscience decisions. An example of this ability can be found in IAM's many useful tax planning and monitoring tools and reports.<br>
 <br>
 

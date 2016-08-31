@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Equity options are contracts between buyers and sellers providing certain rights or responsibilities on the opposite parties.  It is beyond the scope of this manual to explain the mechanics of option trading, but for those interested in learning about using options as investments, visit <a href="http://www.cboe.com">CBOE - Option Concepts - The Basic</a>.<br>
   <br>
 

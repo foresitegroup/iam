@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   QuoteMedia data feed (available for an annual low cost subscription price) provides automatic fundamental analysis data download into Investment Account Manager.<br>
   <br>
 

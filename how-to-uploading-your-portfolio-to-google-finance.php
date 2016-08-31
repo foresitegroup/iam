@@ -10,7 +10,7 @@ include "header.php";
   </article>
 </div>
 
-<article>
+<article class="how-to">
   Having the ability to monitor your portfolio holdings online is easy to accomplish with IAM and Google Finance. To do so, follow these simply steps.<br>
   <br>
 
