@@ -43,7 +43,6 @@ include "header.php";
       <li>Batch Processing of Reports</li>
       <li>Price Alerts to Monitor your Securities</li>
       <li>Create Historical Pricing Databases</li>
-      <li>Import from AAII Stock Investor Pro</li>
       <li>Import from Quicken&reg; and Captools&reg;</li>
       <li>Import from Microsoft Excel&reg;</li>
       <li>Additional Data Importing/Exporting</li>
@@ -88,7 +87,6 @@ include "header.php";
         <li>Batch Processing of Reports</li>
         <li>Price Alerts to Monitor your Securities</li>
         <li>Create Historical Pricing Databases</li>
-        <li>Import from AAII Stock Investor Pro</li>
         <li>Import from Quicken&reg; and Captools&reg;</li>
         <li>Import from Microsoft Excel&reg;</li>
         <li>Additional Data Importing/Exporting</li>
@@ -147,7 +145,6 @@ include "header.php";
         <li>Batch Processing of Reports</li>
         <li>Price Alerts to Monitor your Securities</li>
         <li>Create Historical Pricing Databases</li>
-        <li>Import from AAII Stock Investor Pro</li>
         <li>Import from Quicken&reg; and Captools&reg;</li>
         <li>Import from Microsoft Excel&reg;</li>
         <li>Additional Data Importing/Exporting</li>

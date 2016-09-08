@@ -53,6 +53,7 @@ Redirect 301 /newsletter.php http://www.investmentaccountmanager.com/index.php
 Redirect 301 /partner_links.php http://www.investmentaccountmanager.com/index.php
 Redirect 301 /pers_inst.php http://www.investmentaccountmanager.com
 Redirect 301 /privacy.php http://www.investmentaccountmanager.com/privacy-policy.php
+Redirect 301 /products/renewal-options.php http://www.investmentaccountmanager.com/products
 Redirect 301 /quicken_import.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /quotemedia.php http://www.investmentaccountmanager.com/how-to-quotemedia-data-feed-with-investment-account-manager.php
 Redirect 301 /sample_reports.php http://www.investmentaccountmanager.com/how-to.php
