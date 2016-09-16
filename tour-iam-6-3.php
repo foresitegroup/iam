@@ -37,8 +37,6 @@ include "header.php";
 
     <div style="text-align: left;">
       <ul>
-        <li>Investment Account Manager includes a choice to import a portfolio from Investor's Toolkit 5 or Toolkit 6.  For each Toolkit portfolio, IAM will import the common stocks held and quantity of shares entered. Once imported into Investment Account Manager, you'll be able to quickly review allocation and diversification reports to identify any rebalancing needs.<br><br></li>
-        <li>Investment Account Manager also includes a feature for importing the estimated high and low prices from your Stock Selection Guide software. This selection uses the estimated high and low prices from your SSG analysis software to derive IAM's upside-downside report. Investment Account Manager can also use these estimated high and low prices for setting price alerts in Investment Account Manager that match the buy-sell price zones from your SSG analysis.<br><br></li>
         <li>IAM allows the conversion of most investment transactions from a Quicken&reg; 98 (Quicken Interchange Format QIF) file or later into the Investment Account Manager.<br><br></li>
         <li>IAM allows the conversion of the most common investment transactions from Captools&reg; Investment Software into the Investment Account Manager.</li>
       </ul>
