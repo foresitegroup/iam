@@ -2378,7 +2378,30 @@ ARTICLE.testihead {
   height: auto;
 }
 
+#form-lookup #iam2_uid,
+#form-lookup #lu_lastname,
+#form-lookup #lu_email {
+  float: left;
+  width: 26.66%;
+  box-sizing: border-box;
+}
 
+#form-lookup #or {
+  float: left;
+  width: 8%;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #555555; 
+  line-height: 0.1em;
+  margin: 10px 1% 20px;
+  padding-top: 0.5em;
+}
+
+#form-lookup #or SPAN { 
+  background: #FFFFFF; 
+  padding: 0 10px; 
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -3175,5 +3198,22 @@ ARTICLE.testihead {
 
   .support .graybutton {
     margin: 0.5em 0 !important;
+  }
+
+  .reg-header H1 {
+    font-size: 250%;
+  }
+
+  #form-lookup #iam2_uid,
+  #form-lookup #lu_lastname,
+  #form-lookup #lu_email {
+    float: none;
+    width: 100%;
+  }
+
+  #form-lookup #or {
+    float: none;
+    width: 50%;
+    margin: 10px auto 20px;
   }
 }

@@ -4,7 +4,7 @@ $PageTitle = "IAM3 Registration";
 include "header.php";
 ?>
 
-<div class="red mb">
+<div class="red mb reg-header">
   <article>
     <h1>IAM3 REGISTRATION</h1>
   </article>
@@ -16,13 +16,31 @@ include "header.php";
     $(document).ready(function() {
       $.jMaskGlobals.watchDataMask = true;
 
+      $("#iam2_uid").on("input", function(){
+        if ($("#iam2_uid").val().length !== 0) {
+          $("#lu_lastname").val('');
+          $("#lu_email").val('');
+        }
+      });
+      $("#lu_lastname").on("input", function(){
+        if ($("#lu_lastname").val().length !== 0) {
+          $("#iam2_uid").val('');
+          $("#lu_email").val('');
+        }
+      });
+      $("#lu_email").on("input", function(){
+        if ($("#lu_email").val().length !== 0) {
+          $("#iam2_uid").val('');
+          $("#lu_lastname").val('');
+        }
+      });
+
       var formLookup = $('#form-lookup');
       var formLookupMessages = $('#form-lookup-messages');
 
       $(formLookup).submit(function(event) {
         $(form).find('input:text, textarea').val('');
         $('#email').val(''); // Grrr!
-        $('#confirm_email').val('');
         $('#form-lookup-messages').html('');
 
         event.preventDefault();
@@ -132,11 +150,20 @@ include "header.php";
 
   <form action="form-lookup.php" method="POST" id="form-lookup">
     <div>
-      If you have previously registered IAM2, enter your <strong>old IAM2 User ID</strong> in the field below. If we are able to find your information, the registration form will be automatically filled with most of the data that we need.<br>
+      If you have previously registered IAM2, enter your <strong>old IAM2 User ID</strong> or your <strong>last name</strong> or your <strong>email address</strong> in the respective fields below. If we are able to find your information, the registration form will be automatically filled with most of the data that we need. <em>Please be sure to update your email address as necessary.</em><br>
       <br>
 
-      <input type="text" name="<?php echo md5("iam2_uid" . $prehash); ?>" id="iam2_uid" placeholder="Old IAM2 User ID"><br>
-      <br>
+      <input type="text" name="<?php echo md5("iam2_uid" . $prehash); ?>" id="iam2_uid" placeholder="Old IAM2 User ID">
+
+      <div id="or"><span>OR</span></div>
+
+      <input type="text" name="<?php echo md5("lu_lastname" . $prehash); ?>" id="lu_lastname" placeholder="Last Name">
+
+      <div id="or"><span>OR</span></div>
+
+      <input type="text" name="<?php echo md5("lu_email" . $prehash); ?>" id="lu_email" placeholder="Email">
+
+      <div style="clear: both;"></div><br>
 
       <input type="hidden" name="referrer" value="registration.php">
       
