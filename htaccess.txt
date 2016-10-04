@@ -8,6 +8,7 @@ Redirect 301 /awards.php http://www.investmentaccountmanager.com/awards-and-revi
 Redirect 301 /blog http://www.investmentaccountmanager.com/products/blog
 Redirect 301 /captools_import.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /contact_us.php http://www.investmentaccountmanager.com/contact-us.php
+Redirect 301 /contact-us http://www.investmentaccountmanager.com/contact-us.php
 Redirect 301 /data_entry.php http://www.investmentaccountmanager.com
 Redirect 301 /error-messages.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /iam_tour.php http://www.investmentaccountmanager.com/tour-iam.php

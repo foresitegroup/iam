@@ -28,8 +28,8 @@ include "header.php";
 
   <div>
     <div class="two-col">
-      <div style="width: 100%; height: 250px; background: #2E65B0; color: white; line-height: 250px; text-align: center; font-size: 200%; font-weight: bold;">IMAGE?</div>
-      <br>
+      <!-- <div style="width: 100%; height: 250px; background: #2E65B0; color: white; line-height: 250px; text-align: center; font-size: 200%; font-weight: bold;">IMAGE?</div>
+      <br> -->
       <strong>Matthew K. Willms</strong><br>
       President, co-founder QUANT IX SOFTWARE, Inc.<br>
       <ul>
@@ -40,8 +40,8 @@ include "header.php";
     </div>
 
     <div class="two-col">
-      <div style="width: 100%; height: 250px; background: #2E65B0; color: white; line-height: 250px; text-align: center; font-size: 200%; font-weight: bold;">IMAGE?</div>
-      <br>
+      <!-- <div style="width: 100%; height: 250px; background: #2E65B0; color: white; line-height: 250px; text-align: center; font-size: 200%; font-weight: bold;">IMAGE?</div>
+      <br> -->
       <strong>Peter D. Willms</strong><br>
       Vice President, co-founder QUANT IX SOFTWARE, Inc.<br>
       <ul>
