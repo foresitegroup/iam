@@ -14,7 +14,6 @@ include "header.php";
   Thank you for completing our survey. If we can answer any questions you may have, please <a href="contact-us.php">email us</a> or call 262-241-3990.<br>
   <br>
 
-  Matt &amp; Peter Willms<br>
   QUANT IX SOFTWARE, Inc.
 </article>
 
