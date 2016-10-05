@@ -3,6 +3,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+Redirect 301 /aaii.php http://www.investmentaccountmanager.com
 Redirect 301 /about_us.php http://www.investmentaccountmanager.com/about-us.php
 Redirect 301 /awards.php http://www.investmentaccountmanager.com/awards-and-reviews.php
 Redirect 301 /blog http://www.investmentaccountmanager.com/products/blog
@@ -10,6 +11,7 @@ Redirect 301 /captools_import.php http://www.investmentaccountmanager.com/how-to
 Redirect 301 /contact_us.php http://www.investmentaccountmanager.com/contact-us.php
 Redirect 301 /contact-us http://www.investmentaccountmanager.com/contact-us.php
 Redirect 301 /data_entry.php http://www.investmentaccountmanager.com
+Redirect 301 /demo.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /error-messages.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /iam_tour.php http://www.investmentaccountmanager.com/tour-iam.php
 Redirect 301 /iam_tour1.php http://www.investmentaccountmanager.com/tour-iam.php
@@ -64,6 +66,7 @@ Redirect 301 /software-manual.php http://www.investmentaccountmanager.com/learn.
 Redirect 301 /store http://www.investmentaccountmanager.com/products
 Redirect 301 /system_req.php http://www.investmentaccountmanager.com/faq.php
 Redirect 301 /tips.php http://www.investmentaccountmanager.com/how-to.php
+Redirect 301 /trial-download.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /trial_download.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /trial_download_iam.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /tutorials.php http://www.investmentaccountmanager.com/learn.php
@@ -76,7 +79,11 @@ Redirect 301 /iam_pro_tour.php http://www.investmentaccountmanager.com/tour-pro-
 # Begone hacker scum!
 Redirect 301 /blogs.php http://www.google.com
 Redirect 301 /blog_edit.php http://www.google.com
-Redirect 301 /profile_blogs_new.php http://www.google.com
 Redirect 301 /forum/user.php http://www.google.com
 Redirect 301 /login.php http://www.google.com
+Redirect 301 /member.php http://www.google.com
+Redirect 301 /member/manage_blog.php http://www.google.com
+Redirect 301 /profile_blog_new.php http://www.google.com
+Redirect 301 /profile_blogs_new.php http://www.google.com
+Redirect 301 /user.php http://www.google.com
 Redirect 301 /wp-login.php http://www.google.com
