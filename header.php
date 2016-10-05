@@ -4,8 +4,6 @@ if (!isset($HeaderInc)) $HeaderInc = "";
 if (!isset($Description)) $Description = "";
 if (!isset($Keywords)) $Keywords = "";
 
-$TheCSS = $_SERVER['DOCUMENT_ROOT'] . "/iam/inc/main.css";
-
 function email($address, $name="") {
   $email = "";
   for ($i = 0; $i < strlen($address); $i++) { $email .= (rand(0, 1) == 0) ? "&#" . ord(substr($address, $i)) . ";" : substr($address, $i, 1); }
@@ -30,7 +28,7 @@ function email($address, $name="") {
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css?<?php echo filemtime($TheCSS); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css" type="text/css">
 
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery.cycle2.min.js"></script>
