@@ -11,61 +11,25 @@ include "header.php";
 </div>
 
 <article class="how-to">
-  QuoteMedia data feed (available for an annual low cost subscription price) provides automatic fundamental analysis data download into Investment Account Manager.<br>
+  (Asset Library Menu | Update Data | QuoteMedia Data Feed)<br>
   <br>
 
-  There are two methods to update fundamental data using QuoteMedia within IAM:<br>
-  <ul>
-    <li>All common stocks within the  Current Asset Library or</li>
-    <li>As new common stock is added to IAM.</li>
-  </ul>
+  QuoteMedia data feed (available for an annual low cost subscription price) provides automatic fundamental analysis and fund composition data download into Investment Account Manager. The QuoteMedia&trade; data feed is particularly helpful at month end, so with just a few simple clicks, your investments reflect updated fundamental and descriptive data.  Note: The QuoteMedia data feed is included with Investment Account Manager Professional version.<br>
   <br>
 
-  <strong>All Common Stocks</strong><br>
-  Select The Asset Library Menu | Update Data | QuoteMedia Data Feed (if the selection is grayed-out, this indicates the subscription is not been activated).  The table shows the current values stored within IAM prior to download:<br>
+  QuoteMedia&trade; offers users the ability to automatically populate and update the fundamental and descriptive data for common stocks. This data, when incorporated into Investment Account Manager, provides the information for powerful fundamental ratio analysis, screening, and asset allocation analysis. Fundamental ratio analysis offers a "snap shot" of a company's value, where the analysis is a review of a firm's financial report.<br>
   <br>
 
-  <ul>
-    <li>date of QM data: the date coinciding to the data files used to update IAM assets. This date will replace the 'last updated' date in the IAM current asset library.  Note: if you uncheck the box <strong>Import market prices to current library</strong>, the 'last updated' date in the current asset library will not be updated to reflect the SSG data file date.<br><br></li>
-    <li>symbol: the security symbol.<br><br></li>
-    <li>name: the name or description of the asset.<br><br></li>
-    <li>market price: the market price of the security for the reported SSG data file date.<br><br></li>
-    <li>earnings: the annual earnings per share of the security for the reported SSG data file date.<br><br></li>
-    <li>dividends: the annual dividend rate per share of the security.<br><br></li>
-    <li>beta: the beta coefficient of the security for the reported SSG data file date.<br><br></li>
-    <li>book value per share: most recent reported annual book value per share of the security.<br><br></li>
-    <li>cash flow per share: most recent reported annual cash flow per share of  the security.<br><br></li>
-    <li>sector: the designation for sector is shown. Note: you can select/deselect the option to overwrite existing sector/industry designation prior to import.  See additional notes below.<br><br></li>
-    <li>Size: the designation for size is used, based on revenues. Note: you can select/deselect the option to overwrite existing size designation prior to import.<br><br></li>
-    <li>Note: use the <strong>Default Settings</strong> button to restore the asset library table to pre-defined column widths and order.<br><br></li>
-    <li>
-      Note: for common stock Sector, the following are imported for use in IAM:
-      <ul>
-        <li>Consumer Discretionary</li>
-        <li>Consumer Staples</li>
-        <li>Energy</li>
-        <li>Financial</li>
-        <li>Healthcare</li>
-        <li>Industrials</li>
-        <li>Information Technology</li>
-        <li>Materials</li>
-        <li>Telecommunication Services</li>
-        <li>Utilities</li>
-      </ul>
-    </li>
-  </ul>
+  <img src="images/how-to-quotemedia-data-feed-with-investment-account-manager1.jpg" alt=""><br>
   <br>
 
-  Important Tip: You will notice that the values retrieved may show in red or green font. If so, you can click you mouse on the data cell to see a quick review of the previous value vs. the new value.  This helpful tool lets you review the changing values (ie, dividends, earnings, etc).<br>
+  The QuoteMedia data feed also provides the ability to automatically populate the fund allocation analysis (breakdown by allocation percentages for asset type, sector and size compositions) for mutual funds and exchange traded funds.  These allocation percentages are used in allocation reports to include the portfolio compositions of any funds (mutual funds and exchange traded funds) held in your portfolio when Investment Account Manager derives asset allocation percentages. This means each fund's proportional impact (amount invested in cash, bonds and stocks, by sector, by size) will be included along with any individual holdings of each asset type held outside of your funds, providing a total allocation analysis of your portfolio.<br>
   <br>
 
-  Carefully review the data listed in the scroll window prior to using the <strong>Import</strong> button.  Use the <strong>Print</strong> button to generate a pre-audit report of the SSG import file data. Use the <strong>Cancel</strong> button to quit.<br>
+  <img src="images/how-to-quotemedia-data-feed-with-investment-account-manager2.jpg" alt=""><br>
   <br>
 
-  You are now ready to review the Fundamental Analysis Tab on your Investment Account Manager Home page:<br>
-  <br>
-
-  <img src="images/how-to-quotemedia-data-feed-with-investment-account-manager.jpg" alt="">
+  <img src="images/how-to-quotemedia-data-feed-with-investment-account-manager3.jpg" alt="">
 </article>
 
 <div class="darkgray whitetext footer bt">

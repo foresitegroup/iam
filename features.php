@@ -101,6 +101,7 @@ include "header.php";
         <li>Common Stock Sector and Size</li>
         <li>Earnings Per Share, Dividends Per Share</li>
         <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
+        <li>Mutual and Exchanged Traded Fund Composition Details by Asset Type, Stock Sector and Size</li>
       </ul>
       <br>
 
@@ -125,7 +126,7 @@ include "header.php";
     </div>
 
     <div class="feature-header" style="background: #2E65B0;">PRODUCT FEATURES</div>
-    
+
     <div style="text-align: left;">
       <ul>
         <li>Centralized Secure Portfolio Management</li>
@@ -159,6 +160,7 @@ include "header.php";
         <li>Common Stock Sector and Size</li>
         <li>Earnings Per Share, Dividends Per Share</li>
         <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
+        <li>Mutual and Exchanged Traded Fund Composition Details by Asset Type, Stock Sector and Size</li>
       </ul>
       <br>
 
