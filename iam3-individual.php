@@ -90,7 +90,7 @@ include "header.php";
       <br>
     </li>
     <li>All existing portfolio data will be migrated to IAM3, and IAM3 will be activated to a full version, provided your IAM2 support is up-to-date and active.<br><br></li>
-    <li>We suggest you use IAM3 for a couple of months in shadow to your regular use of IAM2, verifying activity, updating, and reporting.</li>
+    <!-- <li>We suggest you use IAM3 for a couple of months in shadow to your regular use of IAM2, verifying activity, updating, and reporting.</li> -->
   </ol>
   <br>
 
