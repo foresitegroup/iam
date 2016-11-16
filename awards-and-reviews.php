@@ -25,7 +25,7 @@ include "header.php";
       <img src="images/taa-aaii.png" alt="" style="max-width: 100%"><br>
       <br>
 
-      Investment Account Manager earned a perfect score in the most recent AAII Comparison, earning Editor's Choice Award over Quicken Premier and others. <a href="http://www.aaii.com/computerized-investing/article/manage-your-portfolios-with-investment-account-manager-2">Read More</a>
+      Investment Account Manager earned a perfect score in the most recent AAII Comparison, earning Editor's Choice Award over Quicken Premier and others. <a href="http://www.aaii.com/computerized-investing/article/the-top-portfolio-management-software-2016">Read More</a>
     </div>
 
     <div style="clear: both;"></div>
