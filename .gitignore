@@ -67,3 +67,5 @@ products/wp-content/themes/iam/woocommerce/order/.DS_Store
 admin/login.php
 
 forum/Themes/IAM-Redsy/.DS_Store
+
+inc/dbconfigDEV.php
