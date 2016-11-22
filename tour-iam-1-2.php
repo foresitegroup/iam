@@ -35,6 +35,7 @@ include "header.php";
       <li>Collectively, what is my overall allocation, and am I properly diversified?</li>
       <li>Do I hold concentrated positions?</li>
       <li>Are the securities I own held in the right accounts &mdash; i.e., in deferred vs. taxable?</li>
+      <li><a href="pdf/IAM_Sample_Reports.pdf">View a PDF</a> file of a few of the comprehensive reports provided by IAM.</li>
     </ul>
 
     <hr>
