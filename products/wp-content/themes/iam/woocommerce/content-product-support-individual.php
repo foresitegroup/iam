@@ -64,7 +64,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	  // Add short description
 	  echo apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 	  ?>
-	  <!-- <a href="<?php the_permalink(); ?>" class="learnmore">Learn More</a> -->
+	  <a href="<?php the_permalink(); ?>" class="learnmore">Learn More</a>
 	<?php
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.
