@@ -29,7 +29,7 @@ get_header( 'shop' ); ?>
 
     while ( $loop->have_posts() ) : $loop->the_post();
       global $product;
-      wc_get_template_part( 'content', 'product' );
+      wc_get_template_part( 'content', 'product-support-individual' );
     endwhile;
 
     wp_reset_query();
