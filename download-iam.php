@@ -64,8 +64,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
       ?>
       <div style="text-align: left;">
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">1</div>
-        <!-- <a href="software/IAM2_Setup.exe" style="font-weight: bold;">CLICK HERE TO BEGIN THE DOWNLOAD</a><br> -->
-        <a href="ftp://testuser+iamregister.com:Sunshine55@juicedhost.com/IAM3_Ind_Demo_Setup.exe" style="font-weight: bold;">CLICK HERE TO BEGIN THE DOWNLOAD</a><br>
+        <a href="software/IAM3_Ind_Demo_Setup.exe" style="font-weight: bold;">CLICK HERE TO BEGIN THE DOWNLOAD</a><br>
+        <!-- <a href="ftp://testuser+iamregister.com:Sunshine55@juicedhost.com/IAM3_Ind_Demo_Setup.exe" style="font-weight: bold;">CLICK HERE TO BEGIN THE DOWNLOAD</a><br> -->
         <br>
 
         <div class="trial-number" style="font-size: 1em; float: none; display: inline-block; margin-bottom: 0;">2</div>

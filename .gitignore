@@ -69,3 +69,4 @@ admin/login.php
 forum/Themes/IAM-Redsy/.DS_Store
 
 inc/dbconfigDEV.php
+software/*
