@@ -49,7 +49,6 @@ Redirect 301 /iam_tour701.php http://www.investmentaccountmanager.com/tour-iam.p
 Redirect 301 /iam_tour702.php http://www.investmentaccountmanager.com/tour-iam.php
 Redirect 301 /iam_tour703.php http://www.investmentaccountmanager.com/tour-iam.php
 Redirect 301 /import.php http://www.investmentaccountmanager.com/how-to.php
-Redirect 301 /maintenance-releases.php http://www.investmentaccountmanager.com/index.php
 Redirect 301 /manual.php http://www.investmentaccountmanager.com/learn.php
 Redirect 301 /money_import.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /newsletter.php http://www.investmentaccountmanager.com/index.php

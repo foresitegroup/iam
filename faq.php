@@ -117,7 +117,7 @@ include "header.php";
   <strong><span class="redtext">Q:</span> What is the current version?</strong><br>
   <br>
 
-  You can view the details of the current release as well as all previous releases on the <a href="maintenance-releases.php">maintenance releases page</a>.
+  You can view the details of the current release as well as all previous releases on the <a href="maintenance-release.php">maintenance releases page</a>.
 </article>
 
 <div class="gray footer bt">
