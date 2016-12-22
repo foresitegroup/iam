@@ -12,11 +12,11 @@ include "header.php";
 
 <div class="tour-section-menu">
   <article>
-    <a href="tour-iam-6-2.php" class="tour-section-link-prev"><i class="fa fa-angle-left"></i></a>
+    <a href="tour-iam-6-1.php" class="tour-section-link-prev"><i class="fa fa-angle-left"></i></a>
     <a href="tour-iam-6-1.php" class="tour-section-link">6.1</a>
     <hr class="tour-section-link-hr">
-    <a href="tour-iam-6-2.php" class="tour-section-link">6.2</a>
-    <hr class="tour-section-link-hr">
+<!--     <a href="tour-iam-6-2.php" class="tour-section-link">6.2</a>
+    <hr class="tour-section-link-hr"> -->
     <a href="tour-iam-6-3.php" class="tour-section-link current">6.3</a>
     <a href="tour-iam-7-1.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
@@ -46,7 +46,7 @@ include "header.php";
 
 <div class="tour-section-menu footer">
   <article>
-    <a href="tour-iam-6-2.php" class="prev"><i class="fa fa-angle-left"></i> PREV 6.2</a>
+    <a href="tour-iam-6-1.php" class="prev"><i class="fa fa-angle-left"></i> PREV 6.1</a>
     <a href="tour-iam.php" class="index"><i class="fa fa-list-ul"></i></a>
     <a href="tour-iam-7-1.php" class="next">NEXT 7.1 <i class="fa fa-angle-right"></i></a>
   </article>

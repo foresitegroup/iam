@@ -15,10 +15,10 @@ include "header.php";
     <a href="tour-iam-5-4.php" class="tour-section-link-prev"><i class="fa fa-angle-left"></i></a>
     <a href="tour-iam-6-1.php" class="tour-section-link current">6.1</a>
     <hr class="tour-section-link-hr">
-    <a href="tour-iam-6-2.php" class="tour-section-link">6.2</a>
-    <hr class="tour-section-link-hr">
+<!--     <a href="tour-iam-6-2.php" class="tour-section-link">6.2</a>
+    <hr class="tour-section-link-hr"> -->
     <a href="tour-iam-6-3.php" class="tour-section-link">6.3</a>
-    <a href="tour-iam-6-2.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
+    <a href="tour-iam-6-3.php" class="tour-section-link-next"><i class="fa fa-angle-right"></i></a>
     <hr>
     <span class="redtext">6.1</span> COMPATIBILITY WITH GOOGLE &amp; YAHOO
   </article>
@@ -42,7 +42,7 @@ include "header.php";
   <article>
     <a href="tour-iam-5-4.php" class="prev"><i class="fa fa-angle-left"></i> PREV 5.4</a>
     <a href="tour-iam.php" class="index"><i class="fa fa-list-ul"></i></a>
-    <a href="tour-iam-6-2.php" class="next">NEXT 6.2 <i class="fa fa-angle-right"></i></a>
+    <a href="tour-iam-6-3.php" class="next">NEXT 6.3 <i class="fa fa-angle-right"></i></a>
   </article>
 </div>
 

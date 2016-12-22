@@ -136,8 +136,8 @@ include "header.php";
     <span class="redtext">6.1</span> Compatibility with Google &amp; Yahoo<br>
     <br>
 
-    <span class="redtext">6.2</span> Interaction with Other Investment Software<br>
-    <br>
+    <!-- <span class="redtext">6.2</span> Interaction with Other Investment Software<br>
+    <br> -->
 
     <span class="redtext">6.3</span> Import Data<br>
     <br>
