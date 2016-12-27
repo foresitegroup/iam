@@ -225,7 +225,6 @@ include "header.php";
   <img src="images/partner-scottrade.png" alt="ScotTrade">
   <img src="images/partner-quotemedia.png" alt="QuoteMedia">
   <img src="images/partner-manifest.png" alt="ManifestInvesting">
-  <img src="images/partner-invested.png" alt="InvestEd">
   <img src="images/partner-aaii.png" alt="AAII">
 </article>
 

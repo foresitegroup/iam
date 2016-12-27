@@ -37,19 +37,6 @@ include "header.php";
 
   <br>
 
-  <h3>InvestEd Incorporated</h3>
-  <br>
-
-  <strong>InvestEd Incorporated</strong>, a non-profit organization dedicated to creating and nurturing an informed community of investors capable of making its own investment decisions, delivers quality education to neophyte, intermediate, and advanced investors through national and local conferences, workshops, and program recordings. While long-term fundamental investing principles are the core of InvestEd programs, alternative investment theories and use of technology facilitate our educational goals.<br>
-  <br>
-
-  <a href="http://investedinc.org"><img src="images/partners-invested.png" alt="InvestEd Incorporated"></a><br>
-  <br>
-
-  <hr>
-
-  <br>
-
   <h3>Manifest Investing</h3>
   <br>
 
