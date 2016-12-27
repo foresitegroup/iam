@@ -16,7 +16,7 @@ include "header.php";
     <div class="two-col">
       <img src="images/taa-softpedia.png" alt="SOFTPEDIA 100% CLEAN" style="max-width: 100%"><br>
       <div class="taa-sp-tag">NO SPYWARE. NO ADWARE. NO VIRUSES.</div>
-      <div class="taa-sp-desc">This product was last tested in the Softpedia Labs on 9th of August 2014 by Elizabeta Virlan of <a href="http://www.softpedia.com/get/Others/Finances-Business/Investment-Account-Manager.shtml">www.softpedia.com</a>.</div><br>
+      <div class="taa-sp-desc">This product was last tested in the Softpedia Labs on 22nd of December 2016 by Elena Opris of <a href="http://www.softpedia.com/get/Others/Finances-Business/Investment-Account-Manager.shtml">www.softpedia.com</a>.</div><br>
 
       <div class="taa-amazon">4.7/5 STAR RATING ON <a href="http://www.amazon.com/Investment-Account-Manager/dp/B003V04V0Q/ref=sr_1_2?ie=UTF8&s=miscellaneous&qid=1279637390&sr=8-2">AMAZON</a></div>
     </div>
