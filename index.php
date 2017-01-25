@@ -226,6 +226,7 @@ include "header.php";
   <img src="images/partner-quotemedia.png" alt="QuoteMedia">
   <img src="images/partner-manifest.png" alt="ManifestInvesting">
   <img src="images/partner-aaii.png" alt="AAII">
+  <img src="images/partner-7twelve.png" alt="7Twelve">
 </article>
 
 <?php include "footer.php"; ?>

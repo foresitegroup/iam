@@ -58,6 +58,19 @@ include "header.php";
 
   <a href="http://advisor.scottrade.com"><img src="images/partners-scottrade.png" alt="Scottrade"></a><br>
   <br>
+
+  <hr>
+
+  <br>
+
+  <h3>7Twelve</h3>
+  <br>
+
+  7Twelve is a multi-asset balanced portfolio developed by Craig L. Israelsen, Ph.D. in 2008. Unlike a traditional two-asset 60/40 balanced fund, the 7Twelve balanced strategy utilizes multiple asset classes to enhance performance and reduce risk.<br>
+  <br>
+
+  <a href="http://www.7twelveportfolio.com"><img src="images/partners-7twelve.jpg" alt="7Twelve"></a><br>
+  <br>
 </article>
 
 <div class="darkgray whitetext footer">

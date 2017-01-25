@@ -888,8 +888,10 @@ button.single_add_to_cart_button:hover {
 }
 
 #partners IMG {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
-  margin-right: 7%;
+  margin-right: 5%;
 }
 
 #partners IMG:last-child {
@@ -2473,8 +2475,7 @@ ARTICLE.testihead {
   }
 
   #partners IMG {
-    width: 16.5%;
-    height: auto;
+    max-width: 16.5%;
   }
 
   #footermenu UL LI {
@@ -2942,7 +2943,6 @@ ARTICLE.testihead {
 
   #partners IMG,
   #partners IMG:last-child {
-    width: auto;
     max-width: 100%;
     margin: 1em 2%;
   }
