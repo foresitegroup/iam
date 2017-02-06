@@ -68,7 +68,7 @@ Redirect 301 /tips.php http://www.investmentaccountmanager.com/how-to.php
 Redirect 301 /trial-download.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /trial_download.php http://www.investmentaccountmanager.com/free-trial.php
 Redirect 301 /trial_download_iam.php http://www.investmentaccountmanager.com/free-trial.php
-Redirect 301 /tutorials.php http://www.investmentaccountmanager.com/learn.php
+Redirect 301 /tutorials.php http://www.investmentaccountmanager.com/video-tutorials.php
 Redirect 301 /utility-program.php http://www.investmentaccountmanager.com/how-to-iam3-utility-program.php
 
 # IAM Pro specific
