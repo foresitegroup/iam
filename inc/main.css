@@ -2423,6 +2423,70 @@ ARTICLE.testihead {
   padding: 0 10px; 
 }
 
+.video-intro {
+  color: #255493;
+  font-size: 18px;
+  text-align: center;
+}
+
+.videos {
+  border-top: 1px solid #959595;
+  background: #EBEBEB;
+}
+
+.videos ARTICLE {
+  margin: 0 auto;
+  padding: 5em 0;
+  width: 1056px;
+}
+
+.video-box {
+  width: 44.69%;
+  margin: 0 2.65% 4em 2.65%;
+  box-sizing: border-box;
+  border: 1px solid #D4D5D6;
+  padding: 2em 2em 3em;
+  background: #FFFFFF;
+  color: #363636;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.3em;
+  vertical-align: top;
+}
+
+.video-box H5 {
+  margin: 0 0 0.5em;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.video-box .swipebox-video {
+  margin-top: 2.5em;
+  display: block;
+  width: 100%;
+  padding-top: 54%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.video-box .swipebox-video:after {
+  font-family: "FontAwesome";
+  content: "\f01d";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  line-height: 1em;
+}
+
+
+@media only screen and (max-width: 1056px) {
+  .videos ARTICLE {
+    width: 96%;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */
@@ -2888,6 +2952,11 @@ ARTICLE.testihead {
   .taa-quote {
     font-size: 130%;
     line-height: 1.3em;
+  }
+
+  .video-box {
+    width: 100%;
+    margin: 0 0 4em;
   }
 }
 

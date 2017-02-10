@@ -26,6 +26,15 @@ include "header.php";
   <br>
   <br>
 
+  <h4>VIDEO TUTORIALS</h4>
+  Learn how to set up and use your Investment Account Management software with these easy to follow instructional videos.<br>
+  <br>
+
+  <a href="video-tutorials.php" class="redbutton">VIDEO TUTORIALS</a><br>
+  <br>
+  <br>
+  <br>
+
   <h4>HOW TO</h4>
   Included are quick explanations of specific features and functions in IAM for individual users.<br>
   <br>

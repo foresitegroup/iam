@@ -134,7 +134,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerOnlineSupportForm";
 
 <div class="gray bt footer">
   <article>
-    <h2>CHECK OUR <a href="#">TUTORIALS</a> &amp; <a href="faq.php">FAQ</a> SECTION</h2>
+    <h2>CHECK OUR <a href="video-tutorials.php">TUTORIALS</a> &amp; <a href="faq.php">FAQ</a> SECTION</h2>
   </article>
 </div>
 

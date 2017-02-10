@@ -37,7 +37,7 @@ include "header.php";
 
 <div class="gray footer bt">
   <article>
-    <h2 class="small">VISIT OUR <a href="#">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
+    <h2 class="small">VISIT OUR <a href="video-tutorials.php">TUTORIAL</a> PAGE FOR ADDED SUPPORT</h2>
   </article>
 </div>
 

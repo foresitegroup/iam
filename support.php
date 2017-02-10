@@ -40,7 +40,7 @@ include "header.php";
 
 <div class="darkgray whitetext footer">
   <article>
-    <h2>LEARN <span class="redtext">IAM</span> WITH OUR <a href="#">VIDEO TUTORIALS</a>.</h2>
+    <h2>LEARN <span class="redtext">IAM</span> WITH OUR <a href="video-tutorials.php">VIDEO TUTORIALS</a>.</h2>
   </article>
 </div>
 
