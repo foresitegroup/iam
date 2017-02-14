@@ -11,6 +11,21 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.2</strong>
+  <ul>
+    <li>added to 'download positions' form ability to hide/show user name and password.</li>
+    <li>added user preference to 'recall' use of security symbol when entering activity in the new transactions entry ledger.</li>
+    <li>added user preference to 'classic ledger' a check box variable to use trade date = settle date.</li>
+    <li>added user preference under the file menu | preferences | home page tab to [ ] show current asset library as part of price updating process.</li>
+    <li>corrected functionality for posting return of capital activity as part of broker downloads.</li>
+    <li>corrected numeric overflow error in Benchmarks / Portfolio returns feature.</li>
+    <li>corrected error in Portfolio Allocation Level 1 as of date report for money market funds.</li>
+    <li>corrected error in Portfolio Summary as of date allocation graph for money market funds.</li>
+    <li>corrected error on Portfolio Performance Report for partially closed option contracts prior to the exercise/assign of any remaining balance.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.1</strong><br>
   <ul>
     <li>added to QuoteMedia Data Feed the ability to auto-populate mutual fund and exchange traded fund composition details for: asset type, sector and size; investment objective; year to date, 1 year, 3 year, 5 year, 10 year performance; turnover and expense ratio.</li>
