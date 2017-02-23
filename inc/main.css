@@ -2436,13 +2436,22 @@ ARTICLE.testihead {
 
 .videos ARTICLE {
   margin: 0 auto;
-  padding: 5em 0;
+  padding: 2.5em 0 5em;
   width: 1056px;
+}
+
+.videos ARTICLE H2 {
+  margin: 1.5em auto 0.5em;
+  width: 1000px;
+  font-size: 36px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #ED243B;
 }
 
 .video-box {
   width: 44.69%;
-  margin: 0 2.65% 4em 2.65%;
+  margin: 0 2.5% 4em 2.5%;
   box-sizing: border-box;
   border: 1px solid #D4D5D6;
   padding: 2em 2em 3em;
@@ -2452,6 +2461,7 @@ ARTICLE.testihead {
   font-size: 13px;
   line-height: 1.3em;
   vertical-align: top;
+  display: inline-block;
 }
 
 .video-box H5 {
@@ -2485,6 +2495,10 @@ ARTICLE.testihead {
 @media only screen and (max-width: 1056px) {
   .videos ARTICLE {
     width: 96%;
+  }
+
+  .videos ARTICLE H2 {
+    width: 95%;
   }
 }
 
@@ -2952,6 +2966,10 @@ ARTICLE.testihead {
   .taa-quote {
     font-size: 130%;
     line-height: 1.3em;
+  }
+
+  .videos ARTICLE H2 {
+    width: 100%;
   }
 
   .video-box {
