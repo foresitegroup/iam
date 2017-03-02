@@ -30,37 +30,81 @@ include "header.php";
 <div class="videos">
   <article>
     <section>
-      <h2>General</h2>
+      <h2>General Features</h2>
       <div class="video-box">
-        <h5>Home Page</h5>
-        This video introduces the IAM v3 'home page' features and functions.
-
         <a href="https://www.youtube.com/watch?v=Zr4_qbYTOYQ&rel=0&showinfo=0" class="swipebox-video" rel="Zr4_qbYTOYQ"></a>
+
+        <div class="video-box-text">
+          <h4>Home Page: Features &amp; Functions</h4>
+          5:39
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=WOqUKI3hpio&rel=0&showinfo=0" class="swipebox-video" rel="WOqUKI3hpio"></a>
+
+        <div class="video-box-text">
+          <h4>Activity Ledger: Features &amp; Functions</h4>
+          5:34
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=rtFFDFtyN7Y&rel=0&showinfo=0" class="swipebox-video" rel="rtFFDFtyN7Y"></a>
+
+        <div class="video-box-text">
+          <h4>Current Asset Library: Features &amp; Functions</h4>
+          7:32
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=TMkE_YTQaBk&rel=0&showinfo=0" class="swipebox-video" rel="TMkE_YTQaBk"></a>
+
+        <div class="video-box-text">
+          <h4>QuoteMedia Data Feed: Updating New Securities</h4>
+          5:50
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=V7eE6-QEDIU&rel=0&showinfo=0" class="swipebox-video" rel="V7eE6-QEDIU"></a>
+
+        <div class="video-box-text">
+          <h4>QuoteMedia Data Feed: Updating Existing Securities</h4>
+          4:54
+        </div>
       </div>
     </section>
 
     
     <section>
-    <h2>Portfolio Setup Wizard</h2>
+    <h2>Portfolio Setup Wizard Features</h2>
       <div class="video-box">
-        <h5>Enter Holdings</h5>
-        Review of IAM v3 Portfolio Setup Wizard, feature to manually enter current holdings.
-
         <a href="https://www.youtube.com/watch?v=haAsNSbTGJI&rel=0&showinfo=0" class="swipebox-video" rel="haAsNSbTGJI"></a>
+
+        <div class="video-box-text">
+          <h4>Manually Enter Current Holdings</h4>
+          6:24
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Download Holdings</h5>
-        Review of IAM v3 Portfolio Setup Wizard, feature to download current holdings from your financial institution.
-
         <a href="https://www.youtube.com/watch?v=a0Aq__qJHnA&rel=0&showinfo=0" class="swipebox-video" rel="a0Aq__qJHnA"></a>
+
+        <div class="video-box-text">
+          <h4>Download Current Holdings From Your Financial Institution</h4>
+          5:38
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Import from XLS / CVS</h5>
-        Review of IAM v3 Portfolio Setup Wizard, feature to import a Microsoft XLS/csv file of your current holdings.
-
         <a href="https://www.youtube.com/watch?v=DT9Vk3rmgc0&rel=0&showinfo=0" class="swipebox-video" rel="DT9Vk3rmgc0"></a>
+
+        <div class="video-box-text">
+          <h4>Import Current Holdings From A Microsoft XLS/CSV File</h4>
+          4:55
+        </div>
       </div>
     </section>
 
@@ -68,56 +112,70 @@ include "header.php";
     <section>
       <h2>Portfolio Allocation Features</h2>
       <div class="video-box">
-        <h5>Part 1 of 2 of Asset Allocation</h5>
-        Review of features provided by IAM v3.
-
         <a href="https://www.youtube.com/watch?v=EzL-01ew4Kc&rel=0&showinfo=0" class="swipebox-video" rel="EzL-01ew4Kc"></a>
+
+        <div class="video-box-text">
+          <h4>Asset Allocation (1): Setting Portfolio Allocation Targets</h4>
+          5:38
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Part 2 of 2 of Asset Allocation</h5>
-        Review of features provided by IAM v3.
-
         <a href="https://www.youtube.com/watch?v=uj5-r-su6eM&rel=0&showinfo=0" class="swipebox-video" rel="uj5-r-su6eM"></a>
+
+        <div class="video-box-text">
+          <h4>Asset Allocation (2): Current Allocations &amp; Rebalancing</h4>
+          7:17
+        </div>
       </div>
     </section>
 
     
     <section>
-      <h2>Individual Performance Features</h2>
+      <h2>Portfolio Performance Features</h2>
       <div class="video-box">
-        <h5>Creating Historical Price Files</h5>
-        Review of IAM v3 Performance Features.
-
         <a href="https://www.youtube.com/watch?v=gLGX-4FpGI0&rel=0&showinfo=0" class="swipebox-video" rel="gLGX-4FpGI0"></a>
+
+        <div class="video-box-text">
+          <h4>Performance (1): Creating Historical Price Files</h4>
+          4:39
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Performance Report</h5>
-        Review of IAM v3 Performance Features.
-
         <a href="https://www.youtube.com/watch?v=RcAObzZzdXQ&rel=0&showinfo=0" class="swipebox-video" rel="RcAObzZzdXQ"></a>
+
+        <div class="video-box-text">
+          <h4>Performance (2): Portfolio Performance Report</h4>
+          6:11
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Deriving and Storing Portfolio Performance Returns</h5>
-        Review of IAM v3 Performance Features.
-
         <a href="https://www.youtube.com/watch?v=sgHT2GfA7mg&rel=0&showinfo=0" class="swipebox-video" rel="sgHT2GfA7mg"></a>
+
+        <div class="video-box-text">
+          <h4>Performance (3): Deriving and Storing Performance Returns</h4>
+          4:24
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Defining Portfolio Benchmark Indices</h5>
-        Review of IAM v3 Performance Features.
-
         <a href="https://www.youtube.com/watch?v=v2mhEwlyaSg&rel=0&showinfo=0" class="swipebox-video" rel="v2mhEwlyaSg"></a>
+
+        <div class="video-box-text">
+          <h4>Performance (4): Defining Benchmark Indices</h4>
+          4:39
+        </div>
       </div>
 
       <div class="video-box">
-        <h5>Portfolio Performance Comparison</h5>
-        Review of IAM v3 Performance Features.
-
         <a href="https://www.youtube.com/watch?v=-QPN-jU6k2I&rel=0&showinfo=0" class="swipebox-video" rel="-QPN-jU6k2I"></a>
+
+        <div class="video-box-text">
+          <h4>Performance (5): Portfolio Performance Comparisons</h4>
+          4:15
+        </div>
       </div>
     <section>
   </article>
