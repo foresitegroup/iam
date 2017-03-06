@@ -11,6 +11,15 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.3</strong>
+  <ul>
+    <li>corrected Microsoft csv file import for missing variable.</li>
+    <li>corrected delete function for Benchmark Indices Returns Tab.</li>
+    <li>corrected activity ledger for showing the cancel/save buttons prior to entering new activity.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.2</strong>
   <ul>
     <li>added to 'download positions' form ability to hide/show user name and password.</li>
