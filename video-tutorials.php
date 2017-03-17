@@ -32,11 +32,29 @@ include "header.php";
     <section>
       <h2>General Features</h2>
       <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=gHlQY4vjPrw&rel=0&showinfo=0" class="swipebox-video" rel="gHlQY4vjPrw"></a>
+
+        <div class="video-box-text">
+          <h4>Getting Started</h4>
+          5:40
+        </div>
+      </div>
+
+      <div class="video-box">
         <a href="https://www.youtube.com/watch?v=Zr4_qbYTOYQ&rel=0&showinfo=0" class="swipebox-video" rel="Zr4_qbYTOYQ"></a>
 
         <div class="video-box-text">
-          <h4>Home Page: Features &amp; Functions</h4>
+          <h4>Home Page</h4>
           5:39
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=qy_SDpFtQJg&rel=0&showinfo=0" class="swipebox-video" rel="qy_SDpFtQJg"></a>
+
+        <div class="video-box-text">
+          <h4>Reports</h4>
+          8:13
         </div>
       </div>
 
@@ -44,7 +62,7 @@ include "header.php";
         <a href="https://www.youtube.com/watch?v=WOqUKI3hpio&rel=0&showinfo=0" class="swipebox-video" rel="WOqUKI3hpio"></a>
 
         <div class="video-box-text">
-          <h4>Activity Ledger: Features &amp; Functions</h4>
+          <h4>Activity Ledger</h4>
           5:34
         </div>
       </div>
@@ -53,26 +71,17 @@ include "header.php";
         <a href="https://www.youtube.com/watch?v=rtFFDFtyN7Y&rel=0&showinfo=0" class="swipebox-video" rel="rtFFDFtyN7Y"></a>
 
         <div class="video-box-text">
-          <h4>Current Asset Library: Features &amp; Functions</h4>
+          <h4>Current Asset Library</h4>
           7:32
         </div>
       </div>
 
       <div class="video-box">
-        <a href="https://www.youtube.com/watch?v=TMkE_YTQaBk&rel=0&showinfo=0" class="swipebox-video" rel="TMkE_YTQaBk"></a>
+        <a href="https://www.youtube.com/watch?v=oJpE7py3itw&rel=0&showinfo=0" class="swipebox-video" rel="oJpE7py3itw"></a>
 
         <div class="video-box-text">
-          <h4>QuoteMedia Data Feed: Updating New Securities</h4>
-          5:50
-        </div>
-      </div>
-
-      <div class="video-box">
-        <a href="https://www.youtube.com/watch?v=V7eE6-QEDIU&rel=0&showinfo=0" class="swipebox-video" rel="V7eE6-QEDIU"></a>
-
-        <div class="video-box-text">
-          <h4>QuoteMedia Data Feed: Updating Existing Securities</h4>
-          4:54
+          <h4>Historic Price Library</h4>
+          6:04
         </div>
       </div>
     </section>
@@ -104,6 +113,28 @@ include "header.php";
         <div class="video-box-text">
           <h4>Import Current Holdings From A Microsoft XLS/CSV File</h4>
           4:55
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>QuoteMedia Data Feed Features</h2>
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=TMkE_YTQaBk&rel=0&showinfo=0" class="swipebox-video" rel="TMkE_YTQaBk"></a>
+
+        <div class="video-box-text">
+          <h4>QuoteMedia Data Feed: Updating New Securities</h4>
+          5:50
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=V7eE6-QEDIU&rel=0&showinfo=0" class="swipebox-video" rel="V7eE6-QEDIU"></a>
+
+        <div class="video-box-text">
+          <h4>QuoteMedia Data Feed: Updating Existing Securities</h4>
+          4:54
         </div>
       </div>
     </section>

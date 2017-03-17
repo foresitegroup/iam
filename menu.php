@@ -8,6 +8,7 @@
       <li><a href="<?php echo $TopDir; ?>secure.php">Secure Software</a></li>
       <li><a href="<?php echo $TopDir; ?>unified-account-management.php" class="two-line">Unified Account<br>Management</a></li>
       <li><a href="<?php echo $TopDir; ?>awards-and-reviews.php">Awards &amp; Reviews</a></li>
+      <li><a href="<?php echo $TopDir; ?>testimonials.php">Testimonials</a></li>
     </ul>
   </li>
   <li><a href="<?php echo $TopDir; ?>products">PRODUCTS</a></li>
