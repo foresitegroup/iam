@@ -209,6 +209,37 @@ include "header.php";
         </div>
       </div>
     <section>
+
+
+    <section>
+      <h2>Historical Accurate Portfolio</h2>
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=aDEz7hD0k-w&rel=0&showinfo=0" class="swipebox-video" rel="aDEz7hD0k-w"></a>
+
+        <div class="video-box-text">
+          <h4>Historical Accurate Portfolio Part 1</h4>
+          8:10
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=vB0orNAvUiw&rel=0&showinfo=0" class="swipebox-video" rel="vB0orNAvUiw"></a>
+
+        <div class="video-box-text">
+          <h4>Historical Accurate Portfolio Part 2</h4>
+          8:07
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=Lfqb0TqQzNg&rel=0&showinfo=0" class="swipebox-video" rel="Lfqb0TqQzNg"></a>
+
+        <div class="video-box-text">
+          <h4>Historical Accurate Portfolio Part 3</h4>
+          7:53
+        </div>
+      </div>
+    </section>
   </article>
 </div>
 
