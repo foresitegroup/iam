@@ -17,7 +17,7 @@ include "header.php";
 <hr class="full mb">
 
 <article>
-  If you have any questions while using the free 30 day demo version of Investment Account Manager v3 Individual, please call our technical support team at 800-247-6354.<br>
+  If you have any questions while using the free <?php echo $GLOBALS['demodays']; ?> day demo version of Investment Account Manager v3 Individual, please call our technical support team at 800-247-6354.<br>
   <br>
 
   <a href="pdf/Getting_Started.pdf">Print This Guide</a><br>
@@ -26,11 +26,11 @@ include "header.php";
 
   <h5>GETTING STARTED</h5>
 
-  Installing the free 30 day demo version of Investment Account Manager 3 Individual:<br>
+  Installing the free <?php echo $GLOBALS['demodays']; ?> day demo version of Investment Account Manager 3 Individual:<br>
   <br>
 
   <ol class="getting-started">
-    <li class="long-string"><strong><a href="download-iam.php">Download the 30 day trial version</a> from our website &mdash; www.investmentaccountmanager.com.  The file name is IAM3_Setup.exe.</strong></li>
+    <li class="long-string"><strong><a href="download-iam.php">Download the <?php echo $GLOBALS['demodays']; ?> day trial version</a> from our website &mdash; www.investmentaccountmanager.com.  The file name is IAM3_Setup.exe.</strong></li>
 
     <li>
       <strong>Install the trial.</strong>
@@ -47,7 +47,7 @@ networks. IAM can run on Apple operating systems, emulating Windows.</li>
       <strong>Launch Investment Account Manager v3 Individual</strong>
       <ul>
         <li>Complete the Welcome Screen by entering the name of the person to whom the software will be registered.</li>
-        <li>Note that the software demo has a 30 day free trial period.</li>
+        <li>Note that the software demo has a <?php echo $GLOBALS['demodays']; ?> day free trial period.</li>
       </ul>
     </li>
 
@@ -153,7 +153,7 @@ features and tab views.</li>
       <strong>Getting Help</strong>
       <ul>
         <li>
-          Our Technical Support Team offers free unlimited support while you use the IAMv3 30 day demo version.
+          Our Technical Support Team offers free unlimited support while you use the IAMv3 <?php echo $GLOBALS['demodays']; ?> day demo version.
           <ul>
             <li class="long-string">Email us at <strong><?php email("techsupport@investmentaccountmanager.com"); ?></strong></li>
             <li>Call us: <strong>262-241-3990</strong></li>

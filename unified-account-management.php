@@ -102,7 +102,7 @@ include "header.php";
   <div class="three-col download">
     LET <span class="redtext">IAM</span> IMPROVE YOUR PORTFOLIO MANAGEMENT SKILLS TODAY!<br>
     <br>
-    <a href="free-trial.php" class="redbutton">30 DAY FREE TRIAL</a>
+    <a href="free-trial.php" class="redbutton"><?php echo $GLOBALS['demodays']; ?> DAY FREE TRIAL</a>
   </div>
 
   <div style="clear: both;"></div>

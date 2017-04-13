@@ -20,7 +20,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerOnlineSupportForm";
     The developers of IAM Individual and IAM Professional are pleased to offer detailed and comprehensive online support to our users.<br>
     <br>
 
-    Free technical support is provided to all users during the 30 day trial period.  Technical support is also included for 1 year with all new IAM software activations. After the first year, you must purchase a technical support renewal to receive ongoing technical support.<br>
+    Free technical support is provided to all users during the <?php echo $GLOBALS['demodays']; ?> day trial period.  Technical support is also included for 1 year with all new IAM software activations. After the first year, you must purchase a technical support renewal to receive ongoing technical support.<br>
     <br>
 
     Technical support renewals can be found here for <a href="products/product-category/support-individual/">IAM Individual Support Renewal</a> and <a href="/products/product/iam-pro-support-renewal-1-year/">IAM Professional Support Renewal</a>.

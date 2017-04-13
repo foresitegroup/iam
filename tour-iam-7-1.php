@@ -39,7 +39,7 @@ include "header.php";
       <br>
 
       <ul>
-        <li><strong>Step 1:</strong> users simply enter their name.  Investment Account Manager is limited to 30 days of free activation from the installation date.<br><br></li>
+        <li><strong>Step 1:</strong> users simply enter their name.  Investment Account Manager is limited to <?php echo $GLOBALS['demodays']; ?> days of free activation from the installation date.<br><br></li>
         <li><strong>Step 2:</strong> users can identify one of two optional stock data services, including StockCentral.com and AAII's Stock Investor Pro software.  Note: Investment Account Manager is provided with a 45 day free subscription to the StockCentral.com data service.<br><br></li>
         <li><strong>Step 3:</strong> Investment Account Manager also provides optional compatibility with the BetterInvesting&trade; Mutual Fund Data Service. Note: Investment Account Manager is provided with a 45 day free subscription to the BetterInvesting fund data service.<br><br></li>
         <li><strong>Step 4:</strong> this step allows users to set a user defined preference for program backups.<br><br></li>

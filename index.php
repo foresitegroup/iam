@@ -78,7 +78,7 @@ include "header.php";
     <form action="download-iam.php" method="POST" onSubmit="return checkform(this)" class="vert-center">
       <div>
         <h1>FREE TRIAL!</h1>
-        <span>Simply fill out the form below and start your 30 day <strong>individual</strong> free trial today</span><br>
+        <span>Simply fill out the form below and start your <?php echo $GLOBALS['demodays']; ?> day <strong>individual</strong> free trial today</span><br>
         <br>
 
         <div style="font-size: 80%; color: #ED243B; padding-bottom: 0.3em; width: auto;">* Required</div>
@@ -204,7 +204,7 @@ include "header.php";
 
       <div>COMPREHENSIVE SUPPORT</div>
 
-      Investment Account Manager provides award-winning, free technical support to answer any questions while using the 30 day trial version, as well as one year of free unlimited technical support with IAM software activation.<br>
+      Investment Account Manager provides award-winning, free technical support to answer any questions while using the <?php echo $GLOBALS['demodays']; ?> day trial version, as well as one year of free unlimited technical support with IAM software activation.<br>
       <br>
       <strong style="color: #111111;">
         <a href="online-support.php">SUPPORT</a><br>
