@@ -11,6 +11,17 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.4</strong>
+  <ul>
+    <li>corrected Microsoft csv file import for missing variable.</li>
+    <li>corrected backup feature for change drive location selection.</li>
+    <li>corrected historical pricing feature due to changes made by Yahoo! Finance.</li>
+    <li>changed broker access to Janney Montgomery Scott for new required broker credentials.</li>
+    <li>changed QuoteMedia data feed for changes in delivery of data items.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.3</strong>
   <ul>
     <li>corrected Microsoft csv file import for missing variable.</li>
