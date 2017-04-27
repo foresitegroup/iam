@@ -13,7 +13,7 @@
  * @see 	https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.6.0
+ * @version 3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -43,7 +43,7 @@ $order = wc_get_order( $order_id );
 					'item_id'		     => $item_id,
 					'item'			     => $item,
 					//'show_purchase_note' => $show_purchase_note,
-					//'purchase_note'	     => $product ? get_post_meta( $product->id, '_purchase_note', true ) : '',
+					//'purchase_note'	     => $product ? $product->get_purchase_note() : '',
 					'product'	         => $product,
 				) );
 			}

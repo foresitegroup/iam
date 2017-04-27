@@ -4,7 +4,7 @@
  *
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.4.0
+ * @version 3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -28,17 +28,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="two-col">
 		<table class="shop_table shop_table_responsive customer_details">
-			<?php if ( $order->billing_phone ) : ?>
+			<?php if ( $order->get_billing_phone() ) : ?>
 				<tr>
 					<th><?php _e( 'PHONE: ', 'woocommerce' ); ?></th>
-					<td><?php echo esc_html( $order->billing_phone ); ?></td>
+					<td><?php echo esc_html( $order->get_billing_phone() ); ?></td>
 				</tr>
 			<?php endif; ?>
 
-			<?php if ( $order->billing_email ) : ?>
+			<?php if ( $order->get_billing_email() ) : ?>
 				<tr>
 					<th><?php _e( 'EMAIL: ', 'woocommerce' ); ?></th>
-					<td><?php echo esc_html( $order->billing_email ); ?></td>
+					<td><?php echo esc_html( $order->get_billing_email() ); ?></td>
 				</tr>
 			<?php endif; ?>
 
@@ -49,10 +49,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</tr>
 			<?php endif; ?>
 
-			<?php if ( $order->customer_note ) : ?>
+			<?php if ( $order->get_customer_note() ) : ?>
 				<tr>
 					<th><?php _e( 'NOTE: ', 'woocommerce' ); ?></th>
-					<td><?php echo wptexturize( $order->customer_note ); ?></td>
+					<td><?php echo wptexturize( $order->get_customer_note() ); ?></td>
 				</tr>
 			<?php endif; ?>
 

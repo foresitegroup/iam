@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.2.0
+ * @version   3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -79,7 +79,7 @@ if ( $order ) : ?>
 				<?php if ( $order->payment_method_title ) : ?>
 				  <br>
 					<?php _e( 'Payment Method:', 'woocommerce' ); ?>
-					<?php echo $order->payment_method_title; ?>
+					<?php echo wp_kses_post($order->get_payment_method_title()); ?>
 				</li>
 				<?php endif; ?>
 			</div>
@@ -89,32 +89,9 @@ if ( $order ) : ?>
 			<div style="clear: both;"></div>
 		</div>
 
-<!-- 		<ul class="order_details">
-			<li class="order">
-				<?php //_e( 'Order Number:', 'woocommerce' ); ?>
-				<strong><?php //echo $order->get_order_number(); ?></strong>
-			</li>
-			<li class="date">
-				<?php //_e( 'Date:', 'woocommerce' ); ?>
-				<strong><?php //echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
-			</li>
-			<li class="total">
-				<?php //_e( 'Total:', 'woocommerce' ); ?>
-				<strong><?php //echo $order->get_formatted_order_total(); ?></strong>
-			</li>
-			<?php //if ( $order->payment_method_title ) : ?>
-			<li class="method">
-				<?php //_e( 'Payment Method:', 'woocommerce' ); ?>
-				<strong><?php //echo $order->payment_method_title; ?></strong>
-			</li>
-			<?php //endif; ?>
-		</ul>
-		<div class="clear"></div> -->
-
 	<?php endif; ?>
 
-	<?php //do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
-	<?php do_action( 'woocommerce_thankyou', $order->id ); ?>
+	<?php do_action( 'woocommerce_thankyou', $order->get_id ); ?>
 
 <?php else : ?>
 

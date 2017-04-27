@@ -186,4 +186,12 @@ function add_neworders ($order_id) {
   }
 }
 add_action( 'woocommerce_checkout_order_processed', 'add_neworders' );
+
+
+// Make "more" link go to top of page instead of anchor
+function remove_more_link_scroll( $link ) {
+  $link = preg_replace( '|#more-[0-9]+|', '', $link );
+  return $link;
+}
+add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
 ?>

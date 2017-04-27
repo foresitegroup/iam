@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates/Emails
- * @version     2.1.2
+ * @version   3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,8 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 foreach ( $items as $item_id => $item ) :
-	$_product     = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $item ), $item );
-	$item_meta    = new WC_Order_Item_Meta( $item, $_product );
+	$product = $item->get_product();
+	// $_product     = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $item ), $item );
+	// $item_meta    = new WC_Order_Item_Meta( $item, $_product );
 
 	if ( apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 		?>
@@ -26,7 +27,7 @@ foreach ( $items as $item_id => $item ) :
 				}
 
 				// Product name
-				echo apply_filters( 'woocommerce_order_item_name', $item['name'], $item, false );
+				echo apply_filters( 'woocommerce_order_item_name', $item->get_name(), $item, false );
 
 				// SKU
 				if ( $show_sku && is_object( $_product ) && $_product->get_sku() ) {
@@ -37,13 +38,14 @@ foreach ( $items as $item_id => $item ) :
 				do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order );
 
 				// Variation
-				if ( ! empty( $item_meta->meta ) ) {
-					echo '<br/><small>' . nl2br( $item_meta->display( true, true, '_', "\n" ) ) . '</small>';
-				}
+				// if ( ! empty( $item_meta->meta ) ) {
+				// 	echo '<br/><small>' . nl2br( $item_meta->display( true, true, '_', "\n" ) ) . '</small>';
+				// }
+				wc_display_item_meta( $item );
 
 				// File URLs
 				if ( $show_download_links ) {
-					$order->display_item_downloads( $item );
+					wc_display_item_downloads( $item );
 				}
 
 				// allow other plugins to add additional product information here
