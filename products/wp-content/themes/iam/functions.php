@@ -8,6 +8,9 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
+
 
 /* Modify cart coupon layout */
 function fg_wc_cart_totals_coupon_label( $coupon ) {

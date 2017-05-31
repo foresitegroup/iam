@@ -1555,6 +1555,10 @@ UL.products LI .price,
   color: #ED243B;
 }
 
+.price INS { text-decoration: none; font-style: italic; }
+.price INS:before { content: "Now "; }
+.price INS:after { content: " limited time offer"; font-size: 70%; }
+
 UL.products LI .note {
   /*width: 55%;*/
   font-size: 81.25%;
