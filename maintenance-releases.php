@@ -11,6 +11,19 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.5b</strong>
+  <ul>
+    <li>changed QuoteMedia data feed for changes in delivery of data items.</li>
+    <li>corrected edit functions in new ledger entry system.</li>
+    <li>corrected ^dji index and option pricing due to changes made by Yahoo! Finance.</li>
+    <li>corrected historical pricing due to changes made by Yahoo! Finance.</li>
+    <li>corrected Security Basis Report to print user preference | report title.</li>
+    <li>changed broker access to T. Rowe Price for new required broker credentials.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  Note: with the recent changes by Yahoo! Finance, adjusted prices for benchmark indices are no longer available.  We are working on a solution for providing this month end adjusted price as available for mutual funds and exchange traded funds when used for benchmark performance comparisons.  In the meantime, the month-end closing price will now be stored and used for these benchmark performance comparison purposes.<br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.4</strong>
   <ul>
     <li>corrected Microsoft csv file import for missing variable.</li>
