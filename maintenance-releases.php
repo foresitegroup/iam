@@ -11,6 +11,18 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.6</strong>
+  <ul>
+    <li>changed QuoteMedia data feed for changes in delivery of data items.</li>
+    <li>corrected additional historical pricing issues due to changes made by Yahoo! Finance.</li>
+    <li>corrected Income Received Report for report title issue.</li>
+    <li>corrected broker import for duplicate money market offsets popup note message.</li>
+    <li>corrected benchmark performance table for manual entry/deriving monthly returns.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  Note: the 6/30/2017 historical price data provided for use in IAMv3 may be in some cases corrupted and incomplete due to recent NASDAQ technical pricing issues and may not provide accurate pricing.  Depending on your holdings, $1.00 may be returned.  For those securities that show $1.00 after creating the 6/30/2017 historic price date, you'll need to rely on June 30th month-end broker statements, or other sources, to manually edit the 6/30/2017 historic price date for accuracy.  Hopefully this issue will be resolved soon and reliable 6/30/2017 historical price data will be available, and this will no longer be an issue going forward.  We are looking into alternative sources for historic and adjusted benchmark index pricing.<br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.5b</strong>
   <ul>
     <li>changed QuoteMedia data feed for changes in delivery of data items.</li>
