@@ -51,25 +51,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 	<div class="summary entry-summary shop-index-right">
-
 		<?php
-			/**
-			 * woocommerce_single_product_summary hook
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 */
-			do_action( 'woocommerce_single_product_summary' );
+		/**
+		 * woocommerce_single_product_summary hook
+		 *
+		 * @hooked woocommerce_template_single_title - 5
+		 * @hooked woocommerce_template_single_rating - 10
+		 * @hooked woocommerce_template_single_price - 10
+		 * @hooked woocommerce_template_single_excerpt - 20
+		 * @hooked woocommerce_template_single_add_to_cart - 30
+		 * @hooked woocommerce_template_single_meta - 40
+		 * @hooked woocommerce_template_single_sharing - 50
+		 */
+		do_action( 'woocommerce_single_product_summary' );
 
-			$note = get_post_meta( get_the_ID(), 'single_product_note', true );
-	    if (!empty($note)) echo "<div class=\"note\">" . $note . "</div>";
-		?>
-    
+		$note = get_post_meta( get_the_ID(), 'single_product_note', true );
+    if (!empty($note)) echo "<div class=\"note\">" . $note . "</div>";
+
+	  $tags =  get_the_terms( wc_get_product()->ID, 'product_tag' );
+	  echo '<meta itemprop="keywords" content="';
+    foreach ( $tags as $tag ) :
+    	echo $tag->name . ", ";
+    endforeach;
+    echo '">';
+	  ?>
 	</div><!-- .summary -->
 
 	<div style="clear: both;"></div>

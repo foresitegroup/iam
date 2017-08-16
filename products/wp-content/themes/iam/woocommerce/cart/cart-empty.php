@@ -4,7 +4,7 @@
  *
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.0.0
+ * @version 3.1.0
  */
 
 //header('Location: '. wc_get_page_permalink( 'shop' ));

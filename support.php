@@ -1,5 +1,6 @@
 <?php
 $PageTitle = "Support";
+$Keywords = "investment record keeping help, investment account manager support, investment software support, investment portfolio software support, investment management help, investing help, investment software free trial support, investment account management support, portfolio tracker help, portfolio management software support, personal investment portfolio support";
 include "header.php";
 ?>
 
