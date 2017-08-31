@@ -21,7 +21,7 @@ include "header.php";
   We're confident you'll find the new IAMv3 Individual version our best release yet, filled with new features and improvements, including suggestions from users such as yourself.<br>
   <br>
 
-  Follow these steps for downloading a demo of IAMv3.  When you convert your current IAMv2 data, as long as your current IAMv2 is up-to-date with active support, the IAM3 demo will convert to a full version.  If your IAMv2 support has expired, once you have installed and converted your existing IAMv2 data into IAMv3, you can order support renewal codes for IAMv3 to convert the demo to a full version.  You do not need to order a new software activation key.<br>
+  Follow these steps for downloading a demo of IAMv3.<br>
   <br>
 
   <ol>
@@ -45,7 +45,7 @@ include "header.php";
       <ul class="redcircles"><li>Note:  If you did not use the original default location for IAMv2, use the 'Directory' button to locate the installation directory for your current copy of IAMv2, and then select the \Data folder. Your portfolios should be listed for conversion. Select the '<strong>Convert Now</strong>' button.</li></ul>
       <br>
     </li>
-    <li>All existing portfolio data will be migrated to IAMv3, and IAMv3 will be activated to a full version, provided your IAMv2 support is up-to-date and active.  If your IAMv2 support has expired, once you have installed and converted your existing IAMv2 data into IAMv3, you can order support renewal codes for IAMv3 to convert the demo to a full version.<br><br></li>
+    <li>All existing portfolio data will be migrated to IAMv3.<br><br></li>
   </ol>
   <br>
 
