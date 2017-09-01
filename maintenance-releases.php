@@ -11,6 +11,23 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.7</strong>
+  <ul>
+    <li>based on user requests, added to Portfolio Performance Report the ability to derive returns for 'Current Only' held securities as available in the prior IAMv2.</li>
+    <li>based on user requests, added to Portfolio Reports | Additional Reports the Common Stock Allocation by Sector Report as available in the prior IAMv2.</li>
+    <li>changed user preference for settlement date to use 'trade date + 2' for transaction offset activity for recent SEC amendment to shorten by one business day the standard settlement cycle for most broker-dealer securities transactions, effective September 5, 2017.  Previously, the standard settlement cycle for these transactions was three business days, known as T+3.  The amended rule shortens the settlement cycle to two business days, T+2.</li>
+    <li>changed QuoteMedia Data Feed for changes in delivery method of data items.</li>
+    <li>changed asset type label Corporate Bonds to 'Taxable Bonds'.</li>
+    <li>changed Fees and Expenses report to list as 'Tax Withheld' in column header.</li>
+    <li>changed File Menu | Preferences | Home Page to allow selection of a user defined benchmark index for Home Page | Portfolio Summary Tab performance comparison.</li>
+    <li>corrected ^dji index and option pricing due to changes made by Yahoo! Finance.</li>
+    <li>corrected error in form when entering exercised put with short sale.</li>
+    <li>corrected error in Portfolio Performance Comparison Report to reflect deleted and re-derived returns.</li>
+    <li>corrected current asset library to properly display exchange traded fund objectives.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.6</strong>
   <ul>
     <li>changed QuoteMedia data feed for changes in delivery of data items.</li>
@@ -20,7 +37,6 @@ include "header.php";
     <li>corrected benchmark performance table for manual entry/deriving monthly returns.</li>
     <li>corrected additional program errors/error logs as reported by users.</li>
   </ul><br>
-  Note: the 6/30/2017 historical price data provided for use in IAMv3 may be in some cases corrupted and incomplete due to recent NASDAQ technical pricing issues and may not provide accurate pricing.  Depending on your holdings, $1.00 may be returned.  For those securities that show $1.00 after creating the 6/30/2017 historic price date, you'll need to rely on June 30th month-end broker statements, or other sources, to manually edit the 6/30/2017 historic price date for accuracy.  Hopefully this issue will be resolved soon and reliable 6/30/2017 historical price data will be available, and this will no longer be an issue going forward.  We are looking into alternative sources for historic and adjusted benchmark index pricing.<br>
   <br>
 
   <strong>Investment Account Manager 3 for Individuals - release 3.0.5b</strong>
@@ -33,7 +49,6 @@ include "header.php";
     <li>changed broker access to T. Rowe Price for new required broker credentials.</li>
     <li>corrected additional program errors/error logs as reported by users.</li>
   </ul><br>
-  Note: with the recent changes by Yahoo! Finance, adjusted prices for benchmark indices are no longer available.  We are working on a solution for providing this month end adjusted price as available for mutual funds and exchange traded funds when used for benchmark performance comparisons.  In the meantime, the month-end closing price will now be stored and used for these benchmark performance comparison purposes.<br>
   <br>
 
   <strong>Investment Account Manager 3 for Individuals - release 3.0.4</strong>
