@@ -960,7 +960,7 @@ FOOTER .three-col .ltitle A:active {
   color: #111111;
 }
 
-FOOTER INPUT[type="text"] {
+FOOTER INPUT[type="email"] {
   width: 75%;
   padding: 0.5em 7%;
   background: #255595;
@@ -968,7 +968,7 @@ FOOTER INPUT[type="text"] {
   color: #FFFFFF;
 }
 
-FOOTER INPUT[type="text"]:focus {
+FOOTER INPUT[type="email"]:focus {
   border-color: #255595;
 }
 
@@ -983,6 +983,14 @@ FOOTER INPUT[type="submit"] {
   width: auto;
   padding: 0.6em 1.5em;
   font-size: 15px;
+  outline: 0;
+}
+
+FOOTER .response {
+  margin-top: 0.5em;
+  border: 1px solid #ED243B;
+  background: #2F82BF;
+  padding: 0.5em 1em;
 }
 
 FOOTER .three-col A:link,
@@ -2894,7 +2902,7 @@ ARTICLE.testihead {
     margin-bottom: 4em;
   }
 
-  FOOTER INPUT[type="text"] {
+  FOOTER INPUT[type="email"] {
     width: 50%;
     padding: 0.5em 4%;
   }
