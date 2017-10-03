@@ -1,5 +1,5 @@
-
 <?php
+session_start();
 $PageTitle = "Free Trial Download Professional";
 include "header.php";
 include "inc/dbconfig.php";
@@ -16,7 +16,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   </article>
 </div>
 
-<article style="text-align: center; padding-top: 2em;">
+<article class="download-page">
   <img src="images/logo-download-pro.png" alt="" style="max-width: 100%;"><br>
   <br>
 
@@ -103,59 +103,134 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
     }
   } else {
   ?>
-  <script type="text/javascript">
-    function checkform (form) {
-      if (document.getElementById('firstname').value == "") { alert('First Name required.'); document.getElementById('firstname').focus(); return false ; }
-      if (document.getElementById('lastname').value == "") { alert('Last Name required.'); document.getElementById('lastname').focus(); return false ; }
-      if (document.getElementById('email').value == "") { alert('Email required.'); document.getElementById('email').focus(); return false ; }
-      if (document.getElementById('confirmemail').value == "") { alert('Confirm Email required.'); document.getElementById('confirmemail').focus(); return false ; }
-      if (document.getElementById('email').value != document.getElementById('confirmemail').value) {
-        alert('The Email addresses provided do not match.  Please re-enter to confirm email.');
-        document.getElementById('email').focus(); return false;
+  <div class="desktop<?php if ($_SERVER["QUERY_STRING"] == "download") echo " desktop-on"; ?>">
+    <script type="text/javascript">
+      function checkform (form) {
+        if (document.getElementById('firstname').value == "") { alert('First Name required.'); document.getElementById('firstname').focus(); return false ; }
+        if (document.getElementById('lastname').value == "") { alert('Last Name required.'); document.getElementById('lastname').focus(); return false ; }
+        if (document.getElementById('email').value == "") { alert('Email required.'); document.getElementById('email').focus(); return false ; }
+        if (document.getElementById('confirmemail').value == "") { alert('Confirm Email required.'); document.getElementById('confirmemail').focus(); return false ; }
+        if (document.getElementById('email').value != document.getElementById('confirmemail').value) {
+          alert('The Email addresses provided do not match.  Please re-enter to confirm email.');
+          document.getElementById('email').focus(); return false;
+        }
+        return true ;
       }
-      return true ;
-    }
-  </script>
+    </script>
 
-  <form action="download-iam-pro.php" method="POST" onSubmit="return checkform(this)" class="download-form">
-    <div>
-      <div style="font-size: 70%; color: #898989; padding-bottom: 0.3em; text-align: left;">* Required Field</div>
+    <form action="download-iam-pro.php<?php if ($_SERVER["QUERY_STRING"] == "download") echo "?desktop"; ?>" method="POST" onSubmit="return checkform(this)" class="download-form">
+      <div>
+        <div style="font-size: 70%; color: #898989; padding-bottom: 0.3em; text-align: left;">* Required Field</div>
 
-      <label for="firstname">First Name</label>
-      <input type="text" name="<?php echo md5("firstname" . $ip . $salt . $timestamp); ?>" id="firstname" placeholder="* First Name"><br>
-      <br>
+        <label for="firstname">First Name</label>
+        <input type="text" name="<?php echo md5("firstname" . $ip . $salt . $timestamp); ?>" id="firstname" placeholder="* First Name"><br>
+        <br>
 
-      <label for="lastname">Last Name</label>
-      <input type="text" name="<?php echo md5("lastname" . $ip . $salt . $timestamp); ?>" id="lastname" placeholder="* Last Name"><br>
-      <br>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="<?php echo md5("lastname" . $ip . $salt . $timestamp); ?>" id="lastname" placeholder="* Last Name"><br>
+        <br>
 
-      <label for="email">Email</label>
-      <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="* Email Address"><br>
-      <br>
+        <label for="email">Email</label>
+        <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="* Email Address"><br>
+        <br>
 
-      <label for="confirmemail">Confirm Email</label>
-      <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* Confirm Email"><br>
-      <br>
+        <label for="confirmemail">Confirm Email</label>
+        <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* Confirm Email"><br>
+        <br>
 
-      <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
-      <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label><br>
-      <br>
+        <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
+        <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label><br>
+        <br>
 
-      <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
+        <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
 
-      <input type="hidden" name="ip" value="<?php echo $ip; ?>">
-      <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
+        <input type="hidden" name="ip" value="<?php echo $ip; ?>">
+        <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
-      <input type="submit" name="submit" value="DOWNLOAD NOW"><br>
-      <br>
+        <input type="submit" name="submit" value="DOWNLOAD NOW"><br>
+        <br>
 
-      <span style="font-size: 70%; text-decoration: none;">Requirements: <strong>Windows 7</strong> or higher with Internet Access.<br>
-      Apple computer requires Windows emulations software.</span>
-    </div>
-  </form>
+        <span style="font-size: 70%; text-decoration: none;">Requirements: <strong>Windows 7</strong> or higher with Internet Access.<br>
+        Apple computer requires Windows emulations software.</span>
+      </div>
+    </form>
 
-  <a href="mailto:?subject=Investment Account Manager Professional Demo&body=%0AHello, I thought you might find this investment software useful.%0A<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">Refer a Friend</a>
+    <a href="mailto:?subject=Investment Account Manager Professional Demo&body=%0AHello, I thought you might find this investment software useful.%0A<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">Refer a Friend</a>
+  </div>
   <?php } ?>
+  <div class="mobile<?php if ($_SERVER["QUERY_STRING"] == "download") echo " mobile-off"; ?>">
+    It looks like you're on a mobile device and won't be able to download Investment Account Manager at this time. If you would like to be sent an email reminder to download the IAM trial when you are at a desktop computer, enter your address in the form below.<br>
+    <br>
+
+    If you ARE on a device that allows downloads and installs, please <a href="?download">enable the download form</a> to proceed.<br>
+    <br>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var form = $('#download-reminder');
+        var formMessages = $('#form-messages');
+        $(form).submit(function(event) {
+          event.preventDefault();
+
+          function formValidation() {
+            if ($('#reminder-email').val() === '') { alert('Email Address required.'); $('#reminder-email').focus(); return false; }
+            return true;
+          }
+
+          if (formValidation()) {
+            var formData = $(form).serialize();
+            formData += '&src=ajax';
+
+            $.ajax({
+              type: 'POST',
+              url: $(form).attr('action'),
+              data: formData
+            })
+            .done(function(response) {
+              $(formMessages).html(response);
+
+              $('#reminder-email').val('');
+            })
+            .fail(function(data) {
+              if (data.responseText !== '') {
+                $(formMessages).html(data.responseText);
+              } else {
+                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+              }
+            });
+          }
+        });
+      });
+    </script>
+
+    <noscript>
+    <?php
+    $feedback = (!empty($_SESSION['feedback'])) ? $_SESSION['feedback'] : "";
+    unset($_SESSION['feedback']);
+    ?>
+    </noscript>
+
+    <form action="form-download-reminder.php" method="POST" id="download-reminder">
+      <div>
+        <label for="reminder-email">Email</label>
+        <input type="email" name="<?php echo md5("reminder-email" . $ip . $salt . $timestamp); ?>" id="reminder-email" placeholder="Email Address"><br>
+        <br>
+
+        <input type="hidden" name="iam_version" value="pro">
+
+        <input type="hidden" name="referrer" value="download-iam-pro.php">
+
+        <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
+
+        <input type="hidden" name="ip" value="<?php echo $ip; ?>">
+        <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
+
+        <input type="submit" name="submit" value="SET REMINDER">
+      </div>
+    </form>
+
+    <div id="form-messages"><?php echo $feedback; ?></div>
+  </div>
 </article>
 
 <div class="gray footer">

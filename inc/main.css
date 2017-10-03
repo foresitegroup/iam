@@ -1137,6 +1137,13 @@ FOOTER .three-col A.social:active {
   height: 12em;
 }
 
+.download-page {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.download-page .mobile { display: none; }
+
 .testimonials .cycle-slide DIV {
   line-height: 1.5em;
   font-size: 118.75%;
@@ -2645,6 +2652,17 @@ ARTICLE.testihead {
 
   .download-form {
     width: 83%;
+  }
+
+  .download-page .desktop { display: none; }
+  .download-page .mobile { display: block; }
+  .download-page .desktop.desktop-on { display: block; }
+  .download-page .mobile.mobile-off { display: none; }
+
+  #form-messages {
+    margin-top: 2em;
+    font-weight: bold;
+    color: #2E65B0;
   }
 
   .tour-header {
