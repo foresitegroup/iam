@@ -9,7 +9,7 @@ function SendReminder($database) {
   $result = $mysqli->query("SELECT * FROM $database WHERE reminder_sent = '' AND reminder_date <= '$cutofftime'");
 
   while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-    $link .= ($row['ima_version'] == "pro") ? "-pro.php" : ".php";
+    $link .= ($row['iam_version'] == "pro") ? "-pro.php" : ".php";
 
     $SendTo = $row['email'];
     $Subject = "Investment Account Manager Trial Download";
