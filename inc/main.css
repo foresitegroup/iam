@@ -1570,6 +1570,8 @@ UL.products LI .price,
   color: #ED243B;
 }
 
+.woocommerce-product-gallery { opacity: 1 !important; }
+
 .price INS { text-decoration: none; font-style: italic; }
 .price INS:before { content: "Now "; }
 .price INS:after { content: " limited time offer"; font-size: 70%; }
