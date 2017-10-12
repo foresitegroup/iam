@@ -10,9 +10,15 @@ include "header.php";
   </article>
 </div>
 
-<div class="blue mb">
+<div class="blue">
   <article style="width: 60%; padding: 2em 0;">
     Investment Account Manager IAM &AMP; Investment Account Manager Professional IAM PRO offer several outlets for support including:
+  </article>
+</div>
+
+<div class="red mb">
+  <article style="width: 60%; padding: 2em 0;">
+    <strong>IMPORTANT:</strong> the first step in solving your technical support question is to be using the most current version - use the program's <strong>Check for Updates</strong> choice found on IAM's Home Page.
   </article>
 </div>
 
