@@ -11,6 +11,16 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.8</strong>
+  <ul>
+    <li>added new Help Menu choice 'Learn ... Tutorials'.</li>
+    <li>changed broker download access for recent changes implemented by Charles Schwab.</li>
+    <li>corrected ^dji index and option pricing due to changes made by Yahoo! Finance.</li>
+    <li>corrected error in Portfolio Performance Comparison Report/Graph when selecting 'by quarterly' periods.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+  
   <strong>Investment Account Manager 3 for Individuals - release 3.0.7</strong>
   <ul>
     <li>based on user requests, added to Portfolio Performance Report the ability to derive returns for 'Current Only' held securities as available in the prior IAMv2.</li>
