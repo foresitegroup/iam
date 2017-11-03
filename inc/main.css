@@ -461,6 +461,8 @@ NAV:before, NAV:after { content: ""; display: table; }
   font-size: 93.75%;
 }
 
+#banner-form .ucl { text-align: left; }
+
 #banner-form INPUT[type="text"] {
   background: transparent;
   color: #FFFFFF;
@@ -2600,6 +2602,10 @@ ARTICLE.testihead {
     width: 260px;
     left: 56%;
   }
+
+  #banner-form SPAN { font-size: 1.6vw; }
+
+  #banner-form .ucl { font-size: 1.8vw; }
 
   .three-col-mid { padding: 0 2.4%; }
 
