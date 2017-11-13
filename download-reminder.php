@@ -14,7 +14,7 @@ function SendReminder($database) {
     $SendTo = $row['email'];
     $Subject = "Investment Account Manager Trial Download";
     $Header = "From: Investment Account Manager <techsupport@investmentaccountmanager.com>\r\n";
-    $Message = "Hello.\n\nYou are receiving this email because you recently visited the IAM download page on a mobile device and requested a reminder to download the trial demo when you were at a desktop computer. If you did not make this request, we apologize for the mistake and you can simply ignore this email.\n\nTo download Investment Account Manager, please visit " . $link . " using a desktop computer and fill in the short form. We thank you for your interest.\n\nSincerely,\n\nThe Investment Account Manager Team\n";
+    $Message = "Hello.\n\nYou are receiving this email because you recently visited the IAM download page on a mobile device and requested a reminder to download the trial demo when you were at a desktop computer. If you did not make this request, we apologize for the mistake and you can simply ignore this email.\n\nTo download Investment Account Manager, please visit " . $link . " using a desktop computer. We thank you for your interest.\n\nSincerely,\n\nThe Investment Account Manager Team\n";
 
     mail($SendTo, $Subject, $Message, $Header);
 
