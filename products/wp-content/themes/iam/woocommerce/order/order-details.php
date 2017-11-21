@@ -13,15 +13,18 @@
  * @see 	https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.0.0
+ * @version 3.2.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$order = wc_get_order( $order_id );
+if ( ! $order = wc_get_order( $order_id ) ) {
+	return;
+}
 
+$order_items = $order->get_items( apply_filters( 'woocommerce_purchase_order_item_types', 'line_item' ) );
 //$show_purchase_note    = $order->has_status( apply_filters( 'woocommerce_purchase_note_order_statuses', array( 'completed', 'processing' ) ) );
 //$show_customer_details = is_user_logged_in() && $order->get_user_id() === get_current_user_id();
 ?>
@@ -35,8 +38,8 @@ $order = wc_get_order( $order_id );
 	</thead>
 	<tbody>
 		<?php
-			foreach( $order->get_items() as $item_id => $item ) {
-				$product = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $item ), $item );
+			foreach ( $order_items as $item_id => $item ) {
+				$product = apply_filters( 'woocommerce_order_item_product', $item->get_product(), $item );
 
 				wc_get_template( 'order/order-details-item.php', array(
 					'order'			     => $order,

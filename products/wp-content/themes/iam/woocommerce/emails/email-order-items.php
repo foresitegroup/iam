@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates/Emails
- * @version   3.0.0
+ * @version   3.2.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -58,7 +58,7 @@ foreach ( $items as $item_id => $item ) :
 		<?php
 	}
 
-	if ( $show_purchase_note && is_object( $_product ) && ( $purchase_note = get_post_meta( $_product->id, '_purchase_note', true ) ) ) : ?>
+	if ( $show_purchase_note && is_object( $product ) && ( $purchase_note = $product->get_purchase_note() ) ) : ?>
 		<tr>
 			<td colspan="3" style="text-align:left; vertical-align:middle; border: 0px solid #eee; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;"><?php echo wpautop( do_shortcode( wp_kses_post( $purchase_note ) ) ); ?></td>
 		</tr>
