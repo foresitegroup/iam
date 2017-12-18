@@ -11,6 +11,26 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.1.0</strong>
+  <ul>
+    <li>added to the Asset Library Menu | Update Data | Market Prices from Internet | Pricing Source | the ability to use QuoteMedia (if currently subscribed to this optional data source).  The pricing source selected here will be used as the default for the IAM3 Home Page | Tool Bar Menu | Update Prices choice.</li>
+    <li>added prior day mutual fund pricing to QuoteMedia data subscription.</li>
+    <li>added Canadian pricing to QuoteMedia data subscription.</li>
+    <li>corrected additional issues for using free market pricing from Yahoo! Finance, while still available.</li>
+    <li>corrected market pricing for symbols that include a [space].</li>
+    <li>corrected an error in Benchmarks Menu | Portfolio Performance Returns.</li>
+    <li>corrected user preference for including market pricing as part of home page | refresh command.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
+  <strong>Investment Account Manager 3 for Individuals - release 3.0.9</strong>
+  <ul>
+    <li>added functionality to use Google Finance for market pricing.</li>
+    <li>corrected additional program errors/error logs as reported by users</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.8</strong>
   <ul>
     <li>added new Help Menu choice 'Learn ... Tutorials'.</li>
@@ -20,7 +40,7 @@ include "header.php";
     <li>corrected additional program errors/error logs as reported by users.</li>
   </ul><br>
   <br>
-  
+
   <strong>Investment Account Manager 3 for Individuals - release 3.0.7</strong>
   <ul>
     <li>based on user requests, added to Portfolio Performance Report the ability to derive returns for 'Current Only' held securities as available in the prior IAMv2.</li>
