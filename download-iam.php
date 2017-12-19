@@ -23,8 +23,8 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   Thank you for your interest in the Investment Account Manager - Individual version. Designed by professional money managers and used Worldwide in related forms since 1985, Investment Account Manager provides extensive investment tracking and portfolio management tools for individual investors.<br>
   <br>
 
-  <strong>Note: QuoteMedia&trade; Data Feed included while using the demo of Investment Account Manager Individual version.</strong><br>
-  <br>
+  <!-- <strong>Note: QuoteMedia&trade; Data Feed included while using the demo of Investment Account Manager Individual version.</strong><br>
+  <br> -->
 
   <span class="redtext">Downloads: <?php echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number; ?></span><br>
   <br>
