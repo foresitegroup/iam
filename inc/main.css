@@ -2061,6 +2061,11 @@ ARTICLE.features .feature-desc {
   line-height: 1.4em;
 }
 
+ARTICLE.features.features-two-col .feature-desc {
+  min-height: 0;
+  padding-bottom: 2em;
+}
+
 ARTICLE.features HR {
   margin: 1.4em auto;
   width: 25%;
@@ -3012,6 +3017,15 @@ ARTICLE.testihead {
   .tax-total TD,
   .order-total TD {
     width: 18%;
+  }
+
+  ARTICLE.features.features-two-col .two-col-left,
+  ARTICLE.features.features-two-col .two-col-right {
+    float: none;
+    width: 100%;
+    margin: 0 0 4em 0;
+    padding-left: 0;
+    border-left: 0;
   }
 
   ARTICLE.features .feature-name {

@@ -12,8 +12,8 @@ include "header.php";
   </article>
 </div>
 
-<article class="features">
-  <div class="three-col-left">
+<article class="features features-two-col">
+  <div class="two-col-left">
     <div class="feature-name">INVESTMENT ACCOUNT MANAGER</div>
     <div class="feature-type redtext">INDIVIDUAL</div>
 
@@ -24,33 +24,54 @@ include "header.php";
     </div>
 
     <div class="feature-header" style="background: #ED243B;">PRODUCT FEATURES</div>
+    
+    <div style="text-align: left;">
+      <ul>
+        <li>Centralized Secure Portfolio Management</li>
+        <li>Comprehensive Transaction Accounting</li>
+        <li>Detailed, Informative and Customizable Reporting</li>
+        <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
+        <li>Portfolio Allocation and<br>Rebalancing Analysis</li>
+        <li>Portfolio Performance with Benchmark Comparisons</li>
+        <li>Fundamental Ratio Analysis</li>
+        <li>Multiple Portfolio Management<br>and Reporting</li>
+        <li>Portfolio Combination &amp; Duplication</li>
+        <li>Portfolio Setup Wizard</li>
+        <li>Financial Institution Downloads</li>
+        <li>Security Cross-Referencing</li>
+        <li>Automatic Security Price Updating</li>
+        <li>Mutual Fund Composition Analysis</li>
+        <li>Batch Processing of Reports</li>
+        <li>Price Alerts to Monitor your Securities</li>
+        <li>Create Historical Pricing Databases</li>
+        <li>Import from Quicken&reg; and Captools&reg;</li>
+        <li>Import from Microsoft Excel&reg;</li>
+        <li>Additional Data Importing/Exporting</li>
+        <li>Backup and Restore</li>
+        <li>Comprehensive Help System</li>
+      </ul>
+      <br>
 
-    <ul>
-      <li>Centralized Secure Portfolio Management</li>
-      <li>Comprehensive Transaction Accounting</li>
-      <li>Detailed, Informative and Customizable Reporting</li>
-      <li>Accurate Tax Tracking Tools with Security Lot Assignment</li>
-      <li>Portfolio Allocation and<br>Rebalancing Analysis</li>
-      <li>Portfolio Performance with Benchmark Comparisons</li>
-      <li>Fundamental Ratio Analysis</li>
-      <li>Multiple Portfolio Management<br>and Reporting</li>
-      <li>Portfolio Combination &amp; Duplication</li>
-      <li>Portfolio Setup Wizard</li>
-      <li>Financial Institution Downloads</li>
-      <li>Security Cross-Referencing</li>
-      <li>Automatic Security Price Updating</li>
-      <li>Mutual Fund Composition Analysis</li>
-      <li>Batch Processing of Reports</li>
-      <li>Price Alerts to Monitor your Securities</li>
-      <li>Create Historical Pricing Databases</li>
-      <li>Import from Quicken&reg; and Captools&reg;</li>
-      <li>Import from Microsoft Excel&reg;</li>
-      <li>Additional Data Importing/Exporting</li>
-      <li>Backup and Restore</li>
-      <li>Comprehensive Help System</li>
-    </ul>
+      <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
+      <ul>
+        <li>Security Name, Prior Day Market Price</li>
+        <li>Common Stock Sector and Size</li>
+        <li>Earnings Per Share, Dividends Per Share</li>
+        <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
+        <li>Mutual and Exchanged Traded Fund Composition Details by Asset Type, Stock Sector and Size</li>
+      </ul>
+      <br>
+
+      <strong>Derive Fundamental Ratios Including:</strong>
+      <ul>
+        <li>Current Yield, Dividend Payout and Coverage</li>
+        <li>Price / Earnings, Projected Price / Earnings, PEG</li>
+        <li>Price / Cash Flow, Return on Cash Flow</li>
+        <li>Price / Book Value, Return on Equity</li>
+      </ul>
+    </div>
   </div>
-
+<!--
   <div class="three-col-mid">
     <div class="feature-name">INVESTMENT ACCOUNT MANAGER WITH</div>
     <div class="feature-type">QUOTEMEDIA</div>
@@ -114,8 +135,8 @@ include "header.php";
       </ul>
     </div>
   </div>
-
-  <div class="three-col-right">
+-->
+  <div class="two-col-right">
     <div class="feature-name">INVESTMENT ACCOUNT MANAGER</div>
     <div class="feature-type bluetext">PROFESSIONAL</div>
 

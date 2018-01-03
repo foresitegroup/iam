@@ -84,10 +84,10 @@ include "header.php";
 
   <br>
 
-  <strong><span class="redtext">Q:</span> What are the benefits of ordering Investment Account Manager with the QuoteMedia&trade; data feed?</strong><br>
+  <strong><span class="redtext">Q:</span> What are the benefits of renewing Investment Account Manager 3 Individual technical support with the optional QuoteMedia&trade; data feed?</strong><br>
   <br>
 
-  IAM with QuoteMedia&trade; offers users the ability to automatically populate and update the fundamental and descriptive data for common stocks, exchange traded and mutual funds. This data, when incorporated into IAM, provides the information for powerful fundamental ratio analysis and screening.  The QuoteMedia&trade; data feed is particularly helpful at month end, so with just a few simple clicks, your investments reflect updated fundamental and descriptive data.  Note: IAM always includes free Internet pricing and all fundamental and descriptive data can be entered manually by users if IAM is ordered without the QuoteMedia&trade; data feed.<br>
+  IAM3 Individual with QuoteMedia&trade; offers users the ability to automatically update market prices and to also populate the fundamental and descriptive data for common stocks, exchange traded and mutual funds. This data provides the information for powerful fundamental ratio analysis and screening.  Note: IAM3 Individual also includes free Internet pricing as available, and all fundamental and descriptive data can be entered manually by users if IAM3 Individual technical support is renewed without the QuoteMedia&trade; data feed.<br>
   <br>
 
   <hr>
