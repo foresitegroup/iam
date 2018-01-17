@@ -20,7 +20,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <img src="images/logo-download-pro.png" alt="" style="max-width: 100%;"><br>
   <br>
 
-  Thank you for your interest in the Investment Account Manager's IAM <span class="bluetext">Professional Version</span>.<br>To download IAM PRO for your free 30 day trial, please provide the following information.<br>
+  Thank you for your interest in the Investment Account Manager's IAM <span class="bluetext">Professional Version</span>.<br>To download IAM PRO for your free 60 day trial, please provide the following information.<br>
   <br>
 
   <span class="redtext">Downloads: <?php echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number; ?></span><br>
