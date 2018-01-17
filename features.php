@@ -54,7 +54,7 @@ include "header.php";
 
       <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
       <ul>
-        <li>Security Name, Prior Day Market Price</li>
+        <li>Security Name</li>
         <li>Common Stock Sector and Size</li>
         <li>Earnings Per Share, Dividends Per Share</li>
         <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
@@ -177,7 +177,7 @@ include "header.php";
 
       <strong>Fundamental and Descriptive QuoteMedia&trade; Data Including:</strong>
       <ul>
-        <li>Security Name, Prior Day Market Price</li>
+        <li>Security Name</li>
         <li>Common Stock Sector and Size</li>
         <li>Earnings Per Share, Dividends Per Share</li>
         <li>Beta, Book Value Per Share, Cash Flow Per Share</li>
