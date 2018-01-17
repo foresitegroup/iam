@@ -435,58 +435,75 @@ NAV:before, NAV:after { content: ""; display: table; }
 #banner-form {
   display: block;
   height: 500px;
-  width: 320px;
-  padding: 0 40px;
+  width: 380px;
+  box-sizing: border-box;
+  padding: 4em 10px 0;
   background: rgba(0,0,0,0.5);
   color: #FFFFFF;
   position: absolute;
   top: 0;
   left: 58%;
   z-index: 1000;
-}
-
-#banner-form DIV {
-  height: auto;
+  text-align: center;
 }
 
 #banner-form H1 {
-  margin: 0 0 0.2em 0;
+  margin: 0 0 0.2em;
   color: #FFFFFF;
   font-size: 275%;
-  line-height: 0.7em;
+  line-height: 1em;
 }
 
-#banner-form SPAN {
+#banner-form .text {
+  height: auto;
   color: #C2C2C2;
-  font-size: 93.75%;
+  font-style: italic;
+  font-size: 78%;
+  line-height: 1.4em;
 }
 
-#banner-form .ucl { text-align: left; }
+#banner-form .link {
+  height: auto;
+  margin-top: 3em;
+}
 
-#banner-form INPUT[type="text"] {
-  background: transparent;
+#banner-form .link A {
+  margin: 0.4em 0;
+  display: inline-block;
+  border-radius: 3px;
+  width: 80%;
+  padding: 0.8em 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#banner-form .link-red A:link,
+#banner-form .link-red A:visited {
+  background: #ED243B;
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  width: 94%;
-  padding: 0.5em 3%;
+  transition: all 0.2s;
 }
 
-#banner-form INPUT[type="text"]:focus {
-  border-color: #2E65B0;
+#banner-form .link-blue A:link,
+#banner-form .link-blue A:visited {
+  background: #3167AE;
+  color: #FFFFFF;
+  transition: all 0.2s;
 }
 
-#banner-form INPUT::-webkit-input-placeholder { color: #FFFFFF; }
-#banner-form INPUT:-moz-placeholder { color: #FFFFFF; } /* FF 4-18 */
-#banner-form INPUT::-moz-placeholder { color: #FFFFFF; } /* FF 19+ */
-#banner-form INPUT:-ms-input-placeholder { color: #FFFFFF; } /* IE 10+ */
-#banner-form INPUT:focus::-webkit-input-placeholder { color: transparent; }
-#banner-form INPUT:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-#banner-form INPUT:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
-#banner-form INPUT:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+#banner-form .link-red A:hover,
+#banner-form .link-red A:active,
+#banner-form .link-blue A:hover,
+#banner-form .link-blue A:active {
+  background: #C2C2C2;
+  color: #111111;
+}
 
-#banner-form INPUT[type="submit"] {
-  width: 100%;
-  padding: 1em 0;
+#banner-form .link SPAN {
+  margin-top: 0.5em;
+  display: block;
+  font-size: 70%;
+  line-height: 1em;
 }
 
 .sub-header {
@@ -2604,13 +2621,10 @@ ARTICLE.testihead {
   }
 
   #banner-form {
-    width: 260px;
-    left: 56%;
+    width: 330px;
+    left: auto;
+    right: 0;
   }
-
-  #banner-form SPAN { font-size: 1.6vw; }
-
-  #banner-form .ucl { font-size: 1.8vw; }
 
   .three-col-mid { padding: 0 2.4%; }
 
@@ -2770,7 +2784,8 @@ ARTICLE.testihead {
   }
 
   #banner-form {
-    left: 54%;
+    width: 43%;
+    font-size: 2.1vw;
   }
 
   .feature1 H2,

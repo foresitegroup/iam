@@ -55,70 +55,21 @@ include "header.php";
     </div>
   </div>
 
-  <?php
-  // Settings for randomizing the field names
-  $ip = $_SERVER['REMOTE_ADDR'];
-  $timestamp = time();
-  $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
-  ?>
   <span id="banner-form">
-    <script type="text/javascript">
-      function checkform (form) {
-        if(document.getElementById('uptodate').checked) {
-          if (document.getElementById('email').value == "") { alert('Email required.'); document.getElementById('email').focus(); return false ; }
-          if (document.getElementById('confirmemail').value == "") { alert('Confirm Email required.'); document.getElementById('confirmemail').focus(); return false ; }
-          if (document.getElementById('email').value != document.getElementById('confirmemail').value) {
-            alert('The Email addresses provided do not match.  Please re-enter to confirm email.');
-            document.getElementById('email').focus(); return false;
-          }
-        }
-        return true ;
-      }
+    <h1>FREE TRIAL!</h1>
+    <div class="text">Start your free Investment Account Manager v3 trial now. Select your appropriate version below.</div>
+    
+    <div class="link link-red">
+      <?php echo $GLOBALS['demodays']; ?> Day <strong class="redtext"><em>Individual</em></strong> Trial<br>
+      <a href="download-iam.php">Download Now</a>
+      <span class="redtext">Downloads: <?php include "inc/dbconfig.php"; echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number; ?></span>
+    </div>
 
-      $(document).ready(function(){
-        $('#uptodate').click(function(){ $('#toggle-fields').toggle(); });
-      });
-    </script>
-    <form action="download-iam.php" method="POST" onSubmit="return checkform(this)" class="vert-center">
-      <div>
-        <h1>FREE TRIAL!</h1>
-        <span>Start your <?php echo $GLOBALS['demodays']; ?> day <strong>individual</strong> free trial today</span><br>
-        <br>
-
-        <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
-        <label for="uptodate" class="ucl"><span></span>Send me updates, offers and more.</label>
-        <br>
-        
-        <span id="toggle-fields">
-          <label for="firstname">First Name</label>
-          <input type="text" name="<?php echo md5("firstname" . $ip . $salt . $timestamp); ?>" id="firstname" placeholder="FIRST NAME"><br>
-          <br>
-
-          <label for="lastname">Last Name</label>
-          <input type="text" name="<?php echo md5("lastname" . $ip . $salt . $timestamp); ?>" id="lastname" placeholder="LAST NAME"><br>
-          <br>
-
-          <label for="email">Email</label>
-          <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="* EMAIL"><br>
-          <br>
-
-          <label for="confirmemail">Confirm Email</label>
-          <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* CONFIRM EMAIL"><br>
-          <br>
-        </span>
-        
-        <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
-
-        <input type="hidden" name="ip" value="<?php echo $ip; ?>">
-        <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
-
-        <input type="submit" name="submit" value="DOWNLOAD NOW">
-
-        <div class="redtext" style="margin-top: 15px; width: auto; font-size: 80%; text-align: center;">
-          Downloads: <?php include "inc/dbconfig.php"; echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam'")->fetch_object()->number; ?>
-        </div>
-      </div>
-    </form>
+    <div class="link link-blue">
+      60 Day <strong class="bluetext"><em>Professional</em></strong> Trial<br>
+      <a href="download-iam-pro.php">Download Now</a>
+      <span class="bluetext">Downloads: <?php echo $mysqli->query("SELECT number FROM downloads_count WHERE product = 'iam_pro'")->fetch_object()->number; ?></span>
+    </div>
   </span>
 </div>
 
