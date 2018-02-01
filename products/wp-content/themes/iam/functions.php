@@ -197,4 +197,12 @@ function remove_more_link_scroll( $link ) {
   return $link;
 }
 add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+
+
+// Wrap video embed code in DIV for responsive goodness
+add_filter( 'embed_oembed_html', 'my_oembed_filter', 10, 4 ) ;
+function my_oembed_filter($html, $url, $attr, $post_ID) {
+  $return = '<div class="video">'.$html.'</div>';
+  return $return;
+}
 ?>
