@@ -11,6 +11,17 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.1.1</strong>
+  <ul>
+    <li>added more timely prior day mutual fund pricing from QuoteMedia data subscription.</li>
+    <li>added price alerts function to QuoteMedia price updating.</li>
+    <li>modified broker download for recent changes at Edward Jones.</li>
+    <li>modified broker download for recent changes at TIAA-CREF Retirement Services.</li>
+    <li>corrected issue with 'closing buys' in transaction activity ledger.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.1.0</strong>
   <ul>
     <li>added to the Asset Library Menu | Update Data | Market Prices from Internet | Pricing Source | the ability to use QuoteMedia (if currently subscribed to this optional data source).  The pricing source selected here will be used as the default for the IAM3 Home Page | Tool Bar Menu | Update Prices choice.</li>
