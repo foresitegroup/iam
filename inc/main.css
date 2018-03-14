@@ -566,6 +566,11 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
   color: #FFFFFF;
 }
 
+.green {
+  background: #163D22;
+  color: #FFFFFF;
+}
+
 .red {
   background: #ED243B;
   color: #FFFFFF;
@@ -588,6 +593,7 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
 .darkgray ARTICLE,
 .darkestgray ARTICLE,
 .purple ARTICLE,
+.green ARTICLE,
 .red ARTICLE,
 .blue ARTICLE,
 .lightblue ARTICLE {
@@ -596,14 +602,16 @@ A.whitelink:hover, A.whitelink:active { color: #959595; }
   text-align: center;
 }
 
-.purple ARTICLE {
+.purple ARTICLE,
+.green ARTICLE {
   font-weight: 600;
   font-size: 220%;
   line-height: 1.2em;
   padding: 1.5em 0;
 }
 
-.purple ARTICLE SUP {
+.purple ARTICLE SUP,
+.green ARTICLE SUP {
   font-size: 50%;
   font-weight: 300;
 }
@@ -2041,6 +2049,43 @@ TABLE.customer_details TH {
   margin-left: 1em;
 }
 
+#main .video { margin: 2em 0; }
+
+#news-index-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#news-index {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+#news-index HEADER,
+#news-index ARTICLE,
+#news-index FOOTER {
+  width: 100%;
+}
+
+#news-index-sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 29%;
+  box-sizing: border-box;
+  padding-left: 2%;
+  font-size: 13px;
+  line-height: 1.3em;
+}
+
+#news-index-sidebar LI { padding: 0.25em 0; }
+
+#news-index-sidebar A { text-decoration: none; }
+
+#news-index-sidebar H1 {
+  margin: 0 0 0.2em;
+}
+
 .contact-phone ARTICLE {
   margin: 1em auto;
   font-size: 200%;
@@ -2310,22 +2355,22 @@ ARTICLE.testihead {
   font-size: 100% !important;
 }
 
-.scottrade-left {
+.ameritrade-left {
   font-size: 118.75%;
   line-height: 1.6em;
 }
 
-.scottrade-left LI {
+.ameritrade-left LI {
   line-height: 1.4em;
   margin-bottom: 0.8em;
 }
 
-.scottrade-right {
+.ameritrade-right {
   font-size: 87.5%;
   line-height: 1.7em;
 }
 
-.scottrade-right IMG {
+.ameritrade-right IMG {
   max-width: 100%;
   height: auto;
 }
@@ -2569,13 +2614,17 @@ ARTICLE.testihead {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  #news-index-wrap,
+  #main .navigation .nav-links { width: 96%; }
+}
+
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */
   HEADER,
   .cycle-slideshow DIV DIV,
   ARTICLE,
-  FOOTER,
-  #main .navigation .nav-links {
+  FOOTER {
     width: 96%;
   }
 
@@ -3069,6 +3118,8 @@ ARTICLE.testihead {
   .videos ARTICLE SECTION .video-box {
     width: 46.4%;
   }
+
+  #news-index-sidebar { width: 28%; font-size: 2.1vw; }
 }
 
 @media only screen and (max-width: 480px) {

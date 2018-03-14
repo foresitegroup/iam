@@ -179,7 +179,7 @@ include "header.php";
 </div>
 
 <article id="partners">
-  <img src="images/partner-scottrade.png" alt="ScotTrade">
+  <img src="images/partner-ameritrade.png" alt="TD Ameritrade Institutional">
   <img src="images/partner-quotemedia.png" alt="QuoteMedia">
   <img src="images/partner-manifest.png" alt="ManifestInvesting">
   <img src="images/partner-aaii.png" alt="AAII">

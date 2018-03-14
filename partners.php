@@ -50,13 +50,13 @@ include "header.php";
 
   <br>
 
-  <h3>Scottrade Advisor Services</h3>
+  <h3>TD Ameritrade Institutional</h3>
   <br>
 
-  Personalized service and powerful technology are hallmarks of <strong>Scottrade<sup>&reg;</sup> Advisor Services</strong>, a division of Scottrade, Inc., providing comprehensive custodial services for Registered Investment Advisors. A fresh new custodial platform and advanced account management tools help create a productive environment for your business with a minimum of administrative headaches, while dedicated relationship teams provide the one-on-one support you need and deserve. <a href="scottrade.php">Information on using Scottrade with Investment Account Manager Pro can be found here.</a><br>
+  <strong>TD Ameritrade Institutional</strong> Veo platform is a powerful account management and trading platform, designed specifically for advisors&mdash;based on feedback from advisors. With ample core functionality and the ability to access leading third-party applications through Veo Open Access, Veo gives you the flexibility and control to run your business your way. With the ability to automate and streamline labor-intensive tasks, Veo may help you reduce costs while increasing productivity. The result is less time in front of your computer and more time in front of your clients <a href="td-ameritrade-institutional.php">Information on using TD Ameritrade Institutional with Investment Account Manager Pro can be found here.</a><br>
   <br>
 
-  <a href="http://advisor.scottrade.com"><img src="images/partners-scottrade.png" alt="Scottrade"></a><br>
+  <a href="http://www.tdainstitutional.com"><img src="images/partners-ameritrade.png" alt="TD Ameritrade Institutional"></a><br>
   <br>
 
   <hr>
