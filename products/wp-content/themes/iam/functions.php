@@ -188,7 +188,49 @@ function add_neworders ($order_id) {
     ));
   }
 }
-add_action( 'woocommerce_checkout_order_processed', 'add_neworders' );
+add_action('woocommerce_checkout_order_processed', 'add_neworders');
+
+
+// Email Person A their reward coupon because Person B used the coupon they sent
+function reward_coupon_notification_content($order, $heading = false, $mailer) {
+  $template = 'emails/customer-send-coupon.php';
+
+  return wc_get_template_html($template, array(
+    'order'         => $order,
+    'email_heading' => $heading,
+    'sent_to_admin' => false,
+    'plain_text'    => false,
+    'email'         => $mailer
+  ));
+}
+
+function reward_coupon_notification($order_id) {
+  $order = wc_get_order($order_id);
+
+  if ($order->get_used_coupons()) {
+    foreach($order->get_used_coupons() as $coupon) {
+      query_posts(array('post_type' => 'shop_coupon','s' => $coupon,'posts_per_page' => 1));
+      while (have_posts()): the_post(); $realcoupon = get_the_title(); endwhile;
+
+      $decrypt = openssl_decrypt($realcoupon,"AES-128-ECB","IAMreferral");
+      if ($decrypt) $referrer_email = $decrypt;
+    }
+    
+    if ($referrer_email) {
+      $mailer = WC()->mailer();
+
+      $recipient = $referrer_email;
+      $subject = "A Thank You for Referring a Friend";
+      $heading = "25% discount coupon code for IAM3 Individual Technical Support Renewal";
+      $content = reward_coupon_notification_content($order, $heading, $mailer);
+      $headers = "Content-Type: text/html\r\n";
+      $headers .= "Bcc: mark@foresitegrp.com\r\n";
+
+      $mailer->send($recipient, $subject, $content, $headers);
+    }
+  }
+}
+add_action('woocommerce_order_status_pending_to_processing_notification', 'reward_coupon_notification', 10, 1);
 
 
 // Make "more" link go to top of page instead of anchor
