@@ -6,13 +6,13 @@ include "header.php";
 
 <div class="green mb">
   <article>
-    Investment Account Manager Professional integrates with TD Ameritrade Institutional<sup>&reg;</sup> Advisor Services client files.
+    Investment Account Manager Professional integrates with TD Ameritrade Institutional<sup>&reg;</sup> client files.
   </article>
 </div>
 
 <article>
   <div class="two-col ameritrade-left">
-    This integration allows TD Ameritrade Institutional Advisors to easily import client portfolio positions that utilize the TDAI Generic Files format.  Investment Account Manager 3 Professional allows the advisor to import the following client portfolio information as of the date of the TDAI Advisor Services Files:<br>
+    Investment Account Manager 3 Professional is compatible with the following TD Ameritrade Institutional import files:<br>
     <br>
 
     <ul>
