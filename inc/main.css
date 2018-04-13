@@ -1868,6 +1868,15 @@ TABLE.customer_details TH {
   text-align: left;
 }
 
+#main ARTICLE .post { padding-bottom: 2em; }
+
+#main ARTICLE .post:after,
+#main .entry-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #main .entry-title {
   margin: 0;
   line-height: 1.1em;
