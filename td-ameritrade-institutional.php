@@ -6,7 +6,7 @@ include "header.php";
 
 <div class="green mb">
   <article>
-    Investment Account Manager Professional integrates with TD Ameritrade Institutional<sup>&reg;</sup> client files.
+    Investment Account Manager Professional integrates with TD Ameritrade Institutional<sup>&reg;</sup> Advisor Services client files.
   </article>
 </div>
 
