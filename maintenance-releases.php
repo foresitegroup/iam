@@ -11,6 +11,16 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.1.2</strong>
+  <ul>
+    <li>modified broker download for Wells Fargo Advisors and Ameriprise Financial Services to accept new required Client User Identification number.</li>
+    <li>corrected Portfolio Transfers Report to list all transfers within user defined date ranges.</li>
+    <li>corrected formatting issues with the Appraisal Report.</li>
+    <li>corrected error in historical price downloads for invalid dates.</li>
+    <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.1.1</strong>
   <ul>
     <li>added more timely prior day mutual fund pricing from QuoteMedia data subscription.</li>
