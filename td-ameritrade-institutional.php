@@ -6,13 +6,13 @@ include "header.php";
 
 <div class="green mb">
   <article>
-    Investment Account Manager Professional integrates with TD Ameritrade Institutional<sup>&reg;</sup> Advisor Services client files.
+    Investment Account Manager Professional integrates with <span style="display: inline-block;">TD Ameritrade</span> Institutional<sup>&reg;</sup> client files.
   </article>
 </div>
 
 <article>
   <div class="two-col ameritrade-left">
-    This integration allows advisors who custody assets with TD Ameritrade Institutional to easily import client portfolio positions that utilize the TD Ameritrade Institutional Generic Files format.  Investment Account Manager 3 Professional allows the advisor to import the following client portfolio information as of the date of the TD Ameritrade Institutional files:<br>
+    This integration allows advisors who custody assets with <span style="display: inline-block;">TD Ameritrade</span> Institutional to easily import client portfolio positions that utilize the <span style="display: inline-block;">TD Ameritrade</span> Institutional Generic Files format.  Investment Account Manager 3 Professional allows the advisor to import the following client portfolio information as of the date of the <span style="display: inline-block;">TD Ameritrade</span> Institutional files:<br>
     <br>
 
     <ul>
@@ -30,8 +30,8 @@ include "header.php";
 
     <hr style="margin: 3.3em 0;">
 
-    <h5>About TD Ameritrade Institutional Services</h5>
-    TD Ameritrade Institutional's Veo platform is a powerful account management and trading platform, designed specifically for advisors&mdash;based on feedback from advisors.  With ample core functionality and the ability to access leading third-party applications through Veo Open Access&reg;, Veo gives you the flexibility and control to run your business your way.  With the ability to automate and streamline labor-intensive tasks, Veo may help you reduce costs while increasing productivity.  For more information about how TD Ameritrade Institutional Services can help you better serve your clients, visit <a href="http://www.tdainstitutional.com">www.tdainstitutional.com</a>.
+    <h5>About <span style="display: inline-block;">TD Ameritrade</span> Institutional</h5>
+    <span style="display: inline-block;">TD Ameritrade</span> Institutional's Veo platform is a powerful account management and trading platform, designed specifically for advisors&mdash;based on feedback from advisors.  With ample core functionality and the ability to access leading third-party applications through Veo Open Access&reg;, Veo gives you the flexibility and control to run your business your way.  With the ability to automate and streamline labor-intensive tasks, Veo may help you reduce costs while increasing productivity.  For more information about how <span style="display: inline-block;">TD Ameritrade</span> Institutional Services can help you better serve your clients, visit <a href="http://www.tdainstitutional.com">www.tdainstitutional.com</a>.
   </div>
 
   <div style="clear: both;"></div>
@@ -39,7 +39,7 @@ include "header.php";
   <hr><br>
   <br>
 
-  TD Ameritrade, Inc. and QUANT IX SOFTWARE, Inc. are separate, unaffiliated companies and they are not responsible for each other's services and products. Veo Integrated is an indication of programming compatibility. It does not imply any TD Ameritrade, Inc. recommendation of, endorsement of, warranty of, or fitness for use of QUANT IX SOFTWARE's products or services. TD Ameritrade is not responsible for information, opinions or services provided by QUANT IX SOFTWARE, Inc. Brokerage services provided exclusively by TD Ameritrade, Inc., member FINRA/SIPC. Veo is a trademark of TD Ameritrade, Inc. TD Ameritrade is a trademark jointly owned by TD Ameritrade IP Company, Inc. and The Toronto-Dominion Bank. Used with permission. All rights reserved.
+  <span style="display: inline-block;">TD Ameritrade</span>, Inc. and QUANT IX SOFTWARE, Inc. are separate, unaffiliated companies and they are not responsible for each other's services and products. Veo Integrated is an indication of programming compatibility. It does not imply any <span style="display: inline-block;">TD Ameritrade</span>, Inc. recommendation of, endorsement of, warranty of, or fitness for use of QUANT IX SOFTWARE's products or services. <span style="display: inline-block;">TD Ameritrade</span> is not responsible for information, opinions or services provided by QUANT IX SOFTWARE, Inc. Brokerage services provided exclusively by <span style="display: inline-block;">TD Ameritrade</span>, Inc., member FINRA/SIPC. Veo is a trademark of <span style="display: inline-block;">TD Ameritrade</span>, Inc. <span style="display: inline-block;">TD Ameritrade</span> is a trademark jointly owned by <span style="display: inline-block;">TD Ameritrade</span> IP Company, Inc. and The Toronto-Dominion Bank. Used with permission. All rights reserved.
 </article>
 
 <div class="darkgray whitetext footer">
