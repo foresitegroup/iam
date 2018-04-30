@@ -6,7 +6,7 @@ include "header.php";
 
 <div class="green mb">
   <article>
-    Investment Account Manager Professional integrates with <span style="display: inline-block;">TD Ameritrade</span> Institutional<sup>&reg;</sup> client files.
+    Investment Account Manager Professional integrates with <span style="display: inline-block;">TD Ameritrade</span> Institutional's<sup>&reg;</sup> Veo platform client files.
   </article>
 </div>
 
@@ -30,7 +30,7 @@ include "header.php";
 
     <hr style="margin: 3.3em 0;">
 
-    <h5>About <span style="display: inline-block;">TD Ameritrade</span> Institutional</h5>
+    <h5>About <span style="display: inline-block;">TD Ameritrade</span> Institutional's Veo platform</h5>
     <span style="display: inline-block;">TD Ameritrade</span> Institutional's Veo platform is a powerful account management and trading platform, designed specifically for advisors&mdash;based on feedback from advisors.  With ample core functionality and the ability to access leading third-party applications through Veo Open Access&reg;, Veo gives you the flexibility and control to run your business your way.  With the ability to automate and streamline labor-intensive tasks, Veo may help you reduce costs while increasing productivity.  For more information about how <span style="display: inline-block;">TD Ameritrade</span> Institutional Services can help you better serve your clients, visit <a href="http://www.tdainstitutional.com">www.tdainstitutional.com</a>.
   </div>
 

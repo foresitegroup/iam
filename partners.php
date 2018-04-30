@@ -50,7 +50,7 @@ include "header.php";
 
   <br>
 
-  <h3>TD Ameritrade Institutional</h3>
+  <h3>TD Ameritrade Institutional's Veo Platform</h3>
   <br>
 
   <strong>TD Ameritrade Institutional's</strong> Veo platform is a powerful account management and trading platform, designed specifically for advisors--based on feedback from advisors.  With ample core functionality and the ability to access leading third-party applications through Veo Open Access&reg;, Veo gives you the flexibility and control to run your business your way.  With the ability to automate and streamline labor-intensive tasks, Veo may help you reduce costs while increasing productivity. <a href="td-ameritrade-institutional.php">Information on using TD Ameritrade Institutional with Investment Account Manager Pro can be found here.</a><br>
