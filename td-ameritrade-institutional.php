@@ -6,7 +6,7 @@ include "header.php";
 
 <div class="green mb">
   <article>
-    Investment Account Manager Professional integrates with <span style="display: inline-block;">TD Ameritrade</span> Institutional's<sup>&reg;</sup> Veo platform client files.
+    Investment Account Manager Professional integrates with <span style="display: inline-block;">TD Ameritrade</span> Institutional's Veo<sup>&reg;</sup> platform client files.
   </article>
 </div>
 
