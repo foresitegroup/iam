@@ -2622,15 +2622,37 @@ ARTICLE.testihead {
   width: 50%;
   background: #EBEBEB;
   box-sizing: border-box;
+}
+
+#uam-mash .left DIV {
   padding: 1em;
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#uam-mash .left DIV H4 {
+  margin: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 170%;
+}
+
+#uam-mash .left IMG {
+  max-width: calc(100% - 2em);
+  height: auto;
+  margin: 1em;
 }
 
 #uam-mash .right {
   width: 40%;
   background: #000000;
   box-sizing: border-box;
-  padding: 1em 2em;
+  padding: 2em;
   color: #FFFFFF;
+  text-align: center;
 }
 
 #uam-mash .right H2 {
@@ -2642,13 +2664,34 @@ ARTICLE.testihead {
 }
 
 #uam-mash .right H3 {
-  margin: 0 0 2em;
+  margin: 0 0 3em;
   color: #C2C2C2;
   font-weight: 400;
   font-style: italic;
   font-size: 12px;
   line-height: 1.4em;
   text-align: center;
+}
+
+#uam-dl:link,
+#uam-dl:visited {
+  margin: 0.4em 0;
+  display: inline-block;
+  border-radius: 3px;
+  width: 80%;
+  padding: 0.8em 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ED243B;
+  color: #FFFFFF;
+  transition: all 0.2s;
+}
+
+#uam-mash .right SPAN {
+  margin-top: 0.5em;
+  display: block;
+  font-size: 70%;
+  line-height: 1em;
 }
 
 H4.uam-mash {
@@ -2659,6 +2702,46 @@ H4.uam-mash {
 }
 
 H4.uam-mash SPAN { color: #2E65B0; }
+
+#uam-pop {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 780px;
+  box-sizing: border-box;
+  padding: 4em 0;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+  background: #FFFFFF;
+  text-align: center;
+}
+
+#uam-pop-close {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+#uam-pop-form IMG {
+  max-width: 100%;
+  height: auto;
+}
+
+#uam-pop FORM {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#uam-pop-response {
+  display: none;
+  text-align: left;
+  padding: 0 2em;
+}
 
 
 @media only screen and (max-width: 1400px) {
@@ -2875,7 +2958,12 @@ H4.uam-mash SPAN { color: #2E65B0; }
   }
 
   #uam-mash .left { width: 40%; }
+
+  #uam-mash .left DIV H4 { font-size: 3.5vw; }
+
   #uam-mash .right { width: 55%; }
+
+  #uam-pop { width: 90%; }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3534,4 +3622,6 @@ H4.uam-mash SPAN { color: #2E65B0; }
   .videos ARTICLE SECTION .video-box .video-box-text {
     font-size: 3.5vw;
   }
+
+  #uam-pop-form IMG { max-width: 85%; }
 }
