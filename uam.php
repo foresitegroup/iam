@@ -118,11 +118,11 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
 
       <form action="form-uam.php" method="POST" id="uam-form">
         <div>
-          <input type="checkbox" name="uptodate" id="uptodate" value="Send me weekly how to instructional videos during the 90 day free demo period.">
+          <input type="checkbox" name="uptodate" id="uptodate" value="Send me weekly how to instructional videos during the 90 day free demo period." checked>
           <label for="uptodate" style="text-align: left;"><span></span>Provide email to recieve weekly "how to" instructional videos during the 90 day free demo period.</label>
           <br>
 
-          <div id="toggle-fields" style="display: none;">
+          <div id="toggle-fields">
             <label for="email">Email</label>
             <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="* Email Address"><br>
             <br>
