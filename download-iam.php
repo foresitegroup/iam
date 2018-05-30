@@ -20,7 +20,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
   <img src="images/logo-download.png" alt="" style="max-width: 100%;"><br>
   <br>
 
-  Thank you for your interest in the Investment Account Manager - Individual version. Designed by professional money managers and used Worldwide in related forms since 1985, Investment Account Manager provides extensive investment tracking and portfolio management tools for individual investors.<br>
+  Thank you for your interest in the Investment Account Manager - Individual version.  We want you to be happy with Investment Account Manager before you buy it, so <strong><em class="redtext">try our <?php echo $GLOBALS['demodays']; ?> day 100% free demo</em></strong>.  You will have plenty of time to examine the software with your personal data.  You'll gain exposure to time-tested, multiple portfolio management features, while utilizing important tools to help reduce risk, and increase returns.  And, as you work with Investment Account Manager, you will have access to demonstration portfolios, tutorials and free unlimited support. <strong><em>No credit card required.</em></strong> Truly, a no-risk offer!<br>
   <br>
 
   <!-- <strong>Note: QuoteMedia&trade; Data Feed included while using the demo of Investment Account Manager Individual version.</strong><br>
@@ -39,10 +39,10 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
     $uptodate = (isset($_POST['uptodate'])) ? $_POST['uptodate'] : "";
 
     $now = time();
-    
+
     // Make sure address is not already in downloads table
     $result = $mysqli->query("SELECT * FROM downloads WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
-    
+
     // ...and make sure they are not already registered users
     $rresult = $mysqli->query("SELECT * FROM registration WHERE email = '" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "'");
 
@@ -127,9 +127,9 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
     <form action="download-iam.php<?php if ($_SERVER["QUERY_STRING"] == "download") echo "?desktop"; ?>" method="POST" onSubmit="return checkform(this)" class="download-form">
       <div>
         <input type="checkbox" name="uptodate" id="uptodate" value="Keep me up to date with IAM news, software updates, special offers and more." checked>
-        <label for="uptodate" style="text-align: left;"><span></span>Keep me up to date with IAM news, software updates, special offers and more.</label>
+        <label for="uptodate" style="text-align: left;"><span></span>Provide email to recieve weekly "how to" instructional videos during the <?php echo $GLOBALS['demodays']; ?> day free demo period.</label>
         <br>
-        
+
         <div id="toggle-fields">
           <label for="firstname">First Name</label>
           <input type="text" name="<?php echo md5("firstname" . $ip . $salt . $timestamp); ?>" id="firstname" placeholder="First Name"><br>
@@ -147,7 +147,7 @@ $salt = "ForesiteGroupInvestmentAccountManagerDownloadForm";
           <input type="text" name="<?php echo md5("confirmemail" . $ip . $salt . $timestamp); ?>" id="confirmemail" placeholder="* Confirm Email"><br>
           <br>
         </div>
-        
+
         <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
 
         <input type="hidden" name="ip" value="<?php echo $ip; ?>">

@@ -58,6 +58,9 @@ include "header.php";
   <span id="banner-form">
     <h1>FREE TRIAL!</h1>
     <div class="text">Start your free Investment Account Manager v3 trial now. Select your appropriate version below.</div>
+    <br>
+
+    <strong>No Credit Card Required!</strong>
     
     <div class="link link-red">
       <?php echo $GLOBALS['demodays']; ?> Day <strong class="redtext"><em>Individual</em></strong> Trial<br>

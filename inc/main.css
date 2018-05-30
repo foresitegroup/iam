@@ -437,7 +437,7 @@ NAV:before, NAV:after { content: ""; display: table; }
   height: 500px;
   width: 380px;
   box-sizing: border-box;
-  padding: 4em 10px 0;
+  padding: 2.5em 10px 0;
   background: rgba(0,0,0,0.5);
   color: #FFFFFF;
   position: absolute;
@@ -466,6 +466,8 @@ NAV:before, NAV:after { content: ""; display: table; }
   height: auto;
   margin-top: 3em;
 }
+
+#banner-form .link-red { margin-top: 2em; }
 
 #banner-form .link A {
   margin: 0.4em 0;
