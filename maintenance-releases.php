@@ -11,6 +11,18 @@ include "header.php";
 </div>
 
 <article>
+  <strong>Investment Account Manager 3 for Individuals - release 3.1.3</strong>
+  <ul>
+  <li>resolved market pricing issues due to changes implemented by QuoteMedia on July 31st, 2018.</li>
+  <li>corrected error in fund investment objectives report and fund performance comparison report if only a single investment objective was selected.</li>
+  <li>corrected estimated income report/tab display to list estimated income for cash/money market funds.</li>
+  <li>corrected combined appraisal report for missing %gain/loss, page two, first security detail line.</li>
+  <li>corrected transactions activity ledger, security drop down list, to not show cash/money market funds that have no current balance, if preference is set to 'open only'.</li>
+  <li>corrected money market offset issues when using multiple 'closing' transactions for multiple open option positions.</li>
+  <li>corrected additional program errors/error logs as reported by users.</li>
+  </ul><br>
+  <br>
+
   <strong>Investment Account Manager 3 for Individuals - release 3.1.2</strong>
   <ul>
     <li>modified broker download for Wells Fargo Advisors and Ameriprise Financial Services to accept new required Client User Identification number.</li>
