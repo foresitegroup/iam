@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php endforeach; ?>
 			<?php else : ?>
 				<tr class="tax-total">
-					<th>Estimated <?php echo esc_html( WC()->countries->tax_or_vat() ); ?></th>
+					<th>Estimated <?php echo esc_html( WC()->countries->tax_or_vat() ); ?> (WI residents only)</th>
 					<td><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>
 			<?php endif; ?>
