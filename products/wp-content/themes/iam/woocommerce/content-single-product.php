@@ -70,9 +70,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	  $tags =  get_the_terms( wc_get_product()->ID, 'product_tag' );
 	  echo '<meta itemprop="keywords" content="';
-    foreach ( $tags as $tag ) :
-    	echo $tag->name . ", ";
-    endforeach;
+	  if(is_array($terms)) {
+	    foreach ( $tags as $tag ) :
+	    	echo $tag->name . ", ";
+	    endforeach;
+	  }
     echo '">';
 	  ?>
 	</div><!-- .summary -->
